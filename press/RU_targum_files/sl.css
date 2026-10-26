@@ -1,0 +1,13 @@
+.sl td a:link,
+.sl td a:active,
+.sl td a:visited {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+}
+.sl td a:hover {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: underline;
+}

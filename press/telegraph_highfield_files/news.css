@@ -1,0 +1,211 @@
+/**************************************/
+/* NEWS CSS                           */
+/* R. SPENCE                          */
+/* Last Updated: 27/06/2001           */
+/**************************************/
+
+/********** INHERITED STYLES **********/
+
+/* ALL LINKS */
+A {text-decoration: none; color: #0033CC;}
+
+
+/********** BRANDING BAR STYLES **********/
+
+/* JOHN SMITHS TELEGRAPH, CLIPBOARD, HEADLINES ETC (LINK) */
+A.login {font-family: verdana, arial, helvetica, sans-serif; color: #ffffff; font-size: 10px; font-weight: bold;}
+
+/* | (PIPES) */
+.logintext {font-family: verdana, arial, helvetica, sans-serif; color: #ffffff; font-size: 10px;}
+
+/* SEARCH (LINK) */
+A.search {font-family: verdana, arial, helvetica, sans-serif; color: #ffffff; font-size: 10px; font-weight: bold;}
+
+/* DATE LINE */
+.dateline {font-family: verdana, arial, helvetica, sans-serif; color: #ffffff; font-size: 10px; font-weight: bold;}
+
+
+/********** NAVIGATION STYLES **********/
+
+/* NAVIGATION (LINK) */
+A.navhome {font-family: verdana, arial, helvetica, sans-serif; color: #ffffff; font-size: 10px; font-weight: bold;}
+
+/* NAVIGATION (LINK) */
+A.nav1 {font-family: verdana, arial, helvetica, sans-serif; color: #ffffff; font-size: 10px; font-weight: bold;}
+
+/* NAVIGATION LEVEL2 (LINK) */
+A.nav2 {font-family: verdana, arial, helvetica, sans-serif; color: #000066; font-size: 10px; font-weight: bold;}
+
+/* NAVIGATION LEVEL3 (LINK) */
+A.nav3 {font-family: verdana, arial, helvetica, sans-serif; color: #666666; font-size: 10px; font-weight: bold;}
+
+/* 2nd NAVIGATION HEADING */
+.secondnavhead {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 10px; font-weight: bold;}
+.secondNavTd {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 10px; font-weight: bold;}
+
+/* 2nd NAVIGATION (LINK) */
+A.secondnav1 {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 10px; font-weight: bold;}
+
+/* 2nd NAVIGATION LEVEL2 (LINK) */
+A.secondnav2 {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 10px; font-weight: normal;}
+
+
+/********** SUMMARY PAGE STYLES **********/
+
+/* TOP HEADLINE (LINK) */
+A.mainhuge {font-family: verdana, arial, helvetica, sans-serif; color: #0033CC; font-size: 14px; font-weight: bold;}
+
+/* REGULAR HEADLINE (LINK) */
+A.main {font-family: verdana, arial, helvetica, sans-serif; color: #0033CC; font-size: 12px; font-weight: bold;}
+
+/* FACTFILE HEADLINE (LINK) */
+A.mainsmall {font-family: verdana, arial, helvetica, sans-serif; color: #0033CC; font-size: 11px; font-weight: bold;}
+
+/* RELATED REPORTS LINE */
+.summarysub {font-family: verdana, arial, helvetica, sans-serif; color: #ff0000; font-size: 11px; font-weight: bold;}
+
+/* SECTION HEADER (ie.   --opinion------ )*/
+.sectionhead {font-family: verdana, arial, helvetica, sans-serif; color: #000066; font-size: 10px; font-weight: bold;}
+
+/* SUMMARY TEXT HEADER */
+.summarytxthead {font-family: verdana, arial, helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #000099;}
+
+/********** STORY PAGE STYLES **********/
+
+/* STORY PAGE HEADLINE */
+.storyhead {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 16px; font-weight: bold;}
+
+/* NORMAL TEXT */
+.story {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 12px;}
+
+/* BYLINE TEXT */
+.storyby {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 12px; font-weight: bold;}
+
+/* SUB HEADING 1 */
+.subh1 {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 15px; font-weight: bold;}
+
+/* SUB HEADING 2 */
+.subh2 {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 14px; font-weight: bold;}
+
+/* SUB HEADING 3 */
+.subh3 {font-family: verdana, arial, helvetica, sans-serif; color: #ff0000; font-size: 11px; font-weight: bold;}
+
+/* PICTURE CAPTION */
+.caption {font-family: verdana, arial, helvetica, sans-serif; color: #666666; font-size: 10px; font-weight: bold;}
+
+/* LIST ITEM */
+.listory {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 12px;}
+
+/* PRE TEXT */
+PRE {font-family: courier; font-size: 10px; color: #000000;}
+
+/* A.NAME (LINK) */
+A.name {color: #000000;}
+
+/* RELATED REPORTS TEXT */
+.related {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 10px; font-weight: bold;}
+
+/* EXTERNALS TEXT */
+.external {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 10px; font-weight: bold;}
+
+
+/********** ADDITIONAL TEMPLATE STYLES **********/
+
+/* EPOLL / BREAKING NEWS HEADER */
+.boxhead {font-family: verdana, arial, helvetica, sans-serif; color: #ffffff; font-size: 10px; font-weight: bold;}
+
+/* SMALL TEXT */
+.small {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 10px;}
+
+/* SMALL HEADING */
+.smallhead {font-family: verdana, arial, helvetica, sans-serif; color: #990000; font-size: 10px;}
+
+/* STYLES FOR REALLY SMALL TEXT IE. ARIAL */
+.tiny {font-family: arial, sans-serif; color: #000000; font-size: 10px;}
+.tinyhead {font-family: arial, sans-serif; color: #990000; font-size: 10px;}
+
+/* STATUS BAR (EG. 'FRANCE' ON TRAVEL) */
+.statusbar {font-family: verdana, arial, helvetica, sans-serif; color: #ffffff; font-size: 12px;}
+
+/* COPYRIGHT TEXT */
+.copyright {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 10px;}
+
+/* ERROR */
+.error {font-family: verdana, arial, helvetica, sans-serif; font-size: 12px; color: #ff0000; font-weight: bold;}
+
+/* FORM STYLES */
+SELECT {font-family: arial, helvetica, sans-serif; font-size: 10px;}
+INPUT {font-family: arial, helvetica, sans-serif; font-size: 12px;}
+
+/* TOP FIVE NEWS TEXT */
+A.topfive {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; color: #0033cc; font-weight: bold;}
+
+/* SITE INDEX TEXT */
+.whiteIndex{font-family: verdana, arial, helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff;}
+.greyIndex{font-family: verdana, arial, helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #000000;}
+.indexLvl1 {font-family: verdana, arial, helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #ff0000;}
+.indexLvl2 {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #000000;}
+.indexLvl3 {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #999999;}
+.indexLvl4 {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #cccccc;}
+
+/* UPDATE POPUPS */
+.updatesTitleBar {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; color: #ffffff; font-weight: normal;}
+.updatesSelected {font-family: verdana, arial, helvetica, sans-serif; color: #ffcc00; font-size: 10px; font-weight: bold;}
+.updatesDate {font-family: verdana, arial, helvetica, sans-serif; font-size: 9px; color: #000000; font-weight: normal;}
+.upTitle {font-family: verdana, arial, helvetica, sans-serif; font-size: 14px; color: #343399; font-weight: bold;}
+
+/* RIGHT HAND BOX ON NEWS HOME */
+A.rightboxhead {font-family: verdana, arial, helvetica, sans-serif; color: #0033CC; font-size: 12px; font-weight: bold;}
+.rightboxtext {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 11px;}
+
+/* LOGIN AND REGISTRATION STYLES */
+.loginlabel {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 10px; font-weight: bold;}
+.registertext {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 11px;}
+.registerheader {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size: 11px; font-weight: bold;}
+/* MY REG */
+.txt{font:10px verdana;color:#036}
+.err,.star{font:bold 10px verdana;color:#f00}
+.ff{font:bold 10px verdana;color:#036}
+.ftx{font:normal 10px verdana;color:#000}
+
+/********** SPACING STYLES **********/
+
+/* TD.gap8 */
+TD.gap8 {font-family: arial; font-size: 8px;}
+
+/* TD.gap4 */
+TD.gap4 {font-family: arial; font-size: 4px;}
+
+/* TD.gap2 */
+TD.gap2 {font-family: arial; font-size: 2px;}
+
+
+/********* SEARCH *****************/
+ .searchauthor {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #000000;}
+ .searchdate {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #ff0000}
+ .searchheadline {font-family: verdana, arial, helvetica, sans-serif; font-size: 12px; font-weight: bold; color:#0033cc}
+ .searchnav {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #000000} 
+ .searchtext {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #ffffff;}
+ .searchinstruction {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; color: #ffffff;}
+ .searchresults {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; color: #000000;}
+ .searchTitle{font-family: verdana, arial, helvetica, sans-serif; font-size: 11px; color: #ffffff; font-weight: bold;}
+ .searchheadlineresults {font-family: verdana, arial, helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #0033cc;}
+ .searchdateandauthorresults {font-family: verdana, arial, helvetica, sans-serif; font-size: 12px; color: #000000;}
+ .allSearch{font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #9999ff; text-decoration: none;}
+  A.searchlink {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #ffffff;}
+  
+
+/* latest in rel rep */
+.latest {font-family: verdana, arial, helvetica, sans-serif; color: #ff0000; font-size: 10px;}
+
+/* NEWS STORY POP-UP STRAP HEADING */
+.countryText{font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; color: #0033CC; font-weight: bold;}
+.regionText{font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; color: #333333; font-weight: bold;}
+.regionTitle{font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; color: #FFCC00; font-weight: bold;}
+.preNext{font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; color: #0099FF; font-weight: bold;}
+
+/* NEWS TICKER */
+.ticker {font-family: verdana, arial, helvetica, sans-serif; font-size: 10px; color: #0033cc; font-weight: bold;}
+
+/* CHANNEL LINK IN NEWS PUFFS (FEATURES) */
+A.chanlink {font-family: verdana, arial, helvetica, sans-serif; color: #ff0000; font-size: 10px; font-weight: bold;}

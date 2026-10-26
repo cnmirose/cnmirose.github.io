@@ -1,0 +1,53 @@
+/** Newscientist.com stylesheet: version II November 2001 **/
+
+/** links no longer fixed colours. most links bold or small so they can take most of the font information; nest <a> tags closest to text, should only really need textlinks class to determine underlines **/
+
+/** Misc platforms Netscape - DOESN'T nest tags **/
+
+/** Fixed size: mainly spacers **/
+.headerinput {font-family: Arial, helvetica, sans-serif; font-size:10px}
+.space8  {font-size:8px} /** used to fix vertical spaces **/
+.space5  {font-size:5px}
+.leftmarg {margin-left:4px}
+.bothmarg {margin-left:4px; margin-right:4px}
+.selectbox {font-family:arial, helvetica, sans-serif; font-size:11px} /** to save tables from things like the footer **/
+
+
+/** Boxes **/
+.boxheader {background: #68A1BB}
+.shadedbox {background: #E8E8E8}
+.puffboxlink  {font-family: arial, helvetica, sans-serif; font-size:70%; line-height:95%} 
+
+/** Used across the site **/
+p, li {font-family: arial, helvetica, sans-serif; font-size:75%}
+small {font-family: arial, helvetica, sans-serif; font-size:70%} 
+.textlinks {text-decoration:none}
+.squatstrap {font-family: verdana, arial, helvetica, sans-serif; color: #000000; font-size:70%}
+
+/** News **/
+.newsnav {background: #6BA3BF}
+.newssectionstrap {font-family:arial, helvetica, sans-serif; font-size:80%; color:#990000}  
+.newsarthead {font-size:80%; color:#036393}
+.newscrosshead {font-size:80%; color: #003366} /** called nested inside P tags **/
+.newslisthead  {font-family:arial, helvetica, sans-serif; font-size:80%}  
+.newslistdate {line-height:125%; color:#990000}
+.newshomehead {font-family:arial, helvetica, sans-serif; font-size:75%}  
+.newshomestrap {font-family:arial, helvetica, sans-serif; font-size:70%}  
+.newshomedate {font-size:70%; color:#990000} /** had to nest inside p tags as ie was stretching final line **/  
+
+
+.redlinks {color:#990000; text-decoration:none}
+.red {color:#990000}
+.blu  {color:#006699} /** in print box **/
+.darklink {color:#000000}
+a.darklink:visited {color:#CC0033}
+
+/** Special today: specialboxhead not needed here until other sections are included **/
+.specialhead {font-family:arial, helvetica, sans-serif; font-size:95%; line-height:90%; color:#333333; text-decoration:none}
+.specialtext {color:#333333}
+
+/** Search **/
+.searchtext {font-family: arial, helvetica, sans-serif; font-size:60%}
+.searchhead {font-family:arial, helvetica, sans-serif; font-size:70%; color:#333333}
+.searchform {font-family: arial, helvetica, sans-serif; font-size:70%} 
+.searchradio {background : #E8E8E8; color: #000000}

@@ -1,0 +1,1 @@
+document.write ('<A HREF="http://ads.space.com/RealMedia/ads/click_lx.ads/www.space.com/videocommercial/1451711431/x96/default/empty.gif/31383263643031323431343131323130?" target="_top"><IMG SRC="http://a248.e.akamai.net/6/800/1133/0/oasc02.247realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A>');

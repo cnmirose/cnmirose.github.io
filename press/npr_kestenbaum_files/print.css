@@ -1,0 +1,763 @@
+/** general **/
+body 
+	{
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+	
+form, input, select, img, ul, ol, li, dl, dt, dd, div, p, h1, h2, h3, h4, h5, h6
+	{
+		padding: 0;
+		margin: 0;
+	}
+	
+a
+	{
+	color: #333;
+	text-decoration: none;
+	}
+	
+h2 a,
+h3 a,
+h4 a
+	{
+	text-decoration: underline;
+	}
+	
+img
+	{
+		border: none;
+	}
+	
+ul
+	{
+		list-style-type: none;
+	}
+	
+.more
+	{
+		font-weight: bold;
+	}
+	
+.clear
+	{
+		clear: both;
+	}
+	
+h1
+	{
+	font-size: 140%;
+	}
+	
+h2, h3, h4
+	{
+	font-size: 120%;
+	line-height: 120%;
+	margin: 0 0 2pt 0;
+	}		
+	
+hr
+	{
+	color: #CCC;
+	margin-bottom: 15pt;
+	}	
+	
+/*	Structure
+	--------------------------------------------------------------- */
+	
+#header
+	{
+	width: 504pt;
+	margin: 0;
+	padding: 0 0 4pt 0;
+	text-align: left;
+	color: #000;
+	font-size: 0.8em;
+	}
+	
+#main
+	{
+	width: 504pt;
+	margin: 0;
+	text-align: left;	
+	position: relative;
+	}
+	
+#leftcol
+	{
+	display: none;
+	}
+	
+#rightcol
+	{
+	width: 154pt;
+	margin 0;
+	padding: 0 0 0 10pt;
+	float: right;
+	position: absolute;
+	border-left: 0.5pt solid #ccc;
+	left: 340pt;
+	top: 0;
+	}
+	
+#middlecol
+	{
+	width: 330pt;
+	margin: 0;
+	padding: 0 10pt 10pt 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	}
+	
+#footer
+	{
+	display: none;
+	}
+
+	
+/** header **/
+#skipnav
+	{
+		display: none;
+	}
+#logo
+	{
+		float: left;
+		clear: none;
+		display: inline;
+		padding-right: 10pt;
+	}
+/* Hack to display for only IE5 Mac */
+*>html #logo
+	{
+		top: 5pt;
+	}
+/* End hack */
+
+#selPrograms .heading
+	{
+		display: none;
+	}	
+
+#nav
+	{
+		padding: 24pt 5pt 0pt 5pt;
+		text-transform: uppercase;
+	}
+#nav li
+	{
+		display: inline;
+	}
+#nav a
+	{
+		margin:0 4pt 0 0;
+		font-weight: bold;
+		text-decoration: none;
+		color: #000;
+	}
+	
+
+.button
+	{
+	display: none;	
+	}
+	
+#searchcontainer
+	{
+	margin-left: 140pt;
+	}
+	
+#selectprograms
+	{
+	display: none;
+	
+	}
+	
+/*	center - stories
+	--------------------------------------------------------------- */
+
+#middlecol h2
+{
+	font-size: 125%;
+	margin: 0 0 5pt 0;
+}
+
+#middlecol h3, #middlecol h4
+	{
+	font-size: 110%;
+	margin: 0 0 5pt 0;	
+	}
+	
+#middlecol img, .story img
+	{
+		margin: 0 8pt 3pt 0;
+		float: left;
+	}
+
+#middlecol div.story
+	{
+		margin: 0;
+		float: left;
+		page-break-before: auto;
+		font-size: 0.93em;
+	}
+
+/* HIDE no float and clear both from \ IE5 mac */
+#middlecol div.story
+	{
+	width: 330pt;
+	margin: 0 0 15pt 0;
+	float: none;
+	clear: both;
+	}
+	
+#middlecol ul
+	{
+	list-style-type: none;
+	margin: 8pt 0;
+	}
+	
+#middlecol ul li
+	{
+	margin: 0 0 4pt 0;
+	}
+	
+#middlecol div.intro
+	{
+	width: 330pt;
+	}
+	
+#middlecol div.story img
+	{
+	float: left;
+	clear: none;
+	margin: 0 5pt 5pt 0;
+	}
+	
+#middlecol div.story ul
+	{
+	list-style-type: disc;
+	list-style-position: inside;
+	}
+
+#middlecol div.promo
+	{
+	margin: 0 0 15pt 0; 
+	border: 1pt solid #ccc; 
+	float: none; 
+	clear: both;
+	padding: 10pt;	
+	}
+	
+#middlecol div.promo p a
+	{
+	font-weight: bold;
+	text-decoration: none;
+	}
+	
+#middlecol div.promo ul
+	{
+	display: block;
+	}
+	
+#middlecol div.promo ul li
+	{
+	display: block;
+	}
+	
+a.rsslink
+	{
+	display: block;
+	padding: 0 0 4pt 42pt;
+	line-height: 110%;
+	margin: 0 !important;
+	margin: -8pt 0;
+	text-decoration: none;
+	}
+
+ul li a.rsslink
+	{
+	margin: 0 !important;
+	margin: -8pt 0;
+	}
+	
+a.link
+	{
+	display: block;
+	padding: 0 0 4pt 22pt;
+	line-height: 110%;
+	text-decoration: none;
+	}
+	
+ul li a.link
+	{
+	margin: 0 !important;
+	margin: -8pt 0;
+	}
+
+a.audio
+	{
+	display: block;
+	padding: 0 0 4pt 0;
+	line-height: 110%;
+	text-decoration: none;
+	}
+	
+ul li a.audio
+	{
+	margin: 0 !important;
+	margin: -8pt 0;
+	}
+
+.extra
+	{
+		font-family: Helvetica, Geneva, Verdana, Arial, sans-serif;
+		font-size: 90%;
+		display: block;
+		font-style: italic;
+		color: #666;
+		padding-top: 10pt;
+	}
+
+.extra .label
+	{
+		text-transform: uppercase;
+	}
+
+/** MORE FOR STORIES - add slug, dateline and program 6/2004 **/
+
+
+.slug
+	{
+	font-family: Century Gothic, Futura, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #888;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	}
+	
+.imagecredit
+	{
+	color: #CCC;
+	font-size: 9pt;
+	text-align: right;
+	}
+	
+.story .date
+	{
+	color: #999;
+	}
+	
+fieldset
+	{
+	margin: 0 0 15pt 0;
+	border: none;
+	border-top: 1px solid #ccc; 
+	float: none; 
+	clear: both;
+	padding: 10pt 0 0 0;
+	}	
+
+
+/** footer **/
+
+
+#nav2, #legal
+	{
+		padding: 4pt 0 0 0;
+		clear: both;
+		color: #666;
+	}
+
+#nav2
+	{
+		text-transform: uppercase;
+	}
+
+#nav2 li, #legal li
+	{	
+		display: inline;
+		line-height: 1.2em;
+	}
+
+
+/* INSET TWO COL */
+
+h1
+	{
+		font-size: 1.1em;
+	}
+	
+#breakingnews
+	{
+		border: 1pt solid #ccc;
+		padding: 5pt;
+		margin: 0 0 12pt 0;
+	}
+	
+#breakingnews h1, #breakingnews p
+	{
+		display: inline;
+		padding: 0;
+		margin: 0;
+	}
+	
+#breakingnews h1
+	{
+		text-transform: uppercase;
+	}
+	
+.left
+	{
+		width: 160pt;
+		float: left;
+		padding: 5pt 0;
+	}
+	
+.right 
+	{			
+		width: 166pt;
+		float: left;
+		padding: 5pt 0;
+	}
+	
+.left li, .right li
+	{
+		margin-bottom: 6pt;
+	}
+	
+/* \*/
+#topstory .imagewithcaption
+	{
+		margin: 0 5pt 5pt 0;
+	}
+	
+#topstory .imagewithcaption img
+	{
+		margin: 0;
+	}
+	
+#topstory .imagewithcaption p
+	{
+		color: #CCC;
+		padding: 0 0 1pt 0;
+		text-align: left;
+		font-size: .8em;
+		clear: left;
+	}
+	
+#topstory .left, #topstory right
+	{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+/* */
+#audiostreams 
+	{
+	display: none;
+	}
+
+#featured
+	{
+		width: 327pt;
+		color: #000;
+		margin:  5pt 0 15pt 0;
+		padding: 0;
+		border: thin solid #CCC;
+		clear: both;
+	}
+	
+#featured .left
+	{
+		width: 151pt;
+		padding: 6pt;
+	}
+	
+#featured .right
+	{
+		width: 151pt;
+		padding: 6pt;
+	}
+	
+	
+/*	Topics Page Content Display Styles
+	--------------------------------------------------------------- */
+	
+div#categoryheader h1
+	{
+	font-size: 1.8em;
+	width: 320pt;
+	border-bottom: 1pt solid #000;
+	margin-bottom: 8pt;
+	}
+	
+div#categoryheader p
+	{
+	display: none;
+	}	
+
+/*	Topics Archive Pages Content Display Styles
+	--------------------------------------------------------------- */
+	
+div#categoryarchiveheader h1
+	{
+	font-size: 1.8em;
+	width: 320pt;
+	border-bottom: 1pt solid #000;
+	margin-bottom: 8pt;
+	}
+
+div#categoryarchiveheader p
+	{
+	display: none;
+	}	
+	
+div.categorypagenav,
+div.categorypagenav div.pagenumbers
+	{
+	display: none;
+	}
+
+
+#categoryfooter
+	{
+	display: none;
+	}	
+	
+div.inlinesubtopics
+	{
+	display: none;
+	}
+	
+div.promo
+	{
+	width: 307pt;
+	border: thin dotted #ccc;
+	padding: 6pt;
+	margin: 0 0 10pt 0;
+	}
+	
+form
+	{
+	display: none;
+	}
+	
+#emailform
+	{
+	display: none;
+	}	
+
+#searchresults
+	{
+	width: 330pt;
+	}
+	
+/*	spacing between rows
+	---------------------------------------------------------- */
+
+.spacer
+	{
+		clear: both;
+		font-size: 1pt;
+		line-height: 1pt;
+	}
+	
+	
+/*	Dynamic Buckets
+	---------------------------------------------------------- */
+#links ul,
+#links ul li
+	{
+	line-height: 1.2em;
+	padding: 2pt 0;
+	}
+
+.editorialpromo
+	{
+	border: thin dotted #CCC;
+	padding: 6pt;
+	margin: 10pt 0;
+	font-size: 85%;
+	}
+	
+.editorialpromo img
+	{
+	display: none;
+	}
+
+#rightcol div.dynamicbucket
+	{
+	margin-bottom: 4pt;
+	page-break-inside: avoid;
+	}
+	
+#rightcol div.dynamicbucket div.buckettop,
+#rightcol div.dynamicbucket div.bucketbottom
+	{
+	display: none;
+	}
+	
+#rightcol div.rightbanner
+	{
+	height: 100pt;
+	margin-bottom: 4pt;
+	}
+	
+#rightcol div.dynamicbucket div.buckettop
+	{
+	border-bottom: 0.5pt solid #ccc;
+	}
+	
+#rightcol div.dynamicbucket div.bucketcontent
+	{
+	padding: 6pt 0 0 0;
+	margin: 0;
+	}
+	
+#rightcol div.dynamicbucket h3
+	{
+	border-bottom: 0.5pt solid #ccc;
+	padding: 6pt 0 6pt 0;
+	margin-bottom: 0;
+	color: #333;
+	text-transform: uppercase;	
+	font-size: 1em;
+	}
+	
+#rightcol div.dynamicbucket h3 a
+	{
+	text-decoration: none;
+	}
+	
+#rightcol div.dynamicbucket h3 img
+	{
+	margin-right: 3pt;
+	}
+
+#rightcol div.dynamicbucket h4
+	{
+	padding: 0;
+	margin-bottom: 4pt;
+	color: #333;
+	text-transform: uppercase;	
+	font-size: 100%;
+	}
+
+#rightcol div.dynamicbucket ul
+	{
+	clear: both;
+	margin: 0 0 10pt 0;
+	padding: 0;
+	}	
+
+#rightcol div.dynamicbucket ul li
+	{
+	list-style-type: none;
+	margin: 0 0 8pt 0;
+	padding: 0;
+	}	
+	
+#rightcol div.dynamicbucket div.story
+	{
+	display: block;
+	padding: 0;
+	margin: 0 0 10pt 0;
+	}	
+
+#rightcol div.dynamicbucket div.story h4
+	{
+	padding: 0;
+	margin: 0 0 2pt 0;
+	text-transform: none;	
+	}	
+	
+#rightcol div.dynamicbucket div.story img
+	{
+	}
+	
+#rightcol div.dynamicbucket div.story img.thumb
+	{
+	float: left;
+	padding: 0;
+	margin: 0 4pt 4pt 0;
+	width: 40pt;
+	height: 40pt;
+	}
+	
+#rightcol div.dynamicbucket div.story p
+	{
+	line-height: 120%;
+	padding: 0;
+	margin: 0 0 4pt 0;
+	}	
+	
+#rightcol div.dynamicbucket div.story ul
+	{
+	clear: both;
+	/* fix for IE improper display of bulleted lists ('important' selector is correct) */
+	margin: 6pt 0 6pt 6pt !important;
+	margin: 6pt 0 6pt 0pt;
+	padding: 0;
+	font-size: 10pt;
+	}	
+	
+#rightcol div.dynamicbucket div.story ul li
+	{
+	margin: 0 0 6pt 8pt;
+	/* fix for IE improper display of bulleted lists ('important' selector is correct) */
+	padding-left: 0pt !important;
+	padding-left: 8pt;
+	color: #999;
+	list-style-type: disc;
+	list-style-position: outside;
+	font-size: 10pt;
+	}	
+
+#rightcol div.dynamicbucket .slug
+	{
+	clear: both;
+	letter-spacing: 1pt;
+	margin-bottom: 0;
+	color: #666;
+	}
+		
+#rightcol div.dynamicbucket .date
+	{
+	color: #666;
+	font-size: 10pt;
+	}
+	
+#rightcol div.dynamicbucket .byline
+	{
+	color: #666;
+	}
+	
+#rightcol div.dynamicbucket a
+	{
+	font-weight: bold;
+	}
+	
+#rightcol div.dynamicbucket .more
+	{
+	/*text-align: right;*/
+	text-transform: uppercase;
+	}
+	
+#rightcol div.dynamicbucket .more a
+	{
+	color: #666;
+	text-decoration: none;
+	}
+	
+/* ---- specific link styles ---- */
+
+a.note
+	{
+	color: #999;
+	font-size: 10pt;
+	text-decoration: none;
+	}

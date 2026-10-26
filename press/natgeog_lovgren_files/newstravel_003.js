@@ -1,0 +1,1 @@
+document.write('<a target="_top" href="http://ad.doubleclick.net/click;h=v3|3181|0|0|%2a|x;9097902;0-0;0;9612731;2321-160|600;5709830|5727726|3;;~fdr=9112822;0-0;0;6668301;2321-160|600;5723257|5741153|1;;~sscs=%3fhttp://www.peru.info"><img src="http://m2.doubleclick.net/viewad/873133/2-160x600_15.jpg" border=0 alt="Click here to find out more!"></a>');

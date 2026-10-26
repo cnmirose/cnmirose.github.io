@@ -1,0 +1,98 @@
+/*
+PURPOSE:
+	[1] Basic cascading stylesheet for [ CATEGORY : news ] [ TYPE : ALL ].
+
+REVISION HISTORY:
+	June 04th, 2004. v1.0. Created.
+
+STATUS OF THIS DOCUMENT:
+	This is a working draft.
+
+MAINTAINER:
+	Carl Lewin
+	clewin@discovery.com
+
+LEGAL NOTICE:
+	Distribution of this document is limited.
+	Copyright (C) Discovery.com 2004. All Rights Reserved.
+*/
+
+
+/*
+###########################
+HTML TAGS
+###########################
+*/
+img.n1, img.n2, img.nb {
+	vertical-align: middle;
+}
+
+
+/*
+###########################
+TEXT
+###########################
+*/
+.newsHeadText {
+	font: bold 18px Verdana;
+}
+
+
+/*
+###########################
+BOX DEFINITIONS
+###########################
+*/
+.newsXY150 {
+	width: 148px;
+	height: 242px;
+}
+
+.basicXY460 {
+	width: 458px;
+	height: 524px;
+}
+
+.headerXY140 {
+	width: 138px;
+	height: 23px;
+}
+.bodyXY140 {
+	width: 138px;
+	height: auto;
+}
+
+.headerSupOne {
+	width: 303px;
+	height: 23px;
+}
+.bodySupOne {
+	width: 303px;
+	height: 70px;
+}
+
+.headerSupTwo {
+	width: 148px;
+	height: 23px;
+}
+.bodySupTwo {
+	width: 148px;
+	height: 70px;
+}
+
+
+/*
+###########################
+MARGINS, PADDING, SHIMS
+###########################
+*/
+/* top, right, bottom, left */
+.marginTopStory {
+	padding: 15px 5px 5px 5px;
+}
+.paddingSupOne {
+	padding: 5px 10px 0px 10px;
+}
+.paddingSupTwo {
+	padding: 5px 10px 0px 10px;
+}

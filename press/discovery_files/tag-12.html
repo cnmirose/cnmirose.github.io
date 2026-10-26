@@ -1,0 +1,54 @@
+//12
+
+
+var st_iu=st_rs=st_cd=st_rf=st_us=st_hn=st_qs=st_ce="";
+var d=document; 
+var l=location;
+var n=navigator; 
+st_ce=n.cookieEnabled;
+
+st_qs=escape(l.search.substring(1)); 
+st_us=escape(l.pathname);
+st_hn=l.host;
+st_rf=escape(d.referrer);
+if(st_v==1.2) { 
+	var s=screen;
+	st_rs=escape(s.width+"x"+s.height);
+	st_cd=s.colorDepth;
+}
+proto = "http:";
+if (location.protocol == "https:") { 
+	proto = "https:"; 
+	st_dd = "st.sageanalyst.net";
+}
+st_iu=proto+"//"+st_dd+"/" + (new Date()).getTime() + "/JS?ci="+st_ci+"&di="+st_di+"&pg="+st_pg+"&us="+st_us+"&qs="
++st_qs+"&rf="+st_rf+"&rs="+st_rs+"&cd="+st_cd+"&hn="+st_hn+"&ce="+st_ce+"&jv="+st_v+"&tai="+st_tai+"&ai="+st_ai;
+
+var iXz=new Image(); iXz.src=st_iu;
+
+function sageflash(swfname,event) {
+var st_v=1.0; var st_at=""; var st_tai="v:1.2.4";
+var st_iu=st_rs=st_cd=st_rf=st_us=st_hn=st_qs=st_ce="";
+var d=document; var l=location; var n=navigator;
+st_ce=n.cookieEnabled;
+st_ai_flash=',swf:'+swfname+',ev:'+event;
+st_ai_flash=st_ai_flash.replace(/\+/g,'%2b');
+st_ai=st_ai.replace(/\+/g,'%2b');
+
+st_qs=escape(l.search.substring(1)); st_us=escape(l.pathname);
+st_hn=l.host; st_rf=escape(d.referrer);
+var st_pgtitle=escape(d.title);
+var st_pgi = escape("pgti="+st_pgtitle+";");
+
+if(st_v==1.2) {
+        var s=screen;
+        st_rs=escape(s.width+"x"+s.height);
+        st_cd=s.colorDepth;
+}
+proto = "http:";
+if (location.protocol == "https:") {
+        proto = "https:";
+}
+st_iu=proto+"//"+st_dd+"/" + (new Date()).getTime() + "/JS?ci="+st_ci+"&di="+st_di+"&pg="+st_pg+"&pgi="+st_pgi+"&us="+st_us+"&qs="+st_qs+"&rf="+st_rf+"&rs="+st_rs+"&cd="+st_cd+"&hn="+st_hn+"&ce="+st_ce+"&jv="+st_v+"&tai="+st_tai+"&ai="+st_ai+st_ai_flash;
+var iXz=new Image(); iXz.src=st_iu;
+}

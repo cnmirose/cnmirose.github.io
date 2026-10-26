@@ -1,0 +1,12 @@
+/* Styles for login box - Jeremy Thomson Oct 03 */
+/* (site-specific, MUST be saved to "/journalname/login.css" */
+.lgn_border {background-color: #34424C;}
+.lgn_background {background-color: #EAEAEA;}
+.lgn_text {color: #990000; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 10px; line-height: 11px;}
+a.lgn_text, a.lgn_text:link {color: #3333CC; text-decoration: underline;}
+a.lgn_text:visited {color: #3333CC; text-decoration: underline;}
+a.lgn_text:hover {color: #000000; text-decoration: underline;}
+.lgn_textbig {color: #000000; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 11px; line-height: 14px;}
+.lgn_textalt {color: #384955; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 11px; line-height: 16px;}
+.lgn_textred {color: #CC3300; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 10px; line-height: 11px;}
+.lgn_textbox {color: #000000; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 11px; margin-left: 0px; padding-left: 0px;}

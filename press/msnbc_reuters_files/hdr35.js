@@ -1,0 +1,3 @@
+function getMSID(){function getMSID(s){var s=document.cookie;var i=s.indexOf("MC1=");var c=s.substring(i+4,s.indexOf(";",i));var m=c.substring(c.indexOf("GUID=")+5);l=m.indexOf("&");if(l>-1)return m.substring(0,l);else return m;}}
+function getPartnerId(){var s=document.cookie + ";";var i=s.indexOf("mh=");var p="";if(i>=0)p=s.substring(i+3,s.indexOf(";",i));if(null==p)p="";return p.substring(0,4);}
+function logoImg(s){document.write("<img border=\"0\" width=\"118\" height=\"35\" src=\""+s+"/global/c/lg/"+getPartnerId()+"_118x35.gif\" alt=\"go to  MSN.com\" title=\"go to MSN.com\"/>");}

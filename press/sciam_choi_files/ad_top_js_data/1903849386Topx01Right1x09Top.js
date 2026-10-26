@@ -1,0 +1,16 @@
+document.write ('<table width="728" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">\n');
+document.write ('<form name="subban" action="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/111.sciam.com/sa006/16/1841657121/Top/sciam.com/m_sciam_2004-10_sub_banners_US/Nov04_728X90_ddown_US_domtest.html/31383263643031323431353630343830?www.sciam.com/subscribe_alt.cfm?lsource=Nov04_728X90_ddown_US" method="post" target="_new">\n');
+document.write ('<tr><td bgcolor="#ffffff" rowspan="2"><a href="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/111.sciam.com/sa006/16/1841657121/Top/sciam.com/m_sciam_2004-10_sub_banners_US/Nov04_728X90_ddown_US_domtest.html/31383263643031323431353630343830?www.sciam.com/subscribe_alt.cfm?lsource=Nov04_728X90_ddown_US" target="_new"><img src="http://oas-central.realmedia.com/RealMedia/ads/Creatives/sciam.com/m_sciam_2004-10_sub_banners_US/Nov04_728x90_ddown_p1.gif" width="456" height="90" border="0" alt=""></a></td>\n');
+document.write ('<td bgcolor="#cccc99" align="center" valign="middle">&nbsp;<select size="1" onchange="javascript:document.subban.submit();">\n');
+document.write ('<option value="1">-- see list of topics --\n');
+document.write ('<option value="1">Biotechnology\n');
+document.write ('<option value="2">Physics\n');
+document.write ('<option value="3">Environment\n');
+document.write ('<option value="4">Defense\n');
+document.write ('<option value="5">Information Technology\n');
+document.write ('<option value="6">Neuroscience\n');
+document.write ('<option value="7">Innovation\n');
+document.write ('</select>&nbsp;</td></tr>\n');
+document.write ('<tr><td bgcolor="#cccc99" valign="bottom"><a href="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/111.sciam.com/sa006/16/1841657121/Top/sciam.com/m_sciam_2004-10_sub_banners_US/Nov04_728X90_ddown_US_domtest.html/31383263643031323431353630343830?www.sciam.com/subscribe_alt.cfm?lsource=Nov04_728X90_ddown_US" target="_new"><img src="http://oas-central.realmedia.com/RealMedia/ads/Creatives/sciam.com/m_sciam_2004-10_sub_banners_US/Nov04_728x90_ddown_p2.gif" width="272" height="63" border="0" alt=""></a></td></tr>\n');
+document.write ('</form>\n');
+document.write ('</table>\n');

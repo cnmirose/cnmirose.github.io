@@ -1,0 +1,203 @@
+
+/* Base styles */
+body {
+	font-family: Times New Roman, Times, serif;
+}
+A:link {
+	color: ;
+}
+A:visited {
+	color: ;
+}
+
+/* Front Page styles */
+.fpleadheadlinestyle, a.fpleadheadlinestyle:link, a.fpleadheadlinestyle:active, a.fpleadheadlinestyle:visited {
+	font-family: Times New Roman, Times, serif;
+	font-size: 18px;
+	color: a51018;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 0px;
+}
+.fpfeaturedheadlinestyle, a.fpfeaturedheadlinestyle:link, a.fpfeaturedheadlinestyle:active, a.fpfeaturedheadlinestyle:visited {
+	font-family: Times New Roman, Times, serif;
+	font-size: 13px;
+	color: a51018;
+	font-weight: bold;
+	text-decoration: none;
+}
+.fpsectionheaderstyle {
+	font-family: Times New Roman, Times, serif;
+	font-size: 12px;
+	color: 000099;
+	font-weight: normal; text-decoration: none;
+}
+div.fpleadsummarystyle, div.fpfeaturedsummarystyle {
+	margin-top: 5px;
+}
+.fpleadsummarystyle {
+	font-family: Times New Roman, Times, serif;
+	font-size: 14px;
+	color: black;
+}
+.fpfeaturedsummarystyle {
+	font-family: Times New Roman, Times, serif;
+	font-size: 13px;
+	color: black;
+}
+.sectionsstyle, a.sectionsstyle:link, a.sectionsstyle:active, a.sectionsstyle:visited {
+	font-family: Times New Roman, Times, serif;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+.bylinestyle, a.bylinestyle:link, a.bylinestyle:active, a.bylinestyle:visisted {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+
+/* Section Styles */
+.sectionheaderstyle {
+	font-family: Times New Roman, Times, serif;
+	font-size: 18px;
+  color: blue;
+	font-weight: normal;
+}
+.sectionheadlinestyle, a.sectionheadlinestyle:link, a.sectionheadlinestyle:active, a.sectionheadlinestyle:visited {
+	font-family: Times New Roman, Times, serif;
+	font-size: 16px;
+	color: 000090;
+	text-decoration: none;
+}
+div.sectionsummarystyle {
+	margin-top: 5px;
+}
+.sectionsummarystyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: black;
+}
+
+/* Story Styles */
+.detailsubheadlinestyle {
+	font-family: Times New Roman, Times, serif;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+  
+}
+.detailheadlinestyle {
+	font-family: Times New Roman, Times, serif;
+	font-size: 18px;
+	color: #a51018;
+	font-weight: bold;
+  
+}
+.storytextstyle {
+	font-family: Times New Roman, Times, serif;
+	font-size: 13px;
+	color: black;
+	margin-top: 3px;
+}
+.byline, a.byline:link, a.byline:active, a.byline:visited {
+	margin-bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+/* Navigation Styles */
+.navstyle, A.navstyle:link, A.navstyle:active, A.navstyle:visited {
+	font-family: Times New Roman, Times, serif;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+
+/* Object Styles */
+.customlinkstyle, A.customlinkstyle:link, A.customlinkstyle:active, A.customlinkstyle:visited {
+	font-family: Times New Roman, Times, serif;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+.login_logoutstyle, A.login_logoutstyle:link, A.login_logoutstyle:active, A.login_logoutstyle:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: black;
+	text-decoration: none;
+}
+.channelsstyle, A.channelsstyle:link, A.channelsstyle:active, A.channelsstyle:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: black;
+	text-decoration: none;
+}
+.pollquestionstyle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: black;
+	
+}
+.pollanswerstyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: black;
+	
+}
+.issuesummarysection, a.issuesummarysection:link, a.issuesummarysection:active, a.issuesummarysection:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: black;
+	text-decoration: none;
+}
+.issuesummaryheadline, a.issuesummaryheadline:link, a.issuesummaryheadline:active, a.issuesummaryheadline:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: black;
+	text-decoration: none;
+}
+
+/* Utility Styles */
+.graybox {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #a0a0a0;
+	border-bottom-color: #a0a0a0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 5px;
+}
+.caption {
+	font-family: Times New Roman, Times, serif;
+	font-size: 13px;
+	color: black;
+}
+.mediacredit {
+	font-family: Times New Roman, Times, serif;
+	font-size: 13px;
+	color: black;
+	font-style: italic;
+}
+.RecentArticlesObject {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 6px;
+}
+.RecentArticlesHeader {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #999999;
+    margin-bottom: 4px;
+}
+.RecentArticles {
+    margin-bottom: 4px;
+    margin-left: 8px;
+}

@@ -1,0 +1,57 @@
+/*     Stylesheet for National Geographic News site, Macintosh and PC */
+/*     v2.3, 14 Dec 00 - by JW */
+
+/* -------- Story page    */
+/* Line above the superhed (e.g. Environment | United States) */
+.subject { font: 10px/18px Verdana, "News Gothic MT", Tahoma, sans-serif; color: #066; }
+/* One-line summary above headline */
+.superhed { font: 13px/14px Verdana, "News Gothic MT", Tahoma, sans-serif; color: #511a11; margin-bottom: 2px; }
+/* Story headline */
+.storyhed { font: bold 24px Verdana, "News Gothic MT", Tahoma, sans-serif; }
+/* Story byline */
+.byline { font: italic 12px/16px Georgia, "Calisto MT", "Times New Roman", Times, serif; color: #333; }
+/* Story dateline */
+.dateline { font: 12px Georgia, "Calisto MT", "Times New Roman", Times, serif; color: #333; }
+/* Lead paragraph of story */
+.deck { font: 16px/25px Georgia, "Calisto MT", "Times New Roman", Times, serif; color: #000; }
+/* Body text of story */
+.storybody { font: 14px/22px Georgia, "Calisto MT", "Times New Roman", Times, serif; }
+/* Text for related item boxes; also 1k text generally */
+.inline, SMALL { font: 11px/15px Verdana, "News Gothic MT", Tahoma, sans-serif; }
+/* Secondary text for related item boxes */
+.inlinesmall, .inline SMALL, .inline SMALL SMALL, SMALL SMALL { font: 9px/13px Verdana, "News Gothic MT", Tahoma, sans-serif; }
+.inlinesmall A, A .inlinesmall { font-weight: bold; }
+/* Text under photos describing image */
+.cutline { font: 10px/13px Verdana, "News Gothic MT", Tahoma, sans-serif; color: #666; }
+/* Margins for text in related boxes */
+.boxed { margin: 8px 5px 5px 5px;}
+/* Text for subs call */
+.subs { font: 10px/13px Verdana, "News Gothic MT", Tahoma, sans-serif; }
+
+/* -------- Navigation bars */
+
+.nav { font: 11px/14px Verdana, "News Gothic MT", Tahoma, sans-serif; color: #fff; }
+.nav A:link, A:link .nav { color: #fc0; }
+.nav A:visited, A:visited .nav { color: #f90; }
+A:hover .nav, .nav A:hover { background-color: white; color: #039; text-decoration: none;}
+.navsmall { font: 10px Verdana, "News Gothic MT", Tahoma, sans-serif; color: #b2d1d1; }
+.topnav { font: 9px Verdana, "News Gothic MT", Tahoma, sans-serif; color: #fff; }
+.topnav A:link, A:link .topnav { color: #fc0; }
+.topnav a:visited { color:#FC0; }
+
+/* -------- Front page */
+
+/* Headlines for various column widths */
+.hed2k, A .hed2k, .hed2k A { font: bold 18px/21px Verdana, "News Gothic MT", Tahoma, sans-serif; text-decoration: none; }
+.hed1k, A .hed1k, .hed1k A { font: bold 14px/18px Verdana, "News Gothic MT", Tahoma, sans-serif; text-decoration: none; }
+/* Date within intro */
+.inlinedate { font: bold 10px Verdana, "News Gothic MT", Tahoma, sans-serif; color: #333; }
+
+/* -------- Global */
+A:link { color: #039; }
+A:visited { color: #369; }
+A:active { color: #982219;}
+A:hover { text-decoration: underline; }
+
+B { font-weight: bold; }
+IMG { border-color: #000; }

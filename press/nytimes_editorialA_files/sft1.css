@@ -1,0 +1,34 @@
+<!--
+.globalnav {font-family: Arial,Helvetica,Sans-serif; font-size: 11px; color: #000066; padding: 1px 0px 0px 5px;}
+.nav {font-family: Arial,Helvetica,Sans-serif; font-size: 11px}
+.tools {font-family: Arial,Helvetica,Sans-serif; font-size: 11px}
+.smtext {font-family: Arial,Helvetica,Sans-serif; font-size: 11px}
+.kicker {font-family: Arial,Helvetica,Sans-serif; font-size: 11px}
+.sans {font-family: Arial,Helvetica,Sans-serif; font-size: 11px color: #000000}
+.smtextarch {font-family: Arial,Helvetica,Sans-serif; font-size: 10px}
+.promoboxtitle {font-family: Verdana, arial,helvetica,sans-serif; font-weight: bold; color: #FFFFFF; font-size: 10px;background-color: #3D4A5D;}
+.promoboxtext {font-family: arial,helvetica,sans-serif; font-size: 11px;background-color: #F6F6F5;}
+.crosswhite {font-family: arial, helvetica, sans-serif; color:#FFFFFF; font-size: 12px;}
+.crosscopy {font-family: arial, helvetica, sans-serif; color:#000000; font-size: 12px;}
+.crossbig {font-family: Times New Roman, Times, Serif; font-weight:bold; color:#000000; font-size: 14px;}
+.crosslink {font-family: arial,helvetica,sans-serif; font-weight: bold; font-size: 12px;}
+.promomarketing {font-family: arial,helvetica,sans-serif; color: #000000; font-size: 9px;}
+.boldwhite {font-family: Verdana, arial,helvetica,sans-serif; font-weight: bold; color: #FFFFFF; font-size: 11px;}
+.promo { font-family: Times New Roman, Times, Serif; color:#000000; font-size: 12px;}
+.pd {font-family: Times New Roman, Times, Serif; font-size: 13px; color: #000000; padding: 10px 10px 10px 10px;}
+.travel {font-family: Times New Roman, Times, Serif; font-weight:bold; color:#666666; font-size:12px;}
+.special {font-family: arial, helvetica, sans-serif; font-weight:bold; color:#666666; font-weight:bold; font-size:12px;}
+A.ccolhead {font-family: Times New Roman, Times, Serif;font-size: 13px;}
+.small {font-family: arial,helvetica,sans-serif; font-size: 11px;}
+
+/* Promo Specific Styles */
+.epromoBox {border:1px solid #CCCCCC; padding-top:10px;padding-bottom:10px;padding-left:10px;padding-right:10px;margin-bottom:4px;}
+.epromoHead {font-family: Times New Roman, Times, Serif; font-size: 12px; color: #000000; line-height: 14px; font-weight: bold;}
+.epromoText {font-family: Times New Roman, Times, Serif; font-size: 12px; color: #000000; line-height: 14px;}
+.epromoTool {font-family: verdana, arial, sans-serif; font-size: 10px; color: #000000; line-height: 12px; font-weight: bold;}
+.epromoTooltext {font-family: verdana, arial, sans-serif; font-size: 10px; color: #000000; line-height: 12px;}
+.mpromoBox {border-top:1px solid #CCCCCC; border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC; padding-top:10px;padding-left:10px;padding-right:10px;}
+.mpromoBorder {border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC;}
+.mpromoBoxbottom {border-bottom:1px solid #CCCCCC; border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC; margin-bottom:4px;}
+/* End Promo Specific Styles */
+-->

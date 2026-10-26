@@ -1,0 +1,150 @@
+
+	var poID = 1811;
+	var jURL;
+	var Name = "_blank";
+	var popped;
+	var win;
+	var features;
+			
+	var freq = 1440;
+	if( !(freq>=0) ) freq = 86400000; // 24 hours in milliseconds
+
+	
+		var ran_number = Math.round( Math.random()*99999999);
+		if (window == top)
+			jURL = "http://t.trafficmp.com/p.t/i" + poID + "/" + ran_number + "/?" + top.window.location;
+		else
+			jURL = "http://t.trafficmp.com/p.t/i" + poID + "/" + ran_number + "/";
+	
+
+	if(parseFloat(navigator.appVersion)>=4)
+		features = "top=50000,left=50000,titlebar=1,toolbar=1,location=1,menubar=1,scrollbars=1,resizable=1,channelmode=0,directories=0,status=1,width=720,height=300";
+	else
+		features = "titlebar=1,toolbar=1,location=1,menubar=1,scrollbars=1,resizable=1,channelmode=0,directories=0,status=1,width=720,height=300";
+
+	function serveAd()
+	{
+		var cCkEx = document.cookie.indexOf('ptfc=yfki');
+		if(cCkEx == -1)
+		{
+			document.cookie = 'tmpptfc=tmpyfki; path=/;';
+			if(document.cookie.indexOf('tmpptfc=tmpyfki') == -1) cCkEx = 1;
+		}
+		if((cCkEx == -1))
+			return true;
+		else
+			return false;
+	}
+	
+	function cookieDomain( document_domain )
+	{
+		var idx_of_last_period = document_domain.lastIndexOf( '.' );
+	  	var idx_of_next_to_last_period = document_domain.lastIndexOf( '.', idx_of_last_period-1 );
+	  	if( idx_of_next_to_last_period == -1 ) return '.'+document_domain;
+	  	return document_domain.substring( idx_of_next_to_last_period, document_domain.length );
+	}
+
+	function setCookie()
+	{
+		var cDa = new Date();
+		cDa.setTime(cDa.getTime()+(freq*60*1000));
+		document.cookie = 'ptfc=yfki; path=/; domain='+cookieDomain(document.domain)+'; expires='+cDa.toGMTString();
+	}
+	
+	function loadWindow()
+	{
+		win = window.open("", Name, features, true);
+		if (win != null)
+		{
+			win.blur();
+			if(parseFloat(navigator.appVersion) >= 4) win.moveTo((screen.width-720)/2,(screen.height-420)/2);
+			win.document.writeln("<" + "script language='javascript1.1' src='"+jURL+"'>");
+			win.document.writeln("</" + "script>");
+			setCookie();
+			popped = 1;	
+		}
+	}
+	
+	
+
+		function callFirstAttempt()
+		{
+			window.document.tmp.TCallFrame("/", 1);
+		}
+
+		function firstAttempt()
+		{
+			loadWindow();
+
+			if (win == null)
+			{
+				//2nd attempt
+				popspan = document.getElementById("popspan");
+				popspan.fireEvent("onkeydown");
+			}
+		}
+
+		function secondAttempt()
+		{
+			if (popped != 1)
+			{
+				loadWindow();
+
+				if (win == null)
+				{
+					//3rd attempt
+					window.document.tmp.TCallFrame("/", 2);
+					setCookie();
+				}
+			}
+		}
+
+		if (serveAd() == true)
+		{
+			if (window == top)
+			{
+				var URL = "http://ad.trafficmp.com/tmpad/banner/ad/tmp_flash.asp?poID=" + poID + "&isIsapi=" + 1;
+				var MSIE;
+				var popspan;
+				document.writeln('<span id=popspan onkeydown=secondAttempt(); style=width:1;height:1;></span>');
+					
+				if ((navigator.userAgent && navigator.userAgent.indexOf("MSIE")>=0)&& (navigator.userAgent.indexOf("Windows 95")>=0 || navigator.userAgent.indexOf("Windows 98")>=0 || navigator.userAgent.indexOf("Windows NT")>=0))
+					MSIE = 1;
+					
+				var ShockMode = 0;
+				var plugin = (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]) ? navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
+				if (plugin&& parseInt(plugin.description.substring(plugin.description.indexOf(".")-1)) >= 5)
+				{
+					ShockMode = 1;
+				}
+				else if (MSIE == 1)
+				{
+					document.write('<SCR' + 'IPT LANGUAGE=VBScript> \n');
+					document.write('on error resume next \n');
+					document.write('ShockMode = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.5")))\n');
+					document.write('<\/SCR' + 'IPT>\n');
+				}
+				if (ShockMode && MSIE == 1)
+				{
+					document.writeln("<span style=width:1;height:1;>");
+					document.writeln("<OBJECT classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000");
+					document.writeln("codebase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0");
+					document.writeln("WIDTH=1 HEIGHT=1 id=tmp VIEWASTEXT>");
+					document.writeln("<PARAM NAME=movie VALUE=http://ad.trafficmp.com/tmpad/banner/ad/tmp.swf?URL=" + URL + "&Name=" + Name + ">");
+					document.writeln("<PARAM NAME=quality VALUE=high>");
+					document.writeln("<PARAM NAME=bgcolor VALUE=#FFFFFF>");
+					document.writeln("<PARAM NAME=wmode VALUE=transparent>");
+					document.writeln("<EMBED src=http://ad.trafficmp.com/tmpad/banner/ad/tmp.swf?URL=" + URL + "&Name=" + Name + " quality=high wmode=transparent bgcolor=#FFFFFF WIDTH=1 HEIGHT=1 NAME=tmp swLiveConnect=true TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/go/getflashplayer>");
+					document.writeln("</EMBED></OBJECT>");
+					document.writeln("</span>");
+					window.onload = callFirstAttempt;
+				} 
+				else if (!(navigator.appName && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("2.")>=0))
+				{
+					firstAttempt();
+				}
+			}
+			else if (window != top)
+				loadWindow();
+		}
+	

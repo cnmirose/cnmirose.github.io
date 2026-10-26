@@ -1,0 +1,193 @@
+/* all header styles */
+
+/*H1.home {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #660066}
+
+H2 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #30A1D9}
+
+H3 {font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #30A1D9} */
+
+
+
+/* all body styles */
+
+P.home 	{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000}
+
+/* SPAN {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000} */
+
+
+
+/* all bullet styles */
+
+/* LI {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+
+UL {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+
+OL {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+
+DL {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+
+DT {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+
+DD {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000} */
+
+
+
+/* normal link */
+
+A.nav_item:link 	{color:#000000; text-decoration:none; font-size: 8pt}
+
+A.nav_item:active 	{color:#999999; text-decoration:none; font-size: 8pt}
+
+A.nav_item:visited 	{color:#000000; text-decoration:none; font-size: 8pt}
+
+A.nav_item:hover 	{color:#c00000; text-decoration:underline; font-size: 8pt}
+
+.nav_item: {color:#000000; text-decoration:none; font-size: 8pt}
+
+
+A.nav_item_b:link 	{color:#003399; text-decoration:none; font-size: 6pt; font-family: Arial, Helvetica, sans-serif;}
+
+A.nav_item_b:active 	{color:#003399; text-decoration:none; font-size: 6pt; font-family: Arial, Helvetica, sans-serif;}
+
+A.nav_item_b:visited 	{color:#003399; text-decoration:none; font-size: 6pt; font-family: Arial, Helvetica, sans-serif;}
+
+A.nav_item_b:hover 	{color:#999999; text-decoration:underline; font-size: 6pt; font-family: Arial, Helvetica, sans-serif;}
+
+
+
+A.nav_item_g:link 	{color:#999999; text-decoration:none;}
+
+A.nav_item_g:active 	{color:#999999; text-decoration:none;}
+
+A.nav_item_g:visited 	{color:#999999; text-decoration:none;}
+
+A.nav_item_g:hover 	{color:#999999; text-decoration:underline; }
+
+
+
+/* list link */
+
+A.list10:link 		{color:#000000; text-decoration:none;}
+
+A.list10:active 	{color:#000000; text-decoration:none;}
+
+A.list10:visited 	{color:#000000; text-decoration:none;}
+
+A.list10:hover 		{color:#336666; text-decoration:underline; font-weight:normal;}
+
+
+
+A.list12:link 		{color:#000000; text-decoration:none;}
+
+A.list12:active 	{color:#000000; text-decoration:none;}
+
+A.list12:visited 	{color:#000000; text-decoration:none;}
+
+A.list12:hover 		{color:#336666; text-decoration:underline;}
+
+
+
+A.list13:link 		{color:#000000; text-decoration:none;}
+
+A.list13:active 	{color:#000000; text-decoration:none;}
+
+A.list13:visited 	{color:#000000; text-decoration:none;}
+
+A.list13:hover 		{color:#336666; text-decoration:underline;}
+
+
+
+A.back:link 		{color:#003399; text-decoration:none;}
+
+A.back:active 		{color:#003399; text-decoration:none;}
+
+A.back:visited 		{color:#003399; text-decoration:none;}
+
+A.back:hover 		{color:#336666; text-decoration:underline;}
+
+
+
+A.homer:active {color: #000000; text-decoration: none}
+
+A.homer:hover {color: #C00000; text-decoration: underline}
+
+A.homer:link {color: #000000; text-decoration: none}
+
+A.homer:visited {color: #000000; text-decoration: none}
+
+
+
+A.homeb:active {font-weight: bold; color: #000000; text-decoration: none}
+
+A.homeb:hover {font-weight: bold; color: #C00000; text-decoration: underline}
+
+A.homeb:link {font-weight: bold; color: #000000; text-decoration: none}
+
+A.homeb:visited {font-weight: bold; color: #000000; text-decoration: none}
+
+
+
+A.info:link {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #660033; text-decoration:none;}
+
+A.info:active {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #660033; text-decoration:none;}
+
+A.info:visited {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #660033; text-decoration:none;}
+
+A.info:hover {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #c00000; text-decoration:underline;}
+
+
+
+/* all table styles */
+
+TD.nav_heading 	{color:#660033; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; line-spacing:14pt; font-weight:bold;}
+
+TD.nav_item 	{color:#000000; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; line-spacing:14pt;}
+
+TD.grey_line 	{background:#999999;}
+
+TD.beige_field 	{background:#FAFBE6; font-family: Arial, Helvetica, sans-serif;  font-size: 8pt; }
+
+TD.home 	{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000}
+
+
+
+/* 10pt List Item */
+
+.list12 {font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000}
+
+
+
+/* 8pt List Item */
+
+.list10 {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000}
+
+
+
+/* 8pt Brown Title */
+
+.title_brown {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000}
+
+
+
+/* 8pt Light Brown Title */
+
+.title_ltbrown {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #336666}
+
+
+
+A.nav_item_w:active { font-weight: normal; color: #ffffff; text-decoration: none }
+
+A.nav_item_w:hover { font-weight: normal; color: #ffffff; text-decoration: none }
+
+A.nav_item_w:link { font-weight: normal; color: #ffffff; text-decoration: none }
+
+A.nav_item_w:visited { font-weight: normal; color: #ffffff; text-decoration: none }
+
+
+
+TD.nav_item_o { color:#ffcc33; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; line-spacing:14pt; }
+
+TD.back { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; line-spacing:14pt; ; text-decoration: none}
+
+.contactInfo {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000;}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+
+<script>
+var cnnDocDomain='';
+if(location.hostname.indexOf('cnn.com')>0) { cnnDocDomain='cnn.com'; }
+if(location.hostname.indexOf('turner.com')>0) { cnnDocDomain='turner.com'; }
+if(cnnDocDomain) { document.domain = cnnDocDomain;}
+</script>
+<script>
+
+function cnnGetId(query) {
+ var keyValPairs = query.split('&');
+ if(!keyValPairs) {
+   keyValPairs = new Array();
+   keyValPairs[keyValPairs.length]=query;
+ }
+ for(var counter=0;counter<keyValPairs.length;counter++) {
+  var keyVal = keyValPairs[counter].split('=');
+  if(keyVal[0]=='domId') {
+    return keyVal[1];
+  }
+ }
+}
+
+function cnnSendData() {
+ var sendRawHtml ='';
+ var docId = cnnGetId(location.search.substring(1));
+ if(document.mainForm.htmlArea.value) {
+  sendRawHtml = document.mainForm.htmlArea.value;
+ }
+ if(sendRawHtml) {
+  top.cnnUpdateCSI(sendRawHtml, docId);
+ }
+}
+</script></head>
+
+
+
+
+
+
+<body onload="cnnSendData()">
+	<form name="mainForm">
+	<textarea id="htmlArea">&lt;table
+cellspacing="0" cellpadding="0" border="0" width="220" style="margin-bottom:
+10px;"&gt; 	&lt;tr&gt; 		&lt;td colspan="3"&gt;  			&lt;table cellspacing="0"
+cellpadding="0" border="0" width="220"&gt; 				&lt;tr valign="bottom"&gt; 
+					&lt;td&gt;&lt;img src="http://i.cnn.net/cnn/.element/img/1.1/misc/cl/cl_leftcorner.gif"
+width="6" height="11" alt="" border="0"&gt;&lt;/td&gt; 					&lt;td&gt;&lt;img
+src="http://i.cnn.net/cnn/.element/img/1.1/misc/cl/cl_advertiser.gif" width="72"
+height="9" alt="" border="0" hspace="1" vspace="2"&gt;&lt;/td&gt; 					&lt;td&gt;&lt;img
+src="http://i.cnn.net/cnn/.element/img/1.1/misc/cl/cl_bar.gif" width="82"
+height="7" alt="" border="0" vspace="3"&gt;&lt;/td&gt; 					&lt;td&gt;&lt;a
+href="javascript:CNN_openPopup('/services/overture/cl/frameset.exclude.html','620x430','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=620,height=430')"&gt;&lt;img
+src="http://i.cnn.net/cnn/.element/img/1.1/misc/cl/cl_whatsthis.gif" width="50"
+height="9" alt="What's this?" border="0" hspace="1" vspace="2"&gt;&lt;/a&gt;&lt;/td&gt; 
+					&lt;td&gt;&lt;img src="http://i.cnn.net/cnn/.element/img/1.1/misc/cl/cl_rightcorner.gif"
+width="6" height="11" alt="" border="0"&gt;&lt;/td&gt; 				&lt;/tr&gt; 			&lt;/table&gt; 
+ 		&lt;/td&gt; 	&lt;/tr&gt; 	&lt;tr&gt; 		&lt;td style="border-left:solid
+1px #999999;"&gt;&lt;img src="http://i.cnn.net/cnn/images/1.gif" alt="" width="6"
+height="1" border="0"&gt;&lt;/td&gt; 		&lt;td width="206" bgcolor="#EEEEEE"
+class="cnnBodyText"&gt; 		&lt;div class="cnn4pxPad"&gt;   		 		&lt;a href="http://www20.overture.com/d/sr/?xargs=05u3hs9yoakG1vPSDDhhBK%2F0YnOAt4wAG4RH%2BWyruhMEWjUuwWjQJ%2F4pafqlT1IrvWeffvTjPX2CwuW9vJA1ChxFoADGGmpPNcVE6QgTDs4AoNSjadqgbn%2Blz2kZAt4QUjtSYZbPlrh9%2BJRu%2Bp2M0japykd%2BB68x4JnWk0wwVyGMw%2BSgO%2B%2FQAUICkldCPTqhykwDe688TsuNlPxnZMrLl5L8XPkgcnj7Rkm2kBrq5FnAhsnNEqdCfOMbN5z84ey1dn5W4P0W4j%2BkHpaLWZZ%2F02CPu99ILiDmAQqw%3D%3D&amp;yargs=www.maxstream.net"
+target="new"&gt;&lt;b&gt;MaxStream Digital Radio Telemetry System&lt;/b&gt;&lt;/a&gt;&lt;br&gt; 
+  		&lt;span style="font-size: 11px;"&gt;Maxstream develops frequency hopping
+spread spectrum wireless data telemetry...&lt;/span&gt;&lt;br&gt; 		&lt;a
+href="http://www20.overture.com/d/sr/?xargs=05u3hs9yoakG1vPSDDhhBK%2F0YnOAt4wAG4RH%2BWyruhMEWjUuwWjQJ%2F4pafqlT1IrvWeffvTjPX2CwuW9vJA1ChxFoADGGmpPNcVE6QgTDs4AoNSjadqgbn%2Blz2kZAt4QUjtSYZbPlrh9%2BJRu%2Bp2M0japykd%2BB68x4JnWk0wwVyGMw%2BSgO%2B%2FQAUICkldCPTqhykwDe688TsuNlPxnZMrLl5L8XPkgcnj7Rkm2kBrq5FnAhsnNEqdCfOMbN5z84ey1dn5W4P0W4j%2BkHpaLWZZ%2F02CPu99ILiDmAQqw%3D%3D&amp;yargs=www.maxstream.net"
+target="new" style="color:#006633;font-size:11 px;"&gt;www.maxstream.net
+&lt;/a&gt;       		 		&lt;div&gt;&lt;img src="http://i.cnn.net/cnn/.element/img/1.1/misc/cl/cl_greybar.gif"
+width="194" height="5" alt="" border="0" vspace="6" hspace="0"&gt;&lt;/div&gt; 
+		   		 		&lt;a href="http://www20.overture.com/d/sr/?xargs=05u3hs9yoakG1uzSDDhBClX3CX5KmwLHDGlUC7Y25S9DkRbq2g%2BJVAJ%2Fqq6%2B2H2lKoOvezO%2B3zEf3cZgm71n3Xe%2BmZ6Lqbv%2B3GZe2gj30U3bmYfbx3xg7jdZxz8mOO%2FWiJSaxj%2FjVcC5asRgJmDtbmVBKIwhkL2iVU5IWorKAQ%2BGkY2pAZ0nNUlFGfUgOQxQoWA9kUrBzYZQ7IXfMSsXzKbddbDXu86zU2nBMlluuQwGJIUpSkqIQSuZJKnHQ%2BuG6P1ibjDNNwwyvG0%2BJApPFkKaZFLjKXyIJWTJyDSNoPQw4nG31j5uu1oTvpb20gXYadue2zf%2F%2Bm9C5cJtJ8A%2FAu%2BZJy&amp;yargs=www.ebay.com"
+target="new"&gt;&lt;b&gt;Radio Systems on eBay&lt;/b&gt;&lt;/a&gt;&lt;br&gt; 
+  		&lt;span style="font-size: 11px;"&gt;Find radio systems at low prices.
+With over 5 million items for sale every day,...&lt;/span&gt;&lt;br&gt; 		&lt;a
+href="http://www20.overture.com/d/sr/?xargs=05u3hs9yoakG1uzSDDhBClX3CX5KmwLHDGlUC7Y25S9DkRbq2g%2BJVAJ%2Fqq6%2B2H2lKoOvezO%2B3zEf3cZgm71n3Xe%2BmZ6Lqbv%2B3GZe2gj30U3bmYfbx3xg7jdZxz8mOO%2FWiJSaxj%2FjVcC5asRgJmDtbmVBKIwhkL2iVU5IWorKAQ%2BGkY2pAZ0nNUlFGfUgOQxQoWA9kUrBzYZQ7IXfMSsXzKbddbDXu86zU2nBMlluuQwGJIUpSkqIQSuZJKnHQ%2BuG6P1ibjDNNwwyvG0%2BJApPFkKaZFLjKXyIJWTJyDSNoPQw4nG31j5uu1oTvpb20gXYadue2zf%2F%2Bm9C5cJtJ8A%2FAu%2BZJy&amp;yargs=www.ebay.com"
+target="new" style="color:#006633;font-size:11 px;"&gt;www.ebay.com &lt;/a&gt; 
+      		 		&lt;div&gt;&lt;img src="http://i.cnn.net/cnn/.element/img/1.1/misc/cl/cl_greybar.gif"
+width="194" height="5" alt="" border="0" vspace="6" hspace="0"&gt;&lt;/div&gt; 
+		   		 		&lt;a href="http://www20.overture.com/d/sr/?xargs=05u3hs9yoakG1vMSDDhBRK%2FzKXwFrYM28MtSBlLdDLwt2pGGJWgXD1RG%2B%2FK4WVRdb63dPu98%2FuaLAl5mmM2U%2FVrUS8c2d7iG5lZMtTJil8V9rC6MXDj3xYjoxkFhYabzbWJAJ8LXINqhCUE0L3qgpny1BcZTLkZCPt5SFAoDXW%2FJNAWbrLnT%2FXdLq0ohZfh33lHVly0t9DCXFrTG5KBj%2Bq2QYBYkVQQrVSnyTAN8wpsTsHxon%2F1KVRy6SKBfOtGUqaIFUDySSVExd3s60RY%2FeM2uN1%2B7zm0XyvB8zOxI9I%2FxFtZhH%2FE1Yur%2F0jPgZss8A%3D&amp;yargs=radio_system.directory.alibaba.com"
+target="new"&gt;&lt;b&gt;Find Radio System&lt;/b&gt;&lt;/a&gt;&lt;br&gt;  
+ 		&lt;span style="font-size: 11px;"&gt;Find and promote trade opportunities.
+Source buyer and supplier...&lt;/span&gt;&lt;br&gt; 		&lt;a href="http://www20.overture.com/d/sr/?xargs=05u3hs9yoakG1vMSDDhBRK%2FzKXwFrYM28MtSBlLdDLwt2pGGJWgXD1RG%2B%2FK4WVRdb63dPu98%2FuaLAl5mmM2U%2FVrUS8c2d7iG5lZMtTJil8V9rC6MXDj3xYjoxkFhYabzbWJAJ8LXINqhCUE0L3qgpny1BcZTLkZCPt5SFAoDXW%2FJNAWbrLnT%2FXdLq0ohZfh33lHVly0t9DCXFrTG5KBj%2Bq2QYBYkVQQrVSnyTAN8wpsTsHxon%2F1KVRy6SKBfOtGUqaIFUDySSVExd3s60RY%2FeM2uN1%2B7zm0XyvB8zOxI9I%2FxFtZhH%2FE1Yur%2F0jPgZss8A%3D&amp;yargs=radio_system.directory.alibaba.com"
+target="new" style="color:#006633;font-size:11 px;"&gt;radio_system.directory.alibaba.com
+&lt;/a&gt;       		 		&lt;div&gt;&lt;img src="http://i.cnn.net/cnn/.element/img/1.1/misc/cl/cl_greybar.gif"
+width="194" height="5" alt="" border="0" vspace="6" hspace="0"&gt;&lt;/div&gt; 
+		   		 		&lt;a href="http://www20.overture.com/d/sr/?xargs=05u3hs9yoaUW1uyTCD%2FRBelUvqZFUDbJVGQVVJjUUORVGclzGQQSgrYRd29fIQIaopudSZvsy3uvstkpY8d95ffTu1lGuu%2B9eb5BcbIXVr%2BYvuB3P4qipHBL5j7Er4UHBpoDxvhCTtMFU1jI1XyDi6d7hTFj6b8VcJvUlJ%2Fe2G5e5PmBF4MNdfjx%2FvifuQcNVF6d2bUQGy2YrOEBH%2BEPQQon9i5M7BYeIpcL4oaIootObd5zDcPBs17TaDKPEJsdBxKfVLgTCiuAwDRzjivhFpIJTVzgwiI1yOB2wEAXT1uuAJLprOYZr13zApHuu8s0YrZKC122yfe%2Fbxc9eryZvlhb5ZXYXN8AIwORu2mJgc22r3TJVSMVmZtr8yqWYAhDBVFLiX8%2F%2BroU%2FDkTShngy%2BAIfsxA%3D%3D&amp;yargs=shopping.yahoo.com"
+target="new"&gt;&lt;b&gt;Radio System: Yahoo! Shopping&lt;/b&gt;&lt;/a&gt;&lt;br&gt; 
+  		&lt;span style="font-size: 11px;"&gt;Search, compare, and save. Visit
+Yahoo! Shopping to compare products and prices...&lt;/span&gt;&lt;br&gt; 		&lt;a
+href="http://www20.overture.com/d/sr/?xargs=05u3hs9yoaUW1uyTCD%2FRBelUvqZFUDbJVGQVVJjUUORVGclzGQQSgrYRd29fIQIaopudSZvsy3uvstkpY8d95ffTu1lGuu%2B9eb5BcbIXVr%2BYvuB3P4qipHBL5j7Er4UHBpoDxvhCTtMFU1jI1XyDi6d7hTFj6b8VcJvUlJ%2Fe2G5e5PmBF4MNdfjx%2FvifuQcNVF6d2bUQGy2YrOEBH%2BEPQQon9i5M7BYeIpcL4oaIootObd5zDcPBs17TaDKPEJsdBxKfVLgTCiuAwDRzjivhFpIJTVzgwiI1yOB2wEAXT1uuAJLprOYZr13zApHuu8s0YrZKC122yfe%2Fbxc9eryZvlhb5ZXYXN8AIwORu2mJgc22r3TJVSMVmZtr8yqWYAhDBVFLiX8%2F%2BroU%2FDkTShngy%2BAIfsxA%3D%3D&amp;yargs=shopping.yahoo.com"
+target="new" style="color:#006633;font-size:11 px;"&gt;shopping.yahoo.com
+&lt;/a&gt; 		    		&lt;/div&gt; 		&lt;/td&gt; 		&lt;td style="border-right:solid
+1px #999999;"&gt;&lt;img src="http://i.cnn.net/cnn/images/1.gif" alt="" width="6"
+height="1" border="0"&gt;&lt;/td&gt; 	&lt;/tr&gt; 	&lt;tr&gt; 		&lt;td colspan="3"
+style="border-left:solid 1px #999999;border-right:solid 1px #999999;border-bottom:solid
+1px #999999;"&gt;&lt;img src="http://i.cnn.net/cnn/images/1.gif" alt="" width="1"
+height="7" border="0"&gt;&lt;/td&gt;  	&lt;/tr&gt; &lt;/table&gt; </textarea>
+</form>
+</body></html>

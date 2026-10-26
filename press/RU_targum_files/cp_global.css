@@ -1,0 +1,112 @@
+
+/* Search Results */
+
+#searchResults h1 {
+	font: bold 13px verdana;
+	margin: 0px;
+	margin-bottom: 4px;
+	margin-top: -4px;
+}
+#searchResults h2 {
+	font: bold 11px verdana;
+	margin: 0px;
+	margin-bottom: 4px;
+}
+#searchResults, #searchResults p, #searchResults td {
+	font: normal 11px verdana;
+	margin: 0px;
+	margin-bottom: 6px;
+}
+#searchResults .oddrow {
+	background: #ddd;
+}
+#searchResults .evenrow {
+	background: #eee;
+}
+#searchResults td {
+	padding: 8px;
+}
+#searchResults th {
+	font: bold 11px verdana;
+	text-align: left;
+	color: #4B4B4B;
+	background: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/RU_targum_files/media/images/search_header.gif) repeat-x bottom;
+	height: 18px;
+	padding-left: 7px;
+}
+#searchResults .scorebar {
+	border: 1px solid #999; 
+	background: #FFF;
+	width: 50px;
+}
+
+/* CP Elements */
+.cpfooter,
+.cpfooter a:link,
+.cpfooter a:active,
+.cpfooter a:visited {
+	font: normal 9px/1.5em verdana;
+	color: #666;
+}
+.cpfooter a:hover {
+	color: #000;
+}
+
+/* Utility Styles */
+.graybox {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #a0a0a0;
+	border-bottom-color: #a0a0a0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 5px;
+}
+.caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: black;
+}
+.mediacredit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: black;
+	font-style: italic;
+}
+.RecentArticlesObject {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 6px;
+}
+.RecentArticlesHeader {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #999999;
+    margin-bottom: 4px;
+}
+.RecentArticles {
+    margin-bottom: 4px;
+    margin-left: 8px;
+}
+
+/* NC Bar */
+#ncbar {
+	border-bottom: 2px ridge #fff;
+}
+#cp_extras {
+	font: normal 11px Arial Narrow, Arial, Helvetica, sans-serif;
+	padding: 6px;
+}
+#cp_extras a:link,
+#cp_extras a:visited,
+#cp_extras a:active {
+	font-weight: bold;
+	color:#000;
+}
+#cp_extras a:hover {
+	font-weight: bold;
+	color:#900;
+}

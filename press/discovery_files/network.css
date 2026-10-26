@@ -1,0 +1,26 @@
+/*
+PURPOSE:
+	[1] Import relavent cascading stylesheets for this network [ dsc ].
+
+REVISION HISTORY:
+	June 26th, 2004. v1.0. Created.
+
+STATUS OF THIS DOCUMENT:
+	This is a working draft.
+
+MAINTAINER:
+	Carl Lewin
+	clewin@discovery.com
+
+LEGAL NOTICE:
+	Distribution of this document is limited.
+	Copyright (C) Discovery.com 2004. All Rights Reserved.
+*/
+
+
+/*
+###########################
+IMPORT
+###########################
+*/
+@import url("global.css");

@@ -1,0 +1,418 @@
+/*
+PURPOSE:
+	[1] Basic cascading stylesheet for [ CATEGORY : ALL ] [ TYPE : ALL ].
+
+REVISION HISTORY:
+	May 03th, 2004. v1.0. Created.
+
+STATUS OF THIS DOCUMENT:
+	This is a working draft.
+
+MAINTAINER:
+	Carl Lewin
+	clewin@discovery.com
+
+LEGAL NOTICE:
+	Distribution of this document is limited.
+	Copyright (C) Discovery.com 2004. All Rights Reserved.
+*/
+
+
+/*
+###########################
+HTML TAGS
+###########################
+*/
+body {
+	margin: 0px;
+	color: rgb(0,0,0);
+	background-color: rgb(255,255,255);
+}
+		
+a img {
+	border: 0px none;
+}
+
+li {
+	font: 10px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+}
+
+
+/*
+###########################
+LINKS
+###########################
+*/
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+a.black:link {
+	color: rgb(0,0,0);
+}
+a.black:visited {
+	color: rgb(0,0,0);
+}
+a.black:active {
+	color: rgb(0,0,0);
+}
+a.black:hover {
+	color: rgb(0,0,0);
+}
+
+a.white:link {
+	color: rgb(255,255,255);
+}
+a.white:visited {
+	color: rgb(255,255,255);
+}
+a.white:active {
+	color: rgb(255,255,255);
+}
+a.white:hover {
+	color: rgb(255,255,255);
+}
+
+
+/*
+###########################
+TEXT
+###########################
+*/
+.standardText {
+	font: 10px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+}
+.mediumText {
+	font: 11px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+}
+.largeText {
+	font: 12px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+}
+
+.headline {
+	/* 11pt/13pt */
+	font: bold 12px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+}
+.subhead {
+	/* 10pt/12pt */
+	font: bold 11px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+}
+.byline {
+	font: 7pt/9pt Arial, sans-serif;
+	letter-spacing: 0.0em;
+}
+.caption {
+	/* 9px Arial */
+	font: 10px Verdana, sans-serif;
+	letter-spacing: 0.0em;
+}
+.quote {
+	font: bold 10px/15px Verdana, Arial, sans-serif;
+	letter-spacing: 0.1em;
+}
+
+.headerText {
+	font: bold 8pt/11pt Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+	padding-top: 4px;
+}
+.headerShopping {
+	font: bold 8pt/11pt Verdana, Arial, sans-serif;
+	letter-spacing: -0.1em;
+	padding-top: 4px;
+}
+.headerBullet {
+	padding: 5px 5px 4px 10px;
+}
+				
+.date {
+	font: 10px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+	color: rgb(0,0,0);
+	line-height: 23px;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+.fontToggle {
+	font: 10px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+	text-align: right;
+	margin: 3px 3px 0px 0px;
+}
+
+.zeroLine {
+	line-height: 0px;
+}
+
+
+/*
+###########################
+COLORS
+###########################
+*/
+.black {
+	color: rgb(0,0,0);
+}
+.grey {
+	color: rgb(204,204,204);
+}
+.white {
+	color: rgb(255,255,255);
+}
+
+
+/*
+###########################
+FORMS
+###########################
+*/
+form {
+	margin: 0px;
+}
+
+.inField, .inputText {
+	font: bold 10px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+	color: rgb(102,102,102);
+}
+
+.selectText {
+	font: bold 10px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+	font-variant: small-caps;
+	color: rgb(102,102,102);
+}
+
+.pulldownWidth {
+	 width: 200px;
+}
+.paddingPulldownImage {
+	padding: 12px 5px 0px 10px;
+}
+.paddingPulldown {
+	padding: 9px 0px 0px 0px;
+}
+
+
+/*
+###########################
+ADS
+###########################
+*/
+.advertisement {
+	font: bold 10px Verdana, Arial, sans-serif;
+	letter-spacing: 0.0em;
+	color: rgb(153,153,153);
+	padding-top: 5px;
+}
+
+
+/*
+###########################
+CREDITS
+###########################
+*/
+.creditsText {
+	font: 9px Arial, sans-serif;
+	letter-spacing: 0.0em;
+}
+.creditsBoxSix {
+	padding: 30px 75px 20px 75px;
+	text-align: center;
+}
+.creditsBoxSeven {
+	padding: 30px 155px 20px 155px;
+	text-align: center;
+}
+.creditsBoxEight {
+	padding: 30px 195px 20px 155px;
+	text-align: center;
+}
+
+
+/*
+###########################
+BOX DEFINITIONS
+###########################
+*/
+.headerBox {
+	border: 1px solid rgb(204,204,204);
+}
+.bodyBox {
+	border: solid rgb(204,204,204);
+	border-width: 0px 1px 1px 1px;
+}
+.sideBox {
+	border: solid rgb(204,204,204);
+	border-width: 0px 1px 0px 1px;
+}
+
+.headerXY150 {
+	width: 148px;
+	height: 23px;
+}
+.bodyXY150 {
+	width: 148px;
+	height: auto;
+}
+
+.headerXY190 {
+	width: 188px;
+	height: 23px;
+}
+.bodyXY190 {
+	width: 188px;
+	height: auto;
+}
+
+.headerXY460 {
+	width: 458px;
+	height: 23px;
+}
+.bodyXY460 {
+	width: 458px;
+	height: auto;
+}
+.pulldownXY460 {
+	width: 458px;
+	height: 38px;
+}
+
+.headerXY615 {
+	width: 613px;
+	height: 23px;
+}
+.bodyXY615 {
+	width: 613px;
+	height: auto;
+}
+
+.headerXY770 {
+	width: 768px;
+	height: 23px;
+}
+.bodyXY770 {
+	width: 768px;
+	height: auto;
+}
+
+
+/*
+###########################
+MARGINS, PADDING, SHIMS
+###########################
+*/
+/* top, right, bottom, left */
+.widthSix {
+	width: 615px;
+}
+.widthSeven {
+	width: 770px;
+}
+.widthEight {
+	width: 810px;
+}
+
+.zeroOut {
+	margin: 0px;
+}
+.margin5 {
+	margin: 5px;
+}
+.margin10 {
+	margin: 10px;
+}
+
+.padding5 {
+	padding: 5px;
+}
+.padding10 {
+	padding: 10px;
+}
+.padding15 {
+	padding: 15px;
+}
+.padding20 {
+	padding: 20px;
+}
+.padding25 {
+	padding: 25px;
+}
+
+.shim5 {
+	margin-top: 5px;
+}
+.shim10 {
+	margin-top: 10px;
+}
+.shim15 {
+	margin-top: 15px;
+}
+.shim20 {
+	margin-top: 20px;
+}
+.shim25 {
+	margin-top: 25px;
+}
+
+.shift5 {
+	margin-left: 5px;
+}
+.shift10 {
+	margin-left: 10px;
+}
+.shift15 {
+	margin-left: 15px;
+}
+.shift20 {
+	margin-left: 20px;
+}
+
+
+/*
+###########################
+DISPLAY
+###########################
+*/
+.hide {
+	display: none;
+}
+.block {
+	display: block;
+}
+
+.floatRight {
+	float: right;
+}
+.floatLeft {
+	float: left;
+}
+
+
+/*
+###########################
+POSITIONING
+###########################
+*/
+.posAbsolute {
+	position: absolute;
+}
+.posRelative {
+	position: relative;
+}

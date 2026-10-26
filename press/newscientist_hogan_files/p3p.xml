@@ -1,0 +1,9 @@
+<META xmlns="http://www.w3.org/2002/01/P3Pv1">
+<POLICY-REFERENCES>
+    <POLICY-REF about="http://www.newscientist.com/privacy/p3p/nscom.p3p#General">
+      <INCLUDE>/*</INCLUDE>
+      <COOKIE-INCLUDE/>
+    </POLICY-REF>
+
+</POLICY-REFERENCES>
+</META>

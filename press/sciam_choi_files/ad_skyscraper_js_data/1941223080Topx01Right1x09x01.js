@@ -1,0 +1,16 @@
+document.write ('<IFRAME SRC="http://ad.doubleclick.net/adi/N2965.ScientificAmerican/B1416831.4;sz=160x600;click0=http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/111.sciam.com/sa006/16/602148996/x01/sciam.com/p_2004-09_acura_sky_ROS/p_2004-09_acura_sky_ROS.html/31383263643031323431353630343830?;ord=602148996?" WIDTH=162 HEIGHT=602 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=');
+document.write ("'");
+document.write ('#000000');
+document.write ("'");
+document.write ('>\n');
+document.write ('<SCRIPT language=');
+document.write ("'");
+document.write ('JavaScript1.1');
+document.write ("'");
+document.write (' SRC="http://ad.doubleclick.net/adj/N2965.ScientificAmerican/B1416831.4;abr=!ie;sz=160x600;click0=http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/111.sciam.com/sa006/16/602148996/x01/sciam.com/p_2004-09_acura_sky_ROS/p_2004-09_acura_sky_ROS.html/31383263643031323431353630343830?;ord=602148996?">\n');
+document.write ('</SCRIPT>\n');
+document.write ('<NOSCRIPT>\n');
+document.write ('<A HREF="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/111.sciam.com/sa006/16/602148996/x01/sciam.com/p_2004-09_acura_sky_ROS/p_2004-09_acura_sky_ROS.html/31383263643031323431353630343830?http://ad.doubleclick.net/jump/N2965.ScientificAmerican/B1416831.4;abr=!ie4;abr=!ie5;sz=160x600;ord=602148996?">\n');
+document.write ('<IMG SRC="http://ad.doubleclick.net/ad/N2965.ScientificAmerican/B1416831.4;abr=!ie4;abr=!ie5;sz=160x600;ord=602148996?" BORDER=0 WIDTH=160 HEIGHT=600 ALT="Click Here"></A>\n');
+document.write ('</NOSCRIPT>\n');
+document.write ('</IFRAME>\n');

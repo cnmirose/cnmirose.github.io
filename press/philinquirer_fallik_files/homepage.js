@@ -1,0 +1,1 @@
+document.write('<a target="_new" href="http://ad.doubleclick.net/click;h=v3|317e|0|0|%2a|p;7300333;0-0;1;7907731;255-0|0;4481131|4499027|3;;~sscs=%3fhttp://www.robinsonluggage.com"><img src="http://m2.doubleclick.net/viewad/893760/8-15125_robnlugg_leaderboard2.gif" border=0 alt="click here"></a>');

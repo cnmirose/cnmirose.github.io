@@ -1,0 +1,1 @@
+tagtext="<a href=http://servedby.advertising.com/click/site=0000683911/mnum=0000168625/genr=1/tkdt=B0P0R1T0/bnum=56622938 target=_blank><img src=http://servedby.advertising.com/site=0000683911/mnum=0000168625/genr=1/logs=0/mdtm=1079645737/bins=1/optn=1 border=0 width=468 height=60 alt='Click to learn more...'><\/a>";document.write(tagtext);

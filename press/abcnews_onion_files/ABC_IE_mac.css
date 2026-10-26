@@ -1,0 +1,75 @@
+A:hover { color:#DBAB34;}
+.link { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; color: #FFFFFF; text-decoration: none; font-weight: bold}
+.linkon {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #31319C; text-decoration: none}
+.linkred {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; color: #FF3300; text-decoration: none}
+.linkredbold {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; color: #FF3300; font-weight: bold; text-decoration: none}
+.whiteLead { font-family: Arial, Helvetica, sans-serif; font-size: 16pt; font-weight: bold; color: #FFFFFF; text-decoration: none }
+.whiteLink {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-weight: bold; color: #FFFFFF; text-decoration: none }
+.whiteSmall {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt;  color: #FFFFFF;}
+.whiteSmallest {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt;  color: #FFFFFF;}
+.whiteSmallestLink {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt;  color: #FFFFFF; text-decoration: none}
+.whiteSmallbold {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-weight: bold; color: #FFFFFF; text-decoration: none }
+.copyright { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: bold; color: #FFFFFF; }
+.blackSmall { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #000000; }
+.blackSmaller { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: normal; color: #000000; }
+.blackLargeLink { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: bold; color: #000000; text-decoration: none}
+.black9pt { font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: normal; color: #000000; }
+.black9ptBold { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: bold; color: #000000; }
+.darkblueTitle { font-family: Arial, sans-serif; font-size: 12pt; font-weight: bold; color: #003399; text-decoration: none }
+.blueLead { font-family: Arial, Helvetica, sans-serif; font-size: 20pt; font-weight: bold; color: #31319C; text-decoration: none }
+.blueSmall { font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #31319C; }
+.blueSmaller { font-family: Arial, Helvetica, sans-serif; font-size:12pt; font-weight: bold; color: #31319C; }
+.blueLinkNoStyle { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #31319C ; text-decoration: none}
+.blueLinkNoStyleFP { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: bold; color: #31319C ; text-decoration: none}
+.lightblueSmall { font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #7F83BF; }
+.onText { position:absolute; left: 674px; top: 228px; width:90px; height:160px; visibility:hidden; z-index: 1}
+.blackSmallest { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: normal; color: #000000; }
+.blackSmallestbold { font-family: Arial, Helvetica, sans-serif; font-size: 7pt; font-weight: bold; color: #000000; }
+.blueLinkNoStyleSmall { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: bold; color: #31319C ; text-decoration: none }
+.blueLinkSmall { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11pt; font-weight: bold; color: #31319C ; }
+.bluenobold {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; color: #31319C text-decoration: none}
+input.r { background-color: #FFFFFF}
+.redsmall {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: bold; color: #FF0000; text-decoration: none}
+.darkblueTitle { font-family: Arial, sans-serif; font-size: 10pt; font-weight: bold; color: #003399; text-decoration: none }
+.subhead { font-family: Arial, sans-serif; font-size: 12pt; font-weight: bold; color: #003399; text-decoration: none }
+.whiteShowNav {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #FFFFFF; text-decoration: none }
+.breakingnews { font-family: Arial, Verdana,  Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #FF0000 ; text-decoration: none}
+.stock1 { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #003366}
+.stock2 { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #006600}
+.stock3 { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #CC0000}
+.lightgreyHP { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #9C9C9C}
+.lightgrey { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #9C9C9C}
+.greyLink { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #666666}
+.blackLargeLink { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: bold; color: #000000; text-decoration: none}
+.black10ptBold { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #000000; }
+.WhtTitle {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-weight: bold; color: #FFFFFF; text-decoration: none}
+.WhtSmNoStyle {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: #FFFFFF; text-decoration: none}
+.WhtSmNoStyleBold {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FFFFFF; text-decoration: none}
+.BlueSmNoStyleBold {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #31319C; text-decoration: none}
+.bluehead { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13pt; font-weight: bold; color: #31319C}
+.greenSmall {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt;  color: #99CC99;}
+.greennew { font-family: Arial, Verdana,  Helvetica, sans-serif; font-size: 9pt; font-weight: bold; color: #003300; text-decoration: none }
+.darkblueLink { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #31319C}
+.darkblueTitle { font-family: Arial, sans-serif; font-size: 12pt; font-weight: bold; color: #003399; text-decoration: none }
+.darkblueLead { font-family: Arial, Helvetica, sans-serif; font-size: 13pt; font-weight: bold; color: #31319C; text-decoration: none }
+.blueLinkNS { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #31319C}
+.blueLink { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #31319C ; text-decoration: underline;}
+.yellowSmall { font-family: Arial, Helvetica, sans-serif; font-size: 8pt;  color: #FFCC00; }
+.yellowSmallBold { font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 8pt;  color: #FFCC00; }
+.white9pt { font-family: Arial, Helvetica, sans-serif; font-size: 9pt;  color: #FFFFFF; }
+
+.pix {border:1px; border-thickness: 1px; border-color: #000; border-style: solid;}
+
+.searchInput {width: 300px; font-family: Arial, Verdana; font-size: 11px; color: #10124B; font-weight : normal; border: 1px solid; border-color : #4C4FA1;}
+.searchBottom { width: 200px; font-family: Arial, Verdana; font-size: 11px; font-weight: normal; color: #10124B; border: 1px solid; border-color: #4C4FA1}
+.searchInputInfospace {width: 140px; font-family: Arial, Verdana; font-size: 11px; color: #10124B; font-weight : normal; border: 1px solid; border-color : #4C4FA1;}
+
+#italic {font-style: italic}
+#bold {font-weight: bold}
+#UL {text-decoration: underline}
+#noUL {text-decoration: none}
+#white {color:#ffffff}
+#normal {font-weight: normal}
+#mailBlue {color:#2222D3}
+#red {color:#FF3300}
+#boards {color:#cc3300}

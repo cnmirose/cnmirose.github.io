@@ -1,0 +1,705 @@
+/* MSN SHELL */
+a{text-decoration:none;color:#0066cc;}
+a:visited{text-decoration:none;color:#666666}
+a:hover,a:visited:hover{text-decoration:underline;color:#CC0000}
+a:active{text-decoration:none;color:#CC0000}
+
+.big7 {background:#000088;color:white;font-family: tahoma, sans-serif;font-size:11px;}
+.big7 a,.big7 a:visited,.big7 a:active{font:bold 11px tahoma;text-decoration:none;color:white}
+.big7 a:hover,.big7 a:visted:hover {font:bold 11px tahoma;text-decoration:underline;color:#CC0000}
+
+.sf {background:#000088;color:white;font-family: tahoma, sans-serif;font-size:11px;}
+.sf a{color:white}
+.sfl {font-size:24px;border-bottom: 1px solid #0000b0;white-space:nowrap}
+.sfl a:hover{text-decoration:none}
+.sfm {border-bottom: 1px solid #000077}
+.sfr {font-size:1px}
+.sfi {background:#0F669F;background-image:  url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/msn9/sgf_db.gif);border-bottom:1px solid #000077;border-top:1px solid #0000b0;border-right:1px solid #000088;padding:0px 0px 9px 0px;}
+.sflb {font-size:1px;background:#17179A;border-bottom: 1px solid #000077}
+
+.tb, .tb a, .tb a:visited,.tb a:visited:hover {color:#FFFFFF}
+.tb {background:#000088}
+
+.fhelp a {font-weight:normal}
+
+.big1 a, .big1 a:hover, .big1 a:active, .big1 a:visited, .big1 a:visited:hover {color:#E9F2F8}
+
+.terms {background:#000088;color:white}
+.terms td {font: 10px tahoma;border-top-width:1px;border-top-color:#E2EBFE;border-top-style:solid}
+.terms a {font: 10px tahoma;text-decoration:none;color:white}
+
+.nav {background:#E2EBFE}
+
+.adbar{background:#000088;padding-top:11px;padding-bottom:4px;}
+
+/*BG Color*/
+.bg008{background:#000088;}
+
+/*Width*/
+.w130{width:130;}
+.w152{width:152;}
+.w160{width:160;}
+.w300{width:300;}
+.w320{width:320;}
+.w335{width:335;}
+.w349{width:349;}
+.w460{width:460;}
+.w649{width:649;}
+.w779{width:779;}
+.w873{width:873;}
+.w1003{width:1003;}
+
+/*Padding*/
+.p1{padding:15 14 0 15;}
+.p2{padding:15 0 0 0;}
+.p3{padding:0 0 0 15;}
+.p4{padding:15 0 0 15;}
+.p5{padding:15 0 15 0;}
+.p6{padding:15 10 0 15;}
+
+/*alignment*/
+.aC{text-align:center;}
+
+/*Text Font Family*/
+.t1{font-family:Verdana}
+
+/*Font size in pixels*/
+.f9{font-size:9px}
+
+/*Color*/
+.c000{color:#000000}
+
+/*Miscelaneous CSS styles*/
+.clr{clear:both;}
+.fL{position:relative;float:left;}
+
+/* HEADLINES */
+	
+.headlineLargeBlack, .headlineLargeReverse, .headlineMediumBlack, .headlineMediumReverse,
+.headlineLargeRed, .headlineXLReverse, .headlineXLReverseYellow,
+.headlineCable, .headlineComponent, .headlineComponentBlack, .headlineComponentReverse
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.headlineSmallBlack, .headlineSmallReverse, .headlineSmallestBlack, .headlineSmallestReverse,
+.headlineList1, .headlineList1Reverse, .headlineList1Bold, .headlineList1ReverseBold, 
+.headlineList2, .headlineList2Reverse, .headlineSmallRed, .sectionlabelRed, .headlineSmallYellow
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif
+}
+.headlineStory, .subhed 
+{
+	font-family: Georgia, "Times New Roman", Times, serif
+}
+
+.headlineLargeBlack, .headlineLargeReverse, .headlineMediumBlack, .headlineMediumReverse,
+.headlineSmallBlack, .headlineSmallReverse, .headlineSmallestBlack, .headlineSmallestReverse,
+.headlineSmallRed, .headlineLargeRed, .headlineList1Bold, .headlineList1ReverseBold, 
+.headlineXLReverse, .headlineXLReverseYellow, .headlineSmallYellow,
+.headlineCable, .headlineComponent, .headlineComponentBlack, .headlineComponentReverse,
+.subhed, .sectionlabelRed
+{
+ 	font-weight: bold;
+}
+
+.headlineXLReverse, .headlineXLReverseYellow {font-size: 300%}
+.headlineLargeBlack, headlineLargeReverse, .headlineStory, .headlineLargeRed {font-size: 180%;}
+.headlineMediumBlack, .headlineMediumReverse {font-size: 150%}
+.headlineCable {font-size: 125%}
+.headlineComponent, .headlineComponentBlack, .headlineComponentReverse {font-size: 120%}
+.subhed {font-size: 100%}
+.headlineSmallBlack, .headlineSmallReverse, .headlineList1, .headlineSmallRed,
+.headlineSmallYellow {font-size: 80%}
+.headlineList1Reverse, .headlineList1Bold, .headlineList1ReverseBold {font-size: 75%}
+.headlineSmallestBlack, .headlineSmallestReverse, .headlineList2, .headlineList2Reverse {font-size: 70%}
+.sectionlabelRed {font-size: 65%; font-style: normal}
+
+.headlineLargeBlack, .headlineMediumBlack, .headlineSmallBlack, .headlineSmallestBlack,
+.headlineList1, .headlineList2, .headlineList1Bold, .headlineCable,
+.headlineComponentBlack, .subhed {color: #000000;}
+.headlineLargeReverse, .headlineMediumReverse, .headlineSmallReverse, .headlineSmallestReverse,
+.headlineList1Reverse, .headlineList1ReverseBold, .headlineList2Reverse, 
+.headlineXLReverse, .headlineComponent, .headlineComponentReverse {color: #FFFFFF}
+.headlineStory, .headlineLargeRed, .headlineSmallRed, .sectionlabelRed {color: #CC0000}
+.headlineXLReverseYellow, .headlineSmallYellow {color: #FFFF99}
+
+.headlineLargeBlack, .headlineLargeReverse, .headlineMediumBlack, .headlineStory,
+.sectionlabelRed, .headlineXLReverseYellow {line-height: 110%;}
+.subhed, .headlineLargeRed {line-height: 120%}
+.headlineCable {line-height: 130%}
+.headlineSmallBlack, .headlineList2, .headlineList2Reverse {line-height: 140%}
+.headlineSmallReverse, .headlineMediumReverse, .headlineSmallestBlack, .headlineSmallestReverse,
+.headlineList1, .headlineList1Reverse, .headlineList1ReverseBold, .headlineList1Bold, 
+.headlineSmallYellow, .headlineSmallRed {line-height: 150%}
+
+.headlineSmallRed, .headlineList1ReverseBold, .headlineComponent, .headlineComponentBlack,
+.headlineComponentReverse
+{
+	text-decoration: none
+}
+.subhed {letter-spacing: -0.02cm}
+
+
+
+/* DECKS */
+	
+.deckGrey, .deckDkGrey, .deckReverse, .deckBlack, .deckReverseBold 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+ 	font-size: 80%;
+ 	line-height: 140%;
+}
+
+.deckGrey    {color: #cccccc}
+.deckDkGrey	 {color: #666666}
+.deckReverse { color: #ffffff}
+.deckBlack   { color: #000000}
+.deckReverseBold {font-weight: bold; color: #ffffff}
+
+.deckStory
+{
+	font: normal bold 100%/120% Tahoma;
+	color: #000000;
+	letter-spacing: 0.02cm;
+}
+
+
+
+/* TEXT */
+
+
+.textBlueBold, .textBodyBlack, .textBodyBlackBold, .textBodyGrey, .textBodyReverse 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	line-height: 150%;
+}
+.textStoryTag 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+ 	font-size: 80%;
+	line-height: 120%;
+	letter-spacing: 0.03cm
+}
+.linkSubSectionTab {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 65%;
+	font-weight: bold;
+	color: 333333;
+	text-decoration: none;
+}
+.linkSubSectionTab a,.linkSubSectionTab a:visited {color:#333333;}
+.textSubSectionTab {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	font-weight: bold;
+	color: #333333;
+}
+.textMed, .textMedBlack, .textMedBlackBold, .textMedBlackHang, .textMedGrey, .textMedLtGrey, .textMedBlue, .textMedBlueBold,
+.textMedLtGold, .textMedReverse, .textMedRedBold 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	line-height: 140%
+}
+.index
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	line-height: 130%
+}
+.textSmall, .textSmallBold, .textSmallReverse, .textSmallReverseBold, .textSmallRed, .textSmRed, .textSmallGreen, 
+.textSmallBlue, .textSmallBlueBold, .textSmallLtBlue, .textSmallBlack, .textSmallLtGold, 
+.textSmallGrey, .textSmallGreyBold, .AdEShopHead, .leadrow, .candidate, .colnorm, .colalt1, .colalt2, .resultsData
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 65%;
+	line-height: 130%;
+}
+.textSmallBlackBold
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 65%;
+	line-height: 125%;
+}
+.heads 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 65%;
+	line-height: 90%;
+}
+.textTimestamp 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+ 	font-size: 60%;
+	line-height: 125%;
+}
+.textLegal 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 60%;
+}
+.textTagline 
+{
+	font-family: Tahoma;
+	font-size: 70%;
+}
+.textSmallestBlack 
+{
+	font-family: Tahoma;
+	font-size: 65%;
+	line-height: 130%;
+}
+.caption, .captionReverse 
+{
+	font-family: Tahoma;
+	font-size: 65%;
+	line-height: 120%;
+	letter-spacing: 0.02cm
+}
+.credit, .creditGrey 
+{
+	font-family: Tahoma;
+	font-size: 60%;
+	line-height: 120%;
+}
+.pullquote 
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 130%;
+	font-size: 140%;
+}
+.textTemp 
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 150%;
+}
+
+.textSmallBold {font-weight:bold;}
+.textSmallLtGold, .textMedLtGold {font-weight: bold; color: #FFFFCC}
+.textSmallLtGold, .textTimestamp {letter-spacing: 0.01cm}
+.textSmallRed, .textMedRedBold, .textStoryTag, .textTemp, .pullquote {font-weight: bold; color: #CC0000}
+.textSmallLtBlue, .textMedBlue {font-weight: bold; color: #99CCFF}
+.textSmallBlueBold {font-weight: bold; color: #0033CC}
+.textSmallGreen {font-weight: bold; color: #009900}
+.textBlueBold, .textMedBlueBold {font-weight: bold; color: #0000cc}
+.textSmallGreyBold {font-weight: bold; color: #666666}
+.textSmallReverseBold, .AdEShopHead{font-weight: bold; color: #FFFFFF; letter-spacing: 0cm}
+.textSubSectionTab {font-weight: bold; color: #333333}
+.textBodyBlackBold, .textMedBlackBold, .textSmallBlackBold {font-weight: bold; color: #000000}
+.textSmallBlack, .textSmallestBlack, .textMedBlack, .textMedBlackHang, .textBodyBlack, 
+.heads, .textTimestamp, .colnorm, .colalt1, .colalt2 {font-weight: normal; color: #000000}
+.textSmRed {font-weight: normal; color: #cc0000}
+.textMedReverse, .textBodyReverse, .textSmallReverse, .captionReverse,.leadrow, .candidate {font-weight: normal; color: #ffffff}
+.textSmallBlue {font-weight: normal; color: #0033CC}
+.textMedGrey, .textBodyGrey, .textSmallGrey, .credit {font-weight: normal; color: #666666}
+.textMedLtGrey, .textLegal, .textTagline {font-weight: normal; color: #cccccc}
+.creditGrey {font-weight: normal; color: #999999}
+
+.caption {color: #000000}
+.textSmallBlack, .textSmallestBlack, .colnorm, .colalt1, .colalt2 {letter-spacing: -0.01cm}
+.index {font-weight: normal}
+.textLegal, .textTagline, .textSubSectionTab {text-decoration: none}
+	
+.textMedBlackHang { margin-left: 10px; text-indent: -10px; }	
+.textHang, .textHangSmall { margin-left: 9px; text-indent: -9px; }	
+
+/* LINKS */
+
+.linkRed { color:#CC0000 }
+.linkBlack { color:black }
+
+/* BULLETS (CHARACTERS) */
+
+.bulletRedHere, .bulletRed, .bulletGold, .bulletRedSmall, .bulletRedMed, .bulletGoldSmall
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #CC0000;	
+}
+.bulletRed, .bulletRedMed, .bulletGold{font-size: 70%; font-weight: bold;}
+.bulletRedSmall, .bulletGoldSmall{font-size: 65%}
+.bulletGold, .bulletGoldSmall {color: #FFCC00;font-weight: bold;}
+
+/* BOXES */
+
+/* Data Box */
+.dbxPeTa{width:300px;border-width:0px;background-color:#ff9933}
+.dbxPeDi,.dbxUnDa{border:#cccccc 1px solid;background-color:#ffffee}
+.dbxPeDi{width:270px}
+.dbxUnDa{width:300px}
+.dbxPeDi{padding:0px 14px 14px}
+.dbxUnDb{margin:14px}
+.dbxScTa{margin-top:6px}
+.dbxScTd{background:white;border-bottom:1px solid #BBBB99}
+.dbxLoTd{padding:3px 0px 4px}
+.dbxLqHe{padding:0px 2px 4px}
+.dbxLqTa{border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;background-color:#eeeeee}
+.dbxLqLi{margin:6px 16px 6px;text-indent:-9px}
+.dbxLqWd{border-bottom:1px solid #cccccc}
+.dbxSeDi{font-size:50%}
+.dbxWeRu{border-left:1px solid #cccccc}
+
+/* Generic Box */
+.box a {color:#000;}
+.boxH {background-color:#7788aa;height:20px;}
+.boxHI {padding:0px;}
+.boxHC {color:#ffffff;padding:2px;text-transform:uppercase;}
+.boxH2C {background-color:#eeeeee;color:#666666;padding:2px;}
+.boxB {border:solid 1px #cccccc;background-color:#eeeeee;}
+.boxBI {color:#000000;padding:10px;}
+div.boxBI {padding:0px;margin:10px;}
+.boxF {background-color:#cccccc;}
+.boxFI {color:#000000;padding:2px;}
+.tallBox .boxB {height:100%;}
+
+/* pull quote */
+.boxB_pullquoteW,.boxB_pullquote {background-color:#ffffff;}
+.boxBI_pullquoteW,.boxBI_pullquote {color:#000000;padding:10px;}
+.boxB_pullquoteW {border-top: solid 1px #cccccc;border-bottom: solid 1px #cccccc;padding:5px;}
+.boxB_pullquote {padding:2px;}
+
+/* Next Story */
+.box_nxt a {color:#000;}
+.boxH_nxt {background-color:#7788aa;}
+.boxHC_nxt {padding:2px;color:#ffffff;}
+.boxB_nxt {border:solid 1px #cccccc;background-color:#eeeeee;}
+.boxBI_nxt {padding:0px;}
+
+/* Big Red Link */
+.boxH_brl {background-color:#eeeeee;}
+.boxHC_brl {color:#666666;padding:4px;text-transform:uppercase;}
+.boxB_brl {border-top:solid 1px #cccccc;border-bottom:solid 1px #cccccc;background-color:#ffffff;}
+.boxBI_brl {padding:8px;}
+.box_brl a,.box_brl a:visited {color:#cc0000;}
+.box_brl a:hover,.box_brl a:visited:hover {color:#cc0000;}
+
+.bigRedLink {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 80%;line-height: 130%;font-weight: bold;color: #cc0000;}
+
+/* TSM */
+.tsmbullet
+{
+	font-weight: bold; font-size: 70%; line-height: 100%; font-family: verdana, arial, helvetica, sans-serif
+}
+
+.tsmtextSmallLt
+{
+	font-weight: bold; font-size: 65%; color: #ffffcc; line-height: 130%; font-family: verdana, arial, helvetica, sans-serif; letter-spacing: 0.01cm
+}
+
+.tsmHeadlineList1ReverseBold
+{
+	font-weight: bold; font-size: 75%; line-height: 150%; font-family: verdana, arial, helvetica, sans-serif; 
+}
+
+.tsmHeadlineList1ReverseBold a, .tsmHeadlineList1ReverseBold a:active
+{
+	text-decoration: none;
+}
+
+.tsmcredit
+{
+	font-family: Tahoma;
+	font-weight: normal;
+	font-size: 60%;
+	line-height: 120%;
+}
+
+.tsmHeadlineLargeReverse
+{
+	font-family: Arial, Helvetica, sans-serif; font-weight: bold;font-size: 180%;line-height: 110%;
+}
+
+.tsmHeadlineSmallReverse
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold;font-size: 80%;line-height: 150%
+}
+
+.tsmHeadlineLargeReverse a, .tsmHeadlineLargeReverse a:active
+{
+	text-decoration: none;
+}
+
+.tsmDeck
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+ 	font-size: 80%;
+ 	line-height: 140%;
+}
+
+.tsmtextMedLt
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	line-height: 140%
+}
+
+.tsmtextMedLt a, .tsmtextMedLt a:hover, .tsmtextMedLt a:active, .tsmtextMedLt a:visited:hover,
+.tsmDeck a, .tsmDeck a:hover, .tsmDeck a:active, .tsmDeck a:visited:hover
+{
+	text-decoration: none;
+}
+
+.tsmFullStoryLink
+{
+	font-weight: bold; font-size: 65%; line-height: 130%; font-family: verdana, arial, helvetica, sans-serif;
+}
+
+
+.tsmFullStoryLink a, .tsmFullStoryLink a:hover, .tsmFullStoryLink a:active, .tsmFullStoryLink a:visited, .tsmFullStoryLink a:visited:hover
+{
+	text-decoration:none;
+}
+
+.tsmFullStoryLink a:hover
+{
+	text-decoration:underline;
+}
+
+.tsmLinksTable
+{
+	padding-bottom:0px; padding-left:10px; padding-right:10px; padding-top:8px;
+}
+
+.tsmheadlineComponent
+{
+	font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 110%; text-decoration: none;
+}
+
+.tsmheadlineComponent a, .tsmheadlineComponent a:active
+{
+	text-decoration: none;
+}
+
+.tsmheadlineXLReverse, .tsmheadlineXLReverse a, .tsmheadlineXLReverse a:hover, .tsmheadlineXLReverse a:active, .tsmheadlineXLReverse a:visited:hover, .tsmheadlineXLReverse a:visited
+{
+	font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 175%; text-decoration: none;
+}
+
+.tsmheadlineSmall
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 90%; text-decoration: none;
+}
+
+tsmheadlineSmall a, .tsmheadlineSmall a:hover, .tsmheadlineSmall a:active, .tsmheadlineSmall a:visited:hover, .tsmheadlineSmall a:visited
+{
+	text-decoration: none;
+}
+.tsmCaption 
+{
+	font-family: Tahoma,sans-serif;
+	font-size: 65%;
+	line-height: 120%;
+	letter-spacing: 0.02cm;
+	font-weight: normal; 
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.tsmTeaseBody 
+{
+	padding:10px;
+	clear:both;
+}
+.tsmHeadlineMedium
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 150%;
+	line-height: 110%
+}
+.tsmHeadlineMedium, .tsmHeadlineMedium a, .tsmHeadlineMedium a:active, .tsmHeadlineMedium a:visited
+{
+	text-decoration: none;
+}
+.tsmHeadlineSmallest
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 70%;
+	line-height: 150%;
+}
+.tsmHeadlineSmallest, .tsmHeadlineSmallest a, .tsmHeadlineSmallest a:hover, .tsmHeadlineSmallest a:active, .tsmHeadlineSmallest a:visited, .tsmHeadlineSmallest a:visited:hover 
+{
+	text-decoration: none;
+}
+.tsmHeadlineSmallest a:hover, .tsmHeadlineSmallest a:visited:hover, .tsmHeadlineMedium a:hover, .tsmHeadlineMedium a:visited:hover
+{
+	text-decoration: underline;
+}
+.tsmHighlight
+{
+	padding-top:5px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.tsmHighlightTitle
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 65%;
+	line-height: 130%;
+	font-weight: bold;
+}
+.tsmRemaining 
+{
+	padding: 10px;
+}
+.tsmSubsectionTitle,.tsmRemainingTitle
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 65%;
+	line-height: 130%;
+	font-weight:bold;
+}
+.tsmSubsectionTitle 
+{
+	text-transform:uppercase;
+}
+.tsmRemainingLinkHeadline
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	line-height: 140%;
+	font-weight: bold;
+}
+.tsmSubsectionLinkHeadline
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	line-height: 140%;
+}
+.tsmSubsectionDeck,.tsmRemainingDeck
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	line-height: 140%;
+}
+.tsmHighlightDeck
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	line-height: 140%;
+}
+.tsmSubsections
+{
+	padding-bottom:12px;
+}
+.tsmHighlightLinkHeadline a
+{
+	font-weight: bold;
+	font-size: 75%;
+	font-family: verdana, arial, helvetica, sans-serif; 
+	line-height: 140%;
+}
+.tsmHighlightLinkHeadline a, .tsmHighlightLinkHeadline a:active
+{
+	text-decoration: none;
+}
+
+/* NEWS MENU */
+.nmIS,.nmISH,.nmISC,.nmISCH,.nmIB,.nmIBH,.nmIBC,.nmIBCH,.nmIBD,.nmIBDH,.nmIK,.nmIKH,.nmIKC,.nmIKCH,.nmIKD,.nmIKDH{padding-left:12px;padding-right:12px;cursor:hand}
+.nmIE,.nmIEH,.nmIF,.nmIFH,.nmIR,.nmIRH{padding-left:6px;padding-right:12px;border-bottom:1px solid white}
+.nmIE,.nmIEH,.nmIF,.nmIFH{cursor:hand}
+.nmIS,.nmISH,.nmISC,.nmISCH{border-top:1px solid #66AAFF}
+.nmIS{background:#000088 url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/w.gif) no-repeat right center}
+.nmISC{background:#000088 url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
+.nmIR,.nmIRH{background:#333333;cursor:default}
+.nmIKD,.nmIKDH{background:#CC0000 url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/w.gif) no-repeat right center}
+.nmIE{background:#DDDDDD}
+.nmIF{background:#DDDDDD url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/b.gif) no-repeat right center}
+.nmIB,.nmIBH,.nmIBD,.nmIBDH{background:#DDEEFF url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
+.nmIK,.nmIKH{background:#EEEEEE url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
+.nmIEH{background:white}
+.nmISH,.nmISCH,.nmIFH{background:white url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/b.gif) no-repeat right center}
+.nmIBC,.nmIBCH,.nmIKC,.nmIKCH{background:white url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
+.nmLS,.nmLSH,.nmLSC,.nmLSCH,.nmLB,.nmLBH,.nmLBC,.nmLBCH,.nmLBD,.nmLBDH,.nmLK,.nmLKH,.nmLKC,.nmLKCH,.nmLKD,.nmLKDH{font:70% Tahoma,sans-serif}
+.nmLE,.nmLEH,.nmLF,.nmLFH{font:70% Verdana,sans-serif}
+.nmLR,.nmLRH{font:60% Verdana,Arial,Helvetica,sans-serif;color:#EEEEEE}
+.nmLS,.nmLSH,.nmLSC,.nmLSCH,.nmLBD,.nmLBDH,.nmLKD,.nmLKDH,.nmLF,.nmLFH{font-weight:bold}
+.nmLK,.nmLK:visited,.nmLKH,.nmLKH:visited,.nmLKC,.nmLKC:visited,.nmLKCH,.nmLKCH:visited{color:black;text-decoration:none}
+.nmLSH,.nmLSH:visited,.nmLSH:hover,.nmLSH:active,.nmLSCH,.nmLSCH:visited,.nmLSCH:hover,.nmLSCH:active,.nmLB,.nmLB:visited,.nmLBH,.nmLBH:visited,.nmLBC,.nmLBC:visited,.nmLBCH,.nmLBCH:visited,.nmLBD,.nmLBD:visited,.nmLBD:hover,.nmLBD:active,.nmLBDH,.nmLBDH:visited,.nmLBDH:hover,.nmLBDH:active{color:#000088;text-decoration:none}
+.nmLE,.nmLE:visited,.nmLE:hover,.nmLE:active,.nmLEH,.nmLEH:visited,.nmLEH:hover,.nmLEH:active,.nmLF,.nmLF:visited,.nmLF:hover,.nmLF:active,.nmLFH,.nmLFH:visited,.nmLFH:hover,.nmLFH:active{color:#000099;text-decoration:none}
+.nmLSC,.nmLSC:visited,.nmLSC:hover,.nmLSC:active{color:#AAAAAA;text-decoration:none}
+.nmLB:hover,.nmLBH:hover,.nmLBC:hover,.nmLBCH:hover,.nmLK:hover,.nmLKH:hover,.nmLKC:hover,.nmLKCH:hover,.nmLKCH:active{color:#CC0000;text-decoration:underline}
+.nmLB:active,.nmLBH:active,.nmLBC:active,.nmLBCH:active,.nmLK:active,.nmLKH:active,.nmLKC:active,.nmLKCH:active,.nmLKCH:active{color:#CC0000;text-decoration:none}
+.nmLS,.nmLS:visited,.nmLS:hover,.nmLS:active,.nmLKD,.nmLKD:visited,.nmLKD:hover,.nmLKD:active,.nmLKDH,.nmLKDH:visited,.nmLKDH:hover,.nmLKDH:active{color:white;text-decoration:none}
+.nmTS{border-bottom:1px solid #66AAFF}
+.nmTB,.nmTK,.nmTX{border-top:1px solid #66AAFF}
+.nmTK{border-left:3px solid #CC0000;border-bottom:3px solid #CC0000}
+.nmTX{background-color:#000066;line-height:8px}
+.nmTF{border-left:1px solid white;border-top:1px solid white;border-right:1px solid #333333;border-bottom:1px solid #333333}
+.nmF{position:absolute;left:-1000;top:-1000;width:322;height:800}
+.nmX{position:absolute;z-index:1000;left:0;top:0;height:0;line-height:0px}
+
+/* XMLBUDDY ESHOP*/
+A.eSextTitle,.eSextPrice,.eSextSale,A.eSextMerchant,.eSextDesc,.eSextPromo{font:11px Verdana, sans-serif;}
+A.eSextTitle,.eSextPrice,.eSextSale{font-weight:bold;}
+.eSextSale,.eSextPromo{color: #ff6600;}
+.eSextPromo{font-size:10px}
+
+/* MARQUEE DEFAULTS*/
+.BNMq,.BNMq a,.BNMq a:visited,.BNMq a:visited:hover,.BNMq a:active
+{
+	text-decoration:none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+ 	line-height: 140%;
+ 	font-weight: bold;
+ 	color: #ffffff
+}
+.BNMq{font-size:80%;}
+.BNMq a:hover,.BNMq a:visited:hover {text-decoration:underline;}
+
+.FMq,.FMq a,.FMq a:visited,.FMq a:visited:hover,.FMq a:active
+{
+	text-decoration:none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	line-height: 125%;
+	font-weight: bold;
+	color: #000000;
+}
+.FMq{font-size: 65%;}
+.FMq a:hover,.FMq a:visited:hover {text-decoration:underline;}
+
+/* Links */
+.bb a, .bb a:visited, bb a:visited:hover, .bb a:active,.bb a:hover
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration:none;
+}
+.bb{font-size:65%;line-height: 130%;}
+.bb a:visited, bb a:visited:hover{color: #666666;}
+
+.linkSmall,.linkSmallHover,.linkSmallActive ,.linkSmallVisited{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 65%;
+	font-weight: normal;
+	color: #000000;
+	line-height: 130 %
+}
+/* Local Affiliate */
+.localAffiliate{font-family: Verdana,Arial, Helvetica, sans-serif; ;font-size: 120%;color: 000066;font-weight:bold; line-height: 120%;}
+
+.linkSmallHover{color: #CC0000;text-decoration: underline }
+
+.linkSmallActive {color: #CC0000;}
+
+.linkSmallVisited {color: 999999;}
+
+/* EShop SideBar */
+.AdEShopMain,.AdUnderEShop {border-left:solid 1px #CCCCCC;border-right:solid 2px #333333;border-bottom:solid 2px #333333;padding:10 10 2 10;text-align:center;}
+.AdEShopHead{text-align:center;background-color:darkgreen;padding:2 10 4 10;}
+
+/* Election Styles */
+.leadrow{background-color:#999999;}
+.candidate{background-color:#224477;text-align:center;}
+.colnorm{background-color:#FFFFFF;}
+.colalt1{background-color:#EEEEEE;text-align:right;}
+.colalt2{background-color:#E0E0E0;text-align:right;}
+.resultsData{text-align:right;}
+.w66 {width:66px;}
+.w40 {width:40px;}
+.B {font-weight:bold;}
+.HL {color:#990000;}
+.AR {text-align:right;}

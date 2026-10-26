@@ -1,0 +1,761 @@
+/** general/structure **/
+body
+	{
+	background-color: #fff;
+	font-size: 11px;
+	}
+	
+body, p, a, ul, ol, li
+	{
+	font-family: Verdana, Arial, sans-serif;
+	}
+	
+img
+	{
+	border: none;
+	}
+	
+img.blackborder
+	{
+	border: 1px solid #000;
+	}
+
+a
+	{
+	color: #214ac6;
+	background-color: transparent;
+	}
+	
+#header form, #header input, #header select, #header p, ul, li, ol
+	{
+	margin: 0;
+	padding: 0;
+	}
+	
+#header
+	{
+	width: 746px;
+	margin: 0 auto;
+	padding: 8px 0 0 0;
+	position: relative;
+	text-align: left;
+	vertical-align: bottom;
+	background-color: #ccc;
+	color: #000;
+	}
+	
+.leftcol
+	{
+	background-color: #ccc;
+	width: 140px;
+	}
+	
+.content
+	{
+	width: 440px;
+	}
+	
+.rightcol
+	{
+	width: 162px;
+	}
+	
+#footer
+	{
+	width: 746px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+	clear: both;
+	text-align: center;
+	}	
+	
+.borders
+	{
+	display: none;
+	}
+	
+/** header **/
+#skipnav
+	{
+	display: none;
+	}
+	
+#logo
+	{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 47px;
+	width: 140px;	
+	}
+	
+/* Hack to display for only IE5 Mac */
+*>html #logo 
+	{
+	top: 3px;
+	}
+*>html #header 
+	{
+	height: 50px;
+	}
+/* End hack */
+
+#searchcontainer
+	{
+	padding: 0;
+	margin: 0 0 0 150px;
+	font-size: 11px;
+	}
+	
+#selPrograms .heading
+	{
+	font-weight:bold;
+	}	
+	
+#searchtext
+	{
+	float: right;
+	padding: 0 10px 0 0;
+	} 
+
+#nav
+	{
+	padding: 10px 0 2px 150px;
+	text-transform: uppercase;
+	clear: both;
+	font-size: 10px;
+	}
+	
+/* hack for ie */
+* html body ul#nav	
+	{
+	padding-top: 0;
+	}
+/* end hack */
+
+#nav li
+	{
+	display: inline;
+	}
+	
+#nav a
+	{
+	margin:0 14px 0 0;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+	background-color: transparent;	
+	}
+	
+.button
+	{
+	border-bottom: #0e3fa7 2px solid;
+	border-right: #0e3fa7 2px solid;
+	border-top: #739aee 2px solid;
+	border-left: #739aee 2px solid;
+	color: #fff;	
+	font-size: 11px;
+	background-color: #3163ce;	
+	}
+	
+#selectprograms
+	{
+	float: left;
+	width: 325px;
+	}
+	
+/** left **/
+.leftcol ul
+	{
+	list-style: none;
+	}
+	
+#localization
+	{
+	padding: 5px 4px 0 4px;
+	text-align: center;
+	font-size: 10px;
+	}
+	
+#localization img
+	{
+	margin-top: 0;
+	margin-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	}
+	
+#localization h4
+	{
+	margin: 0 0 8px 0;
+	color: #666;
+	background-color: transparent;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: center;	
+	}
+	
+#localization form p
+	{
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	}
+	
+#localization a
+	{
+	font-size: 10px;
+	font-weight: bold;
+	color: #000;
+	background-color: transparent;	
+	}
+	
+#localization ul
+	{
+	margin: 5px 0 5px 2px;	
+	text-align: left;
+	}
+	
+#localization li
+	{
+	margin: 0 0 5px 0;
+	}
+	
+#localizationfind
+	{
+	margin: 8px 0 0 70px;
+	}
+	
+#localization #txtSearchValue
+	{
+	width: 117px;
+	}
+	
+#topics 
+	{
+	margin: 0 4px 15px 4px;
+	background-color: #888;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	}
+	
+#topics li a 
+	{
+	display: block;
+	width: 100%;
+	padding: 5px 0 5px 3px;
+	background-color: transparent;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 11px;
+	}
+	
+/*	LEFT NAV SUBTOPICS - CSS HIDING
+	--------------------------------------------------------------- */
+
+
+#topics li ul
+	{
+	display: none;
+	}
+	
+	
+html>body #topics li a 
+	{
+	width: auto;
+	}
+	
+#topics li a:hover 
+	{
+	background-color: #666;
+	color: #fff;
+	}
+	
+#topics .last
+	{
+	border: none;
+	}
+	
+#programs, #housekeeping, #npranywhere
+	{
+	margin: 12px 4px;
+	}
+	
+#programs ul, #housekeeping ul, #npranywhere ul
+	{
+	padding: 2px;
+	}
+	
+#programs li, #housekeeping li, #npranywhere li
+	{
+	line-height: 14px;
+	margin: 0 0 .5em 0;
+	}
+	
+#programs
+	{
+	color: #000;
+	background-color: #fff;
+	}
+	
+#housekeeping,
+#npranywhere
+	{
+	color: #000;
+	background-color: #efefef;
+	}
+	
+#programs a, #housekeeping a, #npranywhere a
+	{
+	color: #000;
+	background-color: transparent;
+	font-size: 10px;
+	}
+	
+#programs li.more
+	{
+	margin: 12px 0 6px 0;
+	font-weight: bold;
+	font-size: 10px;
+	}
+	
+#audiolinks
+	{
+	margin: 0 4px; 
+	background: transparent url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/npr_scifri_files/images/icon_nav_audio_hrule_10.gif) repeat-x bottom left;	
+	}
+	
+#audiolinks p
+	{
+	font-size: 10px;
+	background: transparent url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/npr_scifri_files/images/icon_nav_audio_hrule_10.gif) repeat-x top left;	
+	padding: 5px 0;
+	margin: 0;
+	}
+	
+#audiolinks .audio
+	{
+	display: block;
+	font-weight: bold;
+	font-size: 10px;	
+	color: #000;
+	background-image: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/npr_scifri_files/images/icon_nav_audiostream.gif);	
+	background-repeat: no-repeat;
+	background-position: left middle;
+	padding: 0 0 0 18px;
+	text-decoration: none;
+	}
+	
+#audiolinks span
+	{
+	margin-left: 18px;
+	}
+	
+/* May be extraneous, MYoch 4/19/04 */
+#textonly a
+	{
+	display: block;	
+	margin-top: 10px;
+	padding: 4px;
+	color: #666;
+	background-color: transparent;
+	font-size: 11px;
+	}
+	
+/** footer **/
+#nav2, #legal
+	{
+	margin: 12px auto;
+	clear: both;
+	}
+	
+#nav2
+	{
+	text-transform: uppercase;
+	}
+	
+#nav2 li, #legal li
+	{	
+	display: inline;
+	font-size: 11px;
+	}
+	
+#nav2 li a, #legal li a
+	{
+	margin: 0 6px;
+	font-size: 11px;
+	}
+	
+/** stories **/
+.pagetitle
+	{
+	font-size: 14px;
+	font-weight: bold;
+	}
+
+.subtitle
+	{
+	font-size: 12px;
+	font-weight: normal;
+	}
+	
+p, .text, ul, ol
+	{
+	font-size: 12px;
+	line-height: 16px;
+	}
+	
+p.subnav
+	{
+	line-height: 12px;
+	margin: 0;
+	padding: 0;
+	}
+
+p.subnav a
+	{
+	font-weight: bold;
+	font-size: 10px;
+	color: #214ac6;
+	background-color: transparent;
+	}
+	
+.caption
+	{
+	font-size: 10px;
+	}
+	
+.pullquote
+	{
+	color: #039;
+	background-color: transparent;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 20px;
+	}
+	
+/** news page **/
+.morelink
+	{
+	font-size: 12px;
+	}
+	
+/** archive page notices **/
+.redcaption
+	{
+	font-size: 11px;
+	color: #f00;
+	background-color: transparent;
+	}
+	
+/** rundowns **/
+a.headline 			
+	{  
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 12px;
+	}
+	
+.teaser
+	{
+	font-size: 11px;
+	}
+	
+a.teaser
+	{
+	font-size: 10px;
+	}
+	
+p.teaser
+	{
+	line-height: 14px;
+	}
+	
+/** calendars **/
+.teaserlink
+	{
+	font-size: 11px;
+	text-decoration: none;
+	}
+	
+.teaserlink:hover
+	{
+	text-decoration: underline;
+	}
+	
+/** photo gallery **/
+body.white
+	{ 
+	background-color: #fff; 
+	font-family:Verdana, Sans Serif;
+	}
+	
+/** right/left side misc **/
+.rightcontent
+	{
+	font-size: 10px;
+	}
+	
+.rightcontentlinklight
+	{
+	color: #333;
+	background-color: transparent;
+	}
+	
+.leftbarlink
+	{
+	color: #fff;
+	background-color: transparent;
+	font-size: 10px;
+	font-weight: bold;
+	}
+	
+.leftcontentlinklightu
+	{
+	color: #333;
+	background-color: transparent;
+	font-size: 10px;	
+	}
+	
+.leftcol
+	{
+	text-align: left;
+	}
+	
+	
+/** email form **/
+
+#emailform
+	{
+	margin: 0px 3px;
+	}
+
+.content div.emailtop img
+	{
+	display: block;
+	float: none;
+	clear: both;
+	margin: 5px 0;
+	padding: 0;
+	}
+
+.email_box_outline, .email_box_header
+	{
+	background-color: #9c9;
+	color: #000;
+	}
+	
+.email_box_background
+	{
+	background-color: #fff;
+	color: #000;
+	}
+	
+.email_box_text
+	{
+	font-size: 10px;
+	color: #000;
+	background-color: transparent;
+	}
+	
+.email_box_title
+	{
+	font-size: 10px;
+	font-weight: bold;
+	color: #000;
+	background-color: transparent;
+	}
+	
+.email_box_link
+	{
+
+	}
+	
+.emailFormTable
+	{
+	width: 100%;
+	border: none;
+	}
+	
+.emailFormTable td
+	{
+	border-bottom: 1px solid #9c9;
+	padding: 6px 0;
+	}
+	
+.emailFormTable tr.first td
+	{
+	border-top: 2px solid #9c9;
+	border-bottom: 2px solid #9c9;
+	}
+	
+.emailFormTable tr.last td
+	{
+	border: none;
+	}
+	
+.list
+	{
+	font-size: 11px;
+	}
+	
+/*	center - stories
+	--------------------------------------------------------------- */
+
+.content div.story img
+	{
+	margin: 0 8px 3px 0;
+	float: left;
+	}
+	
+.content div.story
+	{
+	margin: 0 0 10px 0;
+	float: left;
+	}
+	
+/* HIDE no float and clear both from \ IE5 mac */
+.content div.story
+	{
+	margin: 0 0 15px 0;
+	float: none;
+	clear: both;
+	}
+	
+.content .intro
+	{
+	font-size: 13px;
+	margin-bottom: 15px;
+	}
+	
+.content div.story h3.slug
+	{
+	margin: 0;
+	padding: 0;
+	}
+	
+.content div.story h4
+	{
+	margin: 0 0 5px 0;
+	padding: 0;
+	}
+	
+.content div.story img
+	{
+	float: left;
+	clear: none;
+	margin: 0 5px 5px 0;
+	}	
+
+.content div.story p
+	{
+	line-height: 14px;
+	font-size: 12px;
+	height: auto !important;
+	height: 1px;  /* added display: table; height: 0 to force display like a table, no wrapping */
+	}
+	
+/* hack to display as table for Mozilla browsers */
+.content div.story p:lang(en) {
+   display: table;
+   }
+	
+.content div.story ul
+	{
+	list-style-type: disc;
+	list-style-position: inside;
+	}
+	
+	
+	
+/* editorial promos in the middle column */
+
+.content div.promo
+	{
+	margin: 0 0 15px 0; 
+	border: 1px solid #ccc; 
+	float: none; 
+	clear: both;
+	padding: 10px;	
+	}
+	
+.content div.promo p
+	{
+	margin: 0;
+	padding: 0;
+	}
+	
+.content div.promo p a
+	{
+	font-weight: bold;
+	text-decoration: none;
+	}
+	
+.content div.promo ul
+	{
+	display: block;
+	}
+	
+.content div.promo ul li
+	{
+	display: block;
+	}
+	
+
+/*	LISTS OF ELEMENTS
+	---------------------------------------------------- */
+
+a.iconlink
+	{
+	display: block;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding: 2px 0 2px 22px;
+	}
+	
+h3 a.iconlink,
+h4 a.iconlink
+	{
+	padding: 0 0 2px 22px;
+	}
+	
+ul li a.iconlink
+	{
+	display: block;
+	padding: 2px 0 2px 22px;
+	margin: 0;
+	line-height: 110%;
+	text-decoration: none;
+	}
+	
+a.iconlink:hover
+	{
+	text-decoration: underline;
+	}
+	
+/* Hack for IE 5.0 to show link icons in lists correctly */
+
+a.iconlink/* */ { display: inline-block; }
+ul li a.iconlink/* */ { display: inline-block; }
+
+a.xml,
+ul li a.xml
+	{
+	background-image: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/npr_scifri_files/chrome/icon_xml.gif);	
+	padding: 2px 0 2px 42px;
+	}
+	
+	
+/* spacing between rows */
+.spacer
+	{
+	clear: both;
+	/* added height and font-size to squash non-breaking space added in some divs for IE 5.01 */
+	line-height: 1px;
+	font-size: 1px;
+	}

@@ -1,0 +1,108 @@
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #0066FF;
+
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #666666;
+	text-decoration: none;
+
+
+}
+div, p, th, td, li, dd, dl, dt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+ul {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.pullquote {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #666666;
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.relatedlink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.figurecaption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+.mission {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #999999;
+}
+.posted {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-variant: normal;
+	color: #666666;
+}
+.imagecredit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+}
+.navlink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+    color: #000000
+}
+.navlinkon {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #0099FF;
+	text-decoration: none;
+}
+
+.hlinks {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.featured {
+	font: bold 24px Arial, Helvetica, sans-serif;
+	color: #0099FF;
+}
+.headline {
+	font: bold normal 16px Arial, Helvetica, sans-serif;
+}
+.feature2 {
+	font: bold 16px Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+hr {
+	color: #000000;
+	line-height: 1px;
+
+}
+.rightcolumnlinks {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #0099CC;
+	text-decoration: none;
+
+}

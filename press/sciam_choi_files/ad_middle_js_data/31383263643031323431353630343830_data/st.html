@@ -1,0 +1,7 @@
+function write_script(survey_num,site,code,randnum) {
+str="<script language=\"JavaScript1.1\" src=http://amch.questionmarket.com/adsc/d"+survey_num+"/"+site+"/"+code+"/decide.php?survey_num="+survey_num+"&site="+site+"&code="+code+"&randnum="+randnum+">";
+    str= str + "</scr"+"ipt>";
+	//alert(str);
+    document.write(str);
+    document.close();
+}document.onLoad=write_script(171959,6,6831256,109379069)

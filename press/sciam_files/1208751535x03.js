@@ -1,0 +1,1 @@
+document.write ('<A HREF="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/www.sciamdigital.com/1254769760/x03/sciam.com/d_2004-11_subs_ad/dig1.gif/31383263643031323431613066306130?" target="_top"><IMG SRC="http://a248.e.akamai.net/6/800/1129/1100493706/oascentral-s.realmedia.com/RealMedia/ads/Creatives/sciam.com/d_2004-11_subs_ad/dig1.gif"  ALT=""  BORDER="0"></A>');

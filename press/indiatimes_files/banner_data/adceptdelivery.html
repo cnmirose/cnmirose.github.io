@@ -1,0 +1,109 @@
+<html><head><!-- saved from url=(0022)http://internet.e-mail -->
+        <script language="javascript">
+
+        function Popup()
+        {
+
+         var loc_arg_list = new Array();
+         var loc_string=location.search.substring(1,location.search.length);
+
+        loc_arg_list = loc_string.split('&');
+
+        var random_key;
+        var host_name;
+        var url_name;
+        var adtype;
+        var arg_string;
+        var redirection_url;
+
+            var creative_url='timesjobs/2608/popup.gif';
+            var creative_width=350;
+            var creative_height=280;
+            var creative_type='GIF';
+            var popup_title='';
+	
+
+          var server_name=location.hostname;
+
+        loc_arg_list = loc_string.split('&');
+
+        for (count=0;count<loc_arg_list.length;count++)
+        {
+                var key_val = new Array();
+                key_val = loc_arg_list[count].split("=");
+                if (key_val[0] == 'random_key')
+                        random_key=key_val[1];
+                else
+                        if (key_val[0] == 'host_name')
+                                host_name=key_val[1];
+                        else
+                                if (key_val[0] == 'url_name')
+                                        url_name=key_val[1];
+                                else
+                                        if (key_val[0] == 'adtype')
+                                                adtype=key_val[1];
+
+
+
+        }
+
+
+        arg_string = 'random_key='+random_key;
+        arg_string += '&host_name='+host_name;
+        arg_string += '&url_name='+url_name;
+        arg_string += '&adtype='+adtype;
+        arg_string += '&server_name='+server_name;
+        arg_string += '&creative_url='+creative_url;
+        arg_string += '&creative_type='+creative_type;
+        arg_string += '&popup_title='+popup_title;
+	arg_string += '&creative_width='+creative_width;
+	arg_string += '&creative_height='+creative_height;
+
+
+	window.name = "main";
+
+	if (window.screen)
+	{
+
+	  var ah = screen.availHeight - 70 ;
+	  var aw = screen.availWidth - 25;
+
+ 	}
+	
+
+	var height = 280;
+	var width = 350;
+
+	var xc = 300;
+	var yc = 306;
+
+	var str = "height=" + height + ",innerHeight=" + height;
+	str += ",width=" + width + ",innerWidth=" + width;
+	if (window.screen) {
+	  var xc = (aw - width);
+	  var yc = (ah - height);
+
+	  str += ",left=" + xc + ",screenX=" + xc;
+	  str += ",top=" + yc + ",screenY=" + yc;
+
+
+	}
+	
+	str += ',resizable=yes';
+
+
+
+                redirection_url="http://"+server_name+"/cgi-bin/OTHERS/Popup.cgi?"+arg_string;
+
+	var popUnder = null;
+
+	popUnder=window.open(redirection_url,"newwin",str);
+	
+	window.focus();
+
+        }
+
+        </script></head>
+
+<body onload="javascript:Popup();">
+</body></html>

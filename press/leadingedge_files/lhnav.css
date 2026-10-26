@@ -1,0 +1,73 @@
+/*left hand navigation background colors*/
+hr {color : #ffffff}
+
+.navblue { color : #333366; text-decoration : none;}
+a.navblue {color : #333366; text-decoration : none;}
+a:active.navblue {color : #333366; text-decoration : none;}
+a:visited.navblue {color : #333366; text-decoration : none;}
+a:hover.navblue { color : #9999cc; text-decoration : none;}
+
+.currenttxt {color : #ffffff; text-decoration : none;}
+a.currenttxt {color : #ffffff; text-decoration : none;}
+a:active.currenttxt {color : #ffffff; text-decoration : none;}
+a:visited.currenttxt {color : #ffffff; text-decoration : none;}
+a:hover.currenttxt { color : #CC66CC; text-decoration : none;}
+
+.religiontxt {color : #ffffff; text-decoration : none;}
+a.religiontxt {color : #ffffff; text-decoration : none;}
+a:active.religiontxt {color : #ffffff; text-decoration : none;}
+a:visited.religiontxt {color : #ffffff; text-decoration : none;}
+a:hover.religiontxt {color : #9999ff; text-decoration : none;}
+
+.artstxt {color : #ffffff; text-decoration : none;}
+a.artstxt {color : #ffffff; text-decoration : none;}
+a:active.artstxt {color : #ffffff; text-decoration : none;}
+a:visited.artstxt {color : #ffffff; text-decoration : none;}
+a:hover.artstxt {color : #ff6666; text-decoration : none;}
+
+.sciencetxt {color : #ffffff; text-decoration : none;}
+a.sciencetxt {color : #ffffff; text-decoration : none;}
+a:active.sciencetxt {color : #ffffff; text-decoration : none;}
+a:visited.sciencetxt {color : #ffffff; text-decoration : none;}
+a:hover.sciencetxt {color : #99ccff; text-decoration : none;}
+
+.comedytxt {color : #ffffff; text-decoration : none;}
+a.comedytxt {color : #ffffff; text-decoration : none;}
+a:active.comedytxt {color : #ffffff; text-decoration : none;}
+a:visited.comedytxt {color : #ffffff; text-decoration : none;}
+a:hover.comedytxt {color : #FF99FF; text-decoration : none;}
+
+.historytxt {color : #ffffff; text-decoration : none;}
+a.historytxt {color : #ffffff; text-decoration : none;}
+a:active.historytxt {color : #ffffff; text-decoration : none;}
+a:visited.historytxt {color : #ffffff; text-decoration : none;}
+a:hover.historytxt {color : #99CC66; text-decoration : none;}
+
+.discussiontxt {color : #ffffff; text-decoration : none;}
+a.discussiontxt {color : #ffffff; text-decoration : none;}
+a:active.discussiontxt {color : #ffffff; text-decoration : none;}
+a:visited.discussiontxt {color : #ffffff; text-decoration : none;}
+a:hover.discussiontxt {color : #ffff00; text-decoration : none;}
+
+.navwhite {color : #ffffff; text-decoration : none;}
+a.navwhite {color : #ffffff; text-decoration : none;}
+a:active.navwhite {color : #ffffff; text-decoration : none;}
+a:visited.navwhite {color : #ffffff; text-decoration : none;}
+a:hover.navwhite {color : #ffffff; text-decoration : none;}  
+
+.default {background : #e7e7e7; text-decoration : none;}
+.progs {text-decoration : none; background : #9999cc;}
+.header {text-decoration : none; background : #CCCCE3;}
+.current {text-decoration : none; background : #660066;}
+.religion {text-decoration : none; background : #333399;}
+.arts {text-decoration : none; background : #990000;}
+.science {text-decoration : none; background : #006699;}
+.comedy { text-decoration : none; background : #cc3399;}
+.history { text-decoration : none; background : #336600;}
+.discussion { text-decoration : none; background : #CC9900;}
+.discussion2 { text-decoration : none; background : #E0AE18;}	
+.docu { text-decoration : none; background : #cc6600;}
+.footer {color : #333366;}
+.footerbg { background : #333366;}
+
+/*end left hand navigation background colors*/

@@ -1,0 +1,334 @@
+/* -- DEFAULT PAGE STYLE -- */
+
+body {font-size:12px;font-family:arial,helvetica;text-decoration:none; background-color:#fff; color:#000000; margin:4px;}
+td {font-size:12px;font-family:arial,helvetica;}
+th {font-size:11px;font-family:arial,helvetica;}
+form {margin-top:0px;margin-bottom:0px;}
+input {font-size:12px;font-family:arial,helvetica;}
+select {font-size:12px;font-family:arial,helvetica;}
+textarea {font-size:12px;font-family:arial,helvetica;}
+li { margin: 0px 0px 0px 0px; }
+ul { margin: 0px 0px 0px 20px; }
+
+/* -- DEFAULT LINKS --*/
+a:link {color:#c33;text-decoration:none;}
+a:visited {color:#c33;text-decoration:none;}
+a:active {color:#c33;text-decoration:none;}
+a:hover {color:#c33;text-decoration:underline;}
+
+/* -- HEADER -- */
+.header {background-color:#000000;} /* border-style:solid; border-color:#cc99ff; border-width:2px;}*/
+
+/* -- TOP NAV -- */
+.top-nav {background-color:#000000; padding-top:6px; padding-bottom:6px;}
+.topnavtext,
+.topnavtext a:link,
+.topnavtext a:visited,
+.topnavtext a:active {font-size:11px; color:#ffffff; font-weight:bold; text-decoration:none;}
+.topnavtext a:hover {font-size:11px; color:#ffffff; font-weight:bold; text-decoration:underline;}
+
+/* -- LEFT NAVIGATION STYLE -- */
+
+.leftnav-box {padding-top:5px; padding-bottom:5px; padding-left:0px; padding-right:2px; margin-top:0px; background-color:#e1e1e1;}
+.leftnav-nolink {font-weight:bold; font-size:12px; color:#ff0000; text-decoration:none;}
+.leftnav-hline {background-color:#FBD099; border-style:solid; border-color:#FBD099; 
+	border-top-width:10px; border-bottom-width:0px; border-right-width:8px; border-left-width:0px;}
+
+.leftnav0,
+.leftnav0 a:link,
+.leftnav0 a:visited,
+.leftnav0 a:active	{ margin-bottom:10px; font-weight:bold; font-size:12px; color:#39c; text-decoration:none;}
+.leftnav0 a:hover	{text-decoration:underline;}
+
+.leftnav1,
+.leftnav1 a:link,
+.leftnav1 a:visited,
+.leftnav1 a:active	{font-size:10px; color:#000000; text-decoration:none; font-weight:normal;}
+.leftnav1 a:hover	{ text-decoration:underline;}
+
+.leftnav-pc	{margin-left:7px; font-size:10px; color:#000000; text-decoration:none; font-weight:normal;}  /*Premium conent*/
+
+/* -- ARTICLES -- */
+.content {padding-left:6px; padding-right:6px;}
+
+.article-box			{/*border-style:solid; border-color:#aaaaaa; border-width:1px;*/ background-color:#fff; padding:5px; color:#000000; margin-top:4px;}
+.article-section		{margin-top:20px; /*margin-bottom:10px;*/}
+
+.article-headline		{font-size:16px; color:#39c; text-decoration:none; font-weight:bold;}
+.article-byline			{font-size:12px; color:#000; text-decoration:none; font-weight:bold;}
+.article-author			{font-size:12px; color:#000; text-decoration:none; font-style:italic;}
+.article-sectionhead	{font-size:12px; color:#39c; text-decoration:none; font-weight:bold;}
+.article-sectiontext	{font-size:12px; color:#000; text-decoration:none;}
+
+.article-image-box		{/*border-style:solid; border-color:#808080; border-width:2px; margin:3px; background-color:#C0C0C0;*/}
+.article-image-cell		{padding:3px;}
+
+.article-pdf-box		{padding:2px;}
+.article-pdfinfo-box	{border-style:solid; border-color:#bbb; border-width:0px; background-color:#eee; padding:2px; margin-top:3px;}
+.article-issueinfo		{font-size:12px; color:#000000; text-decoration:none; padding-top:20px;}
+
+.article-abstract-sectionhead	{font-size:12px; color:#39c; text-decoration:none; font-weight:bold;}
+.article-abstract-sectiontext	{font-size:12px; color:#000; text-decoration:none;}
+
+.photo-caption			{font-size:10px; color:#000; text-decoration:none; }
+.photo-caption a:link, 
+.photo-caption a:visited, 
+.photo-caption a:active	{font-size:10px; color:#c33; text-decoration:none;}
+.photo-caption a:hover	{font-size:10px; color:#c33; text-decoration:underline;}
+.photo-credit			{font-size:10px; color:#000; text-decoration:none; font-style:italic;}
+
+/* -- SECTION INDEXS -- */
+.section-box		{/*border-style:solid; border-color:#FFFF40; border-width:2px;*/ background-color:#fff; padding:5px; margin-top:4px;} 
+.section-head			{font-size:16px; color:#39c; text-decoration:none; font-weight:bold;}
+.section-head a:link,
+.section-head a:visited,
+.section-head a:active	{font-size:16px; color:#c33; text-decoration:none; font-weight:bold;}
+.section-head a:hover	{font-size:16px; color:#c33; text-decoration:underline; font-weight:bold;}
+
+.section-expand	{font-size:12px; color:#000; font-weight:bold; /*font-style:italic;*/}
+.section-shortdesc	{font-size:12px; color:#000; font-weight:normal; /*font-style:italic;*/}
+.section-longdesc	{font-size:12px; color:#000; font-weight:normal; /*font-style:italic;*/}
+
+.section-article-headline,
+.section-article-headline a:link,
+.section-article-headline a:visited,
+.section-article-headline a:active	{font-size:12px; color:#c33; text-decoration:none; font-weight:bold;}
+.section-article-headline a:hover	{font-size:12px; color:#c33; text-decoration:underline; font-weight:bold;}
+.section-article-author	{font-size:11px; color:#000000; font-style:normal;}
+.section-article-byline	{font-size:11px; color:#000000; text-decoration:none; font-weight:normal;}
+
+.section-current	{font-size:20px; color:#39c; text-decoration:none; font-weight:bold; padding-bottom:5px;}
+.section-current-issuename	{font-size:16px; color:#000; text-decoration:none; font-weight:bold; padding-bottom:5px;}
+.section-archived	{font-size:20px; color:#39c; text-decoration:none; font-weight:bold; padding-bottom:5px;}
+.section-archived-issuename {font-size:16px; color:#000; font-weight:bold;}
+.section-archived-year {font-size:12px; color:#000; font-weight:bold;}
+.section-archived-box		{margin-top:10px;}
+
+/* -- ISSUE TOC -- */
+.issue-magtitle	{font-size:36px; color:#000; text-decoration:none; font-weight:bold;}
+.issue-section	{font-size:22px; color:#39c; text-decoration:none; font-weight:bold;}
+.issue-subsection	{font-size:14px; color:#000; text-decoration:none; font-weight:bold;}
+.issue-article-headline	{font-size:14px; color:#000; text-decoration:none; font-weight:bold;}
+
+.issue-article-author	{font-size:12px; color:#000000; text-decoration:none; font-weight:normal;}
+.issue-article-summary	{font-size:12px; color:#000000; text-decoration:none; font-weight:normal;}
+.issue-overline	{font-size:10px; color:#39c; text-decoration:none; font-weight:bold;}
+.issue-link	a:link,
+.issue-link	a:visited	{font-size:10px; color:#c33; text-decoration:none; font-weight:normal;}
+.issue-link	a:hover		{font-size:10px; color:#c33; text-decoration:underline; font-weight:normal;}
+
+
+/* -- FOOTER STYLE -- */
+.footer {background-color:white; margin-top:20px; margin-left:5px;}
+
+.footer-text,
+.footer-text a:link,
+.footer-text a:visited,
+.footer-text a:active 	{font-size:10px; color:#000000; text-decoration:none;}
+.footer-text a:hover 	{font-size:10px; color:#000000; text-decoration:underline;}
+
+.footer-text-2,
+.footer-text-2 a:link,
+.footer-text-2 a:visited,
+.footer-text-2 a:active 	{font-size:10px; color:#ffffff; text-decoration:none;}
+.footer-text-2 a:hover 	{font-size:10px; color:#ffffff; text-decoration:underline;}
+
+
+.paging {font-size:10pt;}
+
+/* -- REGISTER BOX -- */
+.register-box {background-color:#E1E1E1; border-top-style:dashed; border-bottom-style:dashed; border-color:#555; border-width:1px; margin-top:6px;}
+.register-content {padding-left:4px; padding-right:4px; padding-top:2px; padding-bottom:2px;}
+.small-input {font-size:9px;}
+
+
+/* -- RIGHT SIDE ADS -- */
+.ads-box	{color:#000000; font-size:11px;  margin-top:5px; }
+.ads-box-top {color:#000000; font-size:11px; padding-top:10px; font-weight:bold;}
+.ads-box-bottom {padding-bottom:10px;}
+
+.ads-textbox-headline	{color:#000; font-weight:bold; font-size:11px;}
+.ads-textbox-content	{border-style:solid; border-color:#000; border-width:1px; padding:2px; font-size:10px;}
+
+.right-nav {background-color:White;}
+
+
+/* -- BREADCRUMBS -- */
+.breadcrumbs-box {margin-top:4px; background-color:#fff; /*border-style:solid; border-color:#eee; border-width:1px;*/ padding-left:2px; padding-bottom:2px;}
+.breadcrumbs {font-size:10px; color:#000;}
+.breadcrumbs a:link, .breadcrumbs a:visited, .breadcrumbs a:active { font-size:10px; color:#000; text-decoration:underline;}
+.breadcrumbs a:hover { font-size:10px; color:#39c; text-decoration:underline;}
+
+
+/*-- HOMEPAGE MODULES --*/
+.click-here { font-weight:bold;}
+.line {margin:3px; background-color:Blue; border-width:3px; border-style:solid; border-color:#ffffff;}
+.h-spacer { border-style:solid; border-color:#4a8cff;}
+
+	/* General */
+	.module-self {margin-top:5px;}
+	.module-header {}
+	.module-content {background-color:#fff; padding:5px;}
+
+	.module-headline {font-size:12px; font-weight:bold; color:black;}
+	.module-byline {font-size:12px; color:gray; font-weight:bold;}
+	.module-sectionhead {font-size:12px; color:black;font-weight:bold;}
+	.module-sectiontext {font-size:12px; color:black; padding-bottom:7px; /* this could be interesting??? text-align:justify;*/}
+	.module-sectiontext a:link, 
+	.module-sectiontext a:visited {font-size:12px; color:#c33; text-decoration:none;font-weight:bold;}
+	.module-sectiontext a:hover {text-decoration:underline;}
+	
+	/* On-line Extra */
+	.extra-module-self {margin-top:20px;}
+	.extra-module-header {}
+	.extra-module-content {background-color:#fff; padding:5px;}
+
+	.extra-module-headline {font-size:12px; font-weight:bold; color:black;}
+	.extra-module-byline {font-size:12px; color:gray; font-weight:bold;}
+	.extra-module-sectionhead {font-size:12px; color:black;font-weight:bold;}
+	.extra-module-sectiontext {font-size:12px; color:black; padding-bottom:7px; /* this could be interesting??? text-align:justify;*/}
+	.extra-module-sectiontext a:link, 
+	.extra-module-sectiontext a:visited {font-size:12px; color:#c33; text-decoration:none;font-weight:bold;}
+	.extra-module-sectiontext a:hover {text-decoration:underline;}
+
+	/* Top Feature */
+	.top-module-self {margin-top:5px;}
+	.top-module-header {}
+	.top-module-content {background-color:#fff; padding:3px;}
+
+	.top-module-headline {font-size:14px; font-weight:bold; color:black;}
+	.top-module-byline {font-size:12px; color:gray; font-weight:bold;}
+	.top-module-sectionhead {font-size:12px; color:black;font-weight:bold;}
+	.top-module-sectiontext {font-size:12px; color:black; }
+	.top-module-sectiontext a:link, 
+	.top-module-sectiontext a:visited	{font-size:12px; color:#c33; text-decoration:none;font-weight:bold;}
+	.top-module-sectiontext a:hover {text-decoration:underline;}
+	
+	/* POTD */
+	.gallery-module-self {margin-top:5px;}
+	.gallery-module-header {}
+	.gallery-module-content {background-color:#fff;}
+
+	.gallery-module-headline {font-size:12px; font-weight:bold; color:black;}
+	.gallery-module-byline {font-size:12px; color:gray; font-weight:bold;}
+	.gallery-module-sectionhead {font-size:12px; color:black;font-weight:bold;}
+	.gallery-module-sectiontext {font-size:12px; color:black; }
+	.gallery-module-sectiontext a:link, 
+	.gallery-module-sectiontext a:visited {font-size:12px; color:#c33; text-decoration:none;font-weight:bold;}
+	.gallery-module-sectiontext a:hover {text-decoration:underline;}
+	
+	/* Gray Promo */
+	.promo-module-self {margin-top:15px; margin-bottom:20px;}
+	.promo-module-header {}
+	.promo-module-content {background-color:#e1e1e1; padding:5px;}
+	.promo-module-content a:link, 
+	.promo-module-content a:visited {font-size:12px; color:#000; text-decoration:none;font-weight:bold;}
+	.promo-module-content a:hover {text-decoration:underline;}
+
+	.promo-module-headline {font-size:20px; font-weight:bold; color:black;}
+	.promo-module-byline {font-size:12px; color:gray; font-weight:bold;}
+	.promo-module-sectionhead {font-size:20px; color:black;font-weight:bold;}
+	.promo-module-sectiontext {font-size:12px; color:black; }
+	.promo-module-sectiontext a:link, 
+	.promo-module-sectiontext a:visited {font-size:12px; color:#000; text-decoration:none;font-weight:bold;}
+	.promo-module-sectiontext a:hover {text-decoration:underline;}
+	
+	/* Headline lister */
+	.lister-module-self {margin-top:5px;}
+	.lister-module-header {}
+	.lister-module-content {padding:2px; padding-top:5px;}
+	.lister-module-content a:link, 
+	.lister-module-content a:visited {font-size:12px; color:#000; text-decoration:none;font-weight:bold;}
+	.lister-module-content a:hover	{text-decoration:underline;}
+	.lister-module-line	{}
+	
+	/* homepage poll control */
+	.c-poll-box {margin-top:15px;}
+	.c-poll-title {font-size:14px;margin-top:4px;font-weight:bold;}
+	.c-poll-question {font-size:12px;margin-top:4px; font-style:italic;}
+	.c-poll-answer {font-size:11px; margin-top:5px;}
+	.c-poll-button {font-size:12px;margin-top:4px;margin-bottom:4px;}
+	.c-poll-options {font-size:12px;}
+
+
+/*-- old search control --*/
+.searchTime {font-size:10px; color:Silver;}
+.search-submit-box {background-color:#000000; padding:3px; margin-top:4px;}
+
+/*-- search control --*/
+.search-box	{margin-top:4px;}
+.search-searchbox	{padding-top:20px; padding-bottom:10px;}
+
+.search-line	{border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#aaa;}
+.search-time	{font-size:10px; color:#aaa;}
+
+.search-error	{color:#f00;font-weight:bold;}
+.search-dimmed	{color:#aaa;}
+
+.search-pagination-current {font-weight:bold;}
+.search-match	{padding-top:5px; padding-bottom:5px;}
+.search-title	{font-size:12px; color:#000; text-decoration:none;font-weight:bold;}
+.search-title a:link,
+.search-title a:visited	{font-size:12px; color:#c33; text-decoration:none;font-weight:bold;}
+.search-title a:hover	{text-decoration:underline;}
+.search-author	{font-size:12px; color:#000; text-decoration:none;font-weight:normal;}
+.search-magnamedate	{font-size:12px; color:#000; text-decoration:none;font-weight:normal;}
+
+/*-- MULTIMEDIA GALLERY --*/
+.mg-searchhead	{font-size:14px; font-weight:bold;}
+.mg-or	{font-size:14px; font-weight:bold; color:#39c;}
+.mg-newsearch	{font-size:11px;}
+.mg-catkeyterms	{font-size:14px;}
+.mg-articlegallery-headline	{font-weight:bold;}
+.mg-articlegallery-byline	{font-size:11px;}
+.mg-thumb-title	{font-size:10px;}
+
+.mg-current-box		{margin-top:20px; margin-bottom:20px;}
+.mg-current-credit	{font-size:10px;}
+.mg-current-title	{font-size:14px; color:#39c; font-weight:bold;}
+.mg-current-caption	{font-size:12px;}
+
+.mg-current-othermedia	{margin-top:10px; margin-bottom:10px;}
+
+/*-- glossary control --*/
+.gl-box {margin-top:4px;}
+.gl-matchesinfo {font-size:10px; color:Gray;}
+.gl-searchbox	{margin-top:10px; margin-bottom:10px;}
+.gl-alpha		{margin-top:10px; margin-bottom:10px;}
+.gl-matches-box	{border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#aaa;}
+.gl-match		{padding:5px;}
+
+/* -- PROMO -- */
+.BottomLeft-promo {margin-top:20px; margin-bottom:3px; /*border-style:solid; border-color:#F93F9B; background-color:#FB99C9; border-width:2px;*/}
+.TopLeft-promo {margin-top:3px; margin-bottom:3px; /*border-style:solid; border-color:#F93F9B; background-color:#FB99C9; border-width:2px;*/}
+.bottom-promo-line {margin-top:40px; margin-bottom:3px; border-top-style:dashed; border-color:#000; background-color:#fff; border-width:1px;}
+
+
+/* -- POPUP GALLERY -- */
+.popup-headline		{font-size:36px; color:#999; text-decoration:none; font-weight:bold; padding-left:30px;}
+.popup-image-box	{padding:7px; padding-top:15px;}
+.popup-copy-box		{padding:7px; padding-top:15px;}
+.popup-stripe		{background-color:#39c; font-size:14px;}
+.popup-nav-button	{background-color:#006; color:#999; padding:3px; border-color:#fff; border-style:solid; border-width:2px;}
+.popup-nav-button a:link, .popup-nav-button a:visited	{background-color:#006; color:#fff;}
+.popup-nav-button a:hover	{text-decoration:underline;}
+.popup-sectionhead	{font-size:14px; color:#39c; text-decoration:none; font-weight:bold;}
+.popup-sectiontext	{}
+
+/* -- SPACE WEATHER -- */
+.sw-subhead	{font-size:14px; color:#39c; text-decoration:none; font-weight:bold;}
+.sw-subhead2	{margin-bottom:-14px; font-size:14px; color:#39c; text-decoration:none; font-weight:bold;}
+.sw-subhead3	{margin-top:18px; margin-bottom:-14px; font-size:14px; color:#39c; text-decoration:none; font-weight:bold;}
+
+/* -- OTHER --*/
+
+.hline-dashed { border-top-style:dashed; border-color:#000; background-color:#fff; border-width:1px;}
+
+/***********************************************/
+/* -- SPECIAL CLASSES USED IN IPUBLISH TEXT -- */
+/***********************************************/
+
+.news-date {font-size: 10px; color:#39c; } /* in news section */
+.dropcap {font-size:38px; margin-top:-7px;margin-bottom:-9px;margin-right:-3px; float:left; color:#000; font-family:Arial; text-decoration:none; font-weight:bold;}
+.smallcaps {font-size:10px; text-transform:uppercase;}
+.hr	{width:100%; border-bottom-width:1px; border-bottom-style:dashed; border-bottom-color:#000; height:1px; font-size:1px; clear:all;}

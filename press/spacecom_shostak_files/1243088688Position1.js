@@ -1,0 +1,2 @@
+document.write ('<a href="http://ads.space.com/RealMedia/ads/click_lx.ads/www.space.com/searchforlife/1420679119/Position1/Space/RadioShack_Q304_300x250/radioshack_Q304_300x250.txt/31383263643031323431343131323130?1420679119" TARGET=_blank>\n');
+document.write ('<img src="http://ad.doubleclick.net/ad/N2335.Space.com/B1423166;sz=300x250;ord=1420679119" BORDER=0 WIDTH=300 HEIGHT=250 ALT="Click Me!"></A>');

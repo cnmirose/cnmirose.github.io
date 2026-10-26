@@ -1,0 +1,1 @@
+var currentIssue = "v430/n7005";

@@ -1,0 +1,10 @@
+BODY {
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: white
+	}
+.extra {
+	DISPLAY: none }
+a:after {
+	content:' [' attr(href) '] ' }

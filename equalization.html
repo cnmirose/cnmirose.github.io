@@ -1,0 +1,395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.05">
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+ 				  		  		  		  																																						         			   			 																					                                                                																																												  													
+<title> ADAPTIVE EQUALIZATION NOTES</title>
+ 
+<h1 align="center">ADAPTIVE EQUALIZATION NOTES </h1>
+
+<p>
+ In your books (Haykin) the concept of the zero forcing equalizer was
+explored.  The overall model assumes an impulse put into a channel and
+the channel output x(t) sampled at times nT to produce the
+discrete time sequence x<sub>n</sub> = x(nT).  The zero-forcing equalizer is a
+FIR filter with tap weights w<sub>k</sub> applied to the input x(nT).  Then,
+you looked to find tap weights which make the overall system impulse
+response (in discrete time) be a single lollipop at the origin and
+zero everywhere else (in a window to either side of size <font face="symbol">±</font
+>N).
+That is, you want to make the system output y<sub>n</sub> = x<sub>n</sub> * w<sub>n</sub> = <font face="symbol">d</font
+>(n) (for n = <font face="symbol">-</font
+>N,<font face="symbol">-</font
+>N+1 ... 0, 1,2, ....N).  That * means
+discrete convolution.
+
+<p>
+Assuming that the tails of the channel impulse response drop rapidly
+as compared to NT, this means that impulses put into the channel
+system at times kT have almost no effect on each other because the
+overall response to an impulse at kT is a value of y<sub>n</sub> = <font face="symbol">d</font
+>(n<font face="symbol">-</font
+>k) and the channel response outside a double-sided window of
+size N is assumed essentially zero.  This roughly corresponds to the
+zero ISI condition where a pulse at 0 has no effect on pulses at
+times nT.
+
+<p>
+We found that the optimal tap weights could be found by
+inverting a matrix composed of channel impulse response samples
+between <font face="symbol">±</font
+>N.  Unfortunately, this is time consuming for larger N
+and it requires someone to tell us the channel characteristics
+(the channel impulse response) and when it changes significantly - bummer!
+All this is completely in the book, by the way.
+
+<p>
+We then moved to adaptive equalization.  The problem here is slightly
+different.  Rather than trying to force zero ISI by inverting
+matrices we formulated it as an error minimization problem.  We have
+the same input sequence x<sub>n</sub> to our equalizer with
+tap weights w<sub>k</sub>, but this time we don't assume anything
+about the channel and simply try to find w<sub>k</sub> which minimize
+an error criterion.
+
+<p>
+Well, in order to calculate error, we need to be pretty sure what the
+right answer is.  So what we assume FIRST is that the transmitter
+is sending a known sequence of digits a<sub>n</sub> over the channel.  In the best
+of all possible worlds (read <b>Candide</b>) the output of the channel
+would be exactly a<sub>n</sub>.  However, evil is afoot and what we get is
+x<sub>n</sub>.  So what we want our equalizer to do is take the sequence x<sub>n</sub>
+and produce (via discrete convolution) a sequence y<sub>n</sub>.  And to finish
+we want the y<sub>n</sub> to be as close to the known a<sub>n</sub> as possible!
+
+<p>
+This closeness is specified by an error function, our old friend
+mean square error e<sub>n</sub><sup>2</sup> = (y<sub>n</sub><font face="symbol">-</font
+>a<sub>n</sub>)<sup>2</sup> and we want this to be
+as close to zero as possible over all n.  So we form
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+<font face="helvetica"><i>E</i></font> = E[e<sub>n</sub><sup>2</sup>] = E </td><td align="left" class="cl"><font face="symbol">
+é<br />ë
+</font></td><td nowrap="nowrap" align="center">
+(</td><td nowrap="nowrap" align="center">
+<font size="-1">N</font><!--sup
+--><br /><font size="+3"><font face="symbol">å<br />
+</font></font><font size="-1">k=<font face="symbol">-</font
+>N</font>&nbsp;<br /></td><td nowrap="nowrap" align="center">
+w<sub>k</sub> x<sub>n<font face="symbol">-</font
+>k</sub> <font face="symbol">-</font
+> a<sub>n</sub>)<sup>2</sup></td><td align="left" class="cl"><font face="symbol">
+ù<br />û
+</font></td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+Now, <font face="helvetica"><i>E</i></font> depends upon how well our equalizer weights are chosen.
+So what we want to do is figure out which weights minimize <font face="helvetica"><i>E</i></font>.
+We can therefore think of <font face="helvetica"><i>E</i></font> as a function of the weight vector
+<b>w</b>, or <font face="helvetica"><i>E</i></font>(<b>w</b>).  
+
+<p>
+Well, when we see ``minimization'' it's almost a reflex
+to take derivatives, set them to zero and declare extremum.
+The derivatives in question are
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+</td><td nowrap="nowrap" align="center">
+&nbsp;<font face="symbol">¶</font
+><font face="helvetica"><i>E</i></font>
+<div class="hrcomp"><hr noshade="noshade" size="1"/></div><font face="symbol">¶</font
+>w<sub>k</sub><br /></td><td nowrap="nowrap" align="center">
+ = <font face="symbol">-</font
+>2 E[e<sub>n</sub> x<sub>n<font face="symbol">-</font
+>k</sub>] = <font face="symbol">-</font
+>2R<sub>ex</sub>(k)</td></tr></table>
+</td></tr></table>
+
+
+where R() is the cross correlation function between e and x.  In
+a single dimension we know that the second derivative greater than zero
+everywhere implies convexity so that a unique minimum exists.  Alas,
+we also know that for multivariate functions, the picture is not so
+rosey!  More on this at the end!
+
+<p>
+The development in the text simply assumes that the minimum can be
+found by taking first derivatives and setting them to zero.  It also
+develops a method of iteratively finding the minimizing weights by
+essentially ``sliding down the error hill''.  This means that you
+modify your weights in a direction opposite to the gradient of the
+error surface.  For example, say your initial guess is <b>w</b>(0).
+You modify your guess by forming for each k
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+w<sub>k</sub>(1) = w<sub>k</sub>(0) + 2 <font face="symbol">m</font
+>R<sub>ex</sub>(k)</td></tr></table>
+</td></tr></table>
+
+
+where <font face="symbol">m</font
+> is some suitably small ``step size''.  You don't want the
+step size too small, otherwise you never get where you're going.
+Likewise with step size too large, you overshoot where you're going
+and may ping pong around but never reach the minimum.  By the way,
+don't worry about the factor of 2 difference between the above
+expression and your book.  That factor is easily subsumed in the
+<font face="symbol">m</font
+>.
+
+<p>
+The final practical whistle is to recognize that you can't
+really know the cross correlation function, so you fake it by
+making a guess as [^R]<sub>ex</sub>(k) = e<sub>n</sub>x<sub>n<font face="symbol">-</font
+>k</sub>, both factors which
+are available to you.  You then modify your algorithm to
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+</td><td nowrap="nowrap" align="center">
+<div class="comp">^<br /></div>
+<div class="norm">w<br /></div>
+<div class="comb">&nbsp;</div>
+</td><td nowrap="nowrap" align="center">
+<font size="-1"></font><!--sup
+--><br /><font size="-1">k</font>&nbsp;<br /></td><td nowrap="nowrap" align="center">
+(1) = </td><td nowrap="nowrap" align="center">
+<div class="comp">^<br /></div>
+<div class="norm">w<br /></div>
+<div class="comb">&nbsp;</div>
+</td><td nowrap="nowrap" align="center">
+<font size="-1"></font><!--sup
+--><br /><font size="-1">k</font>&nbsp;<br /></td><td nowrap="nowrap" align="center">
+(0) + 2 <font face="symbol">m</font
+>e<sub>n</sub>x<sub>n<font face="symbol">-</font
+>k</sub></td></tr></table>
+</td></tr></table>
+
+
+and at some point you stop when the error is small enough (stopping rule).
+
+<p>
+There's a neato keano interpretation for when you stop in the ideal
+case.  That is, you stop when R<sub>ex</sub>(k) = 0.  Assuming that E[x<sub>n</sub>] = 0 and E[e<sub>n</sub>] = 0 that means that you stop when the error and your
+observable x<sub>n</sub> are UNCORRELATED.  If we use uncorrelated as a
+surrogate for independence, that means we stop when the input sequence
+to our equalizer has no more to say about the error we generate!  That
+is, the incoming observations add no new information about how to
+reduce the error and we've done as well as we can.  This <em>
+principle of orthogonality</em> (orthogonal usually means independent when
+used in the random variable sense) is very useful and pops up all over
+the place in communications and estimation.
+
+<p>
+Well, that's all well and good, but remember that in order to calculate
+e<sub>n</sub> we have to assume we know a<sub>n</sub>.  But if we always know a<sub>n</sub> why are we
+bothering to send it?  The answer is that we don't always send a known sequence.
+We only send that sequence while ``training'' the equalizer.  Thus, the known
+sequence is called a ``training sequence'' for the equalizer and we make this
+training sequence long enough so that we're pretty sure we'll get close
+to the optimal weights <b>w</b><sup>*</sup> which minimize <font face="helvetica"><i>E</i></font>.
+
+<p>
+Once we're done training, however, we begin to send data.  And here's
+the neat part!  If we did a good job equalizing and the channel
+characteristics don't change rapidly, then our equalizer outputs y<sub>n</sub>
+are pretty close to the unknown a<sub>n</sub>.  Let's assume that the a<sub>n</sub>
+can take on values <font face="symbol">±</font
+>1.  If that's the case, then as the channel
+changes the equalizer outputs will begin to drift from <font face="symbol">±</font
+>1.  This
+will not immediatly affect our ability to correctly determine the
+a<sub>n</sub>.  For example, if the equalizer puts out y<sub>n</sub> = 0.8 then we're
+probably safe guessing that a<sub>n</sub> = 1.  
+
+<p>
+HOWEVER, we have a nonzero e<sub>n</sub> and we can use these small errors to
+correct the equalizer weights.  The equalizer is then in ``adaptive
+mode'' as opposed to ``training mode'' and tracks slow channel changes
+by monitoring the error and adjusting the weights just as it did for
+training mode.  The only difference is that in training mode the
+correct a<sub>n</sub> were known exactly whereas in adaptive mode, the guesses
+at a<sub>n</sub> are assumed accurate if we did a good job of training
+initially.  Of course, if the channel changes too rapidly, then we
+suck at guesstimating the a<sub>n</sub> and the weight updates will suck too.
+Then, the error begins to grow and the equalizer stops translating
+data and requests a drop back to training mode.  If the channel has
+gotten so bad that it can't be equalized, then the line is dropped and
+you curse it soundly under your breath since this happened near the end
+of a large web page transfer.
+
+<p>
+So that's basically it.  However, WE ARE ANALYSTS!  Thus, there's
+LOADS of things we'd need to prove before we could even begin to
+believe that this REALLY works.  We're not going to prove that the
+stochastic update algorithm (the weight update equation with all the
+hats in it) converges.  The only thing we're going to prove is that
+setting the error derivatives equal to zero does guarantee we find
+the optimal weights.  To do this we're going to prove that
+<font face="helvetica"><i>E</i></font> is convex in the weights w<sub>k</sub>.
+
+<p>
+We have to fall back on the convexity definition from class.  A function is
+convex if for 0  <font face="symbol">£</font
+> <font face="symbol">l</font
+> <font face="symbol">£</font
+> 1 and any <b>x</b><sub>1</sub> and <b>x</b><sub>2</sub> 
+we have
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+f(<font face="symbol">l</font
+><b>x</b><sub>1</sub> + (1<font face="symbol">-</font
+><font face="symbol">l</font
+>) <b>x</b><sub>2</sub>) <font face="symbol">£</font
+> <font face="symbol">l</font
+>f(<b>x</b><sub>1</sub>) + (1<font face="symbol">-</font
+><font face="symbol">l</font
+>) f(<b>x</b><sub>2</sub>)</td></tr></table>
+</td></tr></table>
+
+
+This means that the surface always lies below the line drawn between
+any two points.  It's pretty easy to show that in a single dimension,
+the old second derivative non-negative is exactly equivalent to this
+statement, but we'll forego that pleasure here.
+
+<p>
+Now, to the problem at hand.  Our function is E[(]<font face="symbol">w</font
+>).
+To make life simpler we'll write <font face="symbol">å</font
+><sub>k</sub> w<sub>k</sub> x<sub>n<font face="symbol">-</font
+>k</sub> as
+<font face="symbol">w</font
+><sup>T</sup> <b>x</b>.  This leads to
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+E[(]<font face="symbol">w</font
+>) = E [ (a<sub>n</sub> <font face="symbol">-</font
+> <font face="symbol">w</font
+><sup>T</sup><b>x</b>)<sup>2</sup>] = E [ a<sub>n</sub><sup>2</sup> <font face="symbol">-</font
+> 2a<sub>n</sub><font face="symbol">w</font
+><sup>T</sup><b>x</b>+ (<font face="symbol">w</font
+><sup>T</sup> <b>x</b>)<sup>2</sup>]</td></tr></table>
+</td></tr></table>
+
+
+We then look at
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+E [ (a<sub>n</sub> <font face="symbol">-</font
+> (<font face="symbol">l</font
+><font face="symbol">w</font
+><sub>1</sub> + (1<font face="symbol">-</font
+><font face="symbol">l</font
+>)<font face="symbol">w</font
+><sub>2</sub>)<sup>T</sup><b>x</b>)<sup>2</sup>]</td></tr></table>
+</td></tr></table>
+
+
+which is equivalent to
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+E [ a<sub>n</sub><sup>2</sup> <font face="symbol">-</font
+> 2a<sub>n</sub>(<font face="symbol">l</font
+><font face="symbol">w</font
+><sub>1</sub> + (1<font face="symbol">-</font
+><font face="symbol">l</font
+>)<font face="symbol">w</font
+><sub>2</sub>)<sup>T</sup><b>x</b>+ <font face="symbol">|</font
+>(<font face="symbol">l</font
+><font face="symbol">w</font
+><sub>1</sub> + (1<font face="symbol">-</font
+><font face="symbol">l</font
+>)<font face="symbol">w</font
+><sub>2</sub>)<sup>T</sup> x<font face="symbol">|</font
+><sup>2</sup>]</td></tr></table>
+</td></tr></table>
+
+
+and try to see if it's less than
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+<font face="symbol">l</font
+>E [ (a<sub>n</sub> <font face="symbol">-</font
+> <font face="symbol">w</font
+><sub>1</sub><sup>T</sup><b>x</b>)<sup>2</sup>]+(1<font face="symbol">-</font
+><font face="symbol">l</font
+>)E [ (a<sub>n</sub> <font face="symbol">-</font
+> <font face="symbol">w</font
+><sub>2</sub><sup>T</sup><b>x</b>)<sup>2</sup>]</td></tr></table>
+</td></tr></table>
+
+
+Well after playing around a bit (removing like terms
+from each side such as E[a<sub>n</sub><sup>2</sup>] on the left and right)
+and regrouping (like we did in class) we find that
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center"><tr><td nowrap="nowrap" align="center">
+E [ (a<sub>n</sub> <font face="symbol">-</font
+> (<font face="symbol">l</font
+><font face="symbol">w</font
+><sub>1</sub> + (1<font face="symbol">-</font
+><font face="symbol">l</font
+>)<font face="symbol">w</font
+><sub>2</sub>)<sup>T</sup><b>x</b>)<sup>2</sup>] <font face="symbol">£</font
+> <font face="symbol">l</font
+>E [ (a<sub>n</sub> <font face="symbol">-</font
+> <font face="symbol">w</font
+><sub>1</sub><sup>T</sup><b>x</b>)<sup>2</sup>]+(1<font face="symbol">-</font
+><font face="symbol">l</font
+>)E [ (a<sub>n</sub> <font face="symbol">-</font
+> <font face="symbol">w</font
+><sub>2</sub><sup>T</sup><b>x</b>)<sup>2</sup>]</td></tr></table>
+</td></tr></table>
+
+
+and the function E[<font face="symbol">w</font
+>] is indeed convex in <font face="symbol">w</font
+>.
+
+<p>
+
+<p>
+<a name="tth_fIg1">
+</a> 
+<center><table border="0"><tr><td></td><td><table border="0"><tr><td><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/adapt_eq.ps">Figure</a>
+</td></tr></table><!--vbox-->
+</td><td>
+</td></tr></table><!--hboxt--></center>
+
+<center>Figure 1: Here's a representative figure of the whole shebang</center>
+
+<p>
+
+<center><font size="+2"><b>TADA!!!!!!!</b>
+</font></center>
+
+<p>
+
+<br /><br /><hr /><small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.05.<br />On  4 Mar 2002, 13:49.</small>
+</html>

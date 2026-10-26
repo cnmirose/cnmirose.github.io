@@ -1,0 +1,100 @@
+<html>
+<head>
+<script type="text/javascript">
+function mymessage()
+{
+alert("PRESS ME PRESS ME!! PLEASE PRESS ME!!!!!!!! OHH PLEASE!!!!!!!");
+}
+</script>
+
+
+<script type="text/javascript">
+function angel()
+{
+document.write("<center><h1>YOU ARE A SAINT AND AN ANGEL!!!!!!!!!!!!!</h1></center><br>");
+}
+</script>
+
+
+
+<script type="text/javascript">
+function important_question()
+{
+var r=confirm("Would you like to give me money?");
+if (r == true)
+{
+angel();
+}
+else
+{
+var epithet = "JERK";
+multihell(epithet);
+if (try_again('BOZO')=="BAD")
+ {
+  document.write("I give up'\n'");
+ }
+else {
+angel();
+}
+}
+}
+</script>
+
+
+
+<script type="text/javascript">
+function hell()
+{
+document.write("<p>You are an asshole from hell!</p>");
+}
+</script>
+
+
+<script type="text/javascript">
+function multihell(epithet)
+{
+var d = new Date();
+var hour = d.getHours();
+var minutes= d.getMinutes();
+time=((hour)%12);
+if (time == 0)
+{
+time = 12
+}
+document.write("<b><h1>Hey "+epithet+"!  Know what time it is?</h1></b><br>");
+document.write("It's "+(time)+":"+minutes+" and ... <br>");
+while (time >=1)
+{
+document.write(time+":");
+hell();
+time=time-1;
+}
+}
+</script>
+
+<script type="text/javascript">
+function try_again(name)
+{
+document.write("TEST POINT 1/");
+var response=prompt("Wanna an asshole again, "+name+"?", "YES");
+if (response == "YES") {
+{
+epithet="FUCK FACE";
+multihell(epithet);
+return("BAD");
+}
+else if (response!="YES")
+{
+return("GOOD");
+}
+}
+</script>
+
+</head>
+
+<body onload="important_question()">
+
+
+
+</body>
+</html>

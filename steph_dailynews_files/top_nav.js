@@ -1,0 +1,106 @@
+//----------DHTML Menu Created using AllWebMenus PRO ver 3.1-#530---------------
+//C:\NYDN\NYDN-RC1.awm
+var awmMenuName='top_nav';
+var awmLibraryBuild=530;
+var awmLibraryPath='/awmData-top_nav';
+var awmImagesPath='/awmData-top_nav';
+var awmSupported=(navigator.appName + navigator.appVersion.substring(0,1)=="Netscape5" || document.all || document.layers || navigator.userAgent.indexOf('Opera')>-1)?1:0;
+if (awmAltUrl!='' && !awmSupported) window.location.replace(awmAltUrl);
+if (awmSupported){
+var awmMenuPath;
+if (document.layers) mpi=((document.images['awmMenuPathImg-top_nav'])?document.images['awmMenuPathImg-top_nav'].src:document.layers['xawmMenuPathImg-top_nav'].document.images['awmMenuPathImg-top_nav'].src); else mpi=document.images['awmMenuPathImg-top_nav'].src;
+awmMenuPath=mpi.substring(0,mpi.length-16);
+while (awmMenuPath.search("'")>-1) {awmMenuPath=awmMenuPath.replace("'", "&#39;");}
+var nua=navigator.userAgent,scriptNo=(nua.indexOf('Safari')>-1)?7:(nua.indexOf('Gecko')>-1)?2:((document.layers)?3:((nua.indexOf('Opera')>-1)?4:((nua.indexOf('Mac')>-1)?5:((nua.indexOf('Konqueror')>-1)?6:1))));
+document.write("<SCRIPT SRC='"+awmMenuPath+awmLibraryPath+"/awmlib"+scriptNo+".js'><\/SCRIPT>");
+var n=null;
+awmzindex=1000;
+}
+
+var awmSubmenusFrame='';
+var awmSubmenusFrameOffset;
+var awmOptimize=1;
+function awmBuildMenu(){
+if (awmSupported){
+awmImagesColl=['indent_left.gif',10,23,'home1.gif',61,23,'home_on1.gif',61,23,'news_views.gif',133,23,'news_views_on.gif',133,23,'sports.gif',68,23,'sports_on.gif',68,23,'entertainment.gif',121,23,'entertainment_on.gif',135,23,'bizmoney.gif',90,23,'bizmoney_on.gif',90,23,'boroughs.gif',92,23,'boroughs_on.gif',92,23,'city_life.gif',79,23,'city_life_on.gif',79,23,'services.gif',84,23,'services_on.gif',84,23];
+awmCreateCSS(1,2,1,'#FF0000','#8F8F8F',n,'bold medium sans-serif',n,'outset',0,n,0,0);
+awmCreateCSS(0,1,0,n,n,n,n,n,'none',4,'#0F0F0F',0,0);
+awmCreateCSS(1,2,1,'#000000','#EFEFEF',n,'bold medium sans-serif',n,'solid',1,n,0,1);
+awmCreateCSS(0,2,1,'#FFFFFF','#FF0000',n,'bold medium sans-serif',n,'solid',1,n,0,1);
+awmCreateCSS(0,2,1,'#FFFFFF','#408080',n,'bold medium sans-serif',n,'solid',1,n,0,1);
+awmCreateCSS(1,2,1,'#FF0000','#8F8F8F',n,'bold medium sans-serif',n,'none',0,n,0,0);
+awmCreateCSS(0,1,0,n,'#FFFFFF',n,n,n,'solid',1,'#0F0F0F',0,0);
+awmCreateCSS(1,2,0,'#000000',n,n,'bold x-small sans-serif',n,'outset',1,n,2,1);
+awmCreateCSS(0,2,0,'#FFFFFF','#FF0000',n,'bold x-small sans-serif',n,'outset',1,n,2,1);
+awmCreateCSS(0,2,0,'#FFFFFF','#408080',n,'bold x-small sans-serif',n,'outset',1,n,2,1);
+var s0=awmCreateMenu(0,0,0,0,1,0,0,0,0,0,106,0,2,1,0,n,"",n,1,0,0,1,n,n,100,0);
+it=s0.addItemWithImages(2,3,4,"","","","",0,0,0,0,0,0,n,n,n,"",n,n,n,n,n);
+it=s0.addItemWithImages(2,3,4,"","","","",1,2,n,0,0,0,n,n,n,"NY Daily News - Home",n,n,n,"http://www.nydailynews.com",n);
+it=s0.addItemWithImages(2,3,4,"","","","",3,4,n,0,0,0,n,n,n,"NY Daily News - News & Views",n,n,n,"http://www.nydailynews.com/news/index.html",n);
+var s1=it.addSubmenu(0,0,0,0,0,0,0,6,5,n,"",n,1,0,1,0,"awmhidediv()","awmshowdiv()",100);
+it=s1.addItem(7,8,9,"City News",n,n,"","NY Daily News - City News",n,n,n,"http://www.nydailynews.com/news/local/index.html",n);
+it=s1.addItem(7,8,9,"World & National Report",n,n,"","NY Daily News - World & National Report",n,n,n,"http://www.nydailynews.com/news/wn_report/index.html",n);
+it=s1.addItem(7,8,9,"Crime File",n,n,"","NY Daily News - Crime File",n,n,n,"http://www.nydailynews.com/news/crime_file/index.html",n);
+it=s1.addItem(7,8,9,"Daily Dish & Gossip",n,n,"","NY Daily News - Daily Dish & Gossip",n,n,n,"http://www.nydailynews.com/news/gossip/index.html",n);
+it=s1.addItem(7,8,9,"Politics",n,n,"","NY Daily News - Politics",n,n,n,"http://www.nydailynews.com/news/politics/index.html",n);
+it=s1.addItem(7,8,9,"Ideas & Opinions",n,n,"","NY Daily News - Ideas & Opinions",n,n,n,"http://www.nydailynews.com/news/ideas_opinions/index.html",n);
+it=s1.addItem(7,8,9,"Columnists",n,n,"","NY Daily News - Columnists",n,n,n,"http://www.nydailynews.com/news/col/index.html",n);
+it=s1.addItem(7,8,9,"Today's Headlines",n,n,"","NY Daily News - Today's Headlines",n,n,n,"http://www.nydailynews.com/news/todays_headlines/index.html",n);
+it=s0.addItemWithImages(2,3,4,"","","","",5,6,n,0,0,0,n,n,n,"NY Daily News - Sports",n,n,n,"http://www.nydailynews.com/sports/index.html",n);
+var s1=it.addSubmenu(0,0,0,0,0,0,0,6,5,n,"",n,1,0,1,0,"awmhidediv()","awmshowdiv()",100);
+it=s1.addItem(7,8,9,"Baseball",n,n,"","NY Daily News - Baseball",n,n,n,"http://www.nydailynews.com/sports/baseball/index.html",n);
+var s2=it.addSubmenu(0,0,0,0,0,0,0,6,5,n,"",n,1,0,1,0,n,n,100);
+it=s2.addItem(7,8,9,"Yankees",n,n,"","NY Daily News - Yankees",n,n,n,"http://www.nydailynews.com/sports/baseball/yankees",n);
+it=s2.addItem(7,8,9,"Mets",n,n,"","NY Daily News - Mets",n,n,n,"http://www.nydailynews.com/sports/baseball/mets",n);
+it=s2.addItem(7,8,9,"MLB Stats",n,n,"","NY Daily News - Baseball Stats",n,n,n,"http://www.nydailynews.com/sports/sports_stats/mlb/",n);
+it=s1.addItem(7,8,9,"Basketball",n,n,"","NY Daily News - Basketball",n,n,n,"http://www.nydailynews.com/sports/basketball/index.html",n);
+var s2=it.addSubmenu(0,0,0,0,0,0,0,6,5,n,"",n,1,0,1,0,n,n,100);
+it=s2.addItem(7,8,9,"Knicks",n,n,"","NY Daily News - Knicks",n,n,n,"http://www.nydailynews.com/sports/basketball/knicks",n);
+it=s2.addItem(7,8,9,"Nets",n,n,"","Ny Daily News - Nets",n,n,n,"http://www.nydailynews.com/sports/basketball/nets",n);
+it=s2.addItem(7,8,9,"NBA Stats",n,n,"","NY Daily News - NBA Stats",n,n,n,"http://www.nydailynews.com/sports/sports_stats/nba/",n);
+it=s1.addItem(7,8,9,"High School",n,n,"","NY Daily News - High School",n,n,n,"http://www.nydailynews.com/sports/hschool/index.html",n);
+it=s1.addItem(7,8,9,"More Sports",n,n,"","NY Daily News -  More Sports",n,n,n,"http://www.nydailynews.com/sports/more_sports/index.html",n);
+it=s1.addItem(7,8,9,"Columnists",n,n,"","NY Daily News -  Columnists",n,n,n,"http://www.nydailynews.com/sports/col/index.html",n);
+it=s1.addItem(7,8,9,"Sports Odds",n,n,"","NY Daily News - Sports Odds",n,n,n,"http://covers.nydailynews.com/",n);
+it=s1.addItem(7,8,9,"Fantasy Sports",n,n,"","NY Daily News - Fantasy Baseball",n,n,n,"http://www.bullysports.com/sub/home/index.htm?v=12",n);
+it=s0.addItemWithImages(2,3,4,"","","","",7,8,n,0,0,0,n,n,n,"NY Daily News - Entertainment",n,n,n,"http://www.nydailynews.com/entertainment/index.html",n);
+var s1=it.addSubmenu(0,0,0,0,0,0,0,6,5,n,"",n,1,0,1,0,"awmhidediv()","awmshowdiv()",100);
+it=s1.addItem(7,8,9,"Theater",n,n,"","NY Daily News - Theater",n,n,n,"http://www.nydailynews.com/entertainment/theater/index.html",n);
+it=s1.addItem(7,8,9,"Music",n,n,"","NY Daily News -  Music",n,n,n,"http://www.nydailynews.com/entertainment/music/index.html",n);
+it=s1.addItem(7,8,9,"Television",n,n,"","NY Daily News - Television",n,n,n,"http://www.nydailynews.com/entertainment/ent_radio/index.html",n);
+it=s1.addItem(7,8,9,"Culture",n,n,"","Ny Daily News - Culture",n,n,n,"http://www.nydailynews.com/entertainment/culture/index.html",n);
+it=s1.addItem(7,8,9,"Columnists",n,n,"","NY Daily News - Columnists",n,n,n,"http://www.nydailynews.com/entertainment/col/index.html",n);
+it=s1.addItem(7,8,9,"Movie Reviews",n,n,"","NY Daily News - Movie Reviews",n,n,n,"http://www.nydailynews.com/entertainment/movies/moviereviews/index.html",n);
+it=s0.addItemWithImages(2,3,4,"","","","",9,10,n,0,0,0,n,n,n,"NY Daily News - Business",n,n,n,"http://www.nydailynews.com/business/index.html",n);
+var s1=it.addSubmenu(0,0,0,0,0,0,0,6,5,n,"",n,1,0,1,0,"awmhidediv()","awmshowdiv()",100);
+it=s0.addItemWithImages(2,3,4,"","","","",11,12,n,0,0,0,n,n,n,"NY Daily News - Boroughs",n,n,n,"http://www.nydailynews.com/boroughs/index.html",n);
+it=s0.addItemWithImages(2,3,4,"","","","",13,14,n,0,0,0,n,n,n,"NY Daily News - City Life",n,n,n,"http://www.nydailynews.com/city_life/index.html",n);
+var s1=it.addSubmenu(0,0,0,0,0,0,0,6,5,n,"",n,1,0,1,0,"awmhidediv()","awmshowdiv()",100);
+it=s1.addItem(7,8,9,"Advice",n,n,"","NY Daily News - Advice",n,n,n,"http://www.nydailynews.com/city_life/advice/index.html",n);
+it=s1.addItem(7,8,9,"Food",n,n,"","NY Daily News - Food",n,n,n,"http://www.nydailynews.com/city_life/food/index.html",n);
+it=s1.addItem(7,8,9,"Big Town",n,n,"","NY Daily News - Big Town",n,n,n,"http://www.nydailynews.com/city_life/big_town/",n);
+it=s1.addItem(7,8,9,"Health",n,n,"","NY Daily News - Health",n,n,n,"http://www.nydailynews.com/city_life/health/index.html",n);
+it=s1.addItem(7,8,9,"Travel",n,n,"","NY Daily News - Travel",n,n,n,"http://www.nydailynews.com/city_life/travel/index.html",n);
+it=s1.addItem(7,8,9,"Thersday",n,n,"","NY Daily News - Thersday",n,n,n,"http://www.nydailynews.com/city_life/thersday/index.html",n);
+it=s1.addItem(7,8,9,"Technology",n,n,"","NY Daily News - Technology",n,n,n,"http://www.nydailynews.com/city_life/tech/index.html",n);
+it=s1.addItem(7,8,9,"Horoscopes",n,n,"","NY Daily News - Horoscopes",n,n,n,"http://www.nydailynews.com/city_life/advice/last/",n);
+it=s1.addItem(7,8,9,"Gridlock Sam",n,n,"","NY Daily News - Gridlock Sam",n,n,n,"http://www.nydailynews.com/city_life/advice/gridlocksam/index.html",n);
+it=s1.addItem(7,8,9,"Weather",n,n,"","NY Daily News - Weather",n,n,n,"http://www.nydailynews.com/city_life/weather/index.html",n);
+it=s1.addItem(7,8,9,"Lottery",n,n,"","NY Daily News - Lottery",n,n,n,"http://www.nydailynews.com/lottery/index.html",n);
+it=s1.addItem(7,8,9,"Comics",n,n,"","NY Daily News - Comics",n,n,n,"http://www.nydailynews.com/scontent/comics/index.html",n);
+it=s0.addItemWithImages(2,3,4,"","","","",15,16,n,0,0,0,n,n,n,"NY Daily News - Services",n,n,n,"http://www.nydailynews.com/services/index.html",n);
+var s1=it.addSubmenu(0,0,0,0,0,0,0,6,5,n,"",n,1,0,1,0,n,n,100);
+it=s1.addItem(7,8,9,"Personals",n,n,"","NY Daily News - Personals",n,n,n,"http://www.nydailynews.com/services/personals/",n);
+it=s1.addItem(7,8,9,"Death Notices",n,n,"","NY Daily News - Death Notices",n,n,n,"http://www.nydailynews.com/services/death_notices/index.html",n);
+it=s1.addItem(7,8,9,"NIE",n,n,"","NY Daily News - NIE",n,n,n,"http://www.nydailynews.com/special/nie/index.html",n);
+it=s1.addItem(7,8,9,"Contests",n,n,"","NY Daily News - Contests & Promostions",n,n,n,"http://www.nydailynews.com/services/specials/",n);
+it=s1.addItem(7,8,9,"RSS Feeds",n,n,"","NY Daily News - RSS Feeds",n,n,n,"http://www.nydailynews.com/services/rss/",n);
+it=s1.addItem(7,8,9,"Grocery Coupons",n,n,"","NY Daily News - Gocery Coupons",n,n,n,"http://microsite.coupons.com/microsite/SignInB.asp?pid=10166&ZID=ss41",n);
+it=s1.addItem(7,8,9,"Home Delivery",n,n,"","NY Daily News - Home Delivery",n,n,n,"http://www.nydailynews.com/services/delivery/index.html",n);
+it=s1.addItem(7,8,9,"Classifieds",n,n,"","NY Daily News - Classifieds",n,n,n,"http://nydailynews.abracat.com/index.html",n);
+it=s1.addItem(7,8,9,"Advertising",n,n,"","NY Daily News - Media Kit",n,n,n,"http://www.nydailynews.com/services/media_kit/index.html",n);
+it=s1.addItem(7,8,9,"Contact Us",n,n,"","NY Daily News - Contact Us",n,n,n,"http://www.nydailynews.com/services/contact_us/index.html",n);
+it=s1.addItem(7,8,9,"Auto Market",n,n,"","Auto Market",n,n,n,"http://automarket.nydailynews.com/main.aspx",n);
+it=s1.addItem(7,8,9,"Quick Facts",n,n,"","",n,"Quick Facts Center",n,"http://www.quickfactscenter.com/nydailynews/",n);
+s0.pm.buildMenu();
+}}

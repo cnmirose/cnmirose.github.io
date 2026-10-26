@@ -1,0 +1,1314 @@
+body {
+	background-color:#fff;
+	color:#000;
+}
+
+/* Second level headings variable */
+H2 {
+	font:bold medium Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+H3 {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	margin:0;
+}
+
+H3.intermediate {
+	font:bold 15px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+}
+
+H4 {
+	font:bold 13px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	margin-bottom:10px;
+}
+
+
+/* third level headings Uppercase 12px variable coloured */
+.heading3 {
+ FONT-WEIGHT: bold;
+ FONT-SIZE: x-small;
+ COLOR: #000000;
+ FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+ text-transform: uppercase;
+}
+
+
+/* 1st level table headings 12px variable */
+.table1 {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: x-small;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* 2nd level table headings 12px variable */
+.table2 {
+	FONT-SIZE: x-small;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* 3rd level table headings 10px variable */
+.table3 {
+	FONT-SIZE: xx-small;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Archive table headings 11px white */
+.archivehead {
+	FONT-SIZE: 11px;
+	COLOR: #FFFFFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/* Global Top Navigation Links */
+A.topnav, A.topnav:visited, A.topnav:hover {
+	font:bold 10px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+
+/* Top Nav help and site index links */
+A.topnavsml, A.topnavsml:visited, A.topnavsml:hover {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline
+}
+
+/* marketing box on home page */
+.marketingslot {
+	background-color:#ffeed3;
+}
+
+/* Left Nav Not Links */
+.leftnavOn {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+}
+
+.leftnavresources {
+	background-color:#eaeaea;
+}
+
+.leftnavresourcesheader {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	background-color:#c03;
+}
+
+.leftnavsubjectsheader, .leftnavsubjectsheader:visited, .leftnavsubjectsheader:hover {
+	color:#fff;
+	text-decoration:none;
+}
+
+/* Left Nav Links - highlighted */
+A.leftnavOn, A.leftnavOn:visited, A.leftnavOn:hover {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none
+}
+
+TD.leftnavOn {
+	background-color:#c00;
+}
+
+/* Left Nav Links - not highlighted */
+A.leftnav, A.leftnav:visited {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none
+}
+
+A.leftnav:hover {
+	color:#c00;
+	text-decoration:none;
+}
+
+TD.leftnav {
+	background-color:#ffcccc;
+}
+
+/* Left Nav Links - 2nd level */
+A.leftnav2, A.leftnav2:visited {
+	font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none
+}
+
+A.leftnav2:hover {
+	color:#c00;
+	text-decoration:none;
+}
+
+TD.leftnav2 {
+	background-color:#fde7e7;
+}
+
+/* Left Nav Links - 2nd level highlighted */
+A.leftnav2On, A.leftnav2On:visited, A.leftnav2On:hover {
+	font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none
+}
+
+TD.leftnav2On {
+	background-color:#c00;
+}
+
+/* leftnav nature jobs */
+TD.leftnav-job {
+	background-color:#f3f2f2;
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+A.leftnav-job, A.leftnav-job:visited {
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;
+}
+
+A.leftnav-job:hover {
+	color:#c00;
+	text-decoration:underline;
+}
+
+/* Left Nav B */
+A.leftnavB, A.leftnavB:visited {
+	font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none
+}
+
+A.leftnavB:hover {
+	color:#c00;
+	text-decoration:none;
+}
+
+TD.leftnavB {
+	background-color:#ffcccc;
+}
+
+/* Left Nav B - highlighted */
+A.leftnavBOn, A.leftnavBOn:visited, A.leftnavBOn:hover {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none
+}
+
+TD.leftnavBOn {
+	background-color:#c00;
+}
+
+/* leftnav news channels */
+.leftnav-news {
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+A.leftnav-news, A.leftnav-news:visited {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:none;
+}
+A.leftnav-news:hover {
+	color:#000;
+	text-decoration:none;
+}
+
+TD.leftnav-news {
+	background-color:#fff;
+}
+
+/* date table */
+.date-table TH {
+	background-color:#f98b8b;
+
+}
+
+.date-table TD {
+	background-color:#f98b8b;
+}
+
+/* leftnav top stories */
+.nav-stories {
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+A.nav-stories, A.nav-stories:visited {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;
+}
+A.nav-stories:hover {
+	color:#c00;
+	text-decoration:underline;
+}
+
+TD.nav-stories {
+	background-color:#000;
+}
+
+.nav-date {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+
+/* leftnav marketing slot */
+.adtext {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#f99a9a;
+}
+
+/* NPG Subject black links */
+A.subject, A.subject:visited {
+	font:normal 10px Arial, Verdana, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+
+A.subject:hover {
+	color:#cc3300;
+	text-decoration:none;
+}
+
+/* NPG Subject Browse all publications link */
+A.subjectred, A.subjectred:visited, A.subjectred:hover {
+	font:normal 10px Arial, Verdana, Helvetica, sans-serif;
+	color:#cc3300;
+	text-decoration:none;
+}
+
+/* popup close window links */
+A.closewindow, A.closewindow:hover, A.closewindow:visited {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:underline;
+}
+
+/* popup close window links - in colour for base */
+A.closewindow2, A.closewindow2:hover , A.closewindow2:visited {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#56177B;
+	text-decoration:underline;
+}
+
+
+/* Search Text */
+.search {
+	FONT:bold 12px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.searchspacerbar {
+	background-color:#c00;
+}
+
+/* Advanced Search Links */
+A.adsearch, A.adsearch:visited, A.adsearch:hover {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;
+}
+
+/* Breadcrumb trail - unlinked text */
+.breadcrumb {
+	FONT:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#F98A8A;
+	background-color:#fde7e7;
+}
+
+/* Breadcrumb trail links */
+A.breadcrumblink, A.breadcrumblink:visited, A.breadcrumblink:active {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none
+}
+
+A.breadcrumblink:hover {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;
+}
+
+/* table that holds article image */
+.imagetable {
+	background-color:#000;
+}
+
+/* homepage */
+.welcometext {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.advancesdivider {
+	background:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/nature_ball_files/nmeth/images/homepage/advances_divider.gif) top left repeat-y;
+}
+
+.latestadvances {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+}
+
+.latestadvances:visited {
+	color:#666699;
+	text-decoration:underline;
+}
+
+.latestadvances:hover {
+	color:#e70012;
+	text-decoration:underline;
+}
+
+.researchreviewsrj {
+	font:italic normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.researchreviewslink {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+}
+
+.researchreviewslink:visited {
+	color:#666699;
+	text-decoration:underline;
+}
+
+.researchreviewslink:hover {
+	color:#e70012;
+	text-decoration:underline;
+}
+
+.registertext {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.registerlink, .registerlink:visited, .registerlink:hover {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+}
+
+/* toc */
+.toc-issueheader {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	background-color:#0073bb;
+}
+
+.toc-issueprevnext {
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	background-color:#d4ebf9;
+}
+
+.toc-header {
+	font:bold medium Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	margin:0;
+}
+
+.toc-subhead {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+}
+
+.toclinks {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+
+a.toclinks:link, a.toclinks:visited {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;
+}
+
+a.toclinks:hover {
+	color:#cc0033;
+	text-decoration:underline;
+}
+
+.toc-textlink {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+}
+
+.toc-textlink:visited {
+	color:#666699;
+	text-decoration:underline;
+}
+
+.toc-textlink:hover {
+	color:#cc0033;
+	text-decoration:underline;
+}
+
+.toc-textspacer {
+	font:bold x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+}
+
+/* advances archive */
+.archbrowsebluelt {
+	background-color:#d4ebf9;
+}
+
+.archbrowsebluedk {
+	background-color:#0073bb;
+}
+
+.archbrowsemonthlnk, .archbrowsemonthlnk:visited {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+}
+
+.archbrowsemonthlnk:hover {
+	color:#cc0033;
+	text-decoration:underline;
+}
+
+/* Application notes */
+.appnotessrc {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#999999;
+	line-height:1.7em;
+}
+
+.appnotes-textlink {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+	line-height:1.7em;
+}
+
+.appnotes-textlink:visited {
+	color:#666699;
+	text-decoration:underline;
+}
+
+.appnotes-textlink:hover {
+	color:#cc0033;
+	text-decoration:underline;
+}
+
+/* methods team */
+.teamlinks, .teamlinks:visited {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+}
+
+.teamlinks:hover {
+	color:#cc0033;
+	text-decoration:underline;
+}
+
+.teamtop, .teamtop:visited , .teamtop:hover {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+}
+
+/* classes for "call for papers" box on homepage */
+.callforpapers {
+	background-color:#e91122;
+}
+
+.callforpapers-td {
+	background-color:#fffee8;
+	text-align:center;
+}
+
+.callforpaperslink, .callforpaperslink:visited , .callforpaperslink:hover {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#e91122;
+	text-decoration:none;
+}
+
+/* classes for rtnav sponsors box */
+.sponsors {
+	background-color:#000;
+}
+
+.sponsors-td {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	background-color:#fff;
+}
+
+/* popup classes */
+.bg-popheader {
+	background-color:#0073bb;
+}
+
+.bg-popboxdk {
+	background-color:#d4ebf9;
+}
+
+.bg-popboxlt {
+	background-color:#fff;
+}
+
+.popareatitle {
+	font:bold x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-transform:uppercase;
+}
+
+h1.poptitle {
+	font:normal large Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	margin:0;
+}
+
+.heading1 {
+	font:bold medium Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+}
+
+/* Login Text Labels */
+.login {
+	FONT:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	background-color:#ffcccc;
+}
+
+.loginborder{
+	background-color:#9c0808;
+}
+
+/* intermediate login */
+.int-login {
+	FONT:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	background-color:#ffdcdc;
+}
+
+/* 10px black links */
+A.blacksml, A.blacksml:visited {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+
+A.blacksml:hover {
+	color:#000;
+	text-decoration:underline;
+}
+
+A.blacksml2, A.blacksml2:visited, A.blacksml2:hover {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+
+/* back to top links links 10px variable */
+A.top, A.top:visited {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#cc3300;
+	text-decoration:underline
+}
+
+A.top:hover {
+	color:#cc3300;
+	text-decoration:underline;
+}
+
+/* small coloured links 10px RH Nav */
+A.linksml {
+	FONT:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+}
+
+A.linksml:visited {
+	color:#666699;
+	text-decoration:underline;
+}
+
+A.linksml:hover {
+	color:#e70012;
+	text-decoration:underline;
+}
+
+/* article references list */
+ol.references {
+	margin-top:3px;
+	margin-bottom:0;
+    list-style-position:outside;
+
+}
+
+ol.references li {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+A.referencelink {
+	color:#0073bb;
+	text-decoration:underline;
+}
+
+A.referencelink:visited {
+	color:#666699;
+	text-decoration:underline;
+}
+
+A.referencelink:hover {
+	color:#e70012;
+	text-decoration:underline;
+}
+
+/* weblinks */
+td.weblinks {
+	background-color:#d4ebf9;
+}
+
+A.weblinks {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+}
+
+A.weblinks:visited {
+	color:#666699;
+	text-decoration:underline;
+}
+
+A.weblinks:hover {
+	color:#e70012;
+	text-decoration:underline;
+}
+
+.weblink-href {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+}
+
+/* printer friendly */
+.pf-closewindow, .pf-closewindow:visited {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;
+}
+
+.pf-closewindow:hover {
+	color:#cc0033;
+	text-decoration:underline;
+}
+
+/* rightnav */
+.fulltextheader {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+	text-transform :uppercase;
+	background-color:#0073bb;
+}
+
+.rtnavdark {
+	background-color:#d4ebf9;
+}
+
+.rtnavlight {
+	background-color:#fff;
+}
+
+/* Black author names 12px variable */
+.author {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+
+/* small grey text 10px variable */
+.greysml {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#7a7a7a;
+}
+
+/* Small red 10px text */
+.redsml {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	color:#c00;
+}
+
+/* Small black 10px text variable */
+.blacksml {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+
+/* black 12px text bold variable */
+.blackmedbold {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+/* white 12px text bold variable */
+.whitemedbold {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+/* black 11px text bold */
+.black11pxbold {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+/* white 11px text bold */
+.white11pxbold {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+/* Black text 10px */
+.blacksml2 {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+
+/* Black text 10px variable*/
+.blacksmltext {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+/* Black text 11px */
+.norm {
+	font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+	line-height: 16px;
+}
+
+/* Article link blue 10px */
+A.articlelink {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#0073bb;
+	text-decoration:underline;
+}
+A.articlelink:visited {
+	color:#666699;
+	text-decoration:underline;
+}
+A.articlelink:hover {
+	color:#e70012;
+	text-decoration:underline;
+}
+
+/* Login box links 10px coloured */
+A.login, A.login:visited, A.login:hover {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;
+}
+
+/* Article dividers 10px blue */
+.articlelink {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#0000FF;
+	line-height : 14px;
+}
+
+/* footer line */
+.footerline {
+	background-color:#000;
+}
+
+/* Copyright links 10px black */
+A.copyright, A.copyright:visited {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none
+}
+A.copyright:hover {
+	color:#cc3300;
+	text-decoration:none;
+}
+
+/* copyright for article picture */
+td.copyright {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	background-color:#d4ebf9;
+}
+
+/* Privacy links 10px coloured */
+A.footer2, A.footer2:visited, A.footer2:hover {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:underline
+}
+
+.footer2 {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+}
+
+/* Footer Navigation links 11px coloured */
+A.footer, A.footer:visited, A.footer:hover {
+	color:#c00;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	font-size: 11px;
+}
+
+.footer {
+	color:#c00;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+/* Second level headings variable */
+H2 {
+	font:bold medium Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+H3 {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	margin:0;
+}
+
+/* area title for article pages - nmeth */
+.areatitle {
+	font:bold x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#e70012;
+	text-transform:uppercase;
+}
+
+/* heading2 - nmeth */
+.heading2 {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#e70012;
+	text-transform:uppercase;
+}
+
+/* blue text links */
+.textlink {
+	color:#0073bb;
+}
+
+.textlink:visited {
+	color:#666699;
+}
+
+.textlink:hover {
+	color:#cc0033;
+}
+
+/* Article heads 12px variable */
+.articlehead {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+/* Article titles 20px variable */
+h1.atitle {
+	font:bold large Georgia, Times New Roman, Times, serif;
+	color:#000;
+}
+
+/* Article text 12px variable */
+.articletext {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.articletext-black, A.articletext-black:link, A.articletext-black:visited, A.articletext-black:hover  {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+
+/* Article para text 12px variable */
+p.articletext {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+/*	margin-top:0.8em;
+	margin-bottom:0;
+	margin-top:0.8em;
+	margin-bottom:0.8em;*/
+}
+
+p.articletext a:link {
+	color:#c00;
+}
+p.articletext a:visited {
+	color:#F98A8A;
+}
+p.articletext a:hover {
+	color:#f90;
+}
+
+span.articletext a:link {
+	color:#c00;
+}
+span.articletext a:visited {
+	color:#F98A8A;
+}
+span.articletext a:hover {
+	color:#f90;
+}
+
+/* Doi numbers 10px variable */
+.doi {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+/* Article guide 10px variable */
+.articleguide {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+/* following style is to hide elements that give extra information for users of assistive technology such as screenreaders - for more info see: http://css-discuss.incutio.com/?page=ScreenreaderVisibility */
+.hidden {
+	position:absolute;
+	left:-999px;
+	width:990px;
+}
+
+/* rtnav - style for pipe divider in science books */
+.book-divider {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	color:#ffdcdc;
+} 
+
+/* Dividing lines 10px variable */
+.divider {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.blacksmlvar {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+A.blacksmlvar, A.blacksmlvar:visited {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;
+}
+
+A.blacksmlvar:hover {
+	color:#c00;
+	text-decoration:underline;
+}
+
+A.blacksml2var, A.blacksml2var:visited, A.blacksml2var:hover {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;
+}
+
+.redmed {
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+}
+
+.redsmlvar {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+}
+
+A.redsmlvar {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:underline;
+}
+A.redsmlvar:visited {
+	color:#F98A8A;
+	text-decoration:underline;
+}
+A.redsmlvar:hover {
+	color:#f90;
+	text-decoration:underline;
+}
+
+.redvar {
+	font:bold medium Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+}
+
+A.redsml, A.redsml:visited {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:underline;
+}
+
+A.redsml:hover {
+	color:#c00;
+	text-decoration:underline;
+}
+
+A.redsml2, A.redsml2:visited {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:none;
+}
+A.redsml2:hover {
+	color:#c00;
+	background-color:#ffc;
+	text-decoration:none;
+}
+
+.ltpinksml {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#ffdcdc;
+}
+
+.whitesmlbold {
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+.greyxsml {
+	font:normal 9px Verdana, Arial, Helvetica, sans-serif;
+	color:#7a7a7a;
+}
+
+.blog-bq {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;	
+}
+
+.references-divider {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;	
+}
+
+A.references-text:link, A.references-text:visited, A.references-text:hover {
+	font:normal small Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:underline;
+}
+
+.box-sml {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;	
+}
+
+A.box-sml:link, A.box-sml:visited, A.box-sml:hover {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:underline;	
+}
+
+.article-link {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+A.article-link {
+	font:bold small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;	
+}
+A.article-link:visited {
+	color:#666666;
+	text-decoration:underline;	
+}
+A.article-link:hover {
+	color:#c00;
+	text-decoration:underline;	
+}
+
+A.article-linklrg, A.article-linklrg:visited {
+	font:bold 15px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:underline;	
+}
+A.article-linklrg:hover {
+	color:#c00;
+	text-decoration:underline;	
+}
+
+.article-textlrg {
+	font:normal 13px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.article-textsml {
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.article-cat {
+	font:bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+}
+
+.quote {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+/* picture box styles */
+.pict {
+	font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+A.pict {
+	font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:underline;
+}
+A.pict:visited {
+	color:#fe6464;
+	text-decoration:underline;
+}
+A.pict:hover {
+	color:#f90;
+	text-decoration:underline;
+}
+
+/* 11px archive styles */
+.archive11 {
+	font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	color:#c00;
+}
+
+A.archive11, A.archive11:visited {
+	font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	color:#c00;
+	text-decoration:underline;
+}
+A.archive11:hover {
+	color:#f90;
+	text-decoration:underline;
+}
+
+redbold11 {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+}
+
+A.redbold11 {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:underline;
+}
+A.redbold11:visited {
+	color:#F98A8A;
+	text-decoration:underline;
+}
+A.redbold11:hover {
+	color:#f90;
+	text-decoration:underline;
+}
+
+.black10 {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+A.black10 {
+	font:normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#c00;
+	text-decoration:underline;
+}
+A.black10:visited {
+	color:#F98A8A;
+	text-decoration:underline;
+}
+A.black10:hover {
+	color:#f90;
+	text-decoration:underline;
+}
+
+INPUT.feedback, TEXTAREA.feedback {
+	background-color:#fffde2;
+	font:normal x-small Verdana, Arial, Helvetica, sans-serif;
+	width:220px;
+	height:19px;
+}
+INPUT.feedback:focus, TEXTAREA.feedback:focus {
+	background-color:#ffc;
+}
+
+INPUT.feedback-reset {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	background-color:#a1a0a0;
+height:21px;
+}
+
+INPUT.feedback-submit {
+	font:bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	background-color:#c00;
+height:21px;
+}
+
+/* printer friendly styles */
+.printer-friendly, A.printer-friendly, A.printer-friendly:visited, A.printer-friendly:hover {
+	color:#000 !important;
+}
+
+.red {background-color:#c00;}
+.red-color {color:#c00;}
+.black {background-color:#000;}
+.black-color {color:#000;}
+.white {background-color:#fff;}
+.pink {background-color:#fde7e7;}
+.grey {background-color:#f3f2f2;}
+.dkgrey {background-color:#eaeaea;}
+.purple {background-color:#336;}
+.dkpink {background-color:#f98b8b;}
+.yellow {background-color:#ffc;}
+.ltyellow {background-color:#fdf4e6;}
+.ltpink {background-color:#ffdcdc;}
+.dkbrown {background-color:#ecc7a6;}
+.ltbrown {background-color:#fbeee0;}
+
+.categ_large {
+	FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18px;
+	COLOR: #CC0000;
+	TEXT-DECORATION: none;
+	TEXT-TRANSFORM: uppercase;
+	
+}
+
+.lgn_border {background-color: #E2E2E2;}
+.lgn_background {background-color: #E2E2E2;}
+.lgn_text {color: #000000; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 10px; line-height: 11px;}
+a.lgn_text, a.lgn_text:link {color: #9A1A1A; text-decoration: underline;}
+a.lgn_text:visited {color: #384955; text-decoration: underline;}
+a.lgn_text:hover {color: #CC3300; text-decoration: underline;}
+.lgn_textbig {color: #000000; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 11px; line-height: 14px;}
+.lgn_textalt {color: #384955; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 11px; line-height: 16px;}
+.lgn_textred {color: #CC3300; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 10px; line-height: 11px;}
+.lgn_textbox {color: #000000; font-family: Verdana, Arial, Geneva, sans-serif; font-size: 11px; margin-left: 0px; padding-left: 0px;}
+
+

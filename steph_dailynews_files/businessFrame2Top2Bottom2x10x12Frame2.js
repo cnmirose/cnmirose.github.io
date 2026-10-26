@@ -1,0 +1,1 @@
+document.write ('<A HREF="http://adserver.nydailynews.com/RealMedia/ads/click_lx.cgi/nydailynews.business.com/business/14963/Frame2/Fantasy_HitStreak_2005_Dogear/hit-streak140x85.gif/33663537616261333432623065346330" target="_blank"><IMG SRC="http://adserver.nydailynews.com/RealMedia/ads/Creatives/Fantasy_HitStreak_2005_Dogear/hit-streak140x85.gif"  ALT=""  BORDER="0"></A>');

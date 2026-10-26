@@ -1,0 +1,114 @@
+.calendar, .calendar a, .calendar-b
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.calendar a
+{
+	color: #660000;
+}
+.calendar-b
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.calendarSm, .calendarSm a
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+
+}
+.calendarSm p
+{
+	margin: 10px, 0px;
+}
+.calendarSm br{
+	line-height: 10px;
+}
+.head
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.byline
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-variant: italics;
+}
+
+.story, .story a, .story-rev, .story-rev a
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 17px;
+}
+.story-rev
+{
+	color: white;
+}
+.story-rev a
+{
+	color: #CCCC66;
+}
+.caption
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: Navy;
+}
+.captionSm 
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10px; 
+	color: Navy; 
+	line-height: 125%;
+}
+.captionRev 
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: white; 
+}
+.full-story, full-story a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #660000;
+}
+
+.story a, .caption a, .captionSm a
+{
+	color: #660000;
+}
+
+.header
+{  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #FFFFFF; 
+	font-weight: bold;
+}
+
+.footer 
+{  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10px; 
+	color: #FFFFFF; 
+}
+sub, sup 
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; 
+}
+#name
+{ 
+	color: black; 
+}
+ol, ul, li {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 17px;
+}
+
+

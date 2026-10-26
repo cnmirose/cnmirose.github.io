@@ -1,0 +1,60 @@
+.unpswdboxes {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: normal; color: #000000; text-decoration: none; width: 50px; height: 20px}
+.UsersName {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #FFFFFF; text-decoration: none; text-align: left; text-indent: 5px; height: 18px}
+.breadcrumbtrail {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-align: left}
+.document-body {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; padding-left:1em; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left}
+.table {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left}
+.maintextleft {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left}
+.treestyle {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: blue; text-decoration: none; text-align: left}
+.journalname {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: italic; line-height: normal; font-weight: normal; font-variant: normal; color: blue; text-decoration: none; text-align: left}
+.bannerstyle {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #496DD3; text-decoration: none; text-align: center}
+.maintextleftinclined {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: italic; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left}
+.dropdownmenus { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: normal; color: #000000; text-decoration: none ; height: 18px}
+.fulltextdmenu { font-family: Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; line-height: normal; font-weight: normal; color: #000000; text-decoration: none ; height: 18px}
+.inputboxes { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: normal; color: #000000; text-decoration: none ; width: 130px; height: 18px}
+.maintextjustified { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; padding-left:1em; padding-right:1em; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: justify}
+.abstracttitle {  font-family: Arial, Helvetica, sans-serif; font-size: 13pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #000000; text-align: left}
+.currentarttitle {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #FF0000; text-align: left}
+.maintextcentered { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: Normal; font-variant: normal; color: #000000; text-decoration: none; text-align: center}
+.maintextbldleft { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #000000; text-decoration: none; text-align: left }
+.maintextbldcentered { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #000000; text-decoration: none; text-align: center }
+.maintextright { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: right}
+.notegroup {  padding-left:1em; font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left}
+.listgroup { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left}
+.listgroup-unnumbered { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none;}
+.li1,.li2,.li3,.li4,.li5,.li6 { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left}
+body.popupBody {  background-color: white; background-image: url()}
+.copyright {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; font-weight: normal; color: #000000; text-align: left; padding-left:1em;}
+.footer {  font-family: Arial, Helvetica, sans-serif; font-size: 18pt; font-style: normal; font-weight: normal; color: #000000; text-align: left}
+.inputboxesSmall { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: normal; color: #000000; text-decoration: none ; width: 40px; height: 18px}
+.maintextbldleftSmall { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #000000; text-decoration: none; text-align: left }
+.QuickSearchbox { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: normal; color: #000000; text-decoration: none ; width: 170px; height: 18px}
+.Journaltitle { font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #000000; text-align: left }
+.highlight { font-family: Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; font-weight: normal; color: #000000; text-align: right}
+.ArticleCounter { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #000066; text-decoration: none; text-align: center}
+.document-summary { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left; padding-left:3em;padding-right:3em}
+.summary-title, .summary-heading { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-variant: normal; font-weight: bold; color: #000000; text-decoration: none; text-align: left; padding-left:3em;padding-right:3em}
+.noLinkLine { text-decoration: none }
+.navtitle { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #000000; text-decoration: none }
+.GUItitles { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #FFFFFF; text-decoration: none; text-align: left }
+.smalltext { font-family: Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; font-weight: normal; color: #FFFFFF; text-align: left }
+.GUItitlesBold { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: bolder; font-variant: normal; color: #FFFFFF; text-decoration: none; text-align: left }
+.alertinformation{ font-family: Arial, Helvetica, sans-serif; font-size: 9pt; padding-left:1em; padding-right:1em; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: red; text-decoration: none; text-align: justify}
+.issuestyle1 {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: blue; text-decoration: none; text-align: left}
+.issuestyle2 {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left}
+.Subjecttitle { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #000000; text-align: left }
+.mySynergyAlert{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; padding-left:1em; padding-right:1em; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: red; text-decoration: none; text-align: justify}
+.radiobg{ color:#000001}
+.smallcaps{ font-family: Arial, Helvetica, sans-serif; font-variant: small-caps }
+.affiliations, .history, .short-legend, .citation, .def-term, .def-definition {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000; text-decoration: none; text-align: left}
+#hide {display:none}
+
+
+BODY {
+	color: black;
+	margin-left: 0em;
+	margin-right: 0em;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 40 160;
+}

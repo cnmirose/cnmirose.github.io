@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christopher Rose — A World of Bits</title>
+<meta name="description" content="Christopher Rose, Professor of Engineering at Brown University. Communication and information theory as a lens on everything: particles, molecules, cells, spectrum, and the occasional message in a bottle thrown across the galaxy.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<!-- ============================================================= topbar -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">A World of <span>Bits</span></a>
+    <nav class="topnav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">Cosmic</a>
+      <a href="etmightwrite.html">Cartoons</a>
+      <a href="papers.html">Papers &amp; talks</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="people.html">People</a>
+      <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/vitarose.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- =============================================================== hero -->
+<section class="rail live">
+  <div class="wrap hero">
+    <p class="eyebrow">Professor of Engineering &middot; Brown University</p>
+    <h1>Christopher&nbsp;Rose</h1>
+    <p class="sub">Wireless &amp; beyond</p>
+
+    <p class="role">Communication and information theory applied to just about
+    everything — which, it turns out, is a defensible research program and not
+    only a character flaw.</p>
+
+    <blockquote class="thesis">
+      <p>Interaction is usually defined by what we can observe about outcomes:
+      reactants move toward equilibrium, momentum and energy are conserved,
+      elements of an organism signal each other chemically, mechanically,
+      electrically. Frame those observations mathematically and the equations
+      confer predictive power — which is the whole point of science. However,
+      any interaction is a <em>communication</em>, and communication implies
+      information exchange. So to a communication theorist trained in the
+      physical sciences, one question is inescapable:</p>
+      <span class="punch">What are all these interacting elements saying to one
+      another, how are they saying it, and can I join the conversation?</span>
+    </blockquote>
+
+    <!-- ============ signature element: the banner as a communication graph
+         Ordered by scale, smallest to largest: fundamental descriptions →
+         mechanics → chemistry → biology → art → engineering → interstellar.
+         Natural aspect ratios, varying heights, one shared baseline. The
+         uneven shapes are deliberate; do not normalise them. -->
+    <ul class="strip">
+      <li>
+        <a href="research.html#wireless">
+          <span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/GAcontention.jpg" alt="Genetic algorithm spectrum contention plot"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="label">Interference avoidance</span>
+        </a>
+      </li>
+      <li>
+        <a href="research.html#biology">
+          <span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/embryo_dev.gif" alt="Time lapse of a Drosophila embryo developing, ten scanning electron micrographs dissolved into one another"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="label">Morphogenesis</span>
+        </a>
+      </li>
+      <li>
+        <a href="research.html#cosmic">
+          <span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/040902cover.jpg" alt="Nature cover, 2 September 2004"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="label">Interstellar</span>
+        </a>
+      </li>
+      <li>
+        <a href="research.html#adinkras">
+          <span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/adinkras.jpg" alt="Adinkra diagram"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="label">Adinkras</span>
+        </a>
+      </li>
+      <li>
+        <a href="research.html#particles">
+          <span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/Huppler_9_1951.jpg" alt="Dudley Huppler, Art and Nature"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="label">Particle conversations</span>
+        </a>
+      </li>
+      <li>
+        <a href="research.html#molecular">
+          <span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/Molecular_Informatics_Image.png" alt="DARPA Molecular Informatics"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="label">Chemistry</span>
+        </a>
+      </li>
+</ul>
+  </div>
+</section>
+
+<!-- ================================================================ now -->
+<section class="rail" id="now">
+  <div class="wrap section">
+    <p class="eyebrow">Latest</p>
+    <h2>What's live right now</h2>
+    <div class="now">
+
+      <article class="now-item">
+        <span class="when">New — 2026</span>
+        <h3><a href="https://journals.aps.org/pre/abstract/10.1103/xb2l-78n3">Particle Conversations</a></h3>
+        <p>The first formal paper on particles talking to particles.
+        <em>Limits of Information Flow Between Classically Interacting
+        Particles</em>, with Miles Miller-Dickson, in Physical Review E.</p>
+      </article>
+
+      <article class="now-item">
+        <span class="when">Programs</span>
+        <h3><a href="https://stemjazz.org">STEMJazz&nbsp;@&nbsp;Brown</a></h3>
+        <p>Improvisation, ensemble, and standards — applied to how we bring
+        students into science and engineering.
+        <a href="https://brown.edu/worldofbits/papers/MITForum2021_Rose.pdf">Slides</a> ·
+        <a href="https://www.youtube.com/watch?v=QOXvmESlh3g">MIT Equity Forum panel</a> ·
+        <a href="https://alum.mit.edu/slice/outer-bounds-big-questions">MIT alum piece</a></p>
+      </article>
+
+      <article class="now-item">
+        <span class="when">Ongoing</span>
+        <h3><a href="https://thinking-out-loud.brown.edu">Thinking Out Loud</a></h3>
+        <p>Brown's presidential lecture series — deciphering mysteries of our
+        world and beyond. Chaired since 2014.</p>
+      </article>
+
+      <article class="now-item">
+        <span class="when">Paper trail</span>
+        <h3><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/vitarose.pdf">Curriculum vitae</a></h3>
+        <p>Formal academic puffery, in PDF. See also the
+        <a href="https://en.wikipedia.org/wiki/Christopher_Rose_%28electrical_engineer%29">Wikipedia
+        page</a>, which is personal puffery.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ bio -->
+<section class="rail" id="who">
+  <div class="wrap section">
+    <p class="eyebrow">Who</p>
+    <h2>The short version, told slowly</h2>
+
+    <div class="bio">
+      <div class="bio-body">
+        <p>Chris received the <a href="Frodo_and_Rat.html">S.B. (1979)</a>, S.M.
+        (1981) and Ph.D. (1985) degrees, all from
+        <a href="https://www.eecs.mit.edu/">MIT</a>. Following graduate school he
+        joined AT&amp;T Bell Laboratories in Holmdel, New Jersey, as a member of
+        the Network Systems Research Department, where he regaled his peers with
+        levitated-center-conductor high-T<sub>c</sub> superconducting cables,
+        annoyed them by showing that random lightwave network architectures
+        perform about as well as carefully sculpted ones, and puzzled them with
+        odd applications of cellular automata.</p>
+
+        <p>In 1990, when <a href="https://en.wikipedia.org/wiki/Arno_Penzias">Arno
+        Penzias</a> told everyone in "Area 11" to go to academe if they weren't
+        keenly interested in the corporate bottom line — including his Nobel
+        partner <a href="https://en.wikipedia.org/wiki/Robert_Woodrow_Wilson">Bob
+        Wilson</a> — Chris was congratulated on his timing, having joined
+        Electrical &amp; Computer Engineering at Rutgers the very next week.</p>
+
+        <p>He stayed at Rutgers until 2015, when he moved to Brown as Professor
+        of Engineering and Associate Dean of the Faculty for Special Initiatives.
+        In 2020 he was appointed Associate Provost for STEM Initiatives, and
+        served as the inaugural Director of
+        <a href="https://stemjazz.org">STEMJazz Programs</a> until
+        2026. He is a <a href="https://www.ieee.org/membership/fellows/">Fellow of
+        the IEEE</a>, cited "for contributions to wireless communication systems
+        theory," and served as a full member of the
+        <a href="https://en.wikipedia.org/wiki/Army_Science_Board">Army Science
+        Board</a> (2013–2014).</p>
+
+        <p>He was Associate Director of WINLAB (1999–2007). His current technical
+        interests include applications of communication and information theory to
+        just about everything: biology, nano- micro- and macro-mechanical
+        systems, and — tantalizingly — maybe even supersymmetry, by way of
+        <a href="https://en.wikipedia.org/wiki/Sylvester_James_Gates">Jim
+        Gates</a>' intriguing
+        <a href="research.html#adinkras">Adinkra formalism</a>.</p>
+
+        <p>Past wireless interests include novel mobile communication networks,
+        genetic algorithms applied to control problems in networks, and
+        <a href="research.html#wireless">interference avoidance</a> — universal
+        radios negotiating peaceful coexistence in the wireless ecology of the
+        5&nbsp;GHz U-NII bands. That work, with
+        <a href="https://ece.umd.edu/faculty/ulukus">Sennur
+        Ulukus</a> and <a href="https://www.winlab.rutgers.edu/~ryates/">Roy Yates</a>, received the
+        <strong>2003 IEEE Marconi Prize Paper Award</strong> in Wireless
+        Communications. Here's a
+        <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/marconiaward.jpg">picture</a> of the ecstatic authors at the
+        Globecom 2004 ceremony (credit:
+        <a href="https://ece.osu.edu/people/yener.5">Aylin Yener</a>).</p>
+
+        <p>And for fun — as an outgrowth of research on
+        <a href="research.html#wireless">opportunistic communications</a> — he
+        took on a problem everyone has wondered about at least once:
+        <strong>how will first contact actually happen?</strong> The interesting
+        twist is that it can be far more efficient for distant little green
+        people to send information-bearing physical artifacts than
+        electromagnetic signals, which is seemingly at odds with current SETI
+        wisdom. <a href="research.html#cosmic">That story is over here.</a></p>
+      </div>
+
+      <figure class="portrait">
+        <a class="plain" href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/vitarose.pdf">
+          <img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/ChrisHeadshot2022.jpg" alt="Christopher Rose, 2022">
+        </a>
+        <figcaption>Fall 2022. Click for the CV.<br>
+        Reachable at Christopher_Rose <span class="dim">at</span> brown.edu</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ threads -->
+<section class="rail" id="threads">
+  <div class="wrap section">
+    <p class="eyebrow">Research</p>
+    <h2>Six threads, one question</h2>
+    <p class="lede">Different systems, same move each time: treat the
+    interaction as a channel, then ask what the channel can and cannot carry.</p>
+    <br>
+
+    <div class="threads">
+
+      <article class="thread">
+        <span class="tag">It from channel</span>
+        <h3>Talking particles</h3>
+        <p>If two billiard balls collide, how many bits did they exchange?
+        Conservation laws turn out to be the null space of the interaction
+        channel. This is the current obsession.</p>
+        <span class="more"><a href="research.html#particles">Follow the thread →</a></span>
+      </article>
+
+      <article class="thread">
+        <span class="tag">Molecular</span>
+        <h3>Communicating with molecules</h3>
+        <p>What are the fundamental limits when your symbols are actual
+        molecules — released, diffusing, arriving late and out of order? Timing,
+        payload, and 40&nbsp;bps using alcohol and a photoionization detector.</p>
+        <span class="more"><a href="research.html#molecular">Follow the thread →</a></span>
+      </article>
+
+      <article class="thread">
+        <span class="tag">SETI</span>
+        <h3>Write, don't radiate</h3>
+        <p>Sending inscribed matter beats radiating photons across interstellar
+        distances, by a lot. <em>Nature</em> cover, September 2004 — plus an
+        astounding amount of press, a <em>NY&nbsp;Times</em> editorial, and a
+        cartoon competition.</p>
+        <span class="more"><a href="research.html#cosmic">Follow the thread →</a></span>
+      </article>
+
+      <article class="thread">
+        <span class="tag">Biology</span>
+        <h3>Cells, signals, shape</h3>
+        <p>Organization emerges and repeats despite everything the world throws
+        at biological systems. What is the code-to-structure transformation, and
+        does it have coding theorems?</p>
+        <span class="more"><a href="research.html#biology">Follow the thread →</a></span>
+      </article>
+
+      <article class="thread">
+        <span class="tag">Wireless</span>
+        <h3>Interference avoidance</h3>
+        <p>Radios that adapt their codewords until everyone can hear.
+        Class warfare, water filling, and the U-NII bands. Marconi Prize Paper,
+        2003.</p>
+        <span class="more"><a href="research.html#wireless">Follow the thread →</a></span>
+      </article>
+
+      <article class="thread">
+        <span class="tag">Supersymmetry</span>
+        <h3>Adinkras</h3>
+        <p>Jim Gates' graphs encode supersymmetry algebras — and look suspiciously
+        like error-correcting codes. Somewhere between profound and ludicrous,
+        which is the fun part.</p>
+        <span class="more"><a href="research.html#adinkras">Follow the thread →</a></span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== teaching -->
+<section class="rail" id="teaching">
+  <div class="wrap section">
+    <p class="eyebrow">Teaching</p>
+    <h2>The beer-and-pizza theorem</h2>
+    <p class="lede">A long-running experiment in undergraduate education,
+    conducted with insufficient controls and reported here with full
+    transparency about the confounds.</p>
+
+    <div class="theorem">
+      <span class="name">Theorem</span>
+      <p class="statement">Beer + Pizza = <mark>Academic Excellence</mark></p>
+      <p class="proof">Proof: three Rutgers EGC Teaching Excellence Awards. ∎</p>
+    </div>
+
+    <div class="theorem">
+      <span class="name">Corollary (2011)</span>
+      <p class="statement">Beer + Pizza + <em>BBQ</em> = <mark>Universal Academic Excellence</mark></p>
+      <p class="proof">Proof: 2011 EGC Best Teacher in Engineering Award. ∎</p>
+    </div>
+
+    <p><a href="teaching.html">The full saga, the courses, and a sincere thank-you →</a></p>
+  </div>
+</section>
+
+<!-- =========================================================== oddments -->
+<section class="rail" id="oddments">
+  <div class="wrap section">
+    <p class="eyebrow">Odds &amp; ends</p>
+    <h2>Things that don't fit anywhere else</h2>
+
+    <ul class="links">
+      <li>
+        <span class="kind">Tool</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/talktimer.php">Visual talk timer</a></span>
+        <span class="note">Genuinely useful if you chair conference sessions.
+        Green, amber at five minutes, red in the final minute, and past the
+        end it counts up.</span>
+      </li>
+      <li>
+        <span class="kind">Memoir</span>
+        <span class="what"><a href="https://www.winlab.rutgers.edu/~frenkiel/dreams/">Cellular Dreams and Cordless Nightmares</a></span>
+        <span class="note">Dick Frenkiel — "Father of Cellular" and National Medal
+        of Technology winner — on life at Bell Labs in interesting times. A must-read.</span>
+      </li>
+      <li>
+        <span class="kind">Service</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/learnchan6.pdf">A proposal that got declined</a>,
+        with <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/learnchan6_reviews.txt">its reviews</a></span>
+        <span class="note">Posted deliberately. Possibly useful to new faculty,
+        if only as an example of what not to do.</span>
+      </li>
+      <li>
+        <span class="kind">Musing</span>
+        <span class="what"><a href="research.html#sousveillance">Everything in the light of day</a></span>
+        <span class="note">On sousveillance, and why loss of <em>public</em>
+        privacy might not be the disaster everyone assumes.</span>
+      </li>
+      <li>
+        <span class="kind">Fiction</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/Andromeda_Strain.pdf">Michael Crichton weighs in</a></span>
+        <span class="note"><em>The Andromeda Strain</em>, pp. 222–225. Courtesy of Rich Howard.</span>
+      </li>
+      <li>
+        <span class="kind">Video</span>
+        <span class="what"><a href="https://www.pbs.org/video/nova-sciencenow-profile-james-mclurkin/">A
+        favorite NOVA segment</a></span>
+        <span class="note">The <em>NOVA scienceNOW</em> profile of
+        <a href="https://en.wikipedia.org/wiki/James_McLurkin">James
+        McLurkin</a> as a kid. The video itself has expired from PBS, but the
+        page survives with his picture and the write-up. Proof that an engineer
+        can have it all.</span>
+      </li>
+      <li>
+        <span class="kind">Fund</span>
+        <span class="what"><a href="https://scrlegacyfund.org">The Stephen C. Rose Legacy Fund</a></span>
+        <span class="note"></span>
+      </li>
+    </ul>
+
+    <figure class="fig">
+      <img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/crose_ozma.jpg" alt="Portrait of Christopher Rose at the Green Bank observatory">
+      <figcaption>Out of this world, and prize-winning — believe it or not.
+      Second place, portraits, University Photographers Association of America,
+      October 2010. Credit: Nick Romanenko, Rutgers.</figcaption>
+    </figure>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================== footer -->
+<footer class="rail">
+  <div class="wrap foot">
+    <p class="contact">Christopher_Rose <span class="dim">at</span> brown.edu<br>
+    crose <span class="dim">at</span> winlab.rutgers.edu</p>
+    <p>School of Engineering, Brown University, 184 Hope Street, Providence, RI 02912</p>
+    <p>
+      <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/vitarose.pdf">CV</a> ·
+      <a href="https://en.wikipedia.org/wiki/Christopher_Rose_%28electrical_engineer%29">Wikipedia</a> ·
+      <a href="RoseService.html">Conference &amp; service archive</a> ·
+      <a href="https://www.brown.edu/academics/engineering/">Brown Engineering</a>
+    </p>
+    <p class="fine">A World of Bits · Updated August 2026</p>
+  </div>
+</footer>
+
+<script src="js/strip.js"></script>
+
+</body>
+</html>

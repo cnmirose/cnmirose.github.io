@@ -1,0 +1,1652 @@
+/* basic elements */
+
+html 
+{
+ margin: 0;
+ /* setting border: 0 hoses ie6 win window inner well border */
+ padding: 0;
+}
+
+table.poll_table
+{ 
+font-size: 12px;
+font-family: "Times New Roman", Times;
+}
+
+.section_header
+{
+ font-size: 12px;
+ font-weight: bold;
+ color: #FFFFFF;
+}
+
+
+.more_races
+{
+ font-size: 14px;
+ font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+body 
+{
+ 	font-family: Georgia, "Times New Roman", Times, serif;
+ 	font-size: 11px;
+	line-height: 18px;
+	color: #000000; 
+ 	background: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* basic elements */
+
+
+
+
+ a 
+{
+
+ color: #CC0000;
+ text-decoration: none;
+
+}
+
+a:hover 
+{
+ color: #CC0000;
+ text-decoration: underline;
+
+}
+
+.bold
+{
+ color: #CC0000;
+ font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 11px;
+}
+
+.bold:hover 
+{
+ color: #CC0000;
+ text-decoration: underline;
+ font-weight: bold;
+}
+
+
+.sidebar-header
+{
+
+	  font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: bold;
+	color: #000000;
+	display: block;
+	 text-transform: uppercase;
+background-color: #bbbbbb;
+padding: 5px 0px 5px 0px;
+text-indent: 4px;
+} 
+
+.sidebar-header:hover
+{
+ color: #CC0000;
+ text-decoration: none;
+} 
+
+
+.sidebar 
+{
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+ color: #CC0000;
+margin: 0px 0px 0px 0px;
+
+}
+
+#poll_sidebar
+{
+padding: 0px 0px 0px 4px;
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+
+}
+
+.sidebar:hover 
+{
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+ text-decoration: underline;
+ color: #CC0000;
+}
+
+
+.sidebar-cap 
+{
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+ color: #CC0000;
+ text-transform: capitalize;
+}
+
+.sidebar-cap:hover 
+{
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+ text-decoration: underline;
+ color: #CC0000;
+ text-transform: capitalize;
+}
+
+.home-dates 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.home-dates:hover 
+{
+ color: #FFFFFF;
+ text-decoration: underline;
+ font-size: 11px;
+ font-weight: bold;
+}
+
+.search-url 
+{
+	color: #4c4c4c;
+	text-decoration: none;
+	font-size: 11px;
+
+}
+
+.search-url:hover 
+{
+color: #4c4c4c;
+ text-decoration: underline;
+
+}
+
+a img 
+{ 
+ border: 0; 
+}
+
+
+caption 
+{
+ caption-side: top;
+ margin-left: 0 px;
+ padding-left: 6px;
+ margin-top: 2 px;
+ margin-bottom: 2 px;
+ text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+}
+
+
+
+ul 
+{
+ margin-left: 0px;
+ padding-left: 24px;
+ padding-right: 6px;
+ margin-bottom: 0px;
+ padding-bottom: 0px;
+ margin-top: 0px;
+ padding-top: 0px;
+ list-style-type: none;
+ list-style-position: outside;
+ list-style-image: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/obama08/RealClearPolitics-ElectoralMap08_prefinal_files/dev/mt-static/images/arrow_black.gif);
+}
+
+li {
+ font-size: 11px;
+ font-weight: normal;
+ line-height: 14px;
+ margin-bottom: 0px;
+ padding-bottom: 0px;
+ margin-top: 0px;
+ padding-top: 0px;
+
+}
+
+.related-topics {
+ text-transform: capitalize;
+}
+
+
+
+form 
+{
+padding: 0px;
+margin: 0px;
+}
+
+input.big 
+{
+ width: 100px;	border: 1px solid #CC0000;
+ font-size: 10px;
+ padding: 3px;
+}
+
+input.small 
+{
+ width: 60px;
+ border: 1px solid #CC0000;
+ font-size: 10px;
+ padding: 3px;
+}
+
+.red 
+{
+ color: #CC0000;
+}
+
+hr
+{
+ width: 560px;
+ color: #CC0000;
+ background-color: #CC0000;
+ height: 1px;
+}
+
+hr.reader
+{
+ width: 560px;
+ color: #CC0000;
+ background-color: #CC0000;
+ height: 3px;
+}
+
+
+
+
+h1 
+{
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 36px;
+ line-height: 34px;
+ font-weight: normal;
+ color: #333333;
+ margin-bottom: 2px;
+}
+
+.h1-vlog 
+{
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 36px;
+ line-height: 36px;
+ font-weight: normal;
+ color: #000000;
+}
+
+h2 
+{
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 28px;
+ line-height: 32px;
+ font-weight: normal;
+ margin: 5px 0 10px 0;
+ color: #666666;
+}
+
+.h2-article
+{
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 28px;
+ line-height: 32px;
+ font-weight: normal;
+ margin: 5px 0 5px 0;
+ color: #666666;
+}
+
+
+h3 
+{
+ font-size: 20px;
+ font-weight: normal;
+ color: #666666;
+ margin-bottom: 10px;
+}
+
+.h3-home 
+{
+ font-size: 20px;
+ font-weight: normal;
+ text-transform: capitalize;
+ color: #666666;
+ margin-bottom: 5px;
+ margin-top: 10px;
+}
+
+.h3-home  a:link,  h3  a:visited { color: #666666;
+}
+
+h4 
+{
+ font-size: 12px;
+ font-weight: normal;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ padding: 0px;
+}
+
+h5, h6 
+{ 
+ font-weight: normal; 
+}
+
+h5, h6, p, ol, ul, pre, blockquote
+{
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.textsmall {
+ font-size: 11px;
+
+
+}
+.textsmall :hover 
+{
+ font-size: 11px;
+}
+
+/***********************************************/
+/* Overall Layout Divs                                 */
+/***********************************************/
+
+#container
+{
+	margin: 0;
+	width: 990px;
+	background: #fff;
+	left: 0px;
+	top: 0px;
+	position: relative;
+}
+
+
+#masthead
+{
+	padding: 0px;
+	border-bottom: 1px solid #cccccc;
+	width: 990px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+
+#headlines{
+	float:right;
+	width: 180px;
+	border-left: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	padding-right: 10px;
+	background-color: #66FFFF;
+}
+
+#content{
+	width: 560px;
+	background-color: #FFCC00;
+	float: left;
+	margin-left: 40px;
+}
+
+#alpha 
+{
+	width:600px;
+	float: left;
+	min-height: 1px;
+	margin-left: 20px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+
+#beta 
+{
+	width: 170px;
+	min-height: 1px;
+	padding: 0px;
+	float: right;
+	text-align: left;
+}
+
+#gamma{
+	float: left;
+	width: 180px;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+/************* #top navigation styles ***************/
+#navcontainer
+{
+	margin: 0px 0px 0px 0px;
+	background-color: #000000;
+	width:990px;
+	height:20px;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	clear: both;
+}
+
+#navcontainer ul
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	float: left;
+	
+}
+
+#navcontainer ul li
+{
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#navcontainer ul li a
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 3px;
+	padding-right:5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	float: left;
+	text-align:center;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: .05em;
+}
+
+#navcontainer ul li a:hover
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #CC0000;
+	padding-top: 3px;
+	padding-right:5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	float: left;
+	text-align:center;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: .05em;
+}
+
+#navcontainer a:active
+{
+background: #c60;
+color: #fff;
+}
+
+#navcontainer li#active a
+{
+background: #c60;
+border: 1px solid #c60;
+color: #fff;
+}
+
+
+#navcontainer ul#sub
+{
+ border: 0;
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+ text-align: center;
+ float: right;
+ text-transform: none;
+}
+
+
+.nav
+{
+ color: #FFFFFF;
+ text-decoration: none;
+ font-size: 11px;
+ font-weight: bold;
+}
+
+.nav:hover 
+{
+ color: #FFFFFF;
+ text-decoration: none;
+ font-size: 11px;
+ font-weight: bold;
+}
+
+
+/************* #banner styles ***************/
+
+#page-header
+{
+ margin: 0px; 
+ width: 990px;
+ display: inline;
+ padding: 0px;
+}
+
+#page-header-logo
+{
+ margin:0px;
+ position: relative; 
+ width:180px; 
+ height:125px;
+ display: inline; /* ie win bugfix */
+ float: left;
+ padding: 0px;
+}
+
+/************* #left-column styles ***************/
+
+#leftbox-topics 
+{
+	display: block;
+	background-color: #dddddd;
+	width: 180px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin: 0px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	float: left;
+}
+#leftbox-latest 
+{
+	display: block;
+	background-color: #dddddd;
+	width: 180px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin: 0px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	float: left;
+}
+#leftbox-poll 
+{
+	display: block;
+	background-color: #dddddd;
+	width: 180px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin: 0px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	float: left;
+}
+#leftbox-blog 
+{
+	display: block;
+	background-color: #dddddd;
+	width: 180px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin: 0px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	float: left;
+}
+#leftbox-posts 
+{
+	display: block;
+	background-color: #dddddd;
+	width: 180px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin: 0px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	float: left;
+}
+#leftbox-archive 
+{
+	display: block;
+	background-color: #dddddd;
+	width: 180px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin: 0px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	float: left;
+}
+#leftbox-columnists 
+{
+	display: block;
+	background-color: #dddddd;
+	width: 180px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin: 0px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	float: left;
+}
+
+#leftbox-ext-promo
+{
+	display: block;
+	background-color: #dddddd;
+	width: 178px;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin: 0px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	float: left;
+ border-width: 1px;
+ border-style: solid;
+ border-color: #000000;
+}
+
+/************* #content middle styles ***************/
+
+#story {
+	padding:  0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+
+
+#dateline {
+	width: 560px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CC0000;
+	padding: 0px;
+}
+
+#dateline-date {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #CC0000;
+	text-transform: capitalize;
+        float: left;
+width: 150px;
+}
+
+#article-tools {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #CC0000;
+	text-transform: uppercase;
+        float:left;
+text-align:right;
+width: 560px;
+}
+
+#article-footer
+{
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 12px;
+ font-weight: normal;
+ font-style: italic;
+ color: #000000;
+ margin-top: 5px;
+ margin-bottom: 5px;
+ text-align:center;
+}
+
+#article-author
+{
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 12px;
+ font-weight: normal;
+ font-style: italic;
+ color: #000000;
+ margin-top: 5px;
+ margin-bottom: 5px;
+ text-align:left;
+}
+
+.author-bio-box
+{
+ margin: 4px 0px 8px 0px; 
+ background-color: #FFFFFF;
+ position: relative; 
+ float: left;
+ width:570px;
+ display: inline; /* ie win bugfix */
+ padding: 2px 2px 2px 2px;
+ border-width: 1px 1px 1px 1px;
+ border-style: solid;
+ border-color: #CC0000;
+}
+
+#related-footer
+{
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 12px;
+ font-weight: normal;
+ color: #000000;
+ margin-top: 15px;
+ margin-bottom: 10px;
+}
+
+/************* #right-column styles ***************/
+
+#author-box
+{
+	margin: 4px 0px 2px;
+	background-color: #FFFFFF;
+	display: block;
+	padding: 2px;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #CC0000;
+	width: 165px;
+}
+
+#author-archive
+{
+	margin: 4px 0px 2px;
+	background-color: #FFFFFF;
+	display: block;
+	padding: 2px;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #CC0000;
+	width: 165px;
+ text-align: center;
+}
+
+#search-box
+{
+	margin: 0;
+	position: relative;
+	width: 165px;
+	display: block;
+  height: 25px;
+	background:  #CCCCCC;
+	padding: 3px 2px 2px 4px;
+	margin: 5px 0px 0px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+#registerbox {
+	width: 165px;
+ height=210px;
+	background:  #CC0000;
+	padding: 3px;
+	margin: 0px;
+	/*position: relative;*/
+}
+
+
+
+#utility-container
+{
+ width: 120px;	
+ height=210px;
+ background:  #CC0000;
+ margin-top: 5px; 
+ float: left;
+}
+
+#utility-box
+{
+ width: 117px;	
+ background:  #990000;
+ padding-left: 3px;
+ margin-top: 2px; 
+ float: left;
+}
+
+
+/************* #poll styles ***************/
+
+#poll-title 
+{
+	margin: 10px 0px 0px 0px;
+	background-color: #999999;
+	float:left;
+	width: 590px;
+	height: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-width: 2px 0px 0px 0px;
+	border-style:solid;
+	border-color: #CC0000;
+	text-indent: 6pt;
+}
+
+#poll-body
+{
+ margin: 0px 0px 2px 0px; 
+ position: relative; 
+ float: left;
+ width: 590px; 
+ display: block;
+}
+
+#poll-bottom
+{
+ margin: 2px 0px 2px 0px; 
+ position: relative; 
+ float: left;
+ width: 590px; 
+ display: block;
+ text-align: right;
+}
+
+td.home
+{
+ background-color:#F5F5F5;
+ width:100%;
+ border-width: 0px 0px 2px 0px;
+ padding: 0px 0px 0px 6px;
+ border-style: solid;
+ border-color: #cccccc;
+}
+
+td.poll-head
+{
+ background-color:#EEEEEE;
+ border-width: 0px 0px 0px 0px;
+ padding: 0px 0px 0px 0px;
+}
+
+td.dark
+{
+ background-color:#EEEEEE;
+ border-width: 0px 0px 0px 0px;
+ padding: 0px 0px 0px 0px;
+}
+
+td.light
+{
+ background-color:#F5F5F5;
+ border-width: 0px 0px 0px 0px;
+ padding: 0px 0px 0px 0px;
+}
+
+
+td.poll_avg_yellow
+{
+ background-color:#FFFF00;
+ border-width: 1px 0px 1px 0px;
+ padding: 1px 0px 1px 0px;
+ border-style: solid;
+ border-color: #CC0000;
+}
+
+td.poll-avg
+{
+ background-color:#ffffff;
+ border-width: 1px 0px 1px 0px;
+ padding: 1px 0px 1px 0px;
+ border-style: solid;
+ border-color: #CC0000;
+}
+
+
+td.poll-avg2
+{
+ background-color:#CCCC99;
+ border-width: 0px 0px 0px 0px;
+ padding: 0px 0px 0px 0px;
+}
+
+
+/************* #buzztracker styles ***************/
+
+
+#buzzcontainer
+{
+	margin: 1px 8px 1px 8px;
+	background-color: #efefef;
+	position: relative;
+	width:558px;
+	padding: 0px;
+}
+
+#buzzcontainer ul
+{
+	border: 0;
+	margin: 0 0 0 12px;
+	padding: 0;
+	list-style-type: none;
+	list-style-position: outside;
+	text-align: left;
+	font-size: 11px;
+	line-height: 16px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#buzzcontainer ul li
+{
+	text-align: left;
+	padding: 0;
+	margin: 6px 0 6px 6px;
+	list-style-position: outside;
+	list-style-type: square;
+	line-height: 16px;
+	font-size: 11px;
+ font-weight: bold;
+}
+
+#buzzcontainer ul li a
+{
+
+	font-size: 11px;
+	font-weight: normal;
+
+}
+
+#buzzcontainer ul li a:hover
+{
+
+	font-size: 11px;
+	font-weight: normal;
+
+}
+
+#buzz-date
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10px;
+	line-height: 14px;
+	color: #CC0000;
+	font-weight: normal;
+	padding-top: 0px;
+	padding-right:0px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	margin-top:5px;
+	text-align: left;
+}
+
+
+
+
+
+.buzzcomment {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 11px;
+ line-height: 15px;
+ font-weight: normal;
+ margin-top: 8px;
+}
+
+.buzz-site-title
+{
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #CC0000;
+	clear: left;
+}
+
+.buzz-site-url
+{
+ color: #CC0000;
+ text-decoration: none;
+ font-size: 14px;
+ font-weight: bold;
+ margin-bottom: 0px;
+
+}
+
+.buzz-site-url:hover 
+{
+ color: #CC0000;
+ text-decoration: underline;
+ font-size: 14px;
+ font-weight: bold;
+ margin-bottom: 0px;
+}
+
+/************* #readerarticle styles ***************/
+
+
+#usergen-container
+{
+ margin: 1px;
+ position: relative; 
+ display: inline; /* ie win bugfix */
+ float: left;
+ padding: 0px 6px 0px 6px;
+
+}
+
+#usergen-item
+{
+ margin: 0 0 0 0;
+ position: relative; 
+ display: inline; /* ie win bugfix */
+ float: left;
+ width: 538px;
+ padding: 2px 6px 5px 6px;
+ border-width: 1px 0px 0px 0px;
+ border-style:dotted;
+  border-color: #C0C0C0;
+}
+
+
+
+.usergen-box
+{
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 12px;
+ font-weight: bold;
+ line-height: 22px;
+ color: #333333;
+ background-color: #FFFF99;
+}
+
+
+
+/************* #ad styles ***************/
+
+#ad-banner 
+{ 
+ margin: 5px 0px 10px 0px; 
+ position: relative; 
+ width:450px; 
+ height: 60px;
+ display: inline; /* ie win bugfix */
+ float: left;
+ padding: 0px 0px 0 0px;
+ border-width: 0px 0px 0px 0px;
+ border-style: solid;
+ border-color: #fff;
+background-color:#CC0000;
+}
+
+#ad-leaderboardtag {
+	margin: 1px;
+	width:15px;
+	height: 100px;
+	display: inline;
+	float: right;
+	padding: 0px 0px 0;
+	
+}
+/*
+#page-header-ad
+{
+	position: absolute;
+	width:780px;
+	height:100px;
+	display: block;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #fff;
+	left: 210px;
+	top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	margin-top: 18px;
+	margin-bottom: 0px;
+}
+*/
+#page-header-ad
+{
+position: relative;
+float: left;
+width:780px;
+height:100px;
+border: 0px 0px 0px 0px;
+padding: 0px 0px 0px 30px;
+margin-top: 18px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+}
+#article-box-ad
+{
+	margin: 12px 0px 12px 12px;
+	position: relative;
+	width: 300px;
+	height: 250px;
+	float: right;
+	display: inline;
+	padding: 0px;
+}
+#right-box-ad
+{
+ width: 300px;	
+ height=250px;
+ margin-top: 5px; 
+ float: left;
+}
+#ad-home-left-box
+{
+ padding-top:10px;
+ padding-right:3px;
+ padding-bottom: 10px;
+ padding-left: 6px;
+ text-align: center;
+ background-color: #dddddd;
+}
+
+
+#right-wide-skyscraper
+{
+	width: 167px;
+	float: right;
+ margin: 2px 0px 2px 0px; 
+ padding: 5px 0px 5px 0px; 
+ border-width: 1px 1px 1px 1px;
+ border-style: solid;
+ border-color: #4C4C4C;
+text-align: center;
+}
+#right-narrow-skyscraper
+{
+ width: 125px;	
+ margin-top: 5px; 
+ float: left;
+}
+
+#home-links-ads
+{
+	width: 169px;
+ margin: 2px 0px 2px 0px; 
+float: right;
+	background-color: #FFFFFF;
+ border-width: 0px 0px 0px 0px;
+ border-style: solid;
+  border-color:  #4C4C4C;
+}
+
+
+/************* #dates container ***************/
+
+.dateline {
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 12px;
+ font-weight: bold;
+ color: #CC0000;
+ text-align: left;
+}
+
+#home-dates-container {
+ background-color: #CC0000;
+ width: 33px;
+ padding-top: 0px;
+ padding-right: 2px;
+ padding-bottom: 0px;
+margin-bottom: 5px;
+ padding-left: 0px;
+ border-right-width: 2px;
+ border-right-style: solid;
+ border-right-color: #FFFFFF;
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: #CC0000;
+ float: left;
+ text-align:center;
+}
+
+
+#current-date-container {
+ background-color: #000000;
+ width: 33px;
+ padding-top: 0px;
+ padding-right: 2px;
+ padding-bottom: 0px;
+margin-bottom: 5px;
+ padding-left: 0px;
+ border-right-width: 2px;
+ border-right-style: solid;
+ border-right-color: #FFFFFF;
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: #000000;
+ float: left;
+ text-align:center;
+}
+.home-dates 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.home-dates:hover 
+{
+ color: #FFFFFF;
+ text-decoration: underline;
+ font-size: 11px;
+ font-weight: bold;
+}
+
+#home-dateline {
+ width: 300px;
+ padding-top: 0px;
+ padding-right: 0px;
+ padding-bottom: 0px;
+ margin-bottom: 5px;
+ padding-left: 0px;
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: #CC0000;
+ float: left;
+}
+
+
+/************* #footer styles ***************/
+
+
+#footer{
+	clear: both;
+	border: 1px solid #cccccc;
+	font-size: 75%;
+	color: #FFFFFF;
+	padding: 4px 4px 4px 30px;
+	font-weight: bold;
+	background-color: #4C4C4C;
+	width: 956px;
+ text-align: center;
+margin-top: 10px;
+}
+
+
+.footer 
+{
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+ color: #FFFFFF;
+}
+.footer:hover
+{
+ color: #FFFFFF;
+ text-decoration: underline;
+} 
+
+
+
+.pollnavbox
+{
+	margin: 0px 0px 0px 0px;
+	background-color: #000000;
+	width:120px;
+	height:20px;
+	padding: 0px 0px 0px 5px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: top;
+}
+
+.pollnavhead
+{
+	margin: 0px 0px 0px 0px;
+	background-color: #CC0000;
+	width:125px;
+	height:20px;
+	padding: 0px 0px 0px 5px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: top;
+}
+
+.pollnavhead a
+{
+	margin: 0px 0px 0px 0px;
+	background-color: #CC0000;
+	width:150px;
+	height:20px;
+	padding: 0px 0px 0px 5px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: top;
+}
+
+.pollnavhead a:visited
+{
+	margin: 0px 0px 0px 0px;
+	background-color: #CC0000;
+	width:150px;
+	height:20px;
+	padding: 0px 0px 0px 5px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: top;
+}
+.pollnavhead a:hover
+{
+	margin: 0px 0px 0px 0px;
+	background-color: #CC0000;
+	width:150px;
+	height:20px;
+	padding: 0px 0px 0px 5px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: top;
+}
+
+.pollnavbox a
+{
+	float: top;
+	text-align:center;
+	color: #FFFFFF;
+	text-decoration: none;
+font-size: 11px;
+	font-weight: bold;
+	letter-spacing: .05em;
+	height:20px;
+}
+
+.pollnavbox a:hover
+{
+	background-color: #CC0000;
+	float: top;
+	text-align:center;
+	color: #FFFFFF;
+	text-decoration: none;
+font-size: 11px;
+	font-weight: bold;
+	letter-spacing: .05em;
+	height:20px;
+}
+
+.table_header 
+{
+background-color: #990000;
+}
+
+.most-read 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 6px;
+	line-height: 14px;
+
+}
+
+.most-read:hover 
+{
+ color: #FFFFFF;
+ text-decoration: underline;
+}
+
+.most-read:visited 
+{
+	color: #FFFFFF;
+}
+
+
+/************** EPOLL ********************/
+div.clear { clear: both; padding: 0; margin: 0; }
+
+ul#title-navigation { margin: 0; padding: 0; width: 600px; list-style: none; background: #fff; height: 1%; border: 1px solid #666; }
+ul#title-navigation:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+ul#title-navigation li { float: left; display: inline: }
+ul#title-navigation li.firstTitleElement { background: #CC0000; color: #fff; font-weight: bold; padding: 4px 9px; }
+ul#title-navigation li a { display: block; padding: 5px 11px; color: #CC0000; font: bold .9em Verdana, Arial, Helvetica, sans-serif; background: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/obama08/images/bg-poll-nav.gif) no-repeat left; }
+ul#title-navigation li a.noBg { background: none; }
+ul#title-navigation li ul { position: absolute; left: -999px; display: block; background: #ccc; margin: 0; padding: 0; }
+ul#title-navigation li ul li { float: none; }
+ul#title-navigation li ul li a { color: #000; display: block; }
+ul#title-navigation li ul li a:hover { background: #999; } 
+ul#title-navigation li ul.over { left: auto; }
+
+p#email-link { text-align: center; margin: 3px 0; }
+h2#main-poll-title { margin: 15px 0 0 0; text-align: center; }
+#candidates { border: 1px solid #000; width: 270px; padding: 2px; height: 1%; float: left; }
+#candidates.faux { width: 594px; }
+#candidates:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+#candidates h3 { text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff; }
+#candidates .candidate { float: left; width: 135px; text-align: center; }
+#candidates .candidate img { margin: 6px auto 2px auto; width: 80px; }
+#candidates .candidate p { margin: 1px 0; }
+
+#snapshot { margin: 0 0 0 2px; border: 1px solid #000; padding: 2px; width: 316px; height: 1%; float: left; }
+#snapshot.faux { width: 594px; margin: 0; }
+#snapshot:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+#snapshot h3 {text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff;}
+#snapshot p { margin: 5px 2px 0 2px; line-height: 1.3; }
+#snapshot p br { font-size: 5px; line-height: 1.5; }
+#snapshot p.spread { font-weight: bold; }
+#snapshot p.intrade { line-height: 1; margin-bottom: 6px; border: 1px solid; padding: 4px; }
+
+#polling-data-rcp { clear: both; width: 594px; border: 1px solid #000; padding: 2px; margin-top: 10px; display: inline; float: left; }
+#polling-data-rcp h3 {text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff;}
+#polling-data-rcp table { width: 594px; border-collapse: collapse; font: 1.1em "Times New Roman", Times, serif; }
+#polling-data-rcp p.foot { margin: 5px 0; text-align: center; font-weight: bold; clear: both; }
+#polling-data-rcp th { padding: 4px; background: #cccc99; text-align: center; }
+#polling-data-rcp td { padding: 4px; text-align: center; }
+#polling-data-rcp th.noCenter, #polling-data-rcp td.noCenter { text-align: left; }
+#polling-data-rcp td.spread { text-align: center; }
+span.rep { color: #ff0000; }
+span.dem { color: #0000ff; }
+#polling-data-rcp th.spread { text-align: center; }
+#polling-data-rcp th.date {}
+#polling-data-rcp tr.final { background: #ffff00; font-weight: bold; }
+#polling-data-rcp tr.rcpAvg { background: #ffff00; font-weight: bold; }
+#polling-data-rcp tr.rcpAvg2 { background: #ccc; font-weight: bold; }
+#polling-data-rcp tr.final td.normal { font-weight: normal; }
+
+
+#publish { height: 55px; background: #4b4b4b; padding: 10px; font-weight: bold; color: #fff; font-size: 1.5em; }
+#publish a { display: block; width: 100px; text-align: center; margin-top: 3px; padding: 5px; background: #d30015; border: 1px solid #d30015; color: #fff; }
+
+#polling-data-full { clear: both; width: 594px; border: 1px solid #000; padding: 2px; margin-top: 10px; display: inline; float: left;}
+#polling-data-full h3 {text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff;}
+#polling-data-full table { width: 594px; border-collapse: collapse; font: 1.1em "Times New Roman", Times, serif; }
+#polling-data-full th { padding: 4px; background: #cccc99; text-align: center; }
+#polling-data-full td { padding: 4px; text-align: center; }
+#polling-data-full th.noCenter, #polling-data-full td.noCenter { text-align: left; }
+#polling-data-full td.spread { text-align: center; }
+#polling-data-full th.spread { text-align: center; }
+#polling-data-full th.date { }
+#polling-data-full tr.final { background: #ffff00; font-weight: bold; }
+#polling-data-full tr.rcpAvg { background: #ffff00; font-weight: bold; }
+#polling-data-full tr.rcpAvg2 { background: #ccc; font-weight: bold; }
+#polling-data-full tr.isInRcpAvg { background: #ccc; }
+#polling-data-full tr.final td.normal { font-weight: normal; }
+
+#modules-1 { width: 293px; border: 1px solid #000; float: left; padding: 2px; }
+#modules-1 h3 {text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff;}
+#modules-2 { width: 293px; margin: 0 0 0 2px; border: 1px solid #000; float: left; padding: 2px; }
+#modules-2 h3 {text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff;}
+
+div#under-title { text-align: center; font-weight: normal; }
+div#under-title a { font-weight: normal; }
+div#under-title strong a { font-weight: bold; }
+
+#chart { border: 1px solid #000; margin: 10px 0 0 0; padding: 2px; clear: both; float: left; width: 594px; }
+#map { margin: 10px 0 0 0; padding: 2px; clear: both; float: left; width: 594px; }
+
+#intrade { border: 1px solid #000; padding: 2px; clear: both; float: left; width: 594px; margin-top: 10px; }
+#intrade h3 {text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff;}
+
+#short-news { width: 600px; margin-top: 10px; clear: both; float: left; }
+#short-news h3 { text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff; }
+#short-news p { margin: 1px 0; }
+#short-news p.foot { margin: 5px 0; text-align: center; font-weight: bold; }
+#news { width: 600px; margin-top: 10px; clear: both; float: left; }
+#news h3 { text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff; }
+#news p { margin: 1px 0; }
+
+#candidate-snapshot { height: 1%; position: relative; margin-top: 10px; }
+#candidate-snapshot:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+#candidate-snapshot.faux { background: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/obama08/images/bg-candidate-snapshot.gif) no-repeat bottom; }
+#candidate-snapshot.faux #candidates, #candidate-snapshot.faux #snapshot { border-bottom: 0; }
+#snapshot-footer { margin: 0; width: 304px; bottom: 3px; padding: 1px 6px; right: 3px; background: #990000; position: absolute; color: #fff; }
+#snapshot-footer.faux { width: 582px; }
+#snapshot-footer a { color: #fff; font-weight: bold; }
+
+#modules { height: 1%; clear: both; margin-top: 10px; border: 1px solid #000; padding: 2px; }
+#modules:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+#modules.faux { background: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/obama08/images/bg-modules.gif) no-repeat bottom; border: 0; padding: 0; }
+#modules.faux #modules-1, #modules.faux #modules-2 { border-bottom: 0; }
+#modules div.wide h3 { text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0 0 5px 0; color: #fff; }
+#modules div.wide { margin: 0 0 5px 0; }
+#under-title { margin: 2px 0 0 0; padding: 0; font-size: 1.1em; font-weight: bold; }
+
+#gamma #poll_sidebar p { margin: 0; padding: 0;}
+/************** CUSTOM PAGE ********************/
+
+.race-container { border: 1px solid #000; clear: both; float: left; display: inline; height: 1%; margin: 15px 0 5px 0; width: 600px; }
+.race-container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.race-title { color: #fff; background: #990000; margin: 0; padding: 5px; font-size: 12px; text-align: center; font-weight: bold; }
+
+.race-container p.custom-footer { background: #CCCC99; clear: both; width: 594px; margin: 0; padding: 3px; text-align: center; font-weight: bold; }
+
+.custom-polling-data-rcp { clear: both; width: 596px; padding: 2px; display: inline; float: left; }
+.custom-polling-data-rcp h3 {text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff;}
+.custom-polling-data-rcp table { width: 596px; border-collapse: collapse; font: 1.1em "Times New Roman", Times, serif; }
+.custom-polling-data-rcp p.foot { margin: 5px 0; text-align: center; font-weight: bold; clear: both; }
+.custom-polling-data-rcp th { padding: 4px; background: #cccc99; text-align: center; }
+.custom-polling-data-rcp td { padding: 4px; text-align: center; }
+.custom-polling-data-rcp th.noCenter, .custom-polling-data-rcp td.noCenter { text-align: left; }
+.custom-polling-data-rcp td.spread { text-align: center; }
+span.rep { color: #ff0000; }
+span.dem { color: #0000ff; }
+.custom-polling-data-rcp th.spread { text-align: center; }
+.custom-polling-data-rcp tr.final { background: #ffff00; font-weight: bold; }
+.custom-polling-data-rcp tr.rcpAvg { background: #ffff00; font-weight: bold; }
+.custom-polling-data-rcp tr.rcpAvg2 { background: #ccc; font-weight: bold; }
+.custom-polling-data-rcp tr.final td.normal { font-weight: normal; }
+
+
+.custom-polling-data-full { clear: both; width: 596px; padding: 2px; display: inline; float: left; }
+.custom-polling-data-full h3 {text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff;}
+.custom-polling-data-full table { width: 596px; border-collapse: collapse; font: 1.1em "Times New Roman", Times, serif; }
+.custom-polling-data-full p.foot { margin: 5px 0; text-align: center; font-weight: bold; clear: both; }
+.custom-polling-data-full th { padding: 4px; background: #cccc99; text-align: center; }
+.custom-polling-data-full td { padding: 4px; text-align: center; }
+.custom-polling-data-full th.noCenter, .custom-polling-data-full td.noCenter { text-align: left; }
+.custom-polling-data-full td.spread { text-align: center; }
+span.rep { color: #ff0000; }
+span.dem { color: #0000ff; }
+.custom-polling-data-full th.spread { text-align: center; }
+.custom-polling-data-full tr.final { background: #ffff00; font-weight: bold; }
+.custom-polling-data-full tr.rcpAvg { background: #ffff00; font-weight: bold; }
+.custom-polling-data-full tr.rcpAvg2 { background: #ccc; font-weight: bold; }
+.custom-polling-data-full tr.final td.normal { font-weight: normal; }
+
+.race-container p.custom-under-title { margin: 2px 0; text-align: center; font: bold 1.1em "Times New Roman", Times, serif; }
+
+.custom-short-news { width: 596px; padding: 2px; clear: both; float: left; }
+.custom-short-news h3 { text-align: center; background: #990000; font-size: 1.1em; padding: 1px 0; font-weight: bold; margin: 0; color: #fff; }
+.custom-short-news p { margin: 3px 0; }
+.custom-short-news p.foot { margin: 5px 0; text-align: center; font-weight: bold; }
+
+.custom-chart { padding: 3px; clear: both; float: left; width: 594px; }
+
+/************** LATEST EPOLLS ********************/
+
+table.hide { display: none; }
+table.table-races { clear: both; border: 1px solid #777788; margin-top: 0; }
+ul#race-nav { margin: 15px 0 -1px 0; padding: 0; list-style: none; clear: both; width: 600px; float: left; display: inline; }
+/*ul#race-nav li a#tab-1, ul#race-nav li a#tab-3, ul#race-nav li a#tab-5 { display: none; } */
+ul#race-nav li a#tab-5 { display: none; } 
+ul#race-nav li { float: left; display: inline; }
+ul#race-nav li a { display:block; border: 1px solid #777788; padding: 4px; margin-right: 5px; font: 1em Verdana, Arial, Helvetica, sans-serif; background: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/obama08/images/shade.gif) bottom repeat-x; /*width: 160px;*/ width: 135px; text-align: center; }
+ul#race-nav li a#tab-1 { margin-right: 0; width: 140px; }
+ul#race-nav li a.on { background: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/obama08/images/shade-over.gif) top repeat-x; }
+
+p#my-nav { text-align: right; }
+p#my-nav a.hide { display: none; }
+p#my-nav a.on { color: #000; }
+
+/***************** president grid LC ****************************/
+
+table.president-grid { margin: 5px 0 -5px 1px; padding: 0; border-collapse: collapse; width: 170px; text-align: center; background: #fff; }
+table.president-grid td { padding: 0; width: 34px; border: 1px solid #ccc; background: #efefef; }
+
+p.superscript { margin: 0; padding: 0 4px 4px 4px; font-size: 10px; color: #666; line-height: 13px; text-align: center;}
+p.superscript2 { margin: 5px 0 0 0; padding: 0 4px 4px 4px; font-size: 10px; color: #666; line-height: 13px; text-align: center;}
+
+/*table subtext*/
+div.superscript { margin: 0; padding: 0 4px 4px 4px; font-size: 10px; color: #666; line-height: 13px; text-align: center;}
+
+
+sup { vertical-align: 0; position: relative; bottom: 1ex;  }

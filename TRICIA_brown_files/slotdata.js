@@ -1,0 +1,1 @@
+GA_googleSetAdSlotAttributes({"Front_Page_Ad":{"_width_":160,"_height_":600,"_expandable_":true,"_enabled_":true}});

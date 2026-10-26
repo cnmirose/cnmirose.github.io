@@ -1,0 +1,257 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+</body>
+<h1>
+Takehome Group Grading
+</h1>
+
+<?php
+	function getPassedValue($key){
+		$value = $_POST[$key];
+		if (!isset($value)){
+			$value = $_GET[$key];
+		}
+		return stripslashes(htmlspecialchars_decode($value));
+	}
+$ID = getPassedValue('ID');
+
+?>
+
+<?
+if ($ID) {
+//   echo "Valid ID:" . $ID . "<br>";
+   switch ($ID) {
+   case 114002690:
+   echo "Hello Michael Cheng,<br>";
+   $name1="";
+   $name2="";
+   $name3="";
+   $name4="";
+   $name5="";
+   break;
+
+   //   JASON, FAIZAN, MIKE S.
+   case 117002362:
+   echo "Hello Jason,<br>";
+   $name1="Jason";
+   $name2="Faizan";
+   $name3="Mike S.";
+   $name4="";
+   $name5="";
+   break;
+   case 116003389:
+   echo "Hello Mike Sherman,<br>";
+   $name1="Jason";
+   $name2="Faizan";
+   $name3="Mike S.";
+   $name4="";
+   $name5="";
+   break;
+   case 103000599:
+   echo "Hello Faizan,<br>";
+   $name1="Jason";
+   $name2="Faizan";
+   $name3="Mike S.";
+   $name4="";
+   $name5="";
+   break;
+
+   // Christos, Michael L. Kristin, Atikur
+   case 118000029:
+   echo "Hello Christos,<br>";
+   $name1="Christos";
+   $name2="Michael L.";
+   $name3="Kristine";
+   $name4="Atikur";
+   $name5="";
+   break;
+   case 114001432:
+   echo "Hello Michael Lee,<br>";
+   $name1="Christos";
+   $name2="Michael L.";
+   $name3="Kristine";
+   $name4="Atikur";
+   $name5="";
+   break;
+   case 114007684:
+   echo "Hello Kristine,<br>";
+   $name1="Christos";
+   $name2="Michael L.";
+   $name3="Kristine";
+   $name4="Atikur";
+   $name5="";
+   break;
+   case 115008683:
+   echo "Hello Atikur,<br>";
+   $name1="Christos";
+   $name2="Michael L.";
+   $name3="Kristine";
+   $name4="Atikur";
+   $name5="";
+   break;
+
+   // Jose, Eric, Nishit, Sapan, Hiran
+   case 115005493:
+   echo "Hello Jose,<br>";
+   $name1="Jose";
+   $name2="Eric";
+   $name3="Nishit";
+   $name4="Sapan";
+   $name5="Hiran";
+   break;
+   case 116000443:
+   echo "Hello Hiran,<br>";
+   $name1="Jose";
+   $name2="Eric";
+   $name3="Nishit";
+   $name4="Sapan";
+   $name5="Hiran";
+   break;
+   case 115003090:
+   echo "Hello Nishit,<br>";
+   $name1="Jose";
+   $name2="Eric";
+   $name3="Nishit";
+   $name4="Sapan";
+   $name5="Hiran";
+   break;
+   case 117003456:
+   echo "Hello Sapan,<br>";
+   $name1="Jose";
+   $name2="Eric";
+   $name3="Nishit";
+   $name4="Sapan";
+   $name5="Hiran";
+   break;
+   case 115004828:
+   echo "Hello Eric,<br>";
+   $name1="Jose";
+   $name2="Eric";
+   $name3="Nishit";
+   $name4="Sapan";
+   $name5="Hiran";
+   break;
+
+// Joluis, Chris, Patrick
+   case 129009174:	
+   echo "Hello Joluis,<br>";
+   $name1="Joluis";
+   $name2="Chris";
+   $name3="Patrick";
+   $name4="";
+   $name5="";
+   break;
+   case 115000145:	
+   echo "Hello Chris,<br>";
+   $name1="Joluis";
+   $name2="Chris";
+   $name3="Patrick";
+   $name4="";
+   $name5="";
+   break;
+   case "077003877":
+   echo "Hello Patrick,<br>";
+   $name1="Joluis";
+   $name2="Chris";
+   $name3="Patrick";
+   $name4="";
+   $name5="";
+   break;
+
+   // Mike J.,  Abdul, David
+   case "006004552":
+   echo "Hello Mike Jones,<br>";
+   $name1="Abdul";
+   $name2="Mike";
+   $name3="David";
+   $name4="";
+   $name5="";
+   break;
+   case 116003955:
+   echo "Hello Abdul,<br>";
+   $name1="Abdul";
+   $name2="Mike";
+   $name3="David";
+   $name4="";
+   $name5="";
+   break;
+   case 116007964:
+   echo "Hello David,<br>";
+   $name1="Abdul";
+   $name2="Mike";
+   $name3="David";
+   $name4="";
+   $name5="";
+   break;
+   default:
+   echo "Invalid ID.  Try again<br>";
+   $INVALID="yes";
+}
+   
+if ($INVALID != "yes") {
+   $IDVALID="yes";
+   echo "<br>Please enter a letter grade (with +/- as necessary) for each group member including yourself<br>";
+?>
+
+
+<form id="gradepost" method="post" action="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/selfgradefinal.php">
+<input type="hidden" name="IDvalue" id="IDvalue"  value="<?= $ID ?>"/>
+<?
+   if ($name1) {
+?>
+   <p><label><?= $name1 ?>:</label><input type="text" name="name1" id="name1" value="" /></p>
+   <input type="hidden" name="name1value"  id="name1value" value="<?=  $name1 ?>" />
+<?
+   }
+   if ($name2) {
+?>
+   <p><label><?= $name2 ?>:</label><input type="text" name="name2" id="name2" value="" /></p>
+   <input type="hidden" name="name2value"  id="name2value" value="<?=  $name2 ?>" />
+<?
+   }
+   if ($name3) {
+?>
+   <p><label><?= $name3 ?>:</label><input type="text" name="name3" id="name3" value="" /></p>
+   <input type="hidden" name="name3value"  id="name3value" value="<?=  $name3 ?>" />
+<?
+   }
+   if ($name4) {
+?>
+   <p><label><?= $name4 ?>:</label><input type="text" name="name4" id="name4" value="" /></p>
+   <input type="hidden" name="name4value" id="name4value"  value="<?=  $name4 ?>" />
+<?
+   }
+   if ($name5) {
+?>
+   <p><label><?= $name5 ?>:</label><input type="text" name="name5" id="name5" value="" /></p>
+   <input type="hidden" name="name5value" id="name4value"  value="<?=  $name5 ?>" />
+<?
+   }
+?>
+<INPUT TYPE="submit" NAME="submit" VALUE="submit" >
+</form>
+<?
+
+}
+
+}
+//else {
+//   echo " ID:" . $ID . "<br>";
+//}
+   $ID=NULL;   
+?>
+
+
+<?
+if (!$IDVALID) {
+?>
+<form id="gradeform" method="post" action="selfgradefinal.html">
+<p><label>9-digit StudentID:</label><input type="text" name="ID" id="ID" value="<?= $ID ?>" /></p>
+<INPUT TYPE="submit" NAME="submit" VALUE="submit" >
+</form>
+<?
+}
+?>
+
+</body>
+</html>

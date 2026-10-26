@@ -1,0 +1,288 @@
+BODY
+{
+    BACKGROUND-COLOR: #ffffff;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    MARGIN: 11px
+}
+
+A:link
+{
+    COLOR: #0033ff
+}
+A:visited
+{
+    COLOR: #990099
+}
+A:active
+{
+    COLOR: #ff0000
+}
+A.White:link 
+{
+	color: #ffffff;
+} 
+A.White:active 
+{
+	color: #ffffff;
+}
+A.White:visited 
+{
+	color: #ffffff;
+}
+.text-bold
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 13px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold
+}
+.medium-bold
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 13px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold
+}
+.text-bold-italic
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold
+}
+.text-normal
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 13px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal
+}
+.medium-normal
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 13px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal
+}
+.medium-normal-red
+{
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 13px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal
+}
+.medium-normal-italic
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 13px;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: normal
+}
+.text-large-italic
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 16px;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: normal
+}
+.large-normal-red
+{
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 16px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal
+}
+.text-normal-italic
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: normal
+}
+.letter-bold
+{
+    COLOR: #009966;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 25px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold
+}
+.error-bold-italic
+{
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold
+}
+.text-normal-underline
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: underline
+}
+.text-normal-small
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal
+}
+.text-bold-small
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold
+}
+.text-bold-underline
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: underline
+}
+.title-bold-large
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 16px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold
+}
+.title-bold-medium
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 13px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold
+}
+.link-small-bold
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+	/*/*/
+	FONT-SIZE: 11px;
+	/* Netscape will ignore above*/
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold
+}
+.errort-bold
+{
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold
+}
+.title-bold-large-italic
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 16px;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold
+}
+.title-bold-medium-italic
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 13px;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold
+}
+.title-xlarge-bold
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	FONT-WEIGHT: bold;
+}
+.title-xlarge-normal
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.text-small
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal
+}
+.error-text-small
+{
+    COLOR: #CC0000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal
+}
+.text-bold-big{
+    font-weight : bold;
+    font-style : normal;
+    font-size : 17px;
+}
+.small-bold
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.small-normal
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.small-bold-italic
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+}
+.small-normal-italic
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+}
+.sidebar
+{
+	background-color: #FFFFF0;
+	color: inset;
+	width: 98%;
+	border-style: solid;
+	border-color: #006666;
+	border-width: 1pt;
+	padding-top: 4pt;
+	padding-bottom: 4pt;
+	padding-left: 10pt;
+	padding-right: 10pt;
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	margin-left: 5pt;
+	margin-right: 5pt;
+}
+.ct
+{
+	font-size: 13px
+}
+.tiny-normal
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+}
+.GreenBorder
+{
+	background-color: #009966;
+}
+.shaded
+{
+	background-color: #F7F7F7;
+}

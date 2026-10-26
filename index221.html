@@ -1,0 +1,1794 @@
+<!DOCTYPE html SYSTEM "html.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <base href="http://www.winlab.rutgers.edu/%7Ecrose/index221.html">
+    <title>Principles of Electrical Engineering I (332:221/223)</title>
+  </head>
+  <body bgcolor="#ffffff">
+    <!--base href="index.html"-->
+    <hr> <font color="#ff0000">
+      <center>
+        <h1>&nbsp; RUTGERS UNIVERSITY</h1>
+      </center>
+    </font> <font color="#0000ff">
+      <center>
+        <h2>Department of Electrical and Computer Engineering<br>
+          Principles of Electrical Engineering I (332:221)<br>
+          World Wide Web Homepage </h2>
+        <h3><a
+href="https://sakai.rutgers.edu/portal/site/76343cac-5b9f-44bd-9ec8-8a96b3ae6c4d">Sakai
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Site (published)</a></h3>
+      </center>
+    </font>
+    <center>
+      <h2> M&amp;Th 10:20-11:40,&nbsp; SEC-111</h2>
+    </center>
+    <hr>
+    <hr>
+    <p><big><b> INSTRUCTOR:</b></big> <a
+        href="http://www.winlab.rutgers.edu/%7Ecrose"> Christopher Rose
+      </a> can be reached at <a href="mailto:crose@winlab.rutgers.edu"><i>crose@winlab.rutgers.edu.&nbsp;</i></a>
+      Office hours Monday and Thursday 1 hour after class in CoRE
+      508&nbsp; (or sometimes EE 104&nbsp; in the EE building). Email
+      questions are useful to get things started and will get fast
+      response (sometimes even if posted in the middle of the night).<br>
+    </p>
+    <p><big><b>TAs:</b></big>&nbsp; </p>
+    <ul>
+      <li>(Head TA) Gang Liu <a href="mailto:gliu82@yahoo.com">(gliu82@yahoo.com)</a>&nbsp;&nbsp;
+OFFICE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        HOURS:&nbsp; EE205&nbsp; Wednesday 3:00-4:00<br>
+      </li>
+      <li>Wen-Chiang Hong <a href="mailto:wen.c.hong@rutgers.edu">(wen.c.hong@rutgers.edu)</a>&nbsp;&nbsp;
+OFFICE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        HOURS:&nbsp; EE205&nbsp; Thursdays&nbsp; 2:20-3:20<br>
+      </li>
+      <li>Maria Oprea <a href="mailto:lirui@eden.rutgers.edu">(mo321@eden.rutgers.edu)</a>&nbsp;&nbsp;
+OFFICE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        HOURS:&nbsp; CoRE 514&nbsp; Tuesdays 11:40-1:40<br>
+      </li>
+    </ul>
+    <p></p>
+    <h3><span style="font-weight: bold;">TEXT</span>: <b><a
+href="http://www.amazon.com/Electric-Circuits-Edition-James-Nilsson/dp/0136114997">Electric
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Circuits</a></b> by Nilsson &amp; Riedel, 9th Edition<br>
+    </h3>
+    <hr>
+    <p><big><b>ABSENCES:</b> If you expect to <b>miss two or more
+          classes <font color="#ff0000"> or any examination</font></b>,
+        please use the <a href="https://sims.rutgers.edu/ssra/">University
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Absence Reporting Website</a> to indicate the date and reason
+        for your absence. An email will be automatically sent to me.
+        Additionally, exam absences <font color="#ff0000"> <b>must be
+            cleared with the dean's office</b></font>. </big></p>
+    <hr><big>
+      <p><big><b>MISCELLANEOUS:</b></big>&nbsp;&nbsp;&nbsp; Here's a
+        table of <a
+          href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/mathfacts.pdf">math
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          facts</a> you might find useful. There is also a moderated
+        mailing list <a href="mailto:ECE221_fall12@rams.rutgers.edu">ece221_fall12@rams.rutgers.edu</a>
+        to which you can post questions/comments.&nbsp;&nbsp; You can
+        also contact me directly at <a
+          href="mailto:crose@winlab.rutgers.edu"><i>crose@winlab.rutgers.edu</i></a>
+        and I'll repost your question to the class (by default with your
+        name removed).&nbsp; If you have suggestions about how to better
+        interact over the web, I'm all eyes, ears and fingers!<br>
+      </p>
+      <hr></big>
+    <div align="center"><big><b><big>&nbsp;SCHEDULE<br>
+            +<br>
+            LECTURE NOTES (advisory from previous years)<br>
+            +<br>
+            &nbsp;PROBLEM SETS<br>
+            <br>
+          </big></b></big></div>
+    <big>
+      <center> <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Comments-and-syllabus-of-EE-I.pdf">ECE
+          221 Description (from Fall 2011)</a> </center>
+      <ol>
+        <li> <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Chapter-1-2011%20copy.pdf">Chapter-1-2011
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            copy.pdf</a>&nbsp; (<big><small>"Due"&nbsp; <b>9/10/2012:</b></small>
+          </big><font color="#006600"><b>1.7, 1.11, 1.19, 1.26</b></font>)&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <small><big><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS1soln.pdf">SOLUTIONS</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </big><a
+              href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq1.pdf"><big>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                1</big></a><big>&nbsp;</big></small><big><big><small><big>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <small><small><a
+                        href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq1_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big></li>
+        <li> <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Chapter-2%20copy.pdf">Chapter-2 copy.pdf</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          (<big><small>"Due"&nbsp; <b>9/17/2012:</b></small> </big><font
+            color="#006600"><b>2.1, 2.7, 2.15, 2.18, 2.25, 2.33, 2.38</b></font>)
+          <small><big><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS2soln.pdf">SOLUTIONS&nbsp;</a></big></small>&nbsp;&nbsp;<small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq2.pdf"><big>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                2</big></a></small>&nbsp; <big><big><small><big><small><small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq2_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big><br>
+        </li>
+        <li> <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Chapter-3%20copy.pdf">Chapter-3 copy.pdf</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          (<big><small>"Due"&nbsp; <b>9/24/2012: <font color="#006600">3.1,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  3.2, 3.11, 3.14,&nbsp; 3.26, 3.41, 3.56, 3.61, 3.65</font>
+                )</b><small> </small><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS3soln.pdf">SOLUTION</a></small></big>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <small><a
+              href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq3.pdf"><big>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                3</big></a></small>&nbsp; <big><big><small><big><small><small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq3_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big><br>
+        </li>
+        <li><small><big><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/twoports.pdf">Two-Port
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Networks</a> <br>
+            </big></small></li>
+        <li> <a
+            href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Chapter-4-Node-voltage-mesh-current-methods%20copy.pdf">Chapter-4-Node-voltage/mesh.pdf</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          (<big><small>"Due"&nbsp; <b>10/1/2012: </b></small></big><big><small><b><font
+                  color="#006600"><big><small>4.1, 4.4, 4.8, 4.13, 4.21,
+                      4.32, 4.39, 4.41, 4.53</small></big></font>) </b><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS4soln.pdf">SOLUTIONS</a></small></big>&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <small><a
+              href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq4.pdf"><big>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                4</big></a></small>&nbsp; <big><big><small><big><small><small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq4_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big><br>
+        </li>
+        <li> <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Chapter-4-part2%20copy.pdf">Chapter-4-Thevenin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            etc.pdf</a><big> <small>("Due"&nbsp; <b>10/8/2012: </b></small></big><big><small><b><big><small><b><font
+                        color="#006600"><big><small>4.59, 4.63, 4.64,
+                            4.71, 4.77, 4.91, 4.92</small></big></font></b></small></big>)
+              </b><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS5soln.pdf">SOLUTIONS</a></small></big>&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <small><a
+              href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq5.pdf"><big>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                5</big></a></small>&nbsp; <big><big><small><big><small><small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq5_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big></li>
+        <li><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Chapter-5-Op-Amps-my-notes%20copy.pdf">Chapter-5-Op-Amps-my-notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            copy.pdf</a><big> <small>("Due"</small></big><big><small> </small></big><big><small><b>10/15/2012:&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </b></small></big><big><small><b><font color="#006600"><big><small>5.1,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      5.6, 5.9, 5.13, 5.16, 5.27, 5.34</small></big></font>)
+              </b><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS6soln.pdf">SOLUTIONS</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </small></big><big><small><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq6.pdf"><big><small>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    6</small></big></a></small></big>&nbsp; <big><big><small><big><small><small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq6_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big><br>
+        </li>
+        <li><big><small><b>REVIEW October 15, 2012&nbsp;</b></small></big></li>
+        <li><big><small><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/QUIZI.pdf"><b>QUIZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  I</b></a><b> October 18, 2012 </b><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/QUIZIsoln.pdf">SOLUTIONS</a></small></big></li>
+        <li> <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Chapter-6-L-C%20copy.pdf">Chapter-6-L-C
+            copy.pdf</a><big> <small>("Due"&nbsp; <b>10/29/2012: </b></small></big><big><small><b><big><small><b><big><small><b><font
+                              color="#006600"><big><small>6.1, 6.10,
+                                  6.14, 6.20, 6.26, 6.34, 6.36, 6.39</small></big></font></b></small></big></b></small></big>)</b><small>
+              </small><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS7soln.pdf">SOLUTIONS</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <big><big><small><a
+                      href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq7.pdf"><big><small><small>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            7</small></small></big></a></small></big></big></small></big><big>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+            <big><small><big><small><small><a
+                        href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq7_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big></li>
+        <li><big><big><small><big><small><small><a
+                        href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/diffeq_euler.pdf">Linear
+
+
+
+
+
+
+
+
+
+
+
+                        Constant Coefficient Differential Equations and
+                        Euler</a>&nbsp; </small></small></big></small></big></big><big><small><big><font
+                  color="#ff0000">(REVISED 12/8/2012!)</font></big></small></big></li>
+        <li> <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Chapter-9-complex-numbers%20copy.pdf">Chapter-9-complex-numbers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            copy.pdf</a><big> </big><big><small>("Due"&nbsp; <b>11/12/2012:&nbsp;</b></small></big><big><small><b>
+                <font color="#006600"><b>9.8, 9.10, 9.14, 9.17, 9.25,
+                    9.34, 9.40)&nbsp;</b></font> </b></small></big><a
+            href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS8soln.pdf">SOLUTIONS</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <big>&nbsp; <small><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq8.pdf"><big><small>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    8</small></big></a></small></big> <big><big><small><big><small><small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq8_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big></li>
+        <li> <a
+            href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Chapter-9-Sinusoidal-Steady-State-revised%20copy.pdf">Chapter-9-Sinusoidal-Steady-State-revised
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            copy.pdf, </a><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/Chaoter-9-Transfer-function-emhasis%20copy.pdf">Chapter-9-Transfer-function-emhasis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            copy.pdf</a><big><small>&nbsp; ("Due"&nbsp; <b>11/19/2012:
+              </b></small></big><big><small><b><font color="#009900">9.43,
+
+
+
+
+
+
+
+
+
+                  9.48, 9.56, 9.59, 9.62, 9.64, 9.71, 9.84, 9.87</font>)&nbsp;
+
+
+
+
+
+
+
+
+
+              </b><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS9soln.pdf">SOLUTIONS</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq9.pdf"><big><small>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    9</small></big></a></small></big> <big><big><small><big><small><small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq9_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big></li>
+        <li><b>REVIEW November 19, 2012</b><br>
+        </li>
+        <li><b><a
+              href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/QUIZII.pdf">QUIZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              II</a> November 20, 2012</b> <a
+            href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/QUIZIIsoln.pdf">SOLUTIONS</a></li>
+        <li> <a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/Chapter-10-power%20copy.pdf">Chapter-10-power
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            copy.pdf</a>&nbsp; <big><small>("Due"&nbsp; <b>12/3/2012:</b></small></big><big><small><b><font
+                  color="#006600"> 10.2, 10.3, 10.7, 10.15, 10.17,
+                  10.40, 10.45</font>&nbsp; ) </b><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS10soln.pdf">SOLUTIONS</a></small>&nbsp;<small>
+              <a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq10.pdf"><big><small>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    10</small></big></a></small></big> <big><big><small><big><small><small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq10_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big></li>
+        <li>RLC Hijinx, Op-Amps and Frequency Selectivity&nbsp; (<b>"Due"
+
+
+
+
+
+
+
+
+
+            12/10/2012: </b>)&nbsp; <big><b> </b><small><small><big><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/PS11soln.pdf">SOLUTIONS</a></big></small></small>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <small><a
+                href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq11.pdf"><big><small>Quizlette
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    11</small></big></a></small></big> <big><big><small><big><small><small><a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/lq11_nosoln.pdf">(no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        soln)</a></small></small></big></small></big></big></li>
+        <li><b>REVIEW December 10, 2012</b></li>
+        <li><b><a
+              href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/FINAL.pdf">FINAL</a></b>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <b>(December 18, 2012, 12-3pm</b><b>)&nbsp;</b> <a
+            href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/FINALsoln.pdf">SOLUTIONS</a></li>
+      </ol>
+      <p>We may deviate here and there and may even add in chapters 7, 8
+        and impedance methods, depending upon class response.<br>
+      </p>
+      <hr><b><big>&nbsp;<a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/ece223">LABORATORY (revised
+            for 2012)</a></big></b>
+      <hr><b><big>&nbsp;<a href="https://6002x.mitx.mit.edu/">MITx 6.002
+            Web Page</a> (supplemental -- try not to fall too in love)</big></b>
+      <hr><b><big>&nbsp;MISC STUFF FROM PREVIOUS YEAR(S)</big></b>
+      <ol>
+        <li> <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/HW-AV-RMS-values%20copy.pdf">HW-AV-RMS-values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            copy.pdf</a> </li>
+        <li> <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/221_html/Three-phase%20copy.pdf">Three-phase
+            copy.pdf</a></li>
+      </ol>
+      <hr><b><big>&nbsp;EXAM SCHEDULE</big></b>
+      <ol>
+        <li> Weekly 15 minute in-class "Quizlettes"</li>
+        <li><b>QUIZ I</b> October 18th&nbsp; (Class period, Rooms TBA)<br>
+        </li>
+        <li> <b>QUIZ II</b> November 20th (Class period, Rooms TBA)<br>
+        </li>
+        <li> <b>FINAL EXAM</b> (Tuesday, December 18, College Ave Gym
+          Annex:&nbsp; 12-3pm) </li>
+      </ol>
+      <ul>
+      </ul>
+      <hr>
+      <h1 style="text-align: center;">Grading Policies</h1>
+      <br>
+      <div style="text-align: left;">
+        <div style="text-align: center;"><big><big>Quiz I (30%) + Quiz
+              II (30%) + Final (30%) + Quizlettes (10%).&nbsp; </big></big><br>
+        </div>
+        <br>
+        <div align="center"><b><big>Lab sections graded separately</big></b><br>
+          <br>
+        </div>
+        No credit for homework (will not be collected).&nbsp; No credit
+        for "most improved" or any other thing except in outrageously
+        exceptional cases (I've raised a grade based on final
+        performance exactly once in 22 years).&nbsp; So, DO THE
+        HOMEWORK!&nbsp; Trust me.&nbsp; You'll regret it if you don't.<br>
+        <br>
+        <b>USEFUL INFO:</b><br>
+        <br>
+        The <b>quizlettes</b> are designed to test CONCEPTS as opposed
+        to plug and chug grunge calculation (which is an aspect of the
+        homework). &nbsp;&nbsp; You can use whatever you'd like for the
+        quizlettes, but a calculator, laptop, text whatever will only
+        slow you down and quizlettes are over in a flash. &nbsp;
+        Likewise, running back and forth between notes and the text will
+        also slow you down (though sometimes ya just gotta peek because
+        ya forgot -- it happens :) ).&nbsp; So, if you can pull together
+        a&nbsp; cheat sheet for each quizlette, that might make your job
+        easier come Quiz time (with a capital Q :) :) ).<br>
+        <br>
+        For QUIZZES, you're allowed cheat sheet(s).&nbsp; A cheat sheet
+        is a way to organize your information for easy reference. <br>
+        <br>
+        <b>Definition:</b>&nbsp;<b> Cheat Sheet</b> (singular :) )&nbsp;
+        =&nbsp; <big><big><b>one</b></big></big> side of an 8.5X11in^2
+        piece of paper, handwritten as teensy as you'd like without
+        needing a magnifying glass to read it. :) <br>
+        <br>
+        <ul>
+          <li> Quiz I: &nbsp; 1 cheat sheet</li>
+          <li> Quiz II:&nbsp; 2 cheat sheets</li>
+          <li> Quiz III:&nbsp; 3 cheat sheets</li>
+        </ul>
+        <br>
+        <br>
+      </div>
+      <big>
+        <hr>
+        <p> </p>
+        <h2>
+          <center></center>
+        </h2>
+        <h2> </h2>
+        <h2>
+          <center> GRADES </center>
+        </h2>
+        <div align="center"><a
+            href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/Q1_2012.jpg">Quiz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            I Histogram</a> (2012)<br>
+          <br>
+          <a
+            href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/Q1Q2scat_2012.pdf">Scatter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Plot Quiz I and II</a> (2012)<br>
+          <a
+href="http://www.winlab.rutgers.edu/%7Ecrose/221_html/221Q3Challenge.pdf"><br>
+            Challenge Process for Q3</a><br>
+        </div>
+        <br>
+        <hr></big></big><br>
+    <div align="center"><big><big>
+          <h2>Just for Fun </h2>
+          <p><br>
+            <img src="http://imgs.xkcd.com/comics/circuit_diagram.png"
+              title="I just caught myself idly trying to work out what
+              that resistor mass would actually be, and realized I had
+              self-nerd-sniped." alt="Circuit Diagram"><br>
+          </p>
+        </big></big></div>
+    <div align="center"><big><big><a href="http://xkcd.com/730/">http://xkcd.com/730/</a></big></big><br>
+      <big><big> </big></big></div>
+    <big><big>
+        <p>&nbsp; <a href="http://www.ece.rutgers.edu">Back to ECE home
+            page<br>
+          </a></p>
+        <p>If you have questions, comments or other suggestions please
+          email your comments to <a
+            href="mailto:crose@winlab.rutgers.edu"><i>crose@winlab.rutgers.edu</i></a></p>
+        <hr> <br>
+        <br>
+      </big></big>
+  </body>
+</html>

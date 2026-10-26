@@ -1,0 +1,447 @@
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <base href="http://www.winlab.rutgers.edu/%7Ecrose/index322.html">
+  <title>Principles of Communications Homepage (332:322)</title>
+</head>
+<body bgcolor="#ffffff">
+<!--base href="index.html"-->
+<hr> <font color="#ff0000">
+<center>
+<h1>&nbsp; RUTGERS UNIVERSITY</h1>
+</center>
+</font> <font color="#0000ff">
+<center>
+<h2>Department of Electrical and Computer Engineering<br>
+Principles of Communications Systems (332:322)<br>
+World Wide Web Homepage </h2>
+</center>
+</font>
+<center>
+<h2> T&amp;Th 3:20-4:40,&nbsp; SEC-117</h2>
+</center>
+<hr>
+<hr>
+<p><big><b> INSTRUCTOR:</b></big> <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose"> Christopher Rose </a>
+can be reached at <a href="mailto:crose@winlab.rutgers.edu"><i>crose@winlab.rutgers.edu.&nbsp;</i></a>
+Office hours Tuesdays 1 hour before and after class in CoRE 508&nbsp;
+(or EE
+104&nbsp; in the EE building). Email questions are
+useful to get things started and will
+get fast response (sometimes even if posted in the middle of the night).<br>
+</p>
+<p><big><b>TA:</b></big>&nbsp; Yupeng Liu <a
+ href="mailto:yupeng.liu531@gmail.com">(yupeng.liu531@gmail.com</a>)&nbsp;&nbsp;
+OFFICE
+HOURS:&nbsp;
+TBA<br>
+</p>
+<p><span style="font-weight: bold;">TEXT</span>: Not Sure Yet -- I
+don't like the new Haykin (5e) at all.&nbsp; The section numbers below
+are based on Haykin 4e.<br>
+</p>
+<hr>
+<p><big><b>MISCELLANEOUS:</b></big>&nbsp;&nbsp;&nbsp;
+Here's a <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/LaplaceTable.pdf">Laplace
+Transform
+Table</a>. &nbsp; There's a nice Fourier Transform table in
+appendix A6.2 of your text. Here's a table of <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/mathfacts.pdf">math
+facts</a> you might find useful. &nbsp;Here's an <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/FM.pdf">example
+of FM</a>. &nbsp;Here is a FANTASTIC page on<a
+ href="http://www.jhu.edu/%7Esignals"> linear systems stuff!</a>&nbsp;
+There is also a moderated mailing list <a
+ href="mailto:ece322_09@rams.rutgers.edu">ece322_11@rams.rutgers.edu</a>
+to which you can post questions/comments.&nbsp;&nbsp;
+You can also contact
+me directly at <a href="mailto:crose@winlab.rutgers.edu"><i>crose@winlab.rutgers.edu</i></a>
+and I'll repost your question to the class
+(by default with your name removed).&nbsp; If you have suggestions
+about how to better interact over the web, I'm all eyes, ears and
+fingers!<br>
+</p>
+<hr><b><big>&nbsp;TOPICAL LIST BY WEEK</big></b>
+<ol>
+  <li>Introduction and Linear System Review&nbsp; (appendix 2 will
+help -- chapter 2 in 5e)&nbsp;
+(Linear Systems Diagnostic quiz on TUESDAY JANUARY 18th, 2010)<br>
+  </li>
+  <li>AM Modulation Demodulation Multiplexing&nbsp;&nbsp;&nbsp;
+(2.1-2.5 -- Chapter 3 in 5e)<br>
+  </li>
+  <li>FM Modulation Demodulation including PLLs&nbsp; (2.6-2.9 --
+&nbsp;&nbsp; 4.1-4.4&nbsp; in 5e)<br>
+  </li>
+  <li><span style="font-weight: bold;">Review + Quiz I (Feb 17, 2011)</span></li>
+  <li>PLLs, Sampling and PAM&nbsp; (3.1-3.4 --&nbsp; 4.4 + 7.1-7.8 in
+5e ) </li>
+  <li>Quantization, Convexity, Loyd-Max&nbsp; (3.6 [7.8 in 5e] + <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/convexity1.pdf">convexity</a>
+and <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/quantization.pdf">quantization</a>
+notes)<br>
+  </li>
+  <li>PCM, Delta and Adaptive Modulation (3.7-3.15&nbsp; -- 7.5-7.10 in
+5e) (an energetic
+Spring 2008 demonstration of <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/322_deltamod_spring08.3gp">Delta
+Modulation</a> starring the very adaptive Alan Toy, directed by Eric
+Love and photographed by Jim Nici and Newman Hsiao)</li>
+  <li><b>SPRING BREAK (March 12-20)<br>
+    </b></li>
+  <li>Probability Review and Basic Stochastic Processes&nbsp; (chapter
+1 + appendix 1 will help -- chapter 5 in 5e)<br>
+  </li>
+  <li>Gaussian Processes and LTI Systems (chapter 1 + lecture --
+chapter 5 in 5e)<br>
+  </li>
+  <li>Review + <span style="font-weight: bold;">Quiz II&nbsp; (April
+7, 2011)</span><br>
+  </li>
+  <li>Matched Filters, Hypothesis Testing&nbsp; (4.1-4.3 -- chapter 8
+in 5e)<br>
+  </li>
+  <li>Orthogonality and Signal Space (4.4-4.5,4.10,
+5.1-5.2&nbsp;&nbsp; --&nbsp; ISI = 8.4 in 5e + will have to generate
+notes)<br>
+  </li>
+  <li>Optimum Receivers, Distance-Based Decoding&nbsp; (5.4-5.6 --
+notes again, with an assist from chapter 8+9 in 5e)<span
+ style="font-weight: bold;"></span></li>
+  <li>(if time permits -- which it probably will not) Digital Modulation Menagerie, BER<span
+ style="font-weight: bold;"><span style="font-weight: bold;"></span></span>
+(assorted from chapter 6 --
+assorted from chapter 9 in 5e)</li>
+  <li>(if time permits -- which it definitely will not) Information theory --&nbsp; from chapter 10 in
+5e<br>
+  </li>
+</ol>
+<span style="font-weight: bold;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp; FINAL EXAM</span> <span style="font-weight: bold;">(May 11,
+4-7pm&nbsp; SEC-117</span>)<br>
+<center></center>
+<ul>
+</ul>
+<hr>
+<h1 style="text-align: center;">Grading Policies</h1>
+<br>
+<div style="text-align: left;">
+<div style="text-align: center;"><big><big>Quiz I (30%) + Quiz II (30%)
++ Final (30%) + In-Class Quizzes (10%).&nbsp; </big></big><br>
+</div>
+<br>
+No credit for homework.&nbsp; No credit for "most improved" or any
+other thing except in outrageously exceptional cases (I've raised a
+grade based on final performance exactly once in 20 years).&nbsp; So,
+DO THE HOMEWORK!&nbsp; Trust me.&nbsp; You'll regret it if you
+don't.<br>
+<br>
+<hr style="width: 100%; height: 2px;"></div>
+<h2>
+<center><a>PROBLEM SETS and EXAMS (in pdf)</a></center>
+</h2>
+Problem Sets follow lecture schedule and are informational -- they will
+not be collected or graded. NEWS FLASH: (don't do problem sets) =
+(almost certain failure). &nbsp;&nbsp; As a student course
+synchronization service, there will
+be weekly short quizzes.<br>
+<ol>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/linsys_assess.pdf">Assessment
+Test</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/linsys_assess_soln.pdf">Assessment
+Test
+with
+solutions</a>) &nbsp;&nbsp;</li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw1.pdf">Problem
+Set
+1</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw1_soln.pdf">Problem
+Set
+1
+w/
+soln</a>) &nbsp; Fun with<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/lookdiff_soundsame.html">
+Fourier Series reconstruction of a square wave</a> (your eyes can tell
+-- your ears can't)<br>
+  </li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw2.pdf">Problem
+Set
+2</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw2_soln.pdf">Problem
+Set
+2
+w/
+soln</a>) &nbsp;
+Here's a decent description of the <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/envelope_detector.html">
+envelope detector</a>.&nbsp;&nbsp;
+Here's a spark gap transmitter <a
+ href="http://www.vistech.net/users/w1fji/spark.html">description</a>.&nbsp;
+
+
+
+
+    <br>
+  </li>
+  <li> <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw3.pdf">Problem
+Set
+3</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw3_soln.pdf">Problem
+Set
+3
+w/
+soln</a>) &nbsp;</li>
+  <li> <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw4.pdf">Problem
+Set
+4</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw4_soln.pdf">Problem
+Set
+4
+w/
+soln</a>) &nbsp;</li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/envelope.pdf">Envelope
+Detection
+Problem</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/envelope_soln.pdf">Envelope
+Detection
+Problem
+soln</a>) </li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/quiz1_2004.pdf">QUIZ
+I
+(2004)</a> ( <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/quiz1_2004_soln.pdf">QUIZ
+I
+(2004)
+w/
+soln</a>) </li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/quiz1_2005.pdf">QUIZ
+I
+(2005)</a> ( <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/quiz1_2005_soln.pdf">QUIZ
+I
+(2005)
+w/
+soln</a>)</li>
+  <li><a href="../%7Ecrose/322_html/PS/quiz1_2006.pdf">QUIZ
+I (2006)</a> ( <a href="../%7Ecrose/322_html/PS/quiz1_2006_soln.pdf">QUIZ
+I
+(2006)
+w/
+soln</a>)</li>
+  <li><a href="../%7Ecrose/322_html/PS/quizlette1_2006.pdf">QUIZlette
+I (2006)</a> ( <a
+ href="../%7Ecrose/322_html/PS/quizlette1_2006_soln.pdf">QUIZlette
+I (2006) w/ soln</a>)</li>
+  <li><a href="../%7Ecrose/322_html/PS/quiz1_2008.pdf">QUIZ
+I (2008)</a> ( <a href="../%7Ecrose/322_html/PS/quiz1_2008_soln.pdf">QUIZ
+I
+(2008)
+w/
+soln</a>)</li>
+  <li><a href="../%7Ecrose/322_html/PS/quiz1_2009.pdf">QUIZ
+I (2009)</a> ( <a href="../%7Ecrose/322_html/PS/quiz1_2009_soln.pdf">QUIZ
+I
+(2009)
+w/
+soln</a>)</li>
+  <li><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/322_html/PS/quizI2011.pdf">QUIZ
+I (2011)</a> ( <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/322_html/PS/quizI2011soln.pdf">QUIZ
+I
+(2011)
+w/ soln</a>)</li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw5.pdf">Problem
+Set
+5</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw5_soln.pdf">Problem
+Set
+5
+w/
+soln</a>)&nbsp;&nbsp;</li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw6.pdf">Problem
+Set
+6</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw6_soln.pdf">Problem
+Set
+6
+w/
+soln</a>) &nbsp;</li>
+  <li> <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw7.pdf">Problem
+Set
+7</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw7_soln.pdf">Problem
+Set
+7
+w/
+soln</a>) &nbsp;</li>
+  <li> <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw8.pdf">Problem
+Set
+8</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw8_soln.pdf">Problem
+Set
+8
+w/
+soln</a>) &nbsp;</li>
+  <li> <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/quiz2_2004.pdf">QUIZ
+II
+(2004)</a> ( <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/quiz2_2004_soln.pdf">QUIZ
+II
+(2004)
+w/
+soln</a>) </li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/quiz2_2005.pdf">QUIZ
+II
+(2005)</a> ( <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/quiz2_2005_soln.pdf">QUIZ
+II
+(2005)
+w/
+soln</a>)</li>
+  <li><a href="../%7Ecrose/322_html/PS/quiz2_2006.pdf">QUIZ
+II (2006)</a> ( <a href="../%7Ecrose/322_html/PS/quiz2_2006_soln.pdf">QUIZ
+II
+(2006)
+w/
+soln</a>)</li>
+  <li><a href="../%7Ecrose/322_html/PS/quiz2_2008.pdf">QUIZ
+II (2008)</a> ( <a href="../%7Ecrose/322_html/PS/quiz2_2008_soln.pdf">QUIZ
+II
+(2008)
+w/
+soln</a>)</li>
+  <li><a href="../%7Ecrose/322_html/PS/quiz2_2009.pdf">QUIZ
+II (2009)</a> ( <a href="../%7Ecrose/322_html/PS/quiz2_2009_soln.pdf">QUIZ
+II
+(2009)
+w/
+soln</a>)</li>
+
+  <li><a href="../%7Ecrose/322_html/PS/quiz2_2011.pdf">QUIZ
+II (2011)</a> ( <a href="../%7Ecrose/322_html/PS/quiz2_2011_soln.pdf">QUIZ
+II
+(2011)
+w/
+soln</a>)</li>
+
+  <li> <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw9.pdf">Problem
+Set
+9</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw9_soln.pdf">Problem
+Set
+9
+w/
+soln</a>) &nbsp; &nbsp; (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/ps9_4a.pdf">handwritten
+derivation</a> by student for problem 4a)</li>
+  <li> <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw10.pdf">Problem
+Set
+10</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw10_soln.pdf">Problem
+Set
+10
+w/
+soln</a>) &nbsp;</li>
+  <li> <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw11.pdf">Problem
+Set
+11</a> (<a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/pcshw11_soln.pdf">Problem
+Set
+11
+w/
+soln</a>) &nbsp;</li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/final_2004.pdf">FINAL
+(2004)</a> ( <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/final_2004_soln.pdf">FINAL
+(2004)
+w/
+soln</a> ) &nbsp; <br>
+  </li>
+  <li><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/final_2005.pdf">FINAL
+(2005)</a> ( <a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/PS/final_2005_soln.pdf">FINAL
+(2005)
+w/
+soln</a> ) &nbsp;&nbsp;</li>
+  <li><a href="../%7Ecrose/322_html/PS/final_2006.pdf">FINAL
+(2006)</a> ( <a href="../%7Ecrose/322_html/PS/final_2006_soln.pdf">FINAL
+(2006)
+w/
+soln</a> )</li>
+  <li><a href="../%7Ecrose/322_html/PS/final_2008.pdf">FINAL
+(2008)</a> ( <a href="../%7Ecrose/322_html/PS/final_2008_soln.pdf">FINAL
+(2008)
+w/
+soln</a> )</li>
+  <li><a href="../%7Ecrose/322_html/PS/final_2009.pdf">FINAL
+(2009)</a> ( <a href="../%7Ecrose/322_html/PS/final_2009_soln.pdf">FINAL
+(2009)
+w/
+soln</a> )</li>
+  <li><a href="../%7Ecrose/322_html/PS/final_2011.pdf">FINAL
+(2011)</a> ( <a href="../%7Ecrose/322_html/PS/final_2011_soln.pdf">FINAL
+(2011)
+w/
+soln</a> )</li>
+</ol>
+<br>
+<ol>
+</ol>
+<ul>
+</ul>
+<hr>
+<p> </p>
+<h2>
+<center></center>
+</h2>
+<h2> </h2>
+<h2>
+<center> GRADES
+</center>
+</h2>
+<div align="center"><a
+ href="http://www.winlab.rutgers.edu/%7Ecrose/322_html/Q1_2011.jpg">Quiz
+I
+Histogram</a> (2011)<br>
+<br>
+<a
+ href="http://www.winlab.rutgers.edu/~crose/322_html/Q1Q2scat_2011.pdf">Scatter
+Plot
+Quiz
+I
+and
+II</a> (2011)<br>
+</div>
+<br>
+<hr>
+<p>&nbsp; <a href="http://www.ece.rutgers.edu">Back to ECE home page<br>
+</a></p>
+<p>If you have questions, comments or other suggestions please email
+your comments to <a href="mailto:crose@winlab.rutgers.edu"><i>crose@winlab.rutgers.edu</i></a></p>
+<hr> <br>
+<br>
+</body>
+</html>

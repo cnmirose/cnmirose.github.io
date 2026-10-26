@@ -1,0 +1,144 @@
+<!-- Vignette V6 Tue Nov 08 18:57:45 2005 -->
+BODY.background {background-color:#FFFFFF;}
+
+/* Default style settings */
+*  {font-family:  Arial, Helvetica, sans-serif;	font-size: 12px;	color: #000000;}
+hr {color:#cccccc}
+A:link {text-decoration: underline;color:#333366;}
+A:active {text-decoration: underline;color: #333366;}
+A:visited {text-decoration: underline;color:#999999;}
+A:hover {text-decoration: underline;color:#ff0000;}
+
+A.homeLink:link {text-decoration: underline;color:#333366;font-size: 9px;}
+A.homeLink:active {text-decoration: underline;color: #333366;font-size: 9px;}
+A.homeLink:visited {text-decoration: underline;color:#999999;font-size: 9px;}
+A.homeLink:hover {text-decoration: underline;color:#ff0000;font-size: 9px;}
+
+a.adlink:link {color:#dd0000;font-weight:bold;font-size:12px;}
+a.adlink:visited {color:#dd0000;font-size:12px;}
+a.adlink:hover {color:#dd0000;}
+a.adlink:active {color:#dd0000;}
+
+a.mq:link {color: #FFFFFF; font-size: 13px;}
+a.mq:active {color: #ff0000; font-size: 13px;}
+a.mq:hover {color: #ffffcc; font-size: 13px;}
+a.mq:visited {color: #FFFFFF; font-size: 13px;}
+
+/* All anchor-only classes */
+A.breadcrumb:link {font-size: 11px; color: #666666; text-decoration: none}
+A.breadcrumb:active {text-decoration: none;}
+A.breadcrumb:visited {color:#666666; text-decoration: none}
+A.breadcrumb:hover {text-decoration: underline}
+
+A.copyrightLink {font-size: 10px; color: #ffffff;}
+A.copyrightLink:active {color: #ff0000;}
+A.copyrightLink:visited {color:#ffffff;}
+A.copyrightLink:hover {color: #ff0000;}
+
+A.embedLink{ /*Can we eliminate this class in a future version since it uses only defaults? */ }
+
+A.embedLinkBold {font-weight: bold;}
+
+A.embedLinkPopUp {font-size: 11px;}
+
+A.embedLinkPopUpNav {font-size: 11px;}
+
+A.footerLink {font-size: 10px; text-decoration: none;}
+A.footerLink:active {color: #ff0000;}
+A.footerLink:hover {text-decoration: underline;}
+
+A.headLink {font-weight: bold; font-size: 14px;}
+
+A.link {font-weight: bold; font-size: 12px;}
+
+A.redlink:link {text-decoration: underline;color:#dd0000;}
+A.redlink:active {text-decoration: underline;color: dd0000;}
+A.redlink:visited {text-decoration: underline;color:999999;}
+A.redlink:hover {text-decoration: underline;color:#dd0000;}
+
+A.redlink5th:link {font-size: 11px; text-decoration: underline;color:#dd0000;}
+A.redlink5th:active {font-size: 11px; text-decoration: underline;color: dd0000;}
+A.redlink5th:visited {font-size: 11px; text-decoration: underline;color:999999;}
+A.redlink5th:hover {font-size: 11px; text-decoration: underline;color:#dd0000;}
+
+A.sidebarLink {font-size: 11px;}
+
+A.sidebarHeadLink {font-weight: bold; font-size: 11px;}
+
+A.subheadLink {font-weight: bold;}
+
+A.subnavLink {font-weight: bold; font-size: 11px;}
+A.subnavLink:active {font-weight: bold; font-size: 11px;}
+A.subnavLink:visited {font-weight: bold; font-size: 11px;}
+A.subnavLink:hover {font-weight: bold; font-size: 11px;}
+
+A.tableHeadLink {font-weight: bold; color: #ffffff;}
+A.tableHeadLink:active {color: #ff0000;}
+A.tableHeadLink:visited {color:#ffffff;}
+A.tableHeadLink:hover {color:#ff0000;}
+
+A.tableLink {font-size: 11px;}
+
+/*Pop-up glossary specific anchor classes */
+A.embedLinkPopUpNavGlossary {font-size: 13px;}
+A.embedLinkPopUpNavGlossary:visited {color: #333366;}
+
+/*All non-anchor classes */	
+.bodyCopy { /* Can we eliminate this class in a future version since it uses only defaults? */}
+.bodyCopyBold {font-weight: bold;}
+.boldRed {font-size : 8pt; font-weight : bold; color : #DD0000;}
+.grayBodyCopyBold {font-weight: bold; color: #666666;}
+.breadcrumb {font-size: 11px; color: #666666;}
+.copyright {font-size: 10px; color: #ffffff;}
+.dropDown {font-size: 11px;} 
+.error {font-weight: bold; color: #ff9000;}
+.field {font-weight: bold; font-size: 11px;} 
+.footer {font-size: 9px;}
+.head {font-weight: bold; font-size: 14px;}
+.homeHead {font-weight: bold; font-size: 15px;}
+.inputForm {font-size: 11px;} 
+.leftnav {font-size: 12px;} /* Special class used in left nav of site's index page */
+.leftnavBold {font-size: 10px;font-weight:bold} /* Special class used in left nav of site's index page */
+.leadIn {font-weight: bold; font-size: 14px; color: #666666;}
+.pgTitle {font-size: 18px; font-family: Arial Black, Helvetica, sans-serif;}
+.promoBody {font-size: 11px; color: #666666;}
+.promoHead {font-weight: bold; font-size: 11px;}
+.requiredField {color: #ff0000;}
+.sidebarCopy {font-size: 11px; color: #666666;}
+.sidebarCopyBold {font-weight: bold; font-size: 11px; color: #666666;}
+.sidebarLinkCurrent {font-size: 11px; color: #333366;}
+.sidebarHead {font-weight: bold; font-size: 11px; color: #666666;}
+.sidebarHeadLinkCurrent {font-weight: bold; font-size: 11px; color: #333366;}
+.blueBold {font-weight: bold; font-size: 12px; color: #333366;}
+.subbodyCopy {font-size: 13px;}
+.subhead {font-weight: bold;}
+.subhead2 {font-weight: bold; font-size: 11px;}
+.redsubhead {font-weight: bold;color: #ff0000;}
+.yellowsubhead {font-weight: bold;color: #ffffcc;}
+.subnavLinkCurrent {font-weight: bold; font-size: 11px; color: #333366;}
+.tablebodycopy {font-size: 13px;} 
+.tablebodycopybold {font-weight: bold; font-size: 12px;}
+.tableHead {font-weight: bold; color: #ffffff;}
+.terms {/* Can we eliminate this class in a future version since it uses only defaults? */}
+.warning {font-weight: bold;} 
+.mqhead { font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #CCCCCC; font-size: 13px; font-weight: bold;}
+
+/* Background color classes */
+.bkgHighlight {background-color:#ffffcc;} /* New class to replace class 'ltblgr' */
+.bkgSectionHead {background-color:#999999}  /* New class to replace class 'dkblgr' */
+.black {background-color: #000000}
+.red {background-color: #dd0000}
+.headerRed {background-color : #DD0000;}
+.marqueered {background-color: #CE0205}
+.ltBlGr {background-color: #ffffcc}
+.dkBlGr {background-color: #999999}
+.grey {background-color: #cccccc}
+.ltGrey {background-color: #eeeeee}
+.dkGrey {background-color: #666666}
+.white {background-color: #ffffff}
+
+/* Pop Up glossary specific classes*/
+.alphaCurrent {color: #ff0000;}
+.definitionBody {font-size: 11px;}
+.definitionCurrent {font-weight: bolder; color: #ff0000; text-decoration: underline;}
+.definitionOther {font-weight: bolder; color: #333366; text-decoration: underline;}

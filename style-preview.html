@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three lighter directions — A World of Bits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;500;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<style>
+/* =====================================================================
+   Same content, three palettes. Each panel below sets its own custom
+   properties; every component rule underneath reads only those variables,
+   so switching the whole site is a matter of swapping one block.
+   ===================================================================== */
+
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#2A2E33;font-family:"Newsreader",Georgia,serif}
+img{max-width:100%;display:block}
+
+/* ---- chrome for this preview page only ---------------------------- */
+.chooser{max-width:60rem;margin:0 auto;padding:3rem 1.5rem 1rem;color:#E4E7EA;
+         font-size:1.02rem;line-height:1.6}
+.chooser h1{font-family:"Fraunces",serif;font-variation-settings:"WONK" 1;
+            font-size:2.2rem;margin:0 0 .6rem;line-height:1.1}
+.chooser p{max-width:38rem;color:#B4BBC2}
+.chooser code{font-family:"JetBrains Mono",monospace;font-size:.85em;
+              background:#3A4048;padding:.1em .4em;border-radius:3px}
+.marker{max-width:60rem;margin:0 auto;padding:2.6rem 1.5rem .9rem;
+        color:#8D96A0;font-family:"JetBrains Mono",monospace;font-size:.72rem;
+        letter-spacing:.18em;text-transform:uppercase}
+.marker b{color:#fff;font-weight:500}
+
+/* =====================================================================
+   PALETTE A — "Field Notes"
+   Drafting paper. Cool white with a faint engineering grid, navy ink,
+   red-pencil accent, and a teal for category labels. The most restrained
+   of the three; closest in temperament to the dark version, just inverted.
+   ===================================================================== */
+[data-theme="notes"]{
+  --paper:#FBFBF7; --panel:#FFFFFF; --grid:#DEE5E9;
+  --rule:#CBD5DB; --rule-soft:#E4EAEE;
+  --paper:#16283A; --font-body:#41525F; --faint:#7C8B96;
+  --accent:#D2352C;            /* red pencil — links, live things */
+  --accent-soft:#F7DFDD;
+  --second:#0F7A78;            /* teal — category labels */
+  --font-display:"Fraunces",Georgia,serif;
+  --text:"Newsreader",Georgia,serif;
+  --font-mono:"JetBrains Mono",monospace;
+  --wonk:"SOFT" 0,"WONK" 1;
+  --radius:0px;
+  background:
+    linear-gradient(var(--grid) 1px,transparent 1px) 0 0/100% 26px,
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/26px 100%,
+    var(--paper);
+}
+
+/* =====================================================================
+   PALETTE B — "Blue Note"
+   Named for the jazz sleeves, and for STEMJazz. Pale slate ground, deep
+   navy ink, gold, and a magenta-red for links. Bold and musical; the type
+   is set heavier and tighter. The most confident of the three.
+   ===================================================================== */
+[data-theme="bluenote"]{
+  --paper:#E9EDF0; --panel:#FFFFFF; --grid:transparent;
+  --rule:#B6C2CC; --rule-soft:#D5DDE3;
+  --paper:#10243F; --font-body:#3D4F63; --faint:#78899A;
+  --accent:#C6295B;            /* magenta-red — links */
+  --accent-soft:#F6DDE5;
+  --second:#B8860B;            /* gold — category labels */
+  --font-display:"Fraunces",Georgia,serif;
+  --text:"Newsreader",Georgia,serif;
+  --font-mono:"JetBrains Mono",monospace;
+  --wonk:"SOFT" 100,"WONK" 1;
+  --radius:0px;
+  background:var(--paper);
+}
+
+/* =====================================================================
+   PALETTE C — "Sunday Funnies"
+   Newsprint white with a halftone dot texture, and process colours:
+   cyan, magenta, yellow. Grotesque display face. This one leans hardest
+   into the cartoon contest and the self-deprecating voice — it is the
+   "more fun" option, and the least like an academic homepage.
+   ===================================================================== */
+[data-theme="funnies"]{
+  --paper:#FDFBF4; --panel:#FFFFFF; --grid:transparent;
+  --rule:#D8D3C4; --rule-soft:#E9E5D9;
+  --paper:#1C1B19; --font-body:#4A4740; --faint:#8B857A;
+  --accent:#E0357B;            /* process magenta — links */
+  --accent-soft:#FBDCE9;
+  --second:#0093C4;            /* process cyan — category labels */
+  --third:#FFC526;             /* process yellow — highlights */
+  --font-display:"Bricolage Grotesque",system-ui,sans-serif;
+  --text:"Newsreader",Georgia,serif;
+  --font-mono:"JetBrains Mono",monospace;
+  --wonk:"wdth" 100;
+  --radius:4px;
+  background:
+    radial-gradient(circle at 1px 1px,#E6E0CE 1.1px,transparent 1.2px) 0 0/9px 9px,
+    var(--paper);
+}
+
+/* =====================================================================
+   COMPONENTS — identical for all three, driven purely by the variables
+   ===================================================================== */
+.panel{padding:3rem 0 3.4rem;color:var(--font-body);
+       font-size:1.02rem;line-height:1.62}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem 0 4.5rem;position:relative}
+
+/* the channel rail, now drawn in ink rather than chalk */
+.wrap::before{content:"";position:absolute;left:2.2rem;top:.6rem;bottom:0;
+              width:1px;background:var(--rule-soft)}
+.wrap::after{content:"";position:absolute;left:calc(2.2rem - 4px);top:1.5rem;
+             width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+.eyebrow{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.18em;
+         text-transform:uppercase;color:var(--faint);margin:0 0 .6rem}
+.tag{font-family:var(--font-mono);font-size:.63rem;letter-spacing:.15em;
+     text-transform:uppercase;color:var(--second);margin:0 0 .5rem;font-weight:500}
+
+h2.title{font-family:var(--font-display);font-variation-settings:var(--wonk);
+         font-weight:700;font-size:clamp(2.2rem,5.4vw,3.5rem);line-height:.98;
+         letter-spacing:-.02em;color:var(--paper);margin:0 0 .35rem}
+.sub{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.24em;
+     text-transform:uppercase;color:var(--second);margin:0 0 1.6rem;font-weight:500}
+
+.thesis{border-left:3px solid var(--accent);padding:.1rem 0 .1rem 1.4rem;
+        margin:0 0 2rem;max-width:40rem}
+.thesis .punch{display:block;font-family:var(--font-display);
+               font-variation-settings:var(--wonk);font-style:italic;
+               font-size:1.4rem;line-height:1.26;color:var(--paper)}
+[data-theme="funnies"] .thesis .punch{font-style:normal;font-weight:600}
+
+/* node strip */
+.nodes{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;
+       list-style:none;margin:0 0 2.4rem;padding:0;max-width:34rem;position:relative}
+.nodes::before{content:"";position:absolute;left:0;right:0;
+               top:calc(100% - 2.2rem);height:1px;background:var(--rule)}
+.node a{display:block;text-decoration:none}
+.node .frame{aspect-ratio:1/1;border:1px solid var(--rule);background:var(--panel);
+             border-radius:var(--radius);overflow:hidden;display:flex;
+             align-items:center;justify-content:center;transition:.2s}
+.node .frame img{width:100%;height:100%;object-fit:cover}
+.node .frame .ph{font-family:var(--font-mono);font-size:.55rem;letter-spacing:.1em;
+                 color:var(--faint);text-align:center;padding:.4rem}
+.node .dot{display:block;width:7px;height:7px;margin:.9rem auto .45rem;
+           border-radius:50%;background:var(--panel);border:1px solid var(--rule);
+           position:relative;z-index:2;transition:.2s}
+.node .label{display:block;font-family:var(--font-mono);font-size:.57rem;
+             letter-spacing:.1em;text-transform:uppercase;text-align:center;
+             color:var(--faint);line-height:1.5;transition:.2s}
+.node a:hover .frame{border-color:var(--accent);transform:translateY(-3px)}
+.node a:hover .dot{background:var(--accent);border-color:var(--accent);
+                   box-shadow:0 0 0 4px var(--accent-soft)}
+.node a:hover .label{color:var(--paper)}
+
+/* thread card */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:0 0 2.2rem}
+@media(max-width:44rem){.cards{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--rule-soft);
+      border-top:3px solid var(--rule);border-radius:var(--radius);
+      padding:1.3rem 1.3rem 1.4rem;transition:.2s}
+.card:hover{border-top-color:var(--accent);transform:translateY(-2px)}
+.card h3{font-family:var(--font-display);font-variation-settings:var(--wonk);
+         font-weight:700;font-size:1.16rem;color:var(--paper);margin:.5rem 0 .4rem}
+.card p{font-size:.94rem;margin:0 0 .9rem}
+.card .more{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.12em;
+            text-transform:uppercase;color:var(--accent);text-decoration:none;
+            border-bottom:1px solid var(--accent-soft)}
+
+/* link list */
+.links{list-style:none;margin:0 0 2.2rem;padding:0;max-width:42rem}
+.links li{display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap;
+          padding:.65rem 0;border-bottom:1px solid var(--rule-soft)}
+.links li:first-child{border-top:1px solid var(--rule-soft)}
+.links .kind{flex:0 0 5rem;font-family:var(--font-mono);font-size:.58rem;
+             letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.links .what{flex:1 1 14rem}
+.links .what a{color:var(--accent);text-decoration:none;
+               border-bottom:1px solid var(--accent-soft)}
+.links .what a:hover{border-bottom-color:var(--accent)}
+.links .note{font-size:.9rem;color:var(--faint);flex:1 1 100%}
+
+/* the theorem box */
+.theorem{background:var(--panel);border:1px solid var(--rule);
+         border-left:3px solid var(--second);border-radius:var(--radius);
+         padding:1.1rem 1.3rem;max-width:42rem}
+.theorem .name{display:block;font-family:var(--font-mono);font-size:.62rem;
+               letter-spacing:.15em;text-transform:uppercase;color:var(--second);
+               margin-bottom:.45rem;font-weight:500}
+.theorem .statement{font-family:var(--font-display);font-variation-settings:var(--wonk);
+                    font-weight:700;font-size:1.22rem;color:var(--paper);margin:0 0 .3rem}
+.theorem .proof{font-size:.92rem;color:var(--faint);margin:0}
+
+/* funnies gets one extra flourish: a yellow highlighter behind the punch */
+[data-theme="funnies"] .thesis{border-left-color:var(--second)}
+[data-theme="funnies"] .theorem .statement mark{background:var(--third);
+        padding:0 .18em;border-radius:2px;color:var(--paper)}
+</style>
+</head>
+<body>
+
+<div class="chooser">
+  <h1>Three lighter directions</h1>
+  <p>Same content in each, so the only variable is the palette. Everything here
+  is driven by one block of CSS custom properties per theme — picking one means
+  swapping about twenty lines in <code>site.css</code>, not rebuilding pages.</p>
+  <p>Hover the thumbnails and the cards; the interactions differ in feel even
+  though the markup is identical.</p>
+</div>
+
+<!-- ======================================================== A: FIELD NOTES -->
+<div class="marker"><b>A — Field Notes.</b> &nbsp;Drafting paper, navy ink, red pencil, teal labels</div>
+<section class="panel" data-theme="notes">
+  <div class="wrap">
+    <p class="eyebrow">Brown University · School of Engineering</p>
+    <h2 class="title">Christopher&nbsp;Rose</h2>
+    <p class="sub">Wireless &amp; beyond</p>
+
+    <blockquote class="thesis">
+      <span class="punch">What are all these interacting elements saying to one
+      another, how are they saying it, and can I join the conversation?</span>
+    </blockquote>
+
+    <ul class="nodes">
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/adinkras.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;ADINKRAS&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Adinkras</span></a></li>
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/slink3.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;SLINKY&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Interactions</span></a></li>
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/040902cover.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;NATURE&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Write, don't radiate</span></a></li>
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/embryo_dev_series1.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;EMBRYO&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Morphogenesis</span></a></li>
+    </ul>
+
+    <div class="cards">
+      <article class="card"><span class="tag">It from channel</span>
+        <h3>Talking particles</h3>
+        <p>If two billiard balls collide, how many bits did they exchange?
+        Conservation laws turn out to be the null space of the interaction channel.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+      <article class="card"><span class="tag">SETI</span>
+        <h3>Write, don't radiate</h3>
+        <p>Sending inscribed matter beats radiating photons across interstellar
+        distances, by a lot. <em>Nature</em> cover, September 2004.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+    </div>
+
+    <ul class="links">
+      <li><span class="kind">1990</span><span class="what"><a href="#">A Dielectric-Free Superconducting Coaxial Cable</a></span>
+        <span class="note">Levitate the centre conductor, avoid the lossy dielectric. Conceived in the euphoria after high-T<sub>c</sub>.</span></li>
+      <li><span class="kind">2026</span><span class="what"><a href="#">Limits of Information Flow Between Classically Interacting Particles</a></span>
+        <span class="note">Physical Review E, with Miles Miller-Dickson.</span></li>
+    </ul>
+
+    <div class="theorem"><span class="name">Theorem</span>
+      <p class="statement">Beer + Pizza = Academic Excellence</p>
+      <p class="proof">Proof: three EGC teaching award wins. ∎</p></div>
+  </div>
+</section>
+
+<!-- ========================================================= B: BLUE NOTE -->
+<div class="marker"><b>B — Blue Note.</b> &nbsp;Pale slate, deep navy, gold labels, magenta links</div>
+<section class="panel" data-theme="bluenote">
+  <div class="wrap">
+    <p class="eyebrow">Brown University · School of Engineering</p>
+    <h2 class="title">Christopher&nbsp;Rose</h2>
+    <p class="sub">Wireless &amp; beyond</p>
+
+    <blockquote class="thesis">
+      <span class="punch">What are all these interacting elements saying to one
+      another, how are they saying it, and can I join the conversation?</span>
+    </blockquote>
+
+    <ul class="nodes">
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/adinkras.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;ADINKRAS&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Adinkras</span></a></li>
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/slink3.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;SLINKY&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Interactions</span></a></li>
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/040902cover.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;NATURE&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Write, don't radiate</span></a></li>
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/embryo_dev_series1.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;EMBRYO&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Morphogenesis</span></a></li>
+    </ul>
+
+    <div class="cards">
+      <article class="card"><span class="tag">It from channel</span>
+        <h3>Talking particles</h3>
+        <p>If two billiard balls collide, how many bits did they exchange?
+        Conservation laws turn out to be the null space of the interaction channel.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+      <article class="card"><span class="tag">SETI</span>
+        <h3>Write, don't radiate</h3>
+        <p>Sending inscribed matter beats radiating photons across interstellar
+        distances, by a lot. <em>Nature</em> cover, September 2004.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+    </div>
+
+    <ul class="links">
+      <li><span class="kind">1990</span><span class="what"><a href="#">A Dielectric-Free Superconducting Coaxial Cable</a></span>
+        <span class="note">Levitate the centre conductor, avoid the lossy dielectric. Conceived in the euphoria after high-T<sub>c</sub>.</span></li>
+      <li><span class="kind">2026</span><span class="what"><a href="#">Limits of Information Flow Between Classically Interacting Particles</a></span>
+        <span class="note">Physical Review E, with Miles Miller-Dickson.</span></li>
+    </ul>
+
+    <div class="theorem"><span class="name">Theorem</span>
+      <p class="statement">Beer + Pizza = Academic Excellence</p>
+      <p class="proof">Proof: three EGC teaching award wins. ∎</p></div>
+  </div>
+</section>
+
+<!-- ==================================================== C: SUNDAY FUNNIES -->
+<div class="marker"><b>C — Sunday Funnies.</b> &nbsp;Newsprint, halftone dots, process cyan / magenta / yellow</div>
+<section class="panel" data-theme="funnies">
+  <div class="wrap">
+    <p class="eyebrow">Brown University · School of Engineering</p>
+    <h2 class="title">Christopher&nbsp;Rose</h2>
+    <p class="sub">Wireless &amp; beyond</p>
+
+    <blockquote class="thesis">
+      <span class="punch">What are all these interacting elements saying to one
+      another, how are they saying it, and can I join the conversation?</span>
+    </blockquote>
+
+    <ul class="nodes">
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/adinkras.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;ADINKRAS&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Adinkras</span></a></li>
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/slink3.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;SLINKY&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Interactions</span></a></li>
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/040902cover.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;NATURE&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Write, don't radiate</span></a></li>
+      <li class="node"><a href="#"><span class="frame"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/embryo_dev_series1.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;EMBRYO&lt;/span&gt;'"></span><span class="dot"></span><span class="label">Morphogenesis</span></a></li>
+    </ul>
+
+    <div class="cards">
+      <article class="card"><span class="tag">It from channel</span>
+        <h3>Talking particles</h3>
+        <p>If two billiard balls collide, how many bits did they exchange?
+        Conservation laws turn out to be the null space of the interaction channel.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+      <article class="card"><span class="tag">SETI</span>
+        <h3>Write, don't radiate</h3>
+        <p>Sending inscribed matter beats radiating photons across interstellar
+        distances, by a lot. <em>Nature</em> cover, September 2004.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+    </div>
+
+    <ul class="links">
+      <li><span class="kind">1990</span><span class="what"><a href="#">A Dielectric-Free Superconducting Coaxial Cable</a></span>
+        <span class="note">Levitate the centre conductor, avoid the lossy dielectric. Conceived in the euphoria after high-T<sub>c</sub>.</span></li>
+      <li><span class="kind">2026</span><span class="what"><a href="#">Limits of Information Flow Between Classically Interacting Particles</a></span>
+        <span class="note">Physical Review E, with Miles Miller-Dickson.</span></li>
+    </ul>
+
+    <div class="theorem"><span class="name">Theorem</span>
+      <p class="statement">Beer + Pizza = <mark>Academic Excellence</mark></p>
+      <p class="proof">Proof: three EGC teaching award wins. ∎</p></div>
+  </div>
+</section>
+
+<div class="chooser" style="padding-top:2.6rem;padding-bottom:4rem">
+  <p><strong>Tell me a letter</strong> and I'll rebuild the site in it. Mixing is
+  fine too — Field Notes' restraint with Sunday Funnies' colours, say, or Blue
+  Note without the gold.</p>
+</div>
+
+</body>
+</html>

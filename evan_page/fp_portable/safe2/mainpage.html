@@ -1,0 +1,53 @@
+<html>
+//table Print Code citation"http://www.anyexample.com/programming/php/php_mysql_example__display_table_as_html.xml"
+<head>
+<title> Welcome to myPipeline!</title>
+</head>
+<body>
+<a href ="http://cloud.cs50.net/~emrose/fp/entrepreneurupload.php">Upload Files<a/>
+</body>
+<?php
+    //Start Session
+    session_start();
+    
+    //connect to database
+    if (($connection = mysql_connect("localhost", "emrose", "m8cha4l")) === FALSE)
+    die("Could not connect to database");
+
+    //select database
+    if (mysql_select_db("emrose_fp", $connection) === FALSE)
+        die("Could not select database");
+        
+    //send query
+    $result = mysql_query("SELECT * FROM 'DOC');
+    if (!$result)   
+    {
+        die("query failed)
+    }
+    $fields_num = mysql_num_fields($result);
+    
+    echo "<h1>Table: {$table}</h1>";
+    echo "<table border='1'><tr>";
+    
+    //Print headers
+    for($1=0; $i<$fields_num; $i++)
+    {
+        $field = mysql_fetch_field($result);
+        echo "<td>($field->name}</td>";
+    }
+    echo "<tr>\n";
+    
+    //Print Rows
+    while($row = mysql_fetch_row($result))
+    {
+        echo "<tr>";
+        foreach($row as $cell)
+            echo "<td>$cell</td>";
+        echo "</tr>\n";
+    }
+    mysql_free_result($result);
+    ?>    
+    
+
+
+</html>

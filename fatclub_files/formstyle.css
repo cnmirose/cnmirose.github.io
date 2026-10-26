@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    }
+form {
+    color: #333333;
+    font-size: 1.1em;
+    width: 370px;
+    }
+form fieldset {
+    background: transparent url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/fatclub_files/upload/blue.jpg) repeat-x scroll left bottom;
+    border-color: #C9DCA6 -moz-use-text-color -moz-use-text-color;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    margin-bottom: 10px;    
+    }
+    
+form legend {
+    color: #333333;
+    padding: 0 2px;
+    font-weight: bold;
+    }
+form label {
+    display: -moz-inline-block;
+    line-height: .5;
+    vertical-align: center;
+}
+form fieldset ol {
+    display: -moz-inline-block;
+    margin: 0;
+    padding: 0;
+    }
+form fieldset li {
+    background: transparent url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/fatclub_files/upload/blue.jpg) repeat-x scroll left bottom; 
+    list-style: none;
+    font-size: 12px; 
+    padding: 1px 10px 0px; 
+    margin: 0;
+        }
+form fieldset fieldset {
+    background: transparent none repeat scroll 0 0;
+    }
+form fieldset fieldset legend {
+    padding: 0 0 5px;
+    font-weight: bold;
+    }
+form fieldset fieldset label  {
+    display: block;
+    width: auto;
+    margin-left: 123px;
+    line-height: .1;
+    text-align: right;
+    }
+form label {
+    width: 25px;
+    }

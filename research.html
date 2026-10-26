@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Christopher Rose</title>
+<meta name="description" content="Six research threads: talking particles, molecular communication, cosmic communication, biological information flow, interference avoidance, and Adinkras.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">A World of <span>Bits</span></a>
+    <nav class="topnav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">Cosmic</a>
+      <a href="etmightwrite.html">Cartoons</a>
+      <a href="papers.html">Papers &amp; talks</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="people.html">People</a>
+      <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/vitarose.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="rail live">
+  <div class="wrap hero">
+    <p class="eyebrow">Research</p>
+    <h1>Six&nbsp;threads</h1>
+    <p class="sub">One question, applied repeatedly</p>
+    <p class="role">Take a system. Notice that its parts are interacting.
+    Insist that the interaction is a channel. Ask what that channel can carry,
+    and at what cost. Then see what falls out — sometimes a capacity bound,
+    sometimes a conservation law, occasionally an argument about aliens.</p>
+  </div>
+</section>
+
+<!-- ========================================================== particles -->
+<section class="rail" id="particles">
+  <div class="wrap section">
+    <p class="tag">It from channel</p>
+    <h2>Talking particles</h2>
+
+    <div class="measure">
+      <p>Two objects collide. Momentum and energy are conserved. Standard
+      physics stops there — but from a communication standpoint something else
+      just happened: each particle learned something about the other. How much?
+      In bits?</p>
+
+      <p>It turns out you can ask that question precisely, and the answers are
+      not trivial. Conservation laws look like the null space of the interaction
+      channel: the directions in which no information flows. Mass ratios control
+      how much gets through. And there are regimes where a cascade of collisions
+      conspires to reveal almost nothing at all.</p>
+
+      <p>This is the thread that ties everything else on this page together, and
+      the one currently eating most of my attention.</p>
+    </div>
+    <figure class="fig anim">
+      <img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/collisions.gif" alt="Animation: black and white disks of varying sizes colliding on a dark field, each collision raising a speech bubble that rides above the particle that spoke it">
+      <figcaption>What the paper is about, at play. Equal-mass and unequal-mass
+      disks collide elastically; each contact is a channel use. Some of what
+      passes is small talk, and some of it is momentum.</figcaption>
+    </figure>
+
+
+    <ul class="links">
+      <li>
+        <span class="kind">2026</span>
+        <span class="what"><a href="https://journals.aps.org/pre/abstract/10.1103/xb2l-78n3">Limits
+        of Information Flow Between Classically Interacting Particles</a></span>
+        <span class="note">Physical Review E, with Miles Miller-Dickson. The
+        first formal paper on particles talking to particles.</span>
+      </li>
+      <li>
+        <span class="kind">ISIT '16</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/EstvCap_revision.pdf">State Estimation,
+        Wireless Tropes, Demons and Uncertainty</a></span>
+        <span class="note">A crazy paper that was allowed to sneak in.
+        <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/RoseISIT16_talk.pdf">Talk slides.</a></span>
+      </li>
+      <li>
+        <span class="kind">ITA '13</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/ROSEita13_sequence.pdf">A fun talk</a></span>
+        <span class="note">Where the whole "communication conquers the universe"
+        idea got aired in public for the first time.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========================================================== molecular -->
+<section class="rail" id="molecular">
+  <div class="wrap section">
+    <p class="tag">Molecular</p>
+    <h2>Communicating with molecules</h2>
+
+    <div class="measure">
+      <p>Suppose your symbols are not voltages but actual molecules: released
+      into a fluid, diffusing, arriving late, arriving out of order, sometimes
+      not arriving at all. What is the capacity of that channel?</p>
+
+      <p>The honest answer required rebuilding a fair bit of the theory from
+      scratch — timing channels with multiple identical quanta, energy
+      constraints, the interplay of timing and payload — and then, with
+      collaborators at Brown, actually building the things. We have run
+      40&nbsp;bits per second through open air using rubbing alcohol and a
+      photoionization detector, and stored information in mixtures of small
+      molecules.</p>
+
+      <p>The DARPA Molecular Informatics work lives at
+      <a href="https://molecularcomputing.info/">molecularcomputing.info</a>.</p>
+    </div>
+
+    <ul class="links">
+      <li>
+        <span class="kind">Proc IEEE</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/invitedsurvey6.pdf">Capacity Bounds on
+        Point-to-Point Communication Using Molecules</a></span>
+        <span class="note">2019. The closest thing to a summary of the whole
+        program.</span>
+      </li>
+      <li>
+        <span class="kind">Compendia</span>
+        <span class="what">Inscribed Matter Communication
+        <a href="https://arxiv.org/abs/1606.05023">Part&nbsp;I</a> and
+        <a href="https://arxiv.org/abs/1606.05036">Part&nbsp;II</a></span>
+        <span class="note">Magnum compendiums that no one might ever read.
+        IEEE TMBMC, 2016.</span>
+      </li>
+      <li>
+        <span class="kind">ISIT '19</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/generalupper5.pdf">A General Upper Bound
+        on Particle Timing Channel Capacity</a></span>
+        <span class="note">Under constant particle emission intensity.</span>
+      </li>
+      <li>
+        <span class="kind">Globecom</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/globecom18_15.pdf">40&nbsp;bps using
+        alcohol and photoionization detectors</a></span>
+        <span class="note">2018. It works.</span>
+      </li>
+      <li>
+        <span class="kind">Video</span>
+        <span class="what"><a href="https://vimeo.com/393364087">NSF Molecular
+        Communication Workshop talk</a></span>
+        <span class="note">2020. <a href="https://bioticc.org/">All workshop
+        videos.</a></span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================= cosmic -->
+<section class="rail" id="cosmic">
+  <div class="wrap section">
+    <p class="tag">SETI</p>
+    <h2>Write, don't radiate</h2>
+
+    <div class="measure">
+      <p>How will first contact with an extraterrestrial civilization actually
+      happen? The conventional answer is radio. The interesting twist is that
+      it can be <strong>far</strong> more efficient for distant little green
+      people to send information-bearing physical artifacts than electromagnetic
+      signals — seemingly at odds with current SETI wisdom.</p>
+
+      <p>Inscribed matter wins because photons spread and matter does not. Do
+      the energy accounting per bit delivered and the conclusion is hard to
+      escape. This was the cover of <em>Nature</em> on 2 September 2004, with
+      Gregory Wright, and it drew an astounding amount of press including a
+      <em>New York Times</em> editorial. It also appears in Stephen Webb's
+      <a href="https://www.amazon.com/Universe-Teeming-Aliens-WHERE-EVERYBODY/dp/3319132350"><em>If
+      the Universe Is Teeming with Aliens… Where Is Everybody?</em></a> as
+      reason&nbsp;#35 of 75.</p>
+    </div>
+
+    <figure class="fig">
+      <a class="plain" href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">
+        <img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/040902cover.jpg" alt="Nature cover, 2 September 2004">
+      </a>
+      <figcaption>Nature 431, pp. 47–49, 2 September 2004. The whole story,
+      with the full press archive, lives under the tongue-in-cheek rubric
+      <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">cosmic communications</a>.</figcaption>
+    </figure>
+
+    <ul class="links">
+      <li>
+        <span class="kind">Paper</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/nature.pdf">Inscribed Matter as an
+        Efficient Means of Communication</a></span>
+        <span class="note">Nature letter, plus <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/SI.pdf">supplementary
+        information</a>.</span>
+      </li>
+      <li>
+        <span class="kind">Press</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php#press">The
+        complete coverage archive</a></span>
+        <span class="note">NY Times (news <em>and</em> editorial), Star Ledger
+        front page, BBC, NPR, CBC, Scientific American, CNN.</span>
+      </li>
+      <li>
+        <span class="kind">Fun</span>
+        <span class="what"><a href="etmightwrite.html">The cartoon competition</a></span>
+        <span class="note">Yes, there was a cartoon competition. Caroline Angelo
+        took first place; the winning entries are all still there.</span>
+      </li>
+      <li>
+        <span class="kind">Talk</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/breakthrough16_ROSE.pdf">Write, Don't
+        Radiate</a></span>
+        <span class="note">Breakthrough Discuss, Stanford, 2016.</span>
+      </li>
+      <li>
+        <span class="kind">Practice</span>
+        <span class="what"><a href="https://www.brown.edu/news/2019-04-04/beresheet">The
+        Lunar Library, 2019</a></span>
+        <span class="note">Someone actually did it.
+        <a href="https://www.brown.edu/news/2019-04-04/lunarlibrary">My sidebar.</a></span>
+      </li>
+      <li>
+        <span class="kind">Also</span>
+        <span class="what"><a href="press/nsfdiscovery.html">The NSF Discoveries
+        feature</a> and <a href="http://www.gb.nrao.edu/OZMA@50/agenda.shtml"><!-- VERIFY: likely dead -->Project
+        OZMA at 50</a></span>
+        <span class="note">NSF ran the story on 10 March 2006 — the work was
+        supported in part by the National Science Foundation, and the
+        acknowledgement is in the Nature letter. Their own copy is long gone, so
+        this is the local one. OZMA at 50 is where I ended up on a panel in Green
+        Bank, West Virginia.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================ biology -->
+<section class="rail" id="biology">
+  <div class="wrap section">
+    <p class="tag">Biology</p>
+    <h2>Cells, signals, and shape</h2>
+
+    <div class="measure">
+      <p>After submitting a proposal on communication theory in biological
+      systems to the NSF CDI competition, I stumbled across a drawing at the
+      Museum of Modern Art in New York. The title is <em>Art and Nature</em>;
+      the artist is Dudley Huppler.</p>
+
+      <p>My interpretation: science is crisp and neat. Nature is messy, composed
+      of myriad inter-communicating <em>actors</em>. Yet organization not only
+      emerges but is uncannily repeatable, despite the plethora of insults
+      hurled at biological systems by the world. The nature of that implicit,
+      reliable code-to-structure-and-function transformation is one of the big
+      questions in biology. (The ever-popular
+      <a href="#cosmic">"are we alone?"</a> is another one.)</p>
+
+      <p>My partner in crime here is
+      <a href="https://www.lbl.gov/"><!-- VERIFY: original lab page gone -->Saira Mian</a>, a broadly knowledgeable
+      computational biologist at Lawrence Berkeley National Lab. The hope is
+      that there are coding, channel, network and rate-distortion theorems in
+      there somewhere — perhaps even transcending biology, since at heart
+      <a href="#adinkras"><em>everything</em></a> is a network of
+      inter-communicating actors.</p>
+
+      <p>What captivated me a few years back was
+      <a href="https://www.nytimes.com/2009/12/29/health/research/29cancer.html">Mina
+      Bissell's work</a> on tissue architecture and cancer. Genotypically
+      malignant cells that stay quiet in normal tissue somehow <em>know</em>
+      when they reside in a normal architecture and when they do not. If that
+      isn't a communication problem, nothing is.</p>
+    </div>
+
+    <figure class="fig">
+      <a class="plain" href="https://www.moma.org/">
+        <img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/Huppler_9_1951.jpg" alt="Dudley Huppler, Art and Nature">
+      </a>
+      <figcaption>Dudley Huppler, <em>Art and Nature</em>. Museum of Modern Art,
+      New York.</figcaption>
+    </figure>
+
+    <ul class="links">
+      <li>
+        <span class="kind">Proposal</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/CDI08_9.pdf">The NSF CDI proposal</a>,
+        and <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/CDI07bio">the reviews</a></span>
+        <span class="note"><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0835592">Funded,
+        1 September 2008.</a> Thank you, panelists, whoever you are.</span>
+      </li>
+      <li>
+        <span class="kind">Paper</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/mian_rose_intbio11.pdf">Communication
+        Theory and Multicellular Biology</a></span>
+        <span class="note">Integrative Biology 3, 2011.</span>
+      </li>
+      <li>
+        <span class="kind">Reading</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/nurse_bioinfoflow.pdf">Life, Logic and
+        Information</a></span>
+        <span class="note">Paul Nurse in Nature "Horizons." The gist: we need to
+        understand information flow in biological systems. Which is the point,
+        though we are rather more literal about it.</span>
+      </li>
+      <li>
+        <span class="kind">Quote</span>
+        <span class="what">"Living things are so beautiful and precise that there
+        must be a mathematics that describes them. Information theory is that
+        mathematics."</span>
+        <span class="note">Tom Schneider, NIH.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- =========================================================== wireless -->
+<section class="rail" id="wireless">
+  <div class="wrap section">
+    <p class="tag">Wireless</p>
+    <h2>Sorta standard wireless research</h2>
+
+    <div class="measure">
+      <p>Before everything became about particles and molecules, there were two
+      decades of work on how radios should behave when they have to share.</p>
+
+      <p><strong>Interference avoidance</strong> is the idea that radios can
+      iteratively adapt their own codewords — greedily, selfishly, with no
+      central authority — and still converge to a jointly optimal allocation.
+      It works, it converges, and the convergence argument goes by the name
+      "class warfare." That paper, with Sennur Ulukus and Roy Yates, won the
+      2003 IEEE Marconi Prize Paper Award.</p>
+
+      <p><strong>Opportunistic communications</strong> — infostations — is the
+      observation that if you are patient, you can wait to be near a base
+      station and get your bits far more cheaply than if you insist on
+      connectivity everywhere, always.</p>
+    </div>
+
+    <ul class="links">
+      <li>
+        <span class="kind">Overview</span>
+        <span class="what"><a href="IA.html">The interference avoidance paper storm</a></span>
+        <span class="note">Start here. Or go straight to
+        <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/avoid17.pdf">the main paper</a>.</span>
+      </li>
+      <li>
+        <span class="kind">Overview</span>
+        <span class="what"><a href="infostations.html">Opportunistic communications</a></span>
+        <span class="note">Patience has its rewards.</span>
+      </li>
+      <li>
+        <span class="kind">DySPAN</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/dyspan05.pdf">Genetic Algorithms and
+        Spectrum Sharing</a></span>
+        <span class="note">2005.</span>
+      </li>
+      <li>
+        <span class="kind">Policy</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/TACtalk_Rose_final.pdf">FCC Technological
+        Advisory Council briefing</a></span>
+        <span class="note">Interference avoidance, infostations and economics,
+        18 September 2002.</span>
+      </li>
+      <li>
+        <span class="kind">Slides</span>
+        <span class="what"><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/spectrumserver.ppt">Spectrum server</a> ·
+        <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/nev_iab3.ppt">Contentious spectrum management</a> ·
+        <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/cograd1.ppt">Cognitive radio</a></span>
+        <span class="note">See also <a href="https://www.winlab.rutgers.edu/~ryates/">Roy Yates' page</a>.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- =========================================================== adinkras -->
+<section class="rail" id="adinkras">
+  <div class="wrap section">
+    <p class="tag">Supersymmetry</p>
+    <h2>Adinkras</h2>
+
+    <div class="measure">
+      <p><a href="https://sites.brown.edu/sjgates/">Jim Gates</a>' Adinkras are
+      graphs — black and white nodes, coloured edges — that encode
+      supersymmetry algebras. They also look suspiciously like error-correcting
+      codes, which is either a deep fact about the universe or a coincidence
+      that has been leading people on for twenty years.</p>
+
+      <p>I have a summary slide that ties these threads together, from biology
+      up to fundamental descriptions of the universe. It lies somewhere between
+      profound and ludicrous, but it is so much fun that I keep showing it
+      anyway. Post-talk comments make me think it is time to write the
+      summary paper and incite the roiling masses of young communication
+      theorists.</p>
+    </div>
+
+    <figure class="fig">
+      <a class="plain" href="https://arxiv.org/pdf/1104.0722v2">
+        <img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/adinkras.jpg" alt="Adinkra diagrams">
+      </a>
+      <figcaption>Adinkras.
+      <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.71.065002">Original
+      paper</a> · <a href="https://arxiv.org/pdf/1104.0722v2">as the formalism evolves</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ====================================================== sousveillance -->
+<section class="rail" id="sousveillance">
+  <div class="wrap section">
+    <p class="tag">Musing</p>
+    <h2>Everything in the light of day</h2>
+
+    <div class="measure">
+      <p>Since about 2003 — starting with an unanswered
+      <a href="OpEdtoSafire.html">letter to William Safire</a> and continuing
+      with an extremely weak <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/google_nov6.pdf">talk I gave at
+      Google</a> in 2006 — I have been toying with the implications of the fact
+      that soon everything will be recorded and very little will be private.</p>
+
+      <p>A small example. A candid photo of me was taken in Brazil at MWCN'01.
+      I had no idea it existed until a Google search on my name turned it up.
+      Now imagine zillions of such moments, audio included, uploaded wirelessly,
+      correlated, indexed and searched by some Super-Google.</p>
+
+      <p>Assuming symmetry of access and information accountability, I am not
+      sure that loss of <em>public</em> privacy is such a bad thing. It does
+      give one pause that every public — and many an ostensibly private —
+      moment could be subject to scrutiny. But I see this less as Big Brother
+      and more as everything in the light of day, where the watched can watch
+      the watchers. <a href="https://www.eecg.toronto.edu/~mann/">Steve Mann</a>
+      coined the rather good term
+      <a href="http://wearcam.org/sousveillance.htm">sousveillance</a> for it.</p>
+
+      <p><strong>Update, Fall 2016:</strong> I have discovered
+      <a href="https://www.imdb.com/title/tt2085059/">Black Mirror</a>. See
+      season 1, episode 3. And then see season 2, episode 1, and imagine merging
+      the two storylines.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rail">
+  <div class="wrap foot">
+    <p><a href="index.html">← Back to the front</a></p>
+    <p class="contact">Christopher_Rose <span class="dim">at</span> brown.edu</p>
+    <p class="fine">A World of Bits · Updated August 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

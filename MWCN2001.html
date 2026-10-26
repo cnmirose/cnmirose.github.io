@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>MWCN 2001</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+
+<body bgcolor="#ffffff" text="#000000">
+<p>&nbsp; </p>
+<p><b><font size="+1">Mobile and Wireless Communication Networks, (<a href="http://www.di.ufpe.br/%7Emwcn2001/principal.htm">MWCN   2001</a>)</font></b></p>
+<p><i>Gavoa Praia, Brazil</i></p>
+<p> Attracted by a compact workshop like conference, with some
+interesting people   at an unusual location, I accepted to present a
+paper around the RadioSphere   plan. The title, of "mobile and
+networks", indicated an opening for   the systems oriented approach I
+find most interesting. Besides, I did not attend <a href="http://researchweb.watson.ibm.com/acm_sigmobile_conf_2001/">SigMobile
+in Rome</a> in July, since I had more important things at home at that
+time.</p>
+<p>Someone who was in Rome, in the organizing committee, but also came
+to Gavoa   was <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/ChrisRoseAndWife.jpg">Christopher
+Rose</a> of <a href="http://www.winlab.rutgers.edu/">Winlab</a>, who
+also gave   a kind of <a href="http://www.cdt.luth.se/%7Edick/Pictures/MWCN/ChrisRose.jpg">keynote
+speech</a> over a whole afternoon. Professor Rose is a radio guy, so I
+have   now, together with several other presentations here, started to
+understand much   more about this piece in the mobile puzzle. CDMA,
+OFDM, waterfilling, far-near   problem, rake-receivers, multi-path
+propagation interference and in general   signal processing has not
+been my area of specialty, but having read some books   and listened
+to a by now large number of presentations I feel I can orient myself. 
+It's fun.</p>
+<p>Rose viewed his role as to provoke further thought and presented
+some drastically   new ideas, mainly around the consequences of
+short-range but very high speed   radio transmissions. He calls his
+idea "infostations", which should   utilize extreme bandwidths
+reaching up to gigabit/s transfers as you quickly   pass through,
+exchanging your accumulated need for data until you step into  
+another infostation. Part of the idea is also the ubiquitous
+availability of   large inexpensive small storage, and that you may
+exchange data more or less   automatically with other data-strollers.
+A kind of ad-hoc walknet, where part   of the transfer happens by
+people physically moving around.</p>
+<p>Chris Rose is engaging and fun to hear, but is very much of radio
+and less   of the complete systems architect. It is easy to see from
+the equations that   short range makes wonder for radio transfer
+rates. However, data also has to   come to the infostation in some
+way. I asked about this, and he happily answered   "Well, that's a
+wired network issue, and there bandwidth is infinite"   :-). </p>
+<p>In general I still feel that "mobility" has far too much emphasis  
+on radio. It is an important but far from dominating component in the
+mobile   system. Problem is that the business is so decomposed into
+narrow sub-areas,   that few people can see the complete system in its
+correct light and proportions.   The whole conference suffered from
+this, in that it emphasized the radio access   far too much, and had
+several sessions on CDMA and a whole session on frequency   and
+capacity planning. Two sessions, (6 papers), on Quality of Service were
+also there, but mostly limited to the radio interface. <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/MobileQoS.jpg">One
+paper</a> discussed admission control schemes in the context of new
+calls, handover   of existing ones, and one lifted the issue to
+network level in "Using DiffServ   in 3G Cellular Networks".</p>
+<p>I tried to change this in my presentation, and also surpass Chris
+Rose in visionary   outlook, which I started with saying: "<i>While
+this paper is placed in   a session called 3G Networks, it is about
+the 4:th generation of such systems.   And I must tell you, that the
+fourth generation mobile system is not going to   be an air interface".</i>
+And yes, that is the case of the future. A mobile   network that is a
+direct extension of the Internet, not just technically but  
+architecturally, culturally and philosophically. The radio access
+interface   is not the decisive component, but a piece that could be
+added, by anyone, and   replaced, at any point in the network. Just as
+we add, remove and replace computers   today, usually through ethernet
+interfaces. I improvised around the long list   of issues involved in
+RadioSphere:</p>
+<ol>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Authentication</font></b></font><font color="#0000ff">.</font> For at least two reasons. PKI needed.</div>
+  </li>
+  <li>
+    <div align="left"> <b><font color="#0000ff">Encryption and Privacy</font><font color="#ffff00">.</font></b> Can be arbitrarily sophisticated. Care to
+be tracked?</div>
+  </li>
+  <li>
+    <div align="left"> <b><font color="#0000ff">Customer and group
+membership       management.</font></b> Light-weight.</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Electronic
+economic transactions.</font></b></font> In case you have to pay for
+access       it should be electronic.</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">The
+Business       model.</font></b></font> Less money for bit transport,
+anyway.</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">User
+Interface       technology for mobile devices.</font></b></font> You
+must have it with you.</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Mobility
+of IP-addresses</font>.</b></font> MobileIP and associated
+questions.Triangle       routing is NOT an option. Multicasting.</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Adaptive
+and self-regulating cell-coverage</font></b></font><font color="#0000ff">.</font>
+Necessary for consumer electronics scenario.</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Mobile
+Subnetworks.</font></b></font> One Foreign Agent for the whole ship?</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Advanced
+Applications.</font></b></font> The world beyond the web. And the phone.
+(some <a href="http://www.cdt.luth.se/%7Edick/CDT/SCC/slide0.html">here</a>)</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Location-aware
+applications.</font></b> <font color="#000040">Among few genuinely
+mobility       oriented services.</font></font></div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Integration
+with broadcast technologies and DVB-T in particular.</font></b></font>
+(more <a href="http://www.cdt.luth.se/%7Edick/CDT/SCC/slide0.html">here</a>)</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Application
+Architectures for Resource Limited Small Computers.</font></b></font><font color="#0000ff"> </font>Such as ASP-style.</div>
+  </li>
+  <li><b><font color="#0000ff">Service discovery.</font></b> Where is a
+Printer?     A CD-Burner?</li>
+  <li><b><font color="#0000ff">Context mobility</font><font color="#ffff00">.</font></b> Keeping all state, security associations,
+open files,etc, while moving.</li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Ad-hoc
+networking,       peer-to-peer and Multicast optimization.</font></b></font>
+Including walknet.</div>
+  </li>
+  <li>
+    <div align="left"><b><font color="#0000ff">Quality of Service in
+Mobile <i>and</i> IP networks.</font></b><font color="#0000ff"> </font><font color="#ffffff">Maintaining       reservations while path changes.</font></div>
+  </li>
+  <li><font color="#ffff00"><b><font color="#0000ff">Handover
+management. </font></b><font color="#000000">In     the context of
+packets, small cells and maintained QoS.</font></font></li>
+  <li><font color="#ffff00"><b><font color="#0000ff">Mobile IP telephony</font></b></font><font color="#0000ff">.</font> Header compression and QoS.</li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Smart
+antennas.</font></b></font> Mobile networks can carry them.</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Short
+range       gigabit/s radio.</font></b></font> Some call it
+"Infostations".</div>
+  </li>
+  <li>
+    <div align="left"><b><font color="#0000ff">Ipv6.</font></b> Is it
+needed?       Must Mobile IPv6 be deployed at same time? Expect lots
+of unresolved issues.</div>
+  </li>
+  <li>
+    <div align="left"><font color="#ffff00"><b><font color="#0000ff">Interworking
+with UMTS</font></b></font><font color="#0000ff">.</font> OK, you can
+attach       a UMTS basestation to the RadioSphere.</div>
+  </li>
+  <li><font color="#ffff00"><b><font color="#0000ff">Legal Issues</font></b></font><font color="#0000ff">.</font> Can lawyers sabotage bandwidth sharing?. Is
+FCC/Government regulation needed?</li>
+</ol>
+<p>Yes, this is material for weeks of talking, so I had to be brief.
+Since I was   in Brazil I couldn't resist being a bit exotic and
+mention <a href="http://www.cdt.luth.se/%7Edick/CDT/SCC/slide20.html">Arena/IT-Hockey</a>
+:-), and discuss around its implications for communications and
+application   architectures. </p>
+<p>My approach to things is a bit confusing to many people, who are
+used to limited   and narrow elaborations on a single issue. What box
+to put this in? Help! It   was however received very well and <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/DickDjamel.jpg">professor
+Djamel</a> who was the organizing chair smiled. In any case, as people
+who know   me already understand: any attempt to put me in a box or
+"allocate"   me to a particular limited area will be rejected.</p>
+<p>Another person who also, later in his presentation, referred to my
+speech,   was Mobile IP "guru" <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/DickCharles.jpg">Charles
+Perkins</a>, who talked two times about various aspects about Mobile
+IPv6. As   he is the main author of the IETF RFC on Mobile IPv6 I
+listened carefully. I   cannot say that I learned anything really knew
+- I knew most of the material   on beforehand, but I got confirmed a
+number of intuitions, concerns and even   added some new perspectives.
+I think I know better now how this should be done.What   worries is
+maybe that the undertaking grows a bit, since I see that IPv6
+introduction   is hard to avoid. While this is good, it makes things
+bigger.</p>
+<p>Funny that I had to go all the way to Brazil to establish a good
+contact with <a href="http://www.cwc.oulu.fi/">Center for Wireless
+Communication, CWC),</a> at the University of Oulu. The manager of CWC
+is <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/MattiDick.jpg">Matti
+Latva-Aho,</a> a real hard core radio guy. He made his PhD in "Advanced
+ receivers for wideband CDMA systems" and has continued that track. He
+is   good and knows what he is talking about, (while I am not the one
+to judge).   It was anyway rewarding to <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/MattiLecture.jpg">listen
+to him</a>. </p>
+<p>Nevertheless, he understands the power of the systems view I
+presented around   RadioSphere, and after hours of <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/MattiDickPool.jpg">informal
+discussions</a>, we understand each other and have decided that a joint
+meeting   should take place as soon as we can find suitable time. An
+urgent goal is to   see if an EU project around RadioSphere can be
+constructed for the 16 October   5:th Framework deadline.</p>
+<p>"- And now, a word from our sponsors". The <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/Industry.jpg">Industry
+panel</a> consisted, (from left), of managers of Brazil branches of
+MicroSoft,   Siemens and Nokia. They all made well prepared and nice
+presentations, Siemens   and Nokia especially talking about 3G. Mostly
+from a user and market perspective.   Yes I like the services
+envisioned, but in my comment speech to the panel I   could just ask
+them to reflect over the huge price/performance differences between  
+the wired Internet as we know it, and the wireless/mobile one as
+envisioned   by 3G, and point out the alternative way of doing things
+which may solve the   problem. This way, however, means that mobile
+operators may almost disappear.   Operators in general will be very
+important, (a revenge for the wired backbone),   and even rich, but
+those who build their revenue and large organization mainly   on
+charging insanely high for that final wireless packet hop, those will
+have   a bleak future. This is inherent in the goal of evening out the
+price/performance   difference between wired and wireless. This is
+inherent in reaching the enormous   advantage of being able to use the
+same applications and sites for both wired   and unwired access.
+However, MicroSoft, Siemens and Nokia have nothing to fear  
+long-term, they just gain because the market can quickly be a
+mass-market.</p>
+<p>The industry panelists showed some quite fun 3G-commercials. In true
+Latino-Macho   style they all had as the theme "using 3G gadgets to
+impress on beautiful   women". I started my comment on admitting that
+now I'm almost a 3G fan.   The Nokia representative, a
+French-Brazilian woman who had worked for Nokia   in Paris for 10
+years, told however a story about her Finnish colleagues who   always
+brought their fancy mobile phones to restaurants and called each other
+ to attract attention and brag. It doesn't work nowadays, she said, and
+claimed   that 95% of Finnish teenagers have a mobile phone.</p>
+<p>Anyway, Matti liked my discussion so much that he walked 3
+kilometers along   the beach and bought a beer for me from the locals.
+Initially being a bit disappointed   by my preference for <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/BeachBar.jpg">Coca
+Cola</a>, he cheered up after realizing that he could have it himself. </p>
+<p><font size="+1"><b>Brazil</b></font></p>
+<p>Brazil is a country of extreme differences. While there is certainly
+great   wealth and modern industry in the southwest around burgeoning
+Sao Paolo, there   is so much poverty and lack of progress in the
+poverty-stricken old northeast   and the isolated and huge amazonas.
+The differences in wealth are really disturbing   and unproductive for
+society as a whole. Poor people sell their labour for almost  
+nothing, and are used just to walk dogs and open garage doors when the
+wealthy   people of Ipanema want to drive their BMW down Avenida do
+Atlantica. The conference   was held 60 kilometers outside Recife in
+the poor north-east. Since business   is in the southwest around Sao
+Paolo and Rio de Janeiro all flights go through   those cities, and I
+had the opportunity to visit Rio for a few days.</p>
+<p>Brazil has 160 million people, of a mixed European, African and
+native Indian   heritage. They have little racial problems, they mix
+happily, but have lots   of other troubles. 60 million people lack
+decent housing and live in places   like the infamous Favelas in Rio.
+Climbing the inconvenient heights are shacks   housing millions, often
+without water, sanities or electricity. An unbelievable   12 million
+children are said to be abandoned and homeless. The problem is much  
+one of education, since that is the key to give people the tools
+necessary to   guide themselves in a complex world and be able to do
+productive things. Without   it, there is no chance but to resort to
+criminality or lousily paid jobs, selling   almost anything on the
+beach and earning almost nothing. Or, moving to Sao Paolo   with a
+small hope for a job in a truck factory. While improvements are going 
+on it seems to be so much work. Still it seems like private schools,
+afforded   only by the rich, are much much better, since almost all
+university students   are recruited from those. I walked through the
+little neighbouring poor village   of Nova Cruz and stood by the
+"Municipality School" and thought for   a while, looking at the
+kids.... Do they have the motivation, background, and   outlook, and
+orientation of the world and the life for knowing why English,  
+second order equations, modular arithmetic's and biotechnology is
+important?   Hard, very hard, if their parents have no idea, and no
+one is there to give   them the knowledge-praising ideals that I
+luckily was given as a child.</p>
+<p>Brazil has a long history as the land of the future, which never
+seems to come,   with lots of brave attempts and grand projects.
+President Kubitcheks visionary   plan for developing the interior of
+Brazil included the establishment of a new   capital, Brasilia. Since
+most people live along the coast, the rest of this   huge land,
+(larger than USA excluding Alaska), is little exploited. Brasilia  
+was built from scratch 1000 kilometers inland in the early 60's and is
+now home   to almost 2 million people. Famous architect Oscar Niemayer
+designed it, and   has become a classic in architecture history. For
+good and bad. Other grand   projects were the transamazonas highway
+through thousands of kilometers of unfriendly   wilderness. Anyway,
+large debts built up, currency inflated, and in the traditional  
+South-American style there was much corruption. 11 out of 25 presidents
+have   been forced to go before formal term is over. As late as 1994
+playboy-president   Collor was forced from office being accused of
+transferring a billion dollar   to own accounts. Surprisingly enough,
+however, the following presidents, such   as Henrique Cardoso, a
+previous sociology professor from Sao Paolo, proved honest   and
+managed to get Brazil on a good track. The so called Plano Real
+stabilized   the currency, and foreign investments in Brazil have
+reached record levels in   late 90's.</p>
+<p>Brazil also has a fascinating colonial history of brave Portuguese
+explorers   who sailed to unknown coasts and the tough "Bandeirantes"
+who investigated   the vast interior and extended Portuguese Brazil
+far beyond the original Treaty   of Tortedilha. They fought the French
+and the Dutch who wanted pieces of Brazil,   built sugar plantations,
+growed coffee, benefitted by selling natural rubber   from the
+amazonas to the emerging car-industry and built an opera-house deep  
+inside the amazonas jungle in Manaus. Beautiful colonial towns are
+still there,   such as Olinda and original capital Salvador de Bahia
+in the north-east, and   the town-jewels from the gold mining boom in
+Minas Gerais, such as Ouru Preto   and Tiradentes. Brazil, by the way,
+is still one of the worlds main mining countries,   and the whole
+mountain-sides of iron ore are rusting, major competitors to LKAB.</p>
+<p>Looking down at the <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/Corcovado.jpg">city
+- this area is called Flamengo - and the Sugar Loaf</a>, Copacabana
+hiding behind   the mountain in the right of the picture, Ipanema
+further to the right, I get   to think about <a href="http://www.imit.kth.se/%7Edick56/Music/DeirdresSamba.mp3">Deirdres
+Samba</a>: </p>
+<dl>
+  <dl>
+    <dt><i>"Mellan Praia de Flamengo och det fagra Ipanema,</i></dt>
+    <dd><i>finns de rikas heta stränder, </i></dd>
+    <dd><i>men de fattiga i Rio,</i></dd>
+    <dt><i>bor högt över alla andra,</i></dt>
+    <dt><i>högsta berget bor jag på,</i></dt>
+    <dd><i>vinden svalkar, solen bränns,</i></dd>
+    <dt><i>där finns sorg som inte känns."</i></dt>
+  </dl>
+</dl>
+<blockquote>
+  <p> Cornelis Vreeswijk</p>
+  <p>&nbsp;</p>
+</blockquote>
+<p><font size="+1"><b> Football and Jungle-Hockey</b></font></p>
+<p> Flamengo's kids are practicing on the <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/FlamengoBoys.jpg">beach</a>.
+In the sand. Without shoes. You get hard feet and strong ankles.
+Everybody does   it. It is Brazilian culture. Beaches and football is
+a way of life.</p>
+<p> Of course I had to visit <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/Maracana.jpg">Maracana</a>,
+the world largest football stadium. The Brazilians are so very proud of
+having   been able to beat Sweden once in a world championship final,
+in 1958 it was   I think, that they have dedicated a whole <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/1958.jpg">monument</a>
+to it. Oh yes I remember my childhood, sitting there north of the arctic
+circle   studying the book and the photos about 1958 World
+Championship. Pele, Garrincha   and Mazzola. And probably the best
+Swedish team ever.<br>
+</p>
+<p> While being and old football-player, (Norrbotten junior champion
+1974, with   several later national team players in the team), my
+purpose was to introduce   some hockey-culture in this country. First,
+the <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/HockeyGavoa.jpg">training
+camp</a> up by the jungle-border. It was really <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/DickGavoaBeach.jpg">remote
+and lonely</a>.<br>
+Then, I went down to Copacabana to show the kids a <a href="http://www.imit.kth.se/%7Edick56/Pictures/MWCN/HockeyCopacabana.jpg">cool
+new sports</a>. The customs had never seen hockey-sticks, so they
+confiscated   them just to be on the safe side. Therefore I had to
+just illustrate the basic   movements and try to explain that ice is
+not just those cubes you put in the   drinks. Anyway, after a few
+rounds I think hockey may have a great future in   Brazil!</p>
+<p>&nbsp;</p>
+<p> -- Dick</p>
+<p>&nbsp;</p>
+<center>
+<center> </center>
+</center>
+</body></html>

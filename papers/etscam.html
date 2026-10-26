@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voicemail for ET &mdash; Christopher Rose</title>
+<meta name="description" content="A now-defunct service offered to beam your voice message into space for the price of a 900 number. Here is the link budget.">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">A World of <span>Bits</span></a>
+    <nav class="topnav" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">Cosmic</a>
+      <a href="../etmightwrite.html">Cartoons</a>
+      <a href="../papers.html">Papers &amp; talks</a>
+      <a href="../people.html">People</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="rail">
+  <div class="wrap hero">
+    <p class="eyebrow">A calculation from <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">Cosmic Communications</a></p>
+    <h1>Voicemail<br>for ET</h1>
+    <p class="sub">There's one born every minute</p>
+    <p class="role">New Scientist once profiled a service &mdash; racket &mdash; whereby you called a 900 number to leave voice messages for ET, to be beamed into space with a satellite dish. They contacted me, and since silence can imply complicity, I did the calculation.</p>
+  </div>
+</section>
+
+<section class="rail">
+  <div class="wrap section">
+    <span class="mark"></span>
+    <div class="measure">
+      <p>The intention is to deliver voice messages to the stars. If you assume a
+      voice message carries information at a data rate of <em>C</em> bits per
+      second, working out how far the message can travel before it can no longer
+      be received at that rate gives:</p>
+    </div>
+
+    <div class="theorem">
+      <span class="name">Best case</span>
+      <p class="statement"><em>D</em><sup>2</sup> &le;
+      2&pi;<sup>2</sup><em>P</em>
+      (<em>R</em><sub>r</sub><em>R</em><sub>t</sub>/&lambda;)<sup>2</sup> /
+      <em>C&thinsp;N</em><sub>0</sub></p>
+      <p class="proof"><em>D</em> is the distance; <em>P</em> the transmitted
+      power; <em>R</em><sub>r</sub> and <em>R</em><sub>t</sub> the radii of the
+      receiving and transmitting antennas; &lambda; the radio wavelength;
+      <em>N</em><sub>0</sub> the receiver noise level. This is a
+      <strong>best</strong>-case scenario.</p>
+    </div>
+
+    <div class="measure">
+      <p>Cell phones code voice in the neighbourhood of
+      <em>C</em>&nbsp;=&nbsp;10,000&nbsp;bits per second, so let us take that as
+      the minimum data rate that can support voice communication. Cell phones are
+      extremely stingy with spectrum and try to pack voice signals into as little
+      space as possible, so the figure is a reasonable lower bound.</p>
+
+      <p>According to the website, <em>R</em><sub>t</sub> is approximately
+      2&nbsp;metres and &lambda; about 0.125&nbsp;metres. Assume an
+      Arecibo-sized listening antenna at the other end
+      (<em>R</em><sub>r</sub>&nbsp;=&nbsp;150&nbsp;metres), chilled down to
+      3&nbsp;degrees kelvin. Plugging all that in gives:</p>
+    </div>
+
+    <div class="theorem">
+      <span class="name">Result</span>
+      <p class="statement"><em>D</em> &le; (1.7 &times;
+      10<sup>13</sup>)&nbsp;&radic;<em>P</em> metres</p>
+      <p class="proof">A light year is about 10<sup>16</sup> metres.</p>
+    </div>
+
+    <div class="measure">
+      <p>Now let us assume they are transmitting at a whopping
+      <em>P</em>&nbsp;=&nbsp;1&nbsp;megawatt. The signal will only be received
+      properly about two light years away. However, it turns out that the actual
+      FCC Part&nbsp;15.247 rule under which they are operating allows only
+      <strong>one watt</strong> of radiated power &mdash; so the actual distance
+      is <strong>one thousand times less</strong>, roughly four times the
+      distance from the sun to Pluto. And if I remember correctly, the nearest
+      star is about four light years away.</p>
+
+      <p>One must remember that the above is a <strong>best-case
+      scenario</strong>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rail">
+  <div class="wrap foot">
+    <p><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">&larr; Cosmic Communications</a> &middot; <a href="../index.html">A World of Bits</a></p>
+    <p class="contact">Christopher_Rose <span class="dim">at</span> brown.edu</p>
+    <p class="fine">A World of Bits &middot; Rebuilt August 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

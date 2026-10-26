@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Darker, calmer — A World of Bits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#0D0E11;font-family:"Newsreader",Georgia,serif}
+img{max-width:100%;display:block}
+
+.chooser{max-width:62rem;margin:0 auto;padding:3rem 1.5rem 1rem;color:#DDE1E6;line-height:1.62}
+.chooser h1{font-family:"Fraunces",serif;font-variation-settings:"WONK" 1;font-size:2.1rem;margin:0 0 .6rem;line-height:1.1}
+.chooser p{max-width:40rem;color:#9FA7B0}
+.marker{max-width:62rem;margin:0 auto;padding:2.6rem 1.5rem .9rem;color:#7E868F;
+        font-family:"JetBrains Mono",monospace;font-size:.71rem;letter-spacing:.17em;text-transform:uppercase}
+.marker b{color:#fff;font-weight:500}
+.sw{display:flex;gap:.4rem;margin-top:.7rem}
+.sw i{width:2.4rem;height:.85rem;display:block;border-radius:2px}
+
+/* =====================================================================
+   THREE DARKER GROUNDS.
+   No dot field. No continuous left rail. Depth comes from two very large,
+   very soft colour blooms — non-repeating, no pattern to catch the eye.
+   Sections are separated by space and by a short accent mark above the
+   heading, rather than by ruled lines running down the page.
+   ===================================================================== */
+
+[data-d]{
+  --font-display:"Fraunces",Georgia,serif;
+  --font-body:"Newsreader",Georgia,serif;
+  --font-mono:"JetBrains Mono",monospace;
+  --wonk:"SOFT" 0,"WONK" 1;
+  background-color:var(--ground);
+  background-image:
+    radial-gradient(60rem 40rem at 12% -10%, var(--bloom-a), transparent 70%),
+    radial-gradient(52rem 36rem at 92% 108%, var(--bloom-b), transparent 70%);
+  background-repeat:no-repeat;
+}
+
+/* --- A. SLATE & EMBER -------------------------------------------------
+   Warm near-black, the colour of a lamplit study rather than a screen.
+   Ember orange and a soft mint. The calmest of the three; closest to
+   reading a well-printed book by a good lamp.                          */
+[data-d="ember"]{
+  --ground:#191614; --panel:#221E1B; --panel-2:#2A2521;
+  --bloom-a:rgba(255,122,69,.055); --bloom-b:rgba(127,209,174,.045);
+  --rule:#332C27; --rule-soft:#262120;
+  --ink:#F1EAE1; --body:#BCB2A7; --faint:#8B8177;
+  --accent:#FF8A50; --accent-soft:rgba(255,138,80,.16);
+  --second:#7FD1AE; --highlight:#F0C05A;
+}
+
+/* --- B. PETROL & CORAL ------------------------------------------------
+   Deep sea-green-blue with coral and gold on top. Cool ground, warm
+   accents — the most alive of the three without being loud.            */
+[data-d="petrol"]{
+  --ground:#102428; --panel:#16323A; --panel-2:#1B3C45;
+  --bloom-a:rgba(255,111,97,.06); --bloom-b:rgba(242,193,78,.05);
+  --rule:#25454E; --rule-soft:#1B333A;
+  --ink:#E9F2F2; --body:#A9C0C4; --faint:#7B9299;
+  --accent:#FF7F6E; --accent-soft:rgba(255,127,110,.17);
+  --second:#F2C14E; --highlight:#F2C14E;
+}
+
+/* --- C. PLUM & PROCESS ------------------------------------------------
+   The magenta and cyan you already picked, moved onto a deep plum
+   ground where they stop glaring and start glowing. Keeps the decision
+   you made; fixes the brightness that came with it.                    */
+[data-d="plum"]{
+  --ground:#1A1420; --panel:#241C2C; --panel-2:#2C2236;
+  --bloom-a:rgba(255,77,148,.07); --bloom-b:rgba(53,195,238,.05);
+  --rule:#372B42; --rule-soft:#281F31;
+  --ink:#F3ECF4; --body:#B8ACBE; --faint:#877B8E;
+  --accent:#FF5C9D; --accent-soft:rgba(255,92,157,.18);
+  --second:#4DCBEF; --highlight:#FFD24A;
+}
+
+/* ------------------------------------------------------ components -- */
+.panel{padding:3.2rem 0 3.6rem;color:var(--body);font-size:1.04rem;line-height:1.66}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.6rem}
+
+/* the section mark: a short bar, not a ruled line down the page */
+.mark{display:block;width:2.6rem;height:3px;background:var(--second);
+      border-radius:2px;margin:0 0 1.1rem}
+.mark.hot{background:var(--accent)}
+
+.eyebrow{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.18em;
+         text-transform:uppercase;color:var(--faint);margin:0 0 .7rem}
+.tag{font-family:var(--font-mono);font-size:.63rem;letter-spacing:.15em;
+     text-transform:uppercase;color:var(--second);margin:0 0 .5rem;font-weight:500}
+h2.title{font-family:var(--font-display);font-variation-settings:var(--wonk);font-weight:700;
+         font-size:clamp(2.2rem,5.2vw,3.5rem);line-height:.98;letter-spacing:-.02em;
+         color:var(--ink);margin:0 0 .35rem}
+.sub{font-family:var(--font-mono);font-size:.73rem;letter-spacing:.24em;text-transform:uppercase;
+     color:var(--second);margin:0 0 1.7rem;font-weight:500}
+h3.head{font-family:var(--font-display);font-variation-settings:var(--wonk);font-weight:700;
+        font-size:1.6rem;color:var(--ink);margin:0 0 1.1rem}
+
+.thesis{margin:0 0 2.4rem;max-width:41rem;padding:0}
+.thesis .punch{display:block;font-family:var(--font-display);font-variation-settings:var(--wonk);
+               font-style:italic;font-size:1.46rem;line-height:1.3;color:var(--ink)}
+
+/* banner: natural ratios, one baseline, no rail beneath */
+.strip{display:flex;align-items:flex-end;gap:1.1rem;list-style:none;
+       margin:0 0 2.8rem;padding:0 0 1.5rem;flex-wrap:wrap}
+.strip li{position:relative}
+.strip a{display:block;text-decoration:none}
+.strip .frame{border:1px solid var(--rule);background:var(--panel);padding:4px;
+              display:flex;align-items:center;justify-content:center;
+              transition:transform .22s,border-color .22s,box-shadow .22s}
+.strip .frame img{width:auto;height:100%;display:block}
+.strip .ph{font-family:var(--font-mono);font-size:.5rem;letter-spacing:.08em;color:var(--faint);
+           text-align:center;padding:.5rem .35rem;display:block}
+.strip .label{display:block;text-align:center;font-family:var(--font-mono);font-size:.55rem;
+              letter-spacing:.1em;text-transform:uppercase;color:var(--faint);
+              margin-top:.55rem;transition:color .2s}
+.strip a:hover .frame{border-color:var(--accent);transform:translateY(-4px);
+                      box-shadow:0 10px 24px -12px var(--accent-soft)}
+.strip a:hover .label{color:var(--ink)}
+.h1{height:104px}.h2{height:88px}.h3{height:118px}.h4{height:76px}
+.h5{height:96px}.h6{height:130px}.h7{height:82px}
+
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:0 0 2.4rem}
+@media(max-width:44rem){.cards{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--rule-soft);border-radius:5px;
+      padding:1.4rem 1.35rem 1.45rem;transition:.2s}
+.card:hover{background:var(--panel-2);transform:translateY(-2px)}
+.card h3{font-family:var(--font-display);font-variation-settings:var(--wonk);font-weight:700;
+         font-size:1.16rem;color:var(--ink);margin:.5rem 0 .45rem}
+.card p{font-size:.95rem;margin:0 0 .9rem}
+.card .more{font-family:var(--font-mono);font-size:.63rem;letter-spacing:.12em;
+            text-transform:uppercase;color:var(--accent);text-decoration:none}
+
+/* link list: no top/bottom rules on every row — just breathing room */
+.links{list-style:none;margin:0 0 2.4rem;padding:0;max-width:42rem}
+.links li{padding:.9rem 0 .95rem;display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap}
+.links li+li{border-top:1px solid var(--rule-soft)}
+.links .kind{flex:0 0 4.6rem;font-family:var(--font-mono);font-size:.57rem;
+             letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.links .what{flex:1 1 14rem;color:var(--ink)}
+.links .what a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+.links .what a:hover{border-bottom-color:var(--accent)}
+.links .note{font-size:.9rem;color:var(--faint);flex:1 1 100%}
+
+.theorem{background:var(--panel);border:1px solid var(--rule-soft);border-radius:5px;
+         padding:1.2rem 1.35rem;max-width:42rem}
+.theorem .name{display:block;font-family:var(--font-mono);font-size:.61rem;letter-spacing:.15em;
+               text-transform:uppercase;color:var(--second);margin-bottom:.45rem;font-weight:500}
+.theorem .statement{font-family:var(--font-display);font-variation-settings:var(--wonk);
+                    font-weight:700;font-size:1.24rem;color:var(--ink);margin:0 0 .3rem}
+.theorem .statement em{color:var(--highlight);font-style:normal}
+.theorem .proof{font-size:.91rem;color:var(--faint);margin:0}
+</style>
+</head>
+<body>
+
+<div class="chooser">
+  <h1>Darker, and quieter</h1>
+  <p>No dot field. No rail running down the left. Depth now comes from two very
+  large, very soft colour blooms — no repeating pattern, nothing for the eye to
+  catch on. Sections are separated by space and by a short accent bar above the
+  heading, instead of ruled lines.</p>
+  <p>The link lists have also lost their per-row rules. That was the "ledger"
+  feeling, I think: too many horizontal lines at even intervals.</p>
+</div>
+
+<!-- ============================================================== EMBER -->
+<div class="marker"><b>A — Slate &amp; Ember.</b> &nbsp;Warm near-black, ember orange, soft mint
+  <span class="sw"><i style="background:#191614"></i><i style="background:#FF8A50"></i><i style="background:#7FD1AE"></i><i style="background:#F1EAE1"></i></span>
+</div>
+<section class="panel" data-d="ember">
+  <div class="wrap">
+    <p class="eyebrow">Brown University · School of Engineering</p>
+    <h2 class="title">Christopher&nbsp;Rose</h2>
+    <p class="sub">Wireless &amp; beyond</p>
+    <blockquote class="thesis"><span class="punch">What are all these interacting
+      elements saying to one another, how are they saying it, and can I join the
+      conversation?</span></blockquote>
+
+    <ul class="strip">
+      <li><a href="#"><span class="frame h1"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/adinkras.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;ADINKRAS&lt;/span&gt;'"></span><span class="label">Adinkras</span></a></li>
+      <li><a href="#"><span class="frame h2"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/slink3.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;SLINKY&lt;/span&gt;'"></span><span class="label">Interactions</span></a></li>
+      <li><a href="#"><span class="frame h3"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/Molecular_Informatics_Image.png" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;MOLECULES&lt;/span&gt;'"></span><span class="label">Chemistry</span></a></li>
+      <li><a href="#"><span class="frame h4"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/embryo_dev_series1.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;EMBRYO&lt;/span&gt;'"></span><span class="label">Morphogenesis</span></a></li>
+      <li><a href="#"><span class="frame h5"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/Huppler_9_1951.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;HUPPLER&lt;/span&gt;'"></span><span class="label">Art &amp; nature</span></a></li>
+      <li><a href="#"><span class="frame h7"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/GAcontention.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;SPECTRUM&lt;/span&gt;'"></span><span class="label">Spectrum</span></a></li>
+      <li><a href="#"><span class="frame h6"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/040902cover.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;NATURE&lt;/span&gt;'"></span><span class="label">Write, don't radiate</span></a></li>
+    </ul>
+
+    <span class="mark"></span>
+    <h3 class="head">Six threads, one question</h3>
+    <div class="cards">
+      <article class="card"><span class="tag">It from channel</span><h3>Talking particles</h3>
+        <p>If two billiard balls collide, how many bits did they exchange? Conservation
+        laws turn out to be the null space of the interaction channel.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+      <article class="card"><span class="tag">SETI</span><h3>Write, don't radiate</h3>
+        <p>Inscribed matter beats radiated photons across interstellar distances, by a
+        lot. <em>Nature</em> cover, September 2004.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+    </div>
+
+    <span class="mark hot"></span>
+    <h3 class="head">Papers I am still fond of</h3>
+    <ul class="links">
+      <li><span class="kind">1990</span><span class="what"><a href="#">A Dielectric-Free Superconducting Coaxial Cable</a></span>
+        <span class="note">Levitate the centre conductor, avoid the lossy dielectric. Conceived in the euphoria after high-T<sub>c</sub>.</span></li>
+      <li><span class="kind">1989</span><span class="what"><a href="#">Rapid Optimal Scheduling Using a Cellular Automaton</a></span>
+        <span class="note">Let simple, simply-connected computers find systems of distinct representatives.</span></li>
+      <li><span class="kind">2026</span><span class="what"><a href="#">Limits of Information Flow Between Classically Interacting Particles</a></span>
+        <span class="note">Physical Review E, with Miles Miller-Dickson.</span></li>
+    </ul>
+
+    <div class="theorem"><span class="name">Theorem</span>
+      <p class="statement">Beer + Pizza = <em>Academic Excellence</em></p>
+      <p class="proof">Proof: three EGC teaching award wins. ∎</p></div>
+  </div>
+</section>
+
+<!-- ============================================================= PETROL -->
+<div class="marker"><b>B — Petrol &amp; Coral.</b> &nbsp;Deep sea-blue-green, coral, gold
+  <span class="sw"><i style="background:#102428"></i><i style="background:#FF7F6E"></i><i style="background:#F2C14E"></i><i style="background:#E9F2F2"></i></span>
+</div>
+<section class="panel" data-d="petrol">
+  <div class="wrap">
+    <p class="eyebrow">Brown University · School of Engineering</p>
+    <h2 class="title">Christopher&nbsp;Rose</h2>
+    <p class="sub">Wireless &amp; beyond</p>
+    <blockquote class="thesis"><span class="punch">What are all these interacting
+      elements saying to one another, how are they saying it, and can I join the
+      conversation?</span></blockquote>
+
+    <ul class="strip">
+      <li><a href="#"><span class="frame h1"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/adinkras.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;ADINKRAS&lt;/span&gt;'"></span><span class="label">Adinkras</span></a></li>
+      <li><a href="#"><span class="frame h2"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/slink3.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;SLINKY&lt;/span&gt;'"></span><span class="label">Interactions</span></a></li>
+      <li><a href="#"><span class="frame h3"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/Molecular_Informatics_Image.png" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;MOLECULES&lt;/span&gt;'"></span><span class="label">Chemistry</span></a></li>
+      <li><a href="#"><span class="frame h4"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/embryo_dev_series1.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;EMBRYO&lt;/span&gt;'"></span><span class="label">Morphogenesis</span></a></li>
+      <li><a href="#"><span class="frame h5"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/Huppler_9_1951.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;HUPPLER&lt;/span&gt;'"></span><span class="label">Art &amp; nature</span></a></li>
+      <li><a href="#"><span class="frame h7"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/GAcontention.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;SPECTRUM&lt;/span&gt;'"></span><span class="label">Spectrum</span></a></li>
+      <li><a href="#"><span class="frame h6"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/040902cover.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;NATURE&lt;/span&gt;'"></span><span class="label">Write, don't radiate</span></a></li>
+    </ul>
+
+    <span class="mark"></span>
+    <h3 class="head">Six threads, one question</h3>
+    <div class="cards">
+      <article class="card"><span class="tag">It from channel</span><h3>Talking particles</h3>
+        <p>If two billiard balls collide, how many bits did they exchange? Conservation
+        laws turn out to be the null space of the interaction channel.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+      <article class="card"><span class="tag">SETI</span><h3>Write, don't radiate</h3>
+        <p>Inscribed matter beats radiated photons across interstellar distances, by a
+        lot. <em>Nature</em> cover, September 2004.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+    </div>
+
+    <span class="mark hot"></span>
+    <h3 class="head">Papers I am still fond of</h3>
+    <ul class="links">
+      <li><span class="kind">1990</span><span class="what"><a href="#">A Dielectric-Free Superconducting Coaxial Cable</a></span>
+        <span class="note">Levitate the centre conductor, avoid the lossy dielectric. Conceived in the euphoria after high-T<sub>c</sub>.</span></li>
+      <li><span class="kind">1989</span><span class="what"><a href="#">Rapid Optimal Scheduling Using a Cellular Automaton</a></span>
+        <span class="note">Let simple, simply-connected computers find systems of distinct representatives.</span></li>
+      <li><span class="kind">2026</span><span class="what"><a href="#">Limits of Information Flow Between Classically Interacting Particles</a></span>
+        <span class="note">Physical Review E, with Miles Miller-Dickson.</span></li>
+    </ul>
+
+    <div class="theorem"><span class="name">Theorem</span>
+      <p class="statement">Beer + Pizza = <em>Academic Excellence</em></p>
+      <p class="proof">Proof: three EGC teaching award wins. ∎</p></div>
+  </div>
+</section>
+
+<!-- =============================================================== PLUM -->
+<div class="marker"><b>C — Plum &amp; Process.</b> &nbsp;Your magenta and cyan, on a deep plum ground
+  <span class="sw"><i style="background:#1A1420"></i><i style="background:#FF5C9D"></i><i style="background:#4DCBEF"></i><i style="background:#F3ECF4"></i></span>
+</div>
+<section class="panel" data-d="plum">
+  <div class="wrap">
+    <p class="eyebrow">Brown University · School of Engineering</p>
+    <h2 class="title">Christopher&nbsp;Rose</h2>
+    <p class="sub">Wireless &amp; beyond</p>
+    <blockquote class="thesis"><span class="punch">What are all these interacting
+      elements saying to one another, how are they saying it, and can I join the
+      conversation?</span></blockquote>
+
+    <ul class="strip">
+      <li><a href="#"><span class="frame h1"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/adinkras.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;ADINKRAS&lt;/span&gt;'"></span><span class="label">Adinkras</span></a></li>
+      <li><a href="#"><span class="frame h2"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/slink3.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;SLINKY&lt;/span&gt;'"></span><span class="label">Interactions</span></a></li>
+      <li><a href="#"><span class="frame h3"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/Molecular_Informatics_Image.png" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;MOLECULES&lt;/span&gt;'"></span><span class="label">Chemistry</span></a></li>
+      <li><a href="#"><span class="frame h4"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/embryo_dev_series1.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;EMBRYO&lt;/span&gt;'"></span><span class="label">Morphogenesis</span></a></li>
+      <li><a href="#"><span class="frame h5"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/Huppler_9_1951.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;HUPPLER&lt;/span&gt;'"></span><span class="label">Art &amp; nature</span></a></li>
+      <li><a href="#"><span class="frame h7"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/GAcontention.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;SPECTRUM&lt;/span&gt;'"></span><span class="label">Spectrum</span></a></li>
+      <li><a href="#"><span class="frame h6"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/img/040902cover.jpg" alt="" onerror="this.outerHTML='&lt;span class=ph&gt;NATURE&lt;/span&gt;'"></span><span class="label">Write, don't radiate</span></a></li>
+    </ul>
+
+    <span class="mark"></span>
+    <h3 class="head">Six threads, one question</h3>
+    <div class="cards">
+      <article class="card"><span class="tag">It from channel</span><h3>Talking particles</h3>
+        <p>If two billiard balls collide, how many bits did they exchange? Conservation
+        laws turn out to be the null space of the interaction channel.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+      <article class="card"><span class="tag">SETI</span><h3>Write, don't radiate</h3>
+        <p>Inscribed matter beats radiated photons across interstellar distances, by a
+        lot. <em>Nature</em> cover, September 2004.</p>
+        <a class="more" href="#">Follow the thread →</a></article>
+    </div>
+
+    <span class="mark hot"></span>
+    <h3 class="head">Papers I am still fond of</h3>
+    <ul class="links">
+      <li><span class="kind">1990</span><span class="what"><a href="#">A Dielectric-Free Superconducting Coaxial Cable</a></span>
+        <span class="note">Levitate the centre conductor, avoid the lossy dielectric. Conceived in the euphoria after high-T<sub>c</sub>.</span></li>
+      <li><span class="kind">1989</span><span class="what"><a href="#">Rapid Optimal Scheduling Using a Cellular Automaton</a></span>
+        <span class="note">Let simple, simply-connected computers find systems of distinct representatives.</span></li>
+      <li><span class="kind">2026</span><span class="what"><a href="#">Limits of Information Flow Between Classically Interacting Particles</a></span>
+        <span class="note">Physical Review E, with Miles Miller-Dickson.</span></li>
+    </ul>
+
+    <div class="theorem"><span class="name">Theorem</span>
+      <p class="statement">Beer + Pizza = <em>Academic Excellence</em></p>
+      <p class="proof">Proof: three EGC teaching award wins. ∎</p></div>
+  </div>
+</section>
+
+<div class="chooser" style="padding:2.8rem 1.5rem 4rem">
+  <p>All three are noticeably lighter than the original marine near-black, so
+  text should sit easier than either extreme. If one is close but not right,
+  the ground and the two accents are independent — I can darken a ground, cool
+  an accent, or borrow one scheme's colours onto another's ground.</p>
+</div>
+
+</body>
+</html>

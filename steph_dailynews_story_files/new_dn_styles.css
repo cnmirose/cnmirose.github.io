@@ -1,0 +1,205 @@
+span, ul, ol, blockquote   {
+font: normal 10pt/13pt Georgia, "Times New Roman", serif;
+}
+select, option, input {
+	font : normal 10px/12px Arial,Helvetica,sans-serif;
+}
+
+li  A {
+	font : 12px/14px Georgia, "Times New Roman", serif;
+	color: #CC0000;
+}
+
+A:link {
+	text-decoration:underline; color: #cc0000;
+}
+
+A:hover {
+	color:#000000;
+}
+
+A:visited {
+	color:#666666;
+}
+
+.oldp {
+	font : normal 10px/12px Georgia,"Times New Roman", serif;
+	}
+
+.headline {
+	font : bold 50px/52px Arial,Helvetica,sans-serif;
+}
+
+.headline2 {
+	font : bold 24px/28px Arial,Helvetica,sans-serif;
+        margin-bottom : 10px;
+}
+
+.headlinegiant {
+	       color:#000000;  
+               font : normal 60px/64px Arial;
+               margin-bottom : 5px;
+}
+
+.headlinesmall {
+	font : bold 30px/32px Arial,Helvetica,sans-serif;
+}
+
+.bylinename {
+	font : bold 11px/12px Arial,Helvetica,sans-serif;
+}
+
+.bylineposition {
+	font : normal 10px/12px Arial,Helvetica,sans-serif;
+}
+
+.head {
+	color:#000000;
+	font : bold 24px/28px Georgia,"Times New Roman" serif;
+}
+
+.homehead {
+		color:#000000;
+		font : normal 18px/20px Georgia,"Times New Roman" serif;
+}
+
+.leadin {
+	font : normal 14px/18px Georgia,"Times New Roman" serif;
+}
+
+.leftcolheads {
+	font : bold 16px/18px Arial,Helvetica,sans-serif;
+}
+
+.bodytext {
+	font : normal 10pt/13pt Georgia, "Times New Roman", serif;
+}
+.bodytextBold {
+	font : bold 10pt/13pt Georgia, "Times New Roman", serif;
+}
+
+.rightcolbodytext {
+			font : normal 11px/13px Georgia,"Times New Roman" serif;
+	}
+
+.leftcolbodytext {
+			font : normal 11px/13px Georgia,"Times New Roman" serif;
+	}
+
+.bulletpoints {
+	font : normal 12px/13px Georgia,"Times New Roman" serif;
+	}
+
+.subhead {
+	font : bold 15px/17px Arial,Helvetica,sans-serif;
+}
+
+.crosshead {
+	font : bold 16px/18px Arial,Helvetica,sans-serif;
+}
+
+.signer {
+	text-align:right;
+	font : normal 10px/12px Arial,Helvetica,sans-serif;
+	}
+
+.captiontag {
+	font : normal 12px/15px Arial,Helvetica,sans-serif;
+	}
+
+.captiontext {
+	font : bold 12px/14px Arial,Helvetica,sans-serif;
+	}
+
+.photocaptionname {
+	font : normal 10px/10px Arial,Helvetica,sans-serif;
+	text-align : right;
+		}
+
+.quotetext {
+	color:#666666;
+	font : normal 21px/26px Arial,Helvetica,sans-serif;
+	}
+
+.quotename {
+	font : bold 11px Arial,Helvetica,sans-serif;
+}
+
+.refercategory {
+	font : bold 11px Arial,Helvetica,sans-serif;
+}
+
+.refername {
+	font : bold 11px Arial,Helvetica,sans-serif;
+}
+
+.refertext {
+	font : normal 11px Arial,Helvetica,sans-serif;
+}
+
+.requiredtext {
+	font : bold 11px Arial,Helvetica,sans-serif;
+}
+
+.tabletext {
+	font : bold 11px Arial,Helvetica,sans-serif;
+}
+
+.bc {
+	font : normal 10px/11px Arial,Helvetica,sans-serif;
+	}
+
+.bcLink {
+	font : normal 10px/11px Arial,Helvetica,sans-serif;
+	color:#cc0000;
+}
+
+.welcomeRed {
+	font : normal 10px/12px Georgia, "Times New Roman", serif;
+	color:#cc0000;
+}
+
+.welcomeBold {
+	font : bold 11px/12px Arial,Helvetica,sans-serif;
+	}
+
+.legalese {
+	font : 9.5px/10px Arial,Helvetica,sans-serif;
+	}
+
+A.redlink:link {
+	font : 10px/12px Georgia, "Times New Roman", serif;
+	color: #CC0000; 
+}
+
+A.redlink:visited {
+	font : 10px/12px Georgia, "Times New Roman", serif;
+	color: #666666; 
+}
+
+A.redlink:active {
+	font : 10px/12px Georgia, "Times New Roman", serif;
+	color: #CC0000; 
+}
+
+A.redlink:hover {
+	font : 10px/12px Georgia, "Times New Roman", serif;
+	color: #000000; 
+}
+.fullstory {
+	font : 10px/25px Georgia, "Times New Roman", serif;
+	color: #CC0000;
+}
+
+.largelink {
+	font : 18px/20px Georgia, "Times New Roman", serif;
+	color: #000000;
+}
+
+.legalred {
+	font : 9.5px/10px Arial,Helvetica,sans-serif;
+	color:#cc0000;
+	}
+.awmAnchor {
+        position: relative; z-index:0
+}

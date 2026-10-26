@@ -1,0 +1,2 @@
+document.write ('<A HREF="http://adserver.nydailynews.com/RealMedia/ads/click_lx.cgi/nydailynews.business.com/business/29619/x10/Travelocity_Tile_ROS/travelocity_tile.html/33663537616261333432623065346330?http://ad.doubleclick.net/jump/N447.nydailynews/B1498841;sz=120x90;ord=29619?">\n');
+document.write ('<IMG SRC="http://ad.doubleclick.net/ad/N447.nydailynews/B1498841;sz=120x90;ord=29619?" BORDER=0 WIDTH=120 HEIGHT=90 ALT="Click Here"></A>');

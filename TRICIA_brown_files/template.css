@@ -1,0 +1,756 @@
+/*
+Color Scheme:
+
+BLUE UP: #406C8C
+BLUE DN: #055A8D
+BROWN UP: #8F7358
+BROWN DN: #7E6043
+BROWN BACK: #EEE5D6
+BLOOD RED: #BA000B
+GRAY RULE: #CBCACA
+
+Cover image Dimensions:
+740px x 260px
+
+Thumbnail Dimensions:
+230px x 145px
+
+*/
+
+
+/*****************************/
+/*** Core html setup stuff ***/
+/*****************************/
+
+b, strong {
+	font-weight: bold;
+}
+i, em {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+	color: 	#BA000B;
+}
+ 	a:hover {
+		text-decoration: underline;
+}
+	a:focus {
+		-moz-outline-style: none;
+	}
+	a img {
+		border: none;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 10px 0 0 0;
+	font-size: 130%;
+}
+
+hr {
+	height: 0;
+	margin: 10px 0 15px 0;
+	border-bottom: 4px solid #EEE5D6;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	margin: 0px 0px 0px 0px;
+	height: 100%;
+	font-size: 76%;
+	font-family: Georgia, Times, serif;
+}
+
+input.button {
+ cursor: pointer;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+div, p, table, td, th {
+	font-family: Arial,Helvetica,Arial,sans-serif;
+	line-height: 1.3em;
+	font-size: 1em;
+}
+
+
+/****************************/
+/******** Layout Stuff ******/
+/***************************/
+
+body {
+	text-align:  center;
+	background: #ffffff;
+}
+
+div.container {
+	margin: 0 auto;
+	text-align:  left;
+	width: 950px;
+}
+
+
+
+div.headercontainer {
+	height: 103px;
+	width: 950px;	
+}
+
+div.header {
+	height:  50px;
+	width: 950px;
+	background: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/images/logosmall.gif) no-repeat;
+	border-bottom: 1px solid #cbcaca;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+div.searchbox {
+	height: 30px;
+	width: 185px;
+	float: left;
+}
+
+div.topmenu {
+	height: 30px;
+	width: 750px;
+	float: right;
+	background: #fff;
+	border-bottom: 1px solid #cbcaca;
+}
+
+div.sidebar {
+	width: 185px;
+	margin-top: 20px;
+	float: left;
+}
+
+div.content {
+	width: 750px;
+	float: right;
+	background: #ffffff;
+	padding: 20px 0px 10px 0px;
+}
+
+div.footer {
+	padding:  15px 15px 5px 15px;
+	width: 920px;
+	background:  #EEE5d6 url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/images/footermask.png) no-repeat;
+	font-family: Arial;
+	font-variant: small-caps ;
+	color: #888;
+}
+	div.footer p {
+		margin:0;
+		text-align: center;
+		font-size: 1.1em;
+	}
+	div.footer a {
+		color: #888;
+	}
+	
+div#issue_date {
+	float: right;
+	padding-top: 25px;
+	padding-right: 10px;
+	font-family: Georgia, Times, serif;
+	font-size: 18px;
+	text-align: right;
+	margin: 0 auto;
+	color: #8F7358;
+}
+
+.moduletablerelated {
+	width: 184px;
+	font-variant: small-caps;
+	padding: 0; margin: 0;
+	font-size: 14px;
+	background:  #F5EFDB url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/images/roundedbottom.png) bottom left no-repeat;
+	text-align: center;
+}
+  .moduletablerelated th {
+    text-align: center;
+    font-weight: bold;
+  }
+	.moduletablerelated td {
+		text-align: left;
+		font-variant: small-caps;
+		font-size: 11px;
+		padding: 0 0 10px 0;
+	}
+	.moduletablerelated .relatedspan {
+		padding: 4px 7px 4px 10px;
+		display: block;
+	}
+	
+.moduletablecover {
+	width: 178px;
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 3px 15px 3px;
+	overflow: hidden;
+	background: #FFF0D6;
+	}
+	.moduletablecover p {
+		padding: 0; margin: 0;
+	}
+	.moduletablecover img {
+		margin-top: 5px;
+		width: 178px !important;
+		overflow: hidden;
+	}
+	
+.moduletablesportsheadlines {
+	font-weight:bold;
+	font-size:13px;
+	width: 164px;
+	padding: 10px 10px 10px 10px;
+	background: #F5EFDB url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/images/roundedtop.png) top left no-repeat;
+	text-align: center;
+}
+	.moduletablesportsheadlines form {
+		padding: 7px 0 0 0;
+	}
+		.modulestableportsheadlines form p {
+			margin: 0 0 5px 0;
+		}
+
+.moduletableundersportsheadlines {
+	width: 164px;
+	padding: 10px 10px 10px 10px;
+	background: #F5EFDB url (../images/roundedbottom.png) bottom left no-repeat;
+	text-align: center;
+}
+
+div.classnotes {
+	width: 164px;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 10px 10px 10px 10px;
+	background: #F5EFDB url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/images/roundedtop.png) top left no-repeat;
+	font-size: 15px;
+	text-align: center;
+}
+	div.classnotes form {
+		font-variant: normal;
+		padding: 7px 0 0 0;
+	}
+		div.classnotes form p {
+			margin: 0 0 5px 0;
+		}
+		
+.syndicate {
+	text-align: left;
+	height: 60px;
+	padding-top: 15px;
+	font-size: 11px;
+}
+	.syndicate div {
+		float: right;
+		padding: 0 18px 0 0;
+		width: 70px;
+	}
+	.syndicate .syndicate_text {
+		float: left;
+		padding: 0 0 0 7px;
+		text-align: left;
+	}
+	
+div.podcasts {
+	width: 164px;
+	font-variant: small-caps;
+	padding: 10px 10px 10px 10px;
+	background: #FFF0D6 url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/images/roundedtop.png) top left no-repeat;
+	font-size: 14px;
+	text-align: center;
+}
+	div.podcasts p {
+		text-align: left;
+		font-size: 11px;
+		padding: 7px 0 0 0;
+		margin: 0;
+		font-variant: normal;
+	}
+	div.podcasts img {
+		margin-left: 64px;
+	}
+	
+.moduletabletweets {
+	background: #F5EFDB url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/images/roundedbottom.png) bottom left no-repeat;
+}	
+	
+.moduletablebreakingnews, .sportingnews {
+	width: 164px;
+	padding: 10px 10px 5px 10px;
+	font-size: 16px;
+	font-weight:bold;
+}		
+	
+	.moduletablebreakingnews h3, .sportingnews h3 {
+		text-align: center;
+		font-size: 17px;
+		font-weight: bold;
+		margin: 0; padding: 0px 0 10px 0;
+	}
+	
+	.moduletablebreakingnews div.news_item{ 
+		font-size: 10pt;
+		padding-bottom: 1px;
+	}
+	
+	.moduletablebreakingnews div.news_item a {
+	    color:#BA000B;
+		line-height: 15px;
+	}
+	
+	.moduletablebreakingnews div.news_item a:hover {
+	    color:#BA000B;
+	}
+	
+	.moduletablebreakingnews div.news_item p {
+		display:block;
+		color:#000000;
+		font-size:10px;	
+	}
+	
+	.sportingnews {
+		padding-bottom: 0px;
+		background: #F5EFDB url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/images/roundedtop.png) top left no-repeat;
+	}
+	
+	.sportingnews h3 {
+		text-align: center;
+		font-variant: small-caps;
+		margin: 0; padding: 6px 0 0 0; line-height: 0;
+	}
+	.sportingnews h4 {
+		text-align: center;
+		font-size: 10px;
+		font-style: italic;
+		margin: 0; padding: 0 0 15px 0;; line-height: 0;
+	}
+	#sportsheadline {
+		font-variant: small-caps;
+		line-height: 12px;
+	}
+	#sportscontent {
+	  font-size: 93%;
+		padding: 5px 0 15px 0;
+	}
+	
+/******** Ad Spot *********/
+.moduletablead_spot {
+	margin-top: 10px;
+	font-size: 13px;
+	font-family: Georgia;
+	padding: 2px 2px 5px 2px;
+}
+
+.moduletablead_spot img{
+	width: 181px;
+	margin: 0 0 4px 0;
+	clear: both;
+}
+.moduletablead_spot p{
+	margin: 2px 0 0 10px;
+}
+
+
+/****** Menu Stuff *******/
+ul#mainlevelmainmenu {
+	text-transform: lowercase;
+	font-variant: small-caps;
+	list-style:  none;
+	margin: 0 0px 15px 0; padding: 0px 0 0px 0px;
+	font-family: Arial, Times, serif;
+	/*border-bottom: 1px solid #cbcaca;*/
+}
+	
+	#mainlevelmainmenu li {
+		font-size: 16px;
+		margin: 0 0 8px 0;
+		font-weight: bold;
+	}
+	#mainlevelmainmenu #active_menumainmenu {
+		border-left: 16px solid #000;
+	}
+	#mainlevelmainmenu a {
+		display: block;
+		border-left: 16px solid #fff;
+		width: 150px;
+		margin: 3px 0px 0px 0px;
+		padding-left: 7px; padding-right: 3px;
+		color: #000;
+	}
+		#mainlevelmainmenu a:hover {
+			text-decoration: none;
+			border-left: 16px solid #BA000B;
+		}
+
+.topmenu ul {
+	text-transform: lowercase;
+	font-variant: small-caps;
+	list-style:  none;
+	margin: 0; padding: 0;
+	font-family: Arial, Times, serif;
+}
+	.topmenu li {
+		text-align: center;
+		float:  left;
+		font-size: 17px;
+		font-weight: bold;
+	}
+	.topmenu #active_menutopmenu {
+		border-top: 5px solid #000;
+	}
+	.topmenu a {
+		display: block;
+		border-top: 5px solid #fff;
+		padding: 4px 22px 6px 22px;
+		color: #000;
+	}
+		.topmenu a:hover {
+			border-top: 5px solid #BA000B;
+			text-decoration: none;
+		}
+		
+
+
+/******The Main Event! *****/
+
+div.bodytext, div.bodytext p {
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: Georgia, Times, serif;
+}
+	div.bodytext p:first-child:first-line {
+		font-variant: small-caps;
+		font-size: 18px;
+	}
+	div.bodytext p:first-child:first-letter {
+		font-size: 38px;
+	}
+	div.bodytext p img {
+		padding: 10px;
+	}
+	div.bodytext blockquote {
+	  display: block;
+	  float: left;
+	  margin: 10px 10px 10px 0;
+	  padding: 10px;
+	  background: #f5f5ef;
+	  color: #7d6045;
+	  font-size: 150%;
+	  width: 350px;
+	  border-bottom: 1px solid #9d8065;
+	}
+	  div.bodytext blockquote i, div.bodytext blockquote em {
+	    font-size: 75%;
+	    color: #9d8065;
+	  }
+	  div.bodytext blockquote p {
+	    margin: 0;
+	    padding: 0;
+	    font-size: inherit;
+	    line-height: inherit;
+	  }
+	  div.bodytext blockquote p:first-child:first-line {
+	    font-variant: normal;
+	    font-size: inherit;
+	  }
+	  div.bodytext blockquote p:first-child:first-letter {
+	    font-size: inherit;
+	  }
+	
+.leading {
+	margin: 0 0 20px 0;
+	font-size: 14px;
+	line-height: 0px;
+}
+	.leading .contentpaneopen td{
+		width: 750px;
+		margin: 0;
+		padding: 0;
+		line-height: 1em;
+	}
+	.leading .contentheading {
+		border-bottom: none;
+	}
+	.leading .contentheading a.contentpagetitle {
+		font-size: 22px;
+		padding-bottom: 4px;
+		width: 100%;
+	}
+	.leading .introtext {
+		overflow: visible;
+		line-height: 1.3em;
+	}
+	.leading span.small {
+		font-size: 11px;
+	}
+	
+td.contentbody div.introtext img, td.contentbody div.introtext p img {
+	margin: 0 10px 9px 0px !important;
+	width: 230px;
+	height: 145px;
+	padding: 0;
+}
+	.introtext {
+		padding: 0 10px 0 0; 
+		margin: 0;
+		overflow: hidden;
+	}
+	.introtext p{
+		padding: 0; 
+		margin: 0;
+	}
+	.introtext strong{
+		color: #8A6D50;
+	}
+
+
+.search {
+	padding-top: 8px;
+	padding-left: 0px;
+}
+	.search input, .searchclasses input {
+		color: #AAAAAA;
+	}
+	.search input:focus, .searchclasses input:focus {
+		color: #000;
+	}
+	.search .inputbox {
+		width: 180px;
+	}
+	.searchclasses .inputbox {
+		width: 160px;
+	}
+
+.componentheading, .componentheadingsearchpage {
+	font-variant: small-caps;
+	letter-spacing: 7px;
+	font-family: Georgia, Times, serif;
+	text-align:  center;
+	font-size:  25px;
+	font-weight:  bold;
+	padding: 0 0 3px 0;
+	margin: -31px 0 15px 0;
+	background: #EEE5D6 url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/images/headermask.png) bottom left no-repeat;
+	color: #fff;
+}
+
+table.blog {
+}
+	.blog tbody tr td table tbody tr td td{
+		margin:0;
+		padding: 0;
+		border: 0;
+		list-style-type:circle;
+	}
+	
+.buttonheading {
+	padding-top: 0px;
+}
+
+.contentheading, .contentheadingclassnotes {
+	font-family: Georgia, Times, serif;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 40px;
+	letter-spacing: -2px;
+	border-bottom: 4px solid #EEE5D6;	
+}
+	.contentheading a.contentpagetitle, a.article_title {
+		font-family: Georgia, Times, serif;
+		display: block;
+		font-size: 18px;
+		line-height: 15px;
+		letter-spacing: -0.5px;
+		width: 230px;
+		padding-bottom: 4px;
+	}
+
+.readon {
+	font-weight: bold;
+	font-variant: small-caps;
+	float: left;
+	display: block;
+	padding-right: 15px;
+}
+	.leading .readon {
+		float: right;
+		margin-top: -10px;
+	}
+
+a.category {
+	/* This is for back issues */
+	font-family: Georgia, Times, serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+a.blogsection { /* This is for the class notes. */
+	margin-bottom: 12px;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.sectiontableentry1, .sectiontableentry2 { /* This shit is for weblinks */
+	margin-bottom: 12px;
+	display: block;
+	font-size: 13px;
+}
+	.sectiontableentry1 a.category, .sectiontableentry2 a.category{
+		font-weight: bold;
+	}
+
+div#expander {
+	display: none;
+}
+
+span.small {
+	display: block;
+	padding-top: 5px;
+	font-size: 13px;
+	font-style: italic;
+}
+
+	.blog tbody tr td table tbody tr td table.contentpaneopen tbody tr td span.small {
+		display: inline;
+		font-size: 11px;
+	
+	}
+
+span.pagination span {
+	padding: 0 7px 0 7px;
+}
+
+
+.modulebreakingnews img {
+	display: none;
+}
+
+/* RSS Page */
+
+.rss_block {
+	width: 220px;
+	float: left;
+	font-size: 15px;
+	font-family: Georgia, Times, serif;
+	padding: 12px;
+}
+	.rss_block a {
+		text-transform: uppercase;
+		display: block;
+		padding-bottom : 10px;
+	}
+	.rss_block table {
+		padding: 0; margin: 0;
+	}
+
+
+/* Search Page Stuff */
+.contentpaneopensearchpage  {
+	
+}
+	.smallsearchpage {
+		font-style: italic;
+		color: #8A6D50;;
+	}
+	.searchpage fieldset a {
+		font-size: 16px;
+		font-family: Georgia, Times, serif;
+	}
+	.content .contentpaneopensearchpage .searchpage fieldset {
+		border: none;
+	}
+	.highlight {
+		background-color: #ffffdd;
+		font-weight: bold;
+	}
+	
+/* JCE Caption Stuff */
+/****************************/
+.jce_caption {
+	padding: 0 !important;
+	/* Margins are now taken care of in javascript */
+	background-color: #f5f5f1 !important;
+	border: 0 !important;
+}
+.jce_caption_text {
+	padding: 0px 7px 7px 7px !important;
+	text-align: left!important;
+	color: #707070 !important;
+	font-size: 12px;
+	float: left;
+}
+.jce_caption_text em, .jce_caption_text i {
+	font-size: 10px;
+	float: right;
+	color: #a0a0a0 !important;
+}
+
+/* AkoComment Stuff */
+/************************/
+
+.commenttop {
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding-bottom: 2px;
+	border-bottom: 1px dashed #ddd;
+}
+
+
+#commentheader {
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+	color: #909090
+}
+
+#commentbody2 {
+	background-color: #fff0d6;
+}
+	#commentbody2 #comment , #commentbody1 #comment{
+		font-size: 13px;
+		font-family: Georgia, Times, serif;
+		line-height: 18px;
+	}
+		
+#commentbody1 {
+	background-color: #ffeacb;
+}
+
+#commentfooter2, #commentfooter1 {
+	padding: 20px 0 10px 0;
+	font-size: 15px;
+}
+	#commentfooter2 {
+		float: left;
+	}
+	#commentfooter1 {
+		float: right;
+	}
+	
+#commentform {
+	margin-top: 30px;
+}
+
+#commentform td{
+	font-family: Georgia, Times, serif;
+}	

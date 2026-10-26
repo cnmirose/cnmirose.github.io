@@ -1,0 +1,10 @@
+ // loading
+if (typeof(adxsetup_done) == "undefined") {
+    adxsetup_done = false;
+    document.write("\n<script src=http://ads.nytimes.com/adx/bin/adx_remote.html?adxget&page=www.nytimes.com/mostemailedsponsor&posall=Frame5&pos=Frame5&type=script&query=?>");
+    document.write("<\/script>\n");
+}
+else { // already loaded
+    document.write("\n<script>if (typeof adxpos_Frame5 != \"undefined\") document.write(adxads[adxpos_Frame5]);\n");
+    document.write("\n<\/script>");
+}

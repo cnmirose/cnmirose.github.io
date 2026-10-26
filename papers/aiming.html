@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aiming Calculations &mdash; Christopher Rose</title>
+<meta name="description" content="How well can you aim an interstellar package? Gravitational perturbation, Monte Carlo miss distances, and why aiming turns out not to matter much.">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">A World of <span>Bits</span></a>
+    <nav class="topnav" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">Cosmic</a>
+      <a href="../etmightwrite.html">Cartoons</a>
+      <a href="../papers.html">Papers &amp; talks</a>
+      <a href="../people.html">People</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="rail">
+  <div class="wrap hero">
+    <p class="eyebrow">A side calculation for <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">Cosmic Communications</a></p>
+    <h1>Aiming<br>calculations</h1>
+    <p class="sub">How well can we aim?</p>
+    <p class="role">For grossly macroscopic particles Heisenberg is irrelevant. What matters is random gravitational perturbation en route, from the pull of stars whose placement we do not precisely know.</p>
+  </div>
+</section>
+
+<section class="rail">
+  <div class="wrap section">
+    <span class="mark"></span>
+    <div class="measure">
+      <p>The angular deflection for a body moving past a large stationary mass
+      <em>M</em> at initial velocity <em>v</em><sub>0</sub>, with closest
+      approach <em>y</em><sub>0</sub>, is about
+      2<em>MG</em>/<em>v</em><sub>0</sub><sup>2</sup><em>y</em><sub>0</sub>,
+      where <em>G</em> is the gravitational constant. For a closest approach of
+      <em>y</em><sub>0</sub>&nbsp;=&nbsp;0.001&nbsp;LY,
+      <em>v</em><sub>0</sub>&nbsp;=&nbsp;<em>c</em>/1000 and <em>M</em> one solar
+      mass, the angular deflection is about 0.0003&nbsp;radians. Furthermore,
+      the probability of having a closest approach of less than 0.001&nbsp;LY on
+      a 10&nbsp;kLY trip is about 0.0008 at Milky Way disk stellar densities. So
+      all told, one would not expect fast-moving packages to be deflected by
+      terribly much.</p>
+
+      <p>A Monte Carlo simulation &mdash; with every deflecting mass assumed as
+      large as our sun &mdash; showed an average 0.14&nbsp;LY miss over a
+      10&nbsp;kLY trip. For a more reasonable distribution of solar masses (our
+      sun is largish on average, it turns out), the mean miss distance is about
+      0.08&nbsp;LY. And given that the package already has to have some means of
+      deceleration in the vicinity of the target, correcting for such small
+      ballistic miss distances will almost certainly not add appreciably to the
+      overall energy budget.</p>
+
+      <p>Of course, for slower-moving packages gravitational perturbation could
+      become appreciable, since the angular deflection goes as
+      1/<em>v</em><sub>0</sub><sup>2</sup>. Furthermore, there is also the issue
+      on a long trip of chaotic stellar motion &mdash; what you are aiming at
+      moves out of the way in an effectively random fashion. So it might be
+      tough to target a given solar system, but I will leave that particular
+      calculation to my orbital mechanics and dynamics betters.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rail">
+  <div class="wrap foot">
+    <p><a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/cosmic.php">&larr; Cosmic Communications</a> &middot; <a href="../index.html">A World of Bits</a></p>
+    <p class="contact">Christopher_Rose <span class="dim">at</span> brown.edu</p>
+    <p class="fine">A World of Bits &middot; Rebuilt August 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+document.write ('<IFRAME SRC="http://ad.doubleclick.net/adi/N553.realcities.com/B1618837.7;sz=728x90;ord=3454?" WIDTH=728 HEIGHT=90 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=');
+document.write ("'");
+document.write ('#000000');
+document.write ("'");
+document.write ('>\n');
+document.write ('<SCRIPT language=');
+document.write ("'");
+document.write ('JavaScript1.1');
+document.write ("'");
+document.write (' SRC="http://ad.doubleclick.net/adj/N553.realcities.com/B1618837.7;abr=!ie;sz=728x90;ord=3454?">\n');
+document.write ('</SCRIPT>\n');
+document.write ('<NOSCRIPT>\n');
+document.write ('<A HREF="http://ad.doubleclick.net/jump/N553.realcities.com/B1618837.7;abr=!ie4;abr=!ie5;sz=728x90;ord=3454?">\n');
+document.write ('<IMG SRC="http://ad.doubleclick.net/ad/N553.realcities.com/B1618837.7;abr=!ie4;abr=!ie5;sz=728x90;ord=3454?" BORDER=0 WIDTH=728 HEIGHT=90 ALT="Click Here"></A>\n');
+document.write ('</NOSCRIPT>\n');
+document.write ('</IFRAME>');

@@ -1,0 +1,1005 @@
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<HTML><HEAD><TITLE>Paul Baran Prescience</TITLE></HEAD>
+<BODY BGCOLOR="#ffffff">
+<!base href="index.html">
+<HR>
+<FONT COLOR="#ff0000"><center><H1>RUTGERS UNIVERSITY</H1> </center>  </FONT>
+<FONT COLOR="#0000ff"><center><H2>Department of Electrical and Computer Engineering</center></FONT></H2>
+<H3>
+<center>
+The Prescience of Paul Baran: Infostations and Interference Avoidance
+</center> </H3>
+
+
+<P>At <a href="http://www.winlab.rutgers.edu/">WINLAB</a> we like to
+think we're clever about creating new technologies for the future of
+wireless.  Packet wireless and packet reservation multiple access were
+two of our early successes.  Two of the most exciting new areas we are
+involved with are the <a  href="http://www.winlab.rutgers.edu/~crose/ana.html">
+Infostations data network architecture </A> and
+<a  href="http://www.winlab.rutgers.edu/~crose/papers/iab98.ps">Interference Avoidance</A>.
+
+
+<P>Together these concepts paint a very different picture of
+wireless data in the future.
+And we were quite pleased with our cleverness :)
+However, a talk given by Paul Baran in 1994 scoops us by several
+years!  In this talk (included below), Paul lays out much of the conceptual
+foundation for what we've discovered ourselves from first principles
+(see in particular, "Reduced Range,"  "Smart Transmitters" and
+the section on what everyone learns in kindergarten).
+
+<P> So, although we were not as prescient as we thought, maybe it's
+not too bad a thing.  That is, maybe what we discovered from first
+principles IS the future which Paul seems reasonably adept at
+predicting :)
+
+<center>
+  _________________________________________________________________
+</center>
+
+
+<P>
+Html Transcript of:
+
+
+
+<P>
+Keynote Talk Transcript, 8th Annual Conference on Next Generation<br>
+Networks Washington, DC, November 9, 1994<br>
+   
+<P>
+Visions of the 21st Century Communications: Is the Shortage of Radio<br>
+Spectrum for Broadband Networks of the Future a Self Made Problem?<br>
+   
+<P>
+by: Paul Baran, baran@com21.com, Copyright 1994.<br>
+   
+<center>
+  _________________________________________________________________
+
+</center>
+
+<H1>
+INTRODUCTION
+</H1>   
+John McQuillan:
+
+<P>
+I would like to introduce you to our next session which I consider to
+be one of the real highlights of the Conference: our Keynote
+Presentation:
+
+<P>Visions of the 21st Century Communications
+
+<P>Many of us are wondering what is the role for ATM in the next decade
+and beyond. It's not far away now, and one of the questions we haven't
+talked about at this Conference, that we want to focus on now, is
+wireless and whether the spectrum for wireless is really the scarce
+resource that many of us have been familiar with all our lives or
+whether it's really an abundant one.
+
+<P>One of the great challenges for the 21st Century, I believe, is to get
+all the power of broadband networking that we've been talking about,
+and, at the same time have the convenience and flexibility of wireless
+communications. This would indeed be the grand unification. ATM isn't
+the grand unification - - it's wireless ATM that is the grand
+unification. And what will it take to bring ATM into the home?
+
+<P>Well I'm really delighted to be able to introduce to you this
+morning's Keynote presenter, Paul Baran, Chairman of Com21, a company
+that was formed by Paul to work on 21st Century communications.
+
+<P>Paul is a really notable entrepreneur, inventor and visionary. Paul
+has started many successful companies and made many important
+inventions in this industry. Among the many companies he's started and
+he currently is a director I'd like to mention is Metricom. Metricom
+is a packet radio public company that offers wireless packet radio
+communication for personal computers and has got fairly widespread
+installation now in California.
+
+<P>But to make perhaps a more personal introduction for a moment, I did
+my Ph.D. work in Adaptive Routing Algorithms at Harvard twenty years
+ago. I did my Ph.D. in 1974. At the time I tried to read everything I
+could about what had been done in packet networking up until that
+point and I came across Paul Baran's work at RAND Corporation ten
+years previous in 1964.
+
+<P>When Paul sat down, and I don't know how he did this, but he wrote a
+series of ten reports describing, analyzing and predicting packet
+switches, based on hardware, adaptive routing algorithms, wireless
+links between them and really conceived of the whole way that we're
+planning to build hardware ATM based systems today. So, Paul sees
+things before other do.
+
+<P>You know, in fact, one tries to describe people by their time
+constant. Some people think one day at a time. Some people are good at
+planning month by month or year by year. You know you can't ask
+someone to do a three year plan in a business if they're a one week
+kind of a person. You can think of running the military: You've got to
+have a day at a time foot soldier; you've got to have your logistics
+people be people who can plan a little bit longer; and then the
+generals who are planning the theaters of operation have got to be
+able to see out a year or two.
+
+<P>Well, I've never met anybody with a longer time constant and a more
+accurate record than Paul Baran... Paul!
+
+<H1>
+PAUL BARAN:
+</H1>
+Thank you John!
+
+<P>
+John entitled this talk Visions of the 21st Century. I am humbled
+trying to do justice to such an over-reaching title. I am reminded of
+that Wausau Insurance Company TV commercial. An efficiency expert is
+introduced who is supposed to give a detailed presentation on
+insurance recommendations. This guy gets up to the podium and says one
+word, "Wausau". Then he walks off the stage to an awkward silence,
+until the audience presumably gets the point.
+
+<P>I have to confess that I am tempted to say the three magical letters,
+ATM (Asynchronous Transfer Mode) and then sit down. ATM pretty well
+defines where the higher level protocol portion of the network
+evolution is going in the future. At least in the mind of some of we
+ATM techno-bigots.
+
+<P>
+Having covered so much ground so quickly, there is another part of the
+network that deserves discussion in the remaining time. That is the
+physical media itself.
+
+<H2>PHYSICAL MEDIA</H2>
+
+<P>We have only a limited number of terrestrial transmission media to
+consider. Really, only four. For the metropolitan network, the cable
+TV network appears to be the winner, using a combination of fiber at
+the top of the tree networks, while the tails are coaxial drop cables
+to houses and businesses. This two-way path provides a lower cost
+transmission pipe to the home than twisted copper pairs and can even
+support telephony at a lower cost than in place twisted pairs. This is
+the position announced by Pac Tel in California. Thus, we expect to
+see both the telephone and TV cable companies competing using
+essentially the same technology.
+
+<P>It is amusing to note that while Ethernet moves from coax to twisted
+pair at 100Mb/s, just the opposite direction of evolution may be
+occurring in the telco competition from twisted pair to coax.
+
+<P>When it comes to transmission over distances greater than about a
+kilometer, fiber is the clear winner. And the capabilities of fiber
+suggest continuing significant cost declines and capability increases
+over time in terms of $/bit-kilometer.
+
+<H2> ON WIRELESS</H2>
+
+<P>The last medium that I want to talk about is wireless. Wireless has a
+major potential role to play in the last 100 meters of network systems
+by allowing rapid easy interconnection without a jumble of wires.
+Wireless can allow the user to separate the terminal for maximum
+convenience and effectiveness. The thick umbilical cords providing
+today's lifeline connection between the computer and the network could
+be eliminated
+
+<P>This morning I would like to discuss an issue that limits this
+possibility of our next generation networks. In brief, I am going to
+talk about a communications policy issue that will determine what we
+can, and won't be able to do with our emerging networks of the future.
+Our particular concern is that well meaning government administrators,
+responsible for control of the radio spectrum space, are making
+seemingly innocent decisions that could have disastrous unforeseen
+consequences. It could even cause our networks of the future to be
+unnecessarily expensive and less capable than if a wider appreciation
+of what's really happening was better understood. Of course, any
+negative consequences of such a result are totally at variance with
+the objectives sought by those responsible for telecommunication
+policy. What appears to be missing from the deliberations is an
+understanding of some basic technological issues.
+
+<H2>THE SHORTAGE</H2>
+
+<P>The key point at issue that we will question is the widespread belief
+that we don't have enough radio spectrum to go around. This is a
+common, fundamental belief. Since we live in a world of scarcity or
+natural resources it is almost automatic that we believe that there is
+a shortage of frequencies. This particular resource is somewhat
+different.
+
+<P>This morning, let's start by reviewing this presumption of a permanent
+shortage. Let's consider how, with an application of already known
+technology, we could create even a surplus of frequencies. What may be
+going on is an inadvertent shortage created by a regulatory structure
+which has yet to appreciate the potential capabilities of the new
+digital signal processing technology as applied to communications.
+
+<H2>A LINK IS NOT A SYSTEM</H2>
+
+<P>When we talk about radio or wireless in the following, we should
+appreciate that no single communications medium is ideal in every
+situations, so we build communication networks by choosing the
+combination of various media links, optimized as a network. If our
+link requirement is for long distance transmission, then fiber optics
+tends to be ideal. If it is for distribution of signals to many users
+located only hundreds of meters apart from one another, then coax
+cable or twisted pair is the preferred medium, depending on the data
+rates. And, in the future when we deal with increasing numbers of
+users, wireless could in turn become the preferred medium,
+particularly for the network tails in an increasing number of
+instances. Conceptually this remove the constraints of being like the
+dog whose freedom of action is limited by the length of his leash.
+
+<H2>A PARADOX</H2>
+
+<P>Of course any suggestion that there is no real shortage of UHF
+spectrum is at variance with the common wisdom. But, tune a spectrum
+analyzer across the band of UHF frequencies, and you will encounter a
+few strong signals, while most of the band at any instant is primarily
+silence, or very weak signals. (My words this morning are focused on
+the UHF range, that's the frequencies from 300 to 3,000 megahertz --
+the most valuable part of the radio spectrum for communications with
+high data rate local data devices.)
+
+<P>The spectrum analyzer connected to an antenna shows that much of the
+radio band is empty almost all the time! This spectrum is
+theoretically available for sending a signal if we were to take
+measurements and know exactly when and where to send the signal. The
+frequency shortage is caused in part by thinking in terms of dumb
+transmitters and dumb receivers. With smart electronics, even occupied
+frequencies can be used. To the modern communications engineer lack of
+strong signals anywhere, no matter how distributed, represents
+theoretically unused capacity. This is capacity that could be utilized
+with the proper signal processing. With advanced signal processing
+techniques, any signal below the peak received signal represents
+potential usable transmission capacity. But, there is a catch. the
+assumption is that we are dealing with digital signals able to operate
+with very low signal to noise ratios. That means if a signal is
+slightly stronger than another that it can theoretically be received
+without error. (This game doesn't work with old fashioned analog
+modulation signals, such as high quality analog TV signals where
+interference even 40 dB below the picture is visible.) [40dB is a
+power ratio of 10,000. one part of interference to 10,000 parts of
+signal is visible. Communications systems can be built with 10dB
+ratio, or 1000 times less vulnerable to visible interference.] You can
+think in terms of a curve of energy versus frequency. A potentially
+available bandwidth curve can be visualized by inverting this received
+energy versus frequency curve and then adding a separation energy band
+level equal to the requisite signal to noise ratio. This suggests
+potential spectrum that can be reused by choosing the right form of
+modulation. This is why you need pristine pure channels for analog
+transmission like TV, but can get away with a dirtier digital channel
+. Digital transmission when properly done allows a small signal to
+noise ratio to be used successfully to retrieve an error free signal.
+And, never forget, any transmission capacity not used is wasted
+forever, like water over the dam. Not using such techniques represent
+lost opportunity.
+
+<H2>TABOO FREQUENCIES</H2>
+
+<P>Another thing that you will see with your spectrum analyzer is that
+there is a lot of unused TV spectrum, even in the big cities. As you
+tune across the UHF TV band and there are big holes and these are
+called "taboo channels" intentionally left unoccupied because of the
+limitations of the early era television receivers. You may have
+wondered about these big black holes, particularly since we now know
+how to build far better cheap TV receivers than when this early rule
+was adopted. So leaving all this wonderful spectrum space unused seems
+to be wasteful, particularly when we know how to use better technology
+so that more of it is usable. Again, any spectrum space not being used
+is water over the dam - - and forever wasted.
+
+<H2>SPREAD SPECTRUM</H2>
+
+<P>Today, spread spectrum modulation approaches can allow many more users
+to share a common band of channels. This means spreading the
+transmitted energy over a large number of frequencies and living with
+more interference. But, there is a regulatory lag in allowing such
+technology, such as spread spectrum, because it seems to require more
+spectrum space, albeit commonly shared among many users. The idea of
+preferring to use signals that take up more bandwidth is at variance
+with the mind set of most regulators, whose objective has always in
+the past been to minimize the occupied bandwidth.
+
+<H2>NEGROPONTE'S SUGGESTION</H2>
+
+<P>We can save a vast amount of bandwidth by at least starting to off
+load applications that hog bandwidth and that could be better served
+by using alternative media. For example, TV cable now passes about 96%
+of the US households and could allow many more TV channels to be
+delivered to the home than can be supported over the air and could
+release a vast amount of spectrum space. The use of TV cable started
+primarily in the US and is also now rapidly growing internationally.
+Professor Negroponte of MIT oft quoted half facetious words to the
+effect that the way to solve this problem is `that everything now sent
+by radio should be sent over wires and everything now sent by wire
+should be sent by radio' does have some merit. And the transfer need
+not be 100%. Shorter range rf transceivers connected to fiber could
+produce a significant improvement - - tremendous improvement, really.
+Let's talk about the ...
+
+<H2>EVOLUTION TO DIGITAL</H2>
+
+<P>Digital modulation is the key. It is far more bandwidth efficient than
+today's analog modulation. Digital modulation in lieu of the present
+analog modulation allows ten times as many TV signals to be sent over
+an existing TV cable and of better quality. If a TV cable carries 50
+analog channels, then the same cable would now carry 500 channels. The
+500 channel digital TV cable systems are in early manufacturing stage
+today. The demand for this capability is not to present 500 different
+channels of TV, but rather to allow the transmission of pay-per-view
+movies with multiple start-times to make them more attractive to
+potential viewers. So, the same program would start on the hour,
+thirty minutes after the hour, on the next hour... so when you come
+in, you would be able to see a movie right from the beginning.
+
+<H2>RANGE REDUCTION</H2>
+<h3>(WINLAB NOTE: this is the basic premise behind 
+<a  href="http://www.winlab.rutgers.edu/ana.html">Infostations.</A>)</h3>
+
+<P>Another direction that promises great improvement in bandwidth
+efficiency is in the reduction of the transmitted power. In the UHF
+band the number of geographically dispersed users that can be
+simultaneously accommodated in a fixed spectrum space varies as the
+inverse square of distance. Cut the range in half, and the number of
+users that can be supported is doubled. Cut the range by a factor of
+ten, and 100 times as many users can be served. Reduce the power
+further, and essentially any number of users can be fit into the exact
+same spectrum space presently tied up supporting a few longer distance
+users. Thus, a mixture of terrestrial links plus shorter range radio
+links has the effect of increasing by orders and orders of magnitude
+the amount of frequency spectrum that can be made available. We speak
+of inverse square ranges. While true for free space signals, when it
+comes to the real world, the payoff is even more dramatic. For
+example, radio signal attenuation within concrete office buildings,
+such as a building like this one we are in now is closer to the
+inverse 4'th power of the transmitted power. Given the attenuation
+encountered in these type of buildings means that increasing radiated
+power doesn't buy much in the way of range, anyway. By authorizing
+high power to support a few users to reach slightly longer distances
+we deprive ourselves of the opportunity to serve the many.
+
+<P>Now, how realistic is it to reduce the range of transmission for the
+relatively few to allow a greater number to benefit? Consider today's
+millions of short range cordless telephones, all sharing a minuscule
+slice of the radio spectrum, while a small number of licensed users
+hog most of the spectrum. Most of these long range devices could be
+served by using shorter range radios plus fiber to provide the longer
+distances sought. Of course, the resulting path is not all wireless,
+but neither is today's cellular systems. The advantage of tetherless
+operation is retained for the user's convenience, so that there is
+very little Ògive up" here. There is no shortage of TV coaxial cable
+nor of telephone line capacity to provide the wired medium portion of
+the pair. Assuming that we did move in this direction, we could then
+create a vast new radio communications capability to allow the support
+of a far greater number of users and with greater bandwidths than
+possible with today's present day regulatory constraints.
+
+<h3>(WINLAB NOTE: the next two sections are the basic premises behind 
+<a  href="http://www.winlab.rutgers.edu/papers/iab98.ps">Interference Avoidance.</A>)</h3>
+
+<H2>SMART TRANSMITTERS</H2>
+
+
+<P>A key technology in our new tool bag that should be mentioned is the
+microcontroller that allows creating cost effective smart transmitters
+and smart receivers. For example, a smart transmitter can first listen
+and then automatically choose those frequencies that avoid the other
+signals in the band. Think of it as just being a matter of being a
+good neighbor. The smart transmitter reduces its power level to just
+that needed to produce an error free signal and no greater. You don't
+require that pristine pure slice of spectrum to have error-free
+performance. Digital logic in the chip supports error correcting codes
+to convert a small amount of redundancy in transmission, allowing
+corrupted signals to be cleaned up to emerge error free.
+
+<H2> SOME KINDERGARTEN RULES</H2>
+
+<P>To take the fullest advantage of our new technology with its sharing
+of a common resource requires that our smart transmitters and
+receivers cooperate. This may sound complicated, but the rules to make
+maximum effective use of the shared band are simple -- primarily a
+matter of common decency in sharing resources. The rules are somewhat
+similar to those you learned in kindergarten, assuming you lived in a
+tough neighborhood.
+
+<BL>
+<LI>
+Rule #1. Keep away from the big bullies in the playground. (Avoid the
+strongest signals.)
+
+<LI>Rule #2. Share your toys. (Minimize your transmitted power. Use the
+shortest hop distances feasible. Minimize average power density per
+Hertz.)
+
+<LI>Rule #3. If you have nothing to say, keep quiet.
+
+<LI>Rule #4. Don't pick on the big kids. (Don't step on strong signals.
+You're going to get clobbered.)
+
+<LI>Rule #5. If you feel you absolutely must beat up somebody, be sure to
+pick someone smaller than yourself. (Now this is a less obvious one,
+as weak signals represent far away transmissions; so your signals will
+likely be attenuated the same amount in the reverse direction and
+probably not cause significant interference.)
+
+<LI>Rule #6. Don't get too close to your neighbor. Even the weakest
+signals are very strong when they are shouted in your ear.
+
+<LI>Rule #7. Lastly, don't be a cry baby. (If you insist on using obsolete
+technology that is highly sensitive to interfering signals, don't
+expect much sympathy when you complain about interfering signals in a
+shared band.)
+</BL>
+
+<P>That about summarizes that subject other than to note that this isn't
+the way we presently handle frequency assignments.
+
+<H2>REGULATORY HISTORY</H2>
+
+<P>The hang-up here today is that our highly institutionalized regulatory
+structures contain implicit assumptions about technology that once
+were true; less so today, and probably not at all tomorrow. The
+regulatory game is run by lawyers, while the issues are primarily
+technical. Lawyers tend to view the frequency similar to a piece of
+real estate. If I owned a frequency, then you can't use my frequency.
+It's mine, all mine. Frequencies today are treated as a property
+right. Yet, communications engineers know that statistical averaging
+of larger blocks of frequencies allow far better usage. That's
+something we all know about. This is the heart of the concept of
+sharing an ATM network. We all win as each shared user encounters far
+better economics than if we had to dedicate a separate network to each
+group of users. We did that in the old days. This concept of sharing
+is what cellular radio is all about. Of course we finally did get
+cellular, but over a decade was wasted because of the regulatory lag
+between the time that technology was feasible until the time that it
+was implemented. In fairness, newer thinking is increasingly being
+incorporated in our regulatory decisions. But, from the point of view
+of a technologist, the process is agonizingly slow. I think we can do
+better.
+
+<H2>WHERE WE ARE</H2>
+
+<P>Today the pioneer who proposes to use the radio spectrum in any truly
+innovative way faces a bureaucratic hoop jumping game, interrupted
+with interminable delays. Underneath it all is the implicit assumption
+that there is a God given shortage of frequencies. That being so, the
+government must dole out the slivers with great care. It does so using
+a set of rules based on concepts inherited from an earlier era, but
+now cast in administrative laws. The lawyer's real estate model of
+frequencies is but a zero sum game; while the communications engineer
+views it as a game where many more can win.
+
+<H2>ORIGIN OF THE FREQUENCY SHORTAGE</H2>
+
+<P>Lack of frequencies is not a new problem. Next year, radio is going to
+be 100 years old counting back from the time Marconi, as a teen
+teenager, ran his first experiments in his back yard. Yes, we got
+radio as a byproduct of an experimental hobby activity; not as the
+result of any major corporation's research department. The first
+experiments in radio were funded by Marconi's mother as his father
+refused to come across with the pocket change for such foolishness --
+at least until the time radio worked. Then, his father became a great
+supporter -- with an excess of advice.
+
+<P>The issue of spectrum efficiency has been with us right from the
+outset, starting with the early question, "Would it ever be possible
+to allow more than one radio transmitter to operate at one time?"
+Sharing the channel was one of the first challenge to early radio
+technology development. Ever since the turn of this Century much of
+the history of radio technology has focused on living within an
+over-crowded radio spectrum. Given the limitations of past technology,
+the shortage of preferred frequencies was real. Very real. And, with
+an excess of potential users, it was mandatory for governments to
+create the necessary rationing mechanism. National and international
+regulatory structures evolved, concerned in major measure with the
+ever present issue of scarcity of bandwidth. And, so it was
+institutionalized into regulatory policy. And once institutionalized,
+the basic assumptions that got us there are very rarely ever
+re-examined. And, when they were, changes tended to occur at glacial
+speeds. .
+
+<H2>CREATING MONOPOLIES</H2>
+
+<P>To put things into perspective, let's take a moment to understand how
+the game was played in the past, leading up to today and consider a
+likely scenario or two. Early spectrum was acquired by the pioneer
+user, but with the government use assuming priority. As additional
+spectrum was awarded, it tended to be granted in response to economic
+and political power of the applicants. Whatever organization held most
+power obviously was serving most users. Economists regard regulation
+as a substitute for competition and preferred its use whenever a
+natural monopoly exists. Whenever a government issues frequency, it
+creates a monopoly. Become a regulated monopoly, and the government
+will keep out your competitors.
+
+<h2>TERMINATING MONOPOLIES</H2>
+
+<P>
+When a better technology comes along that allows the feasibility of
+multiple suppliers, it invalidates the natural monopoly argument. The
+end of a monopoly is rarely a swift process and it is never painless
+-- particularly if it were well run and highly profitable. After long
+running anti-trust battles the US telephone monopoly, AT&T, was in
+part fractured into seven local area monopolies and competition was
+permitted in the long distance telephone and data communications
+field. This was an extremely controversial move at the time, and was
+met by all sorts of Chicken Little sky falling predictions. The sky
+didn't fall. Instead we saw a major increase in effectiveness in long
+distance services, fostered by the new competition. And this was
+perceived as being so successful by other countries, that similar long
+distance services are being deregulated throughout the world, even by
+those nations with a long history of sole governmental control.
+
+<h2>DEREGULATION OF THE REST OF THE SYSTEM</h2>
+
+<P>The first wave of deregulation was limited to long distance
+communications, as the technology at the time could only support the
+deregulation of the long distance carriers. Missing was the technology
+to make local area competition feasible and permit deregulation of the
+local carriers. This is now in the process of change. With cable TV
+now passing almost every house in the US and spreading throughout the
+world, an alternative and more cost effective channel will soon be in
+place to support alternative local communications suppliers. The
+combination of fiber/coaxial cable and perhaps radio appears to be the
+lowest cost way of providing local communications and even telephony,
+so the new competition is particularly threatening.
+
+<h2>THE MOVE TO DEREGULATION</h2>
+
+<P>Pressure to deregulate the local carriers is underway. The local
+telephone companies and the cable companies are in an unstable truce
+before the all out war, with cross-merger discussions underway. The
+fear of loosing one's monopoly is never a pleasant prospect to a
+company. It means competition and the necessity to increase
+efficiency; leading to big layoffs of long-term employees, giving up
+perks and that sort of thing. Every month the newspaper carries
+articles about another telephone company laying off another 10,000
+people to become more efficient. The press has been surprisingly
+polite in not asking what these tens of thousands of employees were
+doing prior to the threat of competition.
+
+<h2>CREATION OF A NEW MONOPOLY</h2>
+
+<P>
+If you spent all your life working in a monopoly and it is going away,
+it is understandable that you may want to create another one. But,
+where? If the technology is going to be a combination of TV cable
+technology plus radio tails, a monopoly protection defense line might
+be the regulated spectrum ownership of the tails of the network.
+Maintenance of the monopoly then hinges on maintenance of a spectrum
+shortage. Those that "own" today's frequencies face a diminished value
+of their asset unless the shortage can be maintained.
+
+<h2>THE AUCTIONING GAME</h2>
+
+<P>An idea evolved, first tried in New Zealand and now in the US, to
+auction off small portions of the spectrum in response to the
+unsatisfactory alternative involved in issuing frequencies in the
+past. The era of granting frequencies as political favors ended with
+the increased diligence of the press. A substitute mechanism, random
+drawing, was then tried. This process was also grossly misused, as
+thousands of applications were filed and the winners sold their
+licenses to the legitimate users -- who in turn built their
+monopolies. The overall history of the regulation of the radio
+spectrum is the sort of thing that tends to give government a bad name
+when it comes to running a business.
+
+<P>The frequencies being auctioned off today (and there's going to be a
+big sale of these next month) came partially from a give-up of the
+frequencies reserved by the military and partially from point to point
+users who are to be assigned alternative frequencies, and who will
+receive payment for new equipment in the process. While auctioning
+might seem to be an answer to an unsolved problem, I believe that it
+will exacerbate the problem and is more likely to lead to the creation
+of new monopolies. He with the most up-front money gets to lock up
+frequencies to create an oligopolistic position with a legal barrier
+to competitive entry. It can be argued, on the other hand, that enough
+blocks of frequencies are being auctioned simultaneously to insure
+competition. But, history has shown that in a capital intensive game,
+he who comes in second, but with most dollars wins by buying out the
+early players. Everyone walks away happy. The early license holders
+get a windfall and the last guy gets to milk the public cow with
+minimum interference.
+
+<P>Next month an odd combination of formally competitive bedfellows will
+gather together to jointly buy up big slices of the radio spectrum.
+The November 7th issue of Time quotes Stahlman, an industry observer,
+as saying "the behemoths who can afford to bid are the least likely to
+be innovative." The same article also quotes TCI CEO John Malone as
+saying in effect, "We are starting a new national telephone company."
+And, so the seeds of a re-monopolization are being sowed -- all based
+on the assumption of a shortage of spectrum space.
+
+<H2>AN ALTERNATIVE APPROACH</H2>
+
+<P>A counter hypothesis that I would like to raise for your consideration
+this morning is that there is really no real shortage and what we are
+seeing is a manifestation of a self made problem that would go away if
+we made better use of our present known technology.
+
+
+<P>In the words of Pogo, "We have met the enemy, and it is us."
+
+<P>If the present approach is lacking, what might we do differently? If
+our hypothesis is correct, then there is a potential for a limited
+amount of spectrum to carry all the traffic imaginable (provided the
+power and the range of the transmitters is limited), then public
+policy is better served by moving to an environment of near zero
+regulation. In such an environment anyone would be allowed to use the
+spectrum, without the high front-end costs that keep out the true
+innovators. Of course, the allowable power and power densities would
+have to be realistically restricted.
+
+<H2>CHAOS?</h2>
+
+<P>Would this lead to chaos? In my opinion, the answer is, probably not.
+Consider the many millions of cordless telephones, burglar alarms,
+wireless house controllers and other appliances that operate within a
+minuscule portion of the spectrum and with limited interference to one
+another. These early devices are "dumb devices" compared to equipment
+being developed able to change the frequencies and minimize radiated
+power to better avoid interference to themselves and to others. Of
+course this means that there will have to be enough frequency spectrum
+set aside to do so. But, once having done so we would have created a
+communications environment able to handle orders of magnitude more
+communications today.
+
+<H2>AREN'T WE DOING THAT ALREADY?</h2>
+
+<P>In the US the FCC has allowed unlicensed operation in the Industrial
+Scientific and Medical bands These are "garbage bands" -- the home of
+radar ovens and diathermy machines. Some say "too little and too
+late." Nevertheless access to the ISM bands has proved to be of
+tremendous value in the creation of truly innovative major new
+services -- such as noise free high quality cordless telephones and
+wireless burglar alarm services. However, a shadow is growing as some
+in the FCC are proposing chopping up this band even into smaller
+pieces, and then artificially limiting the use of this band to force
+users over to the auctioned frequencies to increase the monopoly value
+of the frequencies being auctioned.
+
+<h2>POSTSCRIPT</h2>
+
+<P>Now, do we need all the regulation where each slice of frequency in
+each geographical area is tightly controlled by Washington? Or might
+we be better off if we used the Internet as our model? No central
+node. Local decision control with a minimum of restrictions. The
+Internet is growing rapidly. It is inexpensive and it allows the
+broadest access to the world's information to a greater number of
+people than ever initially imagined. Yet, it is theoretically chaotic,
+as would be sharing a common band of frequencies by all comers. We
+know that both examples of distributed networks can be made to work.
+
+<P>Nevertheless, today we see our regulators considering slicing up the
+ISM band. In comparison to successful example of the freewheeling
+Internet type model that works so remarkably well for huge numbers of
+users, slicing up this common bank is like a move back to a
+centralized control reminiscent of the old Soviet economy. And we know
+so well today, that particular centralized system didn't work all that
+well.
+
+<h2>SUMMARY</h2>
+
+<P>So, in conclusion, I'd like to say that the role that wireless can
+play in the ATM world of the 21st Century is bounded by just two
+things:
+
+<P>
+1) the imagination of the system designer, and 2) our ability to
+explain the implication of the emerging technologies to those
+responsible for passing out the radio frequencies.
+
+<P>Unless the long range implications are better understood, we could
+significantly delay the availability of technology of major economic
+importance.
+
+<P>Thank you!
+
+<center>
+  _________________________________________________________________
+</center>
+
+
+<P>QUESTIONS (Submitted on cards and selected and read by John
+McQuillan:)
+
+<P>John McQuillan: Thank you very much Paul, that's real food for
+thought. It's a little depressing in a way to think that we've wasted
+so much opportunity already. But, perhaps we can look forward to doing
+a better job going forward.
+
+<P>We have a couple of questions here from the audience:
+
+<P>One promise of broadcast spectrum that you didn't touch on but that
+certainly appeals to all of us is that we've tended to think of it as
+"free" when we turn on our broadcast TV. It doesn't cost us anything
+and when we do our garage opener, it's free. Isn't that going to
+present a problem in moving some people out of radio spectrum and onto
+cable because you have to pay for cable television unlike broadcast
+television?
+
+<P>Baran: In short, the answer is "yes". But, it's more likely a matter
+of providing a low tier free coverage for the broadcast channels. It
+may well be in the cable company's interest to provide free access to
+solely "over the air" signals. Once the cable is in-house, then the
+cable operator could sell incremental other services.1 While the
+answer is "yes", that nobody likes paying for services they can get
+off the air free. But, the movement in growth of cable is very real
+and I think its advantage increases with time, so, it is not out of
+question. This is not something that's going to happen right away, and
+we don't need 100% penetration everywhere, as the shortage bind is
+only in the big cities.
+
+<P>McQuillan: Considering where we are in the U.S. with an embedded base
+of dumb TVs, broadcasting monopolies and the general inertia of our
+regulatory system, do you think it's possible that your ideas are
+going to be adopted in other countries before they are in the U.S.?
+Possibly in some emerging countries in the third world?
+
+<P>Baran: Could be! You know, when you said 21st Century, that covers an
+awfully long period of time. What can happens over such a long period
+is hard to imagine. All I can talk about is the trend line. It is hard
+to pick an exact date and who's going to do what -- particularly when
+you deal with political type decisions. We can predict technology
+quite well, but historically it has been found nearly impossible to
+predict political decisions as they tend to be a function of a single
+person's whim, rather than the composite result of a large number of
+separate actions that all combine together in the case of a technology
+evolution direction.
+
+<P>McQuillan: Well here's a good question that picks up on one of your
+very last thoughts. Paul, how can we improve our ability to explain
+the implication of these emerging technologies to those responsible to
+handing out spectrum?
+
+<P>Baran: That is my key objective of this discussion this morning. The
+more people that are aware of the problem, the faster we're going to
+work our way towards a solution. I think it behooves all of us who are
+aware of the problem to pass the word around; to study it, to see
+whether it makes sense to you. And, if it does, then it increases our
+base of those that appreciate the nature of the game being played. I
+think when this understanding becomes more widespread, we increase our
+chances to see some movement over time.
+
+<P>McQuillan: One way of understanding your remarks is to say that there
+are two themes. One is that there's a revolution in digital
+technologies, especially digital signal processing, which is going to
+allow us to completely rethink how we move information through the
+radio frequencies and the other is that at the same time and for
+rather different reasons, we're considering the deregulation or
+re-regulation of these frequencies. Which do you really think is
+really going to happen first: the large scale use of digital signal
+processing technology giving us better frequency utilization, or an
+effective deregulation of the spectrum we are currently using?
+
+<P>Baran: Either of these two directions can allow us to win the game.
+
+<P>If we can make much better use of our existing channel using digital
+signal processing, then the pressure for saying there's a shortage of
+frequency goes away. Or, it can be done by smarter regulation. Either
+way we end up at the same point. So, are many paths - any one of which
+can get us there. But, all can be blocked by intentionally unwise
+regulation.
+
+<P>McQuillan: You know, for years I've had the mental model that
+broadband and wireless were two orthogonal axes and you could get more
+and more high performance in your network with a better and better
+wire and better and better switching. Or, you could have more and more
+convenience and portability in wirelessness if you were willing to
+accept lighter weight, less power and more primitive devices. So in
+the one limit, you have the Silicon Graphics work station on fiber
+getting ATM at the other limit you've got the little pocket pager that
+just basically delivers one bit saying "you've been paged" and you
+carry that everywhere. Isn't it really utopian to suggest that we can
+just throw away that model and we'll be able to have any communication
+anywhere?
+
+<P>Baran: The answer is yes, but you can go high data rates very short
+distances; or lower data rates further distances. Remember that we
+don't need to build a system using only a single medium. We can use
+combinations of media. So in this case, it will be radio for just that
+portion where it's a pain to carry signals by physical wires and then
+as quickly as possible, move over to a wired medium or fiber or coax
+and then go the rest of the way by electrons or photons. It is a
+matter of mixing, combining the two to get the advantage of both and
+minimize the disadvantage of each.
+
+<P>McQuillan: So the vision of the 21st Century communications might be a
+hybrid fiber coax or a fiber to the curb arrangement to the business
+and the home. And then, broadband wireless within the last few hundred
+meters within the building.
+
+<P>Baran: It could be only a few feet for very high data rate radio
+devices or a mile or two for low data rate devices such as a PCN
+telephone.
+
+<P>McQuillan: Paul's too much of a gentleman to go into this, but his
+company, Com21 is pursuing this vision commercially. Paul has acquired
+a number of patents in this area and so he's actually putting his
+money where his ideas are on this point.
+
+<P>Timely subject, we've cleverly planned this conference so that this
+session and the subsequent one on "Discussion of Washington" seem to
+happen the day after the elections.....what do you think?
+
+<P>We've got a whole new ball game in Washington now - - all new House
+and Senate - - Republican controlled. (I'm not going to pause for
+applause or for any other kinds of comments - this is a non-partisan
+event.) [LAUGHTER] I'm just asking Paul - - well, what do you think?
+Does that change your views of how we might be proceeding here?
+
+<P>Baran: No, no. The concept of selling off of the frequencies seems to
+have political acceptance by both parties, but for different reasons.
+I think that the Democrats it looks like the new way of raising
+taxes...
+
+<P>McQuillan: Yes, I noticed that...without using that word!
+
+<P>Baran: ... and to the Republicans, it appears to be a way of
+privatizing government assets. So this move is politically acceptable
+by both those that like raising taxes by stealth, and by those that
+believe that government has no role here as this is something best
+left to the marketplace.
+
+<P>McQuillan: So why wait for regulatory change? If signals can sneak in
+and coexist on the bands, then no one else will really notice when you
+occupy an unused tiny slice of spectrum in the neighborhood.
+[LAUGHTER]
+
+<P>But wait, there's more, so start now - - develop a base of important
+users - - don't worry about the dinosaurs, the mice are fleet afoot
+and hard to spot in the grass.
+
+<P>Baran: Very good! Great idea!
+
+<P>McQuillan: It's pretty radical!
+
+<P>Baran: We're getting to see some bootleg stations in the FM band. Once
+upon a time the FCC was very tough about it. But so much of this sort
+of stuff is going on that they're sort of looking the other way. It
+could be like marijuana - - where you have tight rules but they don't
+get enforced. And, after a while the rules become unenforceable. I'd
+hate to see us move in that direction. I'd prefer to have us face up
+to the fact that there's a change needed here, and we would much
+prefer to work within the laws.
+
+<P>But the point you raise is a very good one. There's a heck of a lot of
+stuff you can do (using the spectrum) without getting caught.
+[LAUGHTER]
+
+<P>McQuillan: In a way that might be the American way or the free market
+way: that we the users have to demonstrate with action to the
+government the right way to go and then they'll regulate almost in
+hindsight or in afterthought.
+
+<P>Baran: That's right! That's the history of the Internet.
+
+<P>McQuillan: Indeed, yes!
+
+<P>Baran: Chaos up!
+
+<P>McQuillan: Right, and now President Clinton says "I want everybody in
+the administration to have a mailbox in the Internet". Whereas a few
+years before that would have been unheard of. Partly because no one
+knew what it was and partly because everybody thought it was a joke.
+It's funny how things can transition from being a joke or being wrong
+to being the middle of the road accepted idea.
+
+<P>Well in your vision of the future, there are these potentially large
+number of end stations which contending for spectrum by using spread
+spectrum technology and by using a lot of very clever electronics,
+doesn't this end up meaning that the end stations need to be quite
+expensive to be so smart?
+
+<P>Baran: No! With silicon the complexity is no longer a factor. As long
+as the numbers are big, and they will be in this case, you can pile an
+awful lot of capability into a very inexpensive chip or a few chips.
+And the cost of the chips is pretty much a matter of dividing a fixed
+cost by a number. If the number is big then the cost per chip can be
+fairly low.
+
+<P>McQuillan: Do you think that can get so cheap that it can go into
+telephones?
+
+<P>Baran: Oh, yes!
+
+<P>McQuillan: Putting you on the spot here, do you think we'll see ATM
+telephones?
+
+<P>Baran Yes!
+
+<P>
+McQuillan: That's really the end game here isn't it?
+
+<P>Baran Yeah, I could see cells going right down to the telephone
+instrument itself. We've looked at that one and it seems to make
+sense.
+
+<P>McQuillan That's the logical conclusion of this line of thinking is
+that you build fiber to the curb or hybrid fiber coax. You deliver
+video and data but you're also delivering telephony and then all the
+devices in the home or the business that televisions and the computer,
+but also the telephones have to be peers, have to be wireless, so that
+means they have to have wireless ATM. Thought for the day.
+
+<P>Baran: The ATM cell is the key.
+
+<P>McQuillan: For those of you in the chip business, this is a good
+thought for the day.
+
+<P>Is the FCC examining this question of the last mile becoming wireless
+for broadband services for the home?
+
+<P>Baran: I don't know. I don't think that's very high on their agenda.
+The FCC has a few very good technical people, but they're totally
+outnumbered by the lawyers. [LAUGHTER]
+
+<P>McQuillan: I'm sorry to hear that, but I'm not at all surprised. I
+mean, that's what we get in Washington and I don't know, what do we do
+to change it? You seem to be advocating a kind of a public awareness
+and education campaign. Is there any reason to believe that would work
+or do we have any example of that working before?
+
+<P>Baran: Well, it worked yesterday! [LAUGHTER & APPLAUSE]
+
+<P>McQuillan: If only we had direct election of FCC Commissioners that
+would really be something.
+
+<P>So, I know this is a difficult question, but being an optimist for a
+moment, when do you think that we might get a significant adoption of
+your ideas?
+
+<P>Baran: I think that this is one of these multiple S shaped curves....
+these things always take a hell of a lot longer than you think they
+should. Someone pointed out that no truly new communications system
+ever got from laboratory to full field implementation in less than
+fifteen years. So we're talking pretty long time constants. But that
+doesn't mean we can't see some thinks occurring very early. There's
+the bottom of the pyramid and then we start moving up.
+
+<P>McQuillan: It also doesn't mean that we can't use that insight to be
+quite clear about what's strategic and what's counter strategic in
+moving over the next few years. There's a lot of efforts I see as
+pretty counter strategic to this line of thinking in this whole
+revolution of cable companies doing telephony and telephone companies
+doing cable. Clearly, I think one's view of what are the important
+assets to protect needs to get revised from this prospective that
+spectrum is abundant rather than scarce and that digital signal
+processing is one of the key technologies, rather than a, let's say,
+HDTV being one of the key technologies, you know, in this view, which
+I share, compression isn't really the issue. While fiber's very
+important, that's not really the issue either because we've been
+living with fiber for a long time, but we can't afford to put fiber
+everywhere. The real issue is, what do you do to get to the user and I
+think Paul's contribution here is to suggest that we've solved a lot
+of the other problems but we don't really have a good solution yet for
+getting all the way to the user and that wireless represents the
+solution that people aren't thinking of for that.
+
+<P>So, Paul, thank you very much for being with us this morning!
+
+<center>
+  _________________________________________________________________
+</center>
+
+<P>Footnote added after the talk:
+
+<P>Assuming fewer 100 million TV households of which 65% already take
+cable then fewer than 35 million households would require access to
+the cable. Cable systems generally are wired for taps for 100%
+penetration (because they don't know who will and won't take cable.)
+The missing items is running coax drop cables to the houses without
+cable. Assuming a cost of about $30 per house in a mass contracted out
+installation, the total cost would be about $1 Billion to free up over
+400 MHz of high quality bandwidth for the entire country. This is
+about 1/10 the cost of the amount that is expected for the PCS
+licenses being auctioned off. And, it is only 5% of the $20 Billion
+annual cable TV revenues. If this approach was limited solely to those
+few large cities where any semblance of scarcity can be said to exist,
+the cost would then be correspondingly lower.<br>
+
+
+
+<A HREF="     http://www.eff.org/pub/GII_NII/Wireless_cellular_radio/false_scarcity_baran_cngn94.transcript" 
+>Original Text of talk</A>
+</BODY></HTML>

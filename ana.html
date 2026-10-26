@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Noreen DeCarlo">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Project 2</title>
+</head>
+
+<body bgcolor="#FFFFFF" link="#000080" vlink="#CC0000" alink="#0098E1" background="../../tanstone.gif">
+
+<div align="center"><center>
+
+<table border="5" cellpadding="8" bordercolor="#CC0000" bordercolordark="#CC0000" bordercolorlight="#CC0000" width="650">
+  <tr>
+    <td width="680">
+      <div align="center">
+        <table border="0" cellpadding="3" cellspacing="3" width="100%">
+          <tr>
+            <td width="29%"><font face="Arial"><strong><small><font color="#CC0000">PROJECT
+    TITLE:</font></small></strong></font></td>
+            <td width="71%"><font color="#000080" face="Arial"><small><b>Information Delivery in an Infostation System</b></small></font></td>
+          </tr>
+          <tr>
+            <td width="29%"><font face="Arial"><strong><font size="2" color="#CC0000">PROJECT
+    ADVISOR:</font><font size="2" color="#000080"> </font></strong></font></td>
+            <td width="71%"><font face="Arial" size="2" color="#000080"> <b> Christopher Rose</b></font></td>
+          </tr>
+          <tr>
+            <td width="29%"><font face="Arial"><strong><font size="2" color="#CC0000">STUDENT:</font></strong></font></td>
+            <td width="71%"><font face="Arial" size="2" color="#000080">
+      <b>
+      Ana Lucia Iacono</b></font></td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="680"><u><p ALIGN="JUSTIFY"><b><font face="Arial" size="2"><font color="#CC0000">Purpose:</font><font color="#000080"><br>
+      </font>
+      </font>
+      </b></u><b><font color="#000080" size="2" face="Arial">The Infostation network
+    consists of many base stations, each with a small and discontinuous coverage area. The
+    radios transmit at very high bit rate and it is possible to download a significant amount
+    of information even when the mobile station is in the coverage area for a short time.
+    Therefore, if the information is available at the Infostation, the user will be able to
+    receive it with a very short delay. However, this may not always be the case and the
+    information may have to be transferred from the server and pass through the fixed network
+    before reaching the mobile. Since the coverage area is small, the short time the mobile
+    spends in the coverage area may not be sufficient to bring the information from the server
+    to the Infostation. This is the reverse of the usual wireless problem, in which the radio
+    is the main concern since there are many users being served by the same base station. In
+    this problem the bottleneck of the network is actually the backbone and not the radio. The
+    goal of this project is to derive a delivery schedule for file parts that minimizes
+    overall delay in receiving the whole file.</font></b></p>
+      <p ALIGN="JUSTIFY"><font face="Arial"><b><u><font size="2" color="#CC0000">Approach:
+    </font></u><font color="#000080"><br>
+    <font size="2" color="#000080">We consider a system where the
+    Infostations are connected as a cluster in a hierarchy where there is a higher level with
+    a cluster controller. As mentioned before, even though the radio rate is high, the
+    coverage area is small and the short time the mobile spends in the coverage area may not
+    be sufficient to bring the information from the server to the Infostation. To overcome
+    this problem the cluster controller can coordinate the delivery to the next Infostation in
+    the mobile path, so that the information is locally available at that Infostation when the
+    mobile user arrives in its coverage area. If the path is not known then the cluster
+    controller can send the information to Infostations that are most likely to be in the
+    mobile user path.
+      </font>
+    <font size="2" color="#0000A0"><br>
+      </font>
+      </font>
+      <font size="2"><font color="#000080">
+    <br>
+      </font>
+    <u>
+    <font face="Arial" size="2" color="#CC0000">Status:</font>
+    <font face="Book Antiqua" size="2" color="#0000A0"><br>
+    </font>
+      </u>
+      <font color="#000080" face="Arial">The case of a single user with fixed velocity was studied first. The
+    interesting result is that a higher aggregate delivery rate is possible for a user in
+    motion than for one who dwells at a single Infostation. Then a random walk with fixed
+    velocity but random travel direction was investigated. We derived bounds on minimum
+    delivery delay for a variety of Infostation geometries. These were the one-dimensional
+    highway scenario, the two-dimensional street grid and the three-dimensional street grid
+    with tall buildings. A heuristic algorithm for the one-dimensional case (single user) was
+    proposed and simulation results show that the algorithm is near optimum (minimum delay).
+    We are currently working with the multiple user case. Results for two users with fixed
+    velocity show that the scheduling algorithm that minimizes the average delay gives
+    priority to one of the users. This result is similar to what we see in conventional
+    scheduling algorithms where to minimize the average delay the jobs are scheduled in order
+    of non-decreasing processing time, what is called shortest-processing-time sequencing.<br>
+    <u><br>
+      </u>
+    </font>
+    <u>
+    <font face="Arial" size="2" color="#CC0000">
+    Related Publications:</font>
+    <font face="Book Antiqua" size="2" color="#0000A0"><br>
+    </font>
+      </u>
+      </font></b></font>
+      <div align="center">
+        <table border="0" cellpadding="3" cellspacing="3" width="100%">
+          <tr>
+            <td width="8%" valign="top"><font color="#000080" face="Arial" size="2"><b>[1]&nbsp;</b></font></td>
+            <td width="92%"><font face="Arial" size="2" color="#000080"><b>Ana Lucia Iacono and Christopher Rose,
+    &quot;Minimizing File Delivery Delay in an Infostation System&quot;, Technical Report
+    TR-167, WINLAB, Rutgers University, August 1998</b></font></td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center"><font color="#000080" size="2" face="Arial"><b>This page was last updated
+November 22, 1999.</b></font></p>
+
+<p align="center"><font color="#000080" face="Arial"><b><a href="Index.html" target="_top"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/icons/prosbutton.gif" align="center"></a> <small>Back to
+Project Index page&nbsp;&nbsp;&nbsp; <a href="/pub/Index.html" target="_top"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/icons/home_btn.gif" align="center"></a>
+Back to WINLAB Home page</small></b></font></p>
+
+<p align="center"><small><font face="Arial" color="#000080"><b>If you have
+questions, comments or other suggestions, please contact us at <br>
+<a href="mailto:webmaster@winlab.rutgers.edu">webmaster@winlab.rutgers.edu</a></b></font></small></p>
+</body>
+</html>

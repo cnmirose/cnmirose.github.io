@@ -1,0 +1,286 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+</body>
+<h1>
+ABET Course Evaluation for 332:421 Fall 2010
+</h1>
+
+<?php
+	function getPassedValue($key){
+		$value = $_POST[$key];
+		if (!isset($value)){
+			$value = $_GET[$key];
+		}
+		return stripslashes(htmlspecialchars_decode($value));
+	}
+$ID = getPassedValue('ID');
+
+?>
+
+<?
+if ($ID) {
+//   echo "Valid ID:" . $ID . "<br>";
+   switch ($ID) {
+   case 114002690:
+   echo "<h2> Hello Michael Cheng</h2>";
+   break;
+
+   //   JASON, FAIZAN, MIKE S.
+   case 117002362:
+   echo "<h2> Hello Jason</h2>";
+   break;
+   case 116003389:
+   echo "<h2> Hello Mike Sherman</h2>";
+   break;
+   case 103000599:
+   echo "<h2> Hello Faizan</h2>";
+   break;
+
+   // Christos, Michael L. Kristin, Atikur
+   case 118000029:
+   echo "<h2> Hello Christos</h2>";
+   break;
+   case 114001432:
+   echo "<h2> Hello Michael Lee</h2>";
+   break;
+   case 114007684:
+   echo "<h2> Hello Kristine</h2>";
+   break;
+   case 115008683:
+   echo "<h2> Hello Atikur</h2>";
+   break;
+
+   // Jose, Eric, Nishit, Sapan, Hiran
+   case 115005493:
+   echo "<h2> Hello Jose</h2>";
+   break;
+   case 116000443:
+   echo "<h2> Hello Hiran</h2>";
+   break;
+   case 115003090:
+   echo "<h2> Hello Nishit</h2>";
+   break;
+   case 117003456:
+   echo "<h2> Hello Sapan</h2>";
+   break;
+   case 115004828:
+   echo "<h2> Hello Eric</h2>";
+   break;
+
+// Joluis, Chris, Patrick
+   case 129009174:	
+   echo "<h2> Hello Joluis</h2>";
+   break;
+   case 115000145:	
+   echo "<h2> Hello Chris</h2>";
+   break;
+   case "077003877":
+   echo "<h2> Hello Patrick</h2>";
+   break;
+
+   // Mike J.,  Abdul, David
+   case "006004552":
+   echo "<h2> Hello Mike Jones</h2>";
+   break;
+   case 116003955:
+   echo "<h2> Hello Abdul</h2>";
+   break;
+   case 116007964:
+   echo "<h2> Hello David</h2>";
+   break;
+   case "000111222":
+   echo "<h2> Hello Pedda</h2>";
+   break;
+   default:
+   echo "Invalid ID.  Try again<br>";
+   $INVALID="yes";
+}
+   
+if ($INVALID != "yes") {
+   $IDVALID="yes";
+   echo "<br>Please enter your ratings on each questionaire topic using the following codes:<br>";
+   echo "<b>1: Unsatisfied<br>";
+   echo "2: Kinda Satisfied<br>";
+   echo "3: Satisfied<br>";
+   echo "4: Frickin Ecstatic<br><br></b>";
+
+$name1 = "(a) an ability to apply knowledge of Mathematics,
+science, and engineering<br>
+(as assessed by
+HW Problems, Exams,
+Lecture Discussion,
+Project Meetings)<br>";
+
+$name2 = "(b) an ability to design and conduct experiments and
+interpret data<br>
+(as assessed by Project meetings and
+Final Project Report)<br>";
+
+$name3 = "(c) an ability to design a system, component or
+process to meet desired needs within realistic
+constraints such as economic, environmental,
+social, political, ethical, health and safety,
+manufacturability, and sustainability<br>
+(as assessed HW Problems, Exams,
+Lecture Discussion,
+Project Meetings and
+Final Project Report)<br>";
+$name4 = "(d) an ability to function as part of a multidisciplinary
+team<br>
+(as assessed by Group Project Activity)<br>";
+
+$name5 = "(e) an ability to identify, formulate, and solve ECE
+problems<br>
+(as assessed by HW Problems, Exams,
+Lecture Discussion)<br>";
+$name6 = "(f) an understanding of professional and ethical
+responsibility<br>
+(as assessed by Group Project Work)<br>";
+$name7 = "(g) an ability to communicate in written and oral
+form<br>
+(as assessed by HW Problems, Lecture
+Discussion, Final Project
+Report and Presentation)<br>";
+
+
+$name8 = "(h) the broad education necessary to understand the
+impact of electrical and computer engineering
+solutions in a global, economic, environmental, and
+societal context<br>
+(as assessed by HW Problems, Exams,
+Lecture Discussion, Final Project)<br>";
+
+$name9 = "(i) a recognition of the need for, and an ability to
+engage in life-long learning<br>
+(as assessed by Home-work, discussions
+during lectures, Final  Project)<br>";
+
+$name10 = "(j) a knowledge of contemporary issues<br>
+(as assessed by Lecture Discussion, Final Project)<br>";
+
+$name11 = "(k) an ability to use the techniques, skills, and
+modern engineering tools necessary for electrical and
+computer engineering practice<br>
+(as assessed by HW Problems, Exams, Final Project)<br>";
+
+?>
+<h2> The first 7 items are "highly related" course outcomes (what the course was really about)</h2>
+
+
+<form id="gradepost" method="post" action="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/abet421_10.php">
+<input type="hidden" name="IDvalue" id="IDvalue"  value="<?= $ID ?>"/>
+
+<?
+   if ($name1) {
+?>
+   <p><label><?= $name1 ?>:</label><input type="text" name="name1" id="name1" value="" /></p>
+   <input type="hidden" name="name1value"  id="name1value" value="<?=  $name1 ?>" />
+<?
+   }
+   if ($name2) {
+?>
+   <p><label><?= $name2 ?>:</label><input type="text" name="name2" id="name2" value="" /></p>
+   <input type="hidden" name="name2value"  id="name2value" value="<?=  $name2 ?>" />
+<?
+   }
+   if ($name3) {
+?>
+   <p><label><?= $name3 ?>:</label><input type="text" name="name3" id="name3" value="" /></p>
+   <input type="hidden" name="name3value"  id="name3value" value="<?=  $name3 ?>" />
+<?
+   }
+   if ($name4) {
+?>
+   <p><label><?= $name4 ?>:</label><input type="text" name="name4" id="name4" value="" /></p>
+   <input type="hidden" name="name4value" id="name4value"  value="<?=  $name4 ?>" />
+<?
+   }
+   if ($name5) {
+?>
+   <p><label><?= $name5 ?>:</label><input type="text" name="name5" id="name5" value="" /></p>
+   <input type="hidden" name="name5value" id="name4value"  value="<?=  $name5 ?>" />
+<?
+   }
+?>
+<?
+   if ($name6) {
+?>
+   <p><label><?= $name6 ?>:</label><input type="text" name="name6" id="name6" value="" /></p>
+   <input type="hidden" name="name6value"  id="name6value" value="<?=  $name6 ?>" />
+<?
+   }
+?>
+<?
+   if ($name7) {
+?>
+   <p><label><?= $name7 ?>:</label><input type="text" name="name7" id="name7" value="" /></p>
+   <input type="hidden" name="name7value"  id="name7value" value="<?=  $name7 ?>" />
+<?
+   }
+?>
+
+
+<h2> These next 4 items are "only supportive" course outcomes (i.e., secondary or incidental)</h2>
+
+
+<?
+   if ($name8) {
+?>
+   <p><label><?= $name8 ?>:</label><input type="text" name="name8" id="name8" value="" /></p>
+   <input type="hidden" name="name8value"  id="name8value" value="<?=  $name8 ?>" />
+<?
+   }
+?>
+<?
+   if ($name9) {
+?>
+   <p><label><?= $name9 ?>:</label><input type="text" name="name9" id="name9" value="" /></p>
+   <input type="hidden" name="name9value"  id="name9value" value="<?=  $name9 ?>" />
+<?
+   }
+?>
+<?
+   if ($name10) {
+?>
+   <p><label><?= $name10 ?>:</label><input type="text" name="name10" id="name10" value="" /></p>
+   <input type="hidden" name="name10value"  id="name10value" value="<?=  $name10 ?>" />
+<?
+   }
+?>
+<?
+   if ($name11) {
+?>
+   <p><label><?= $name11 ?>:</label><input type="text" name="name11" id="name11" value="" /></p>
+   <input type="hidden" name="name11value"  id="name11value" value="<?=  $name11 ?>" />
+<?
+   }
+?>
+
+
+<INPUT TYPE="submit" NAME="submit" VALUE="submit" >
+</form>
+<?
+
+}
+
+}
+//else {
+//   echo " ID:" . $ID . "<br>";
+//}
+   $ID=NULL;   
+?>
+
+
+<?
+if (!$IDVALID) {
+?>
+<form id="gradeform" method="post" action="abet421_10.html">
+<p><label>9-digit StudentID:</label><input type="text" name="ID" id="ID" value="<?= $ID ?>" /></p>
+<INPUT TYPE="submit" NAME="submit" VALUE="submit" >
+</form>
+<?
+}
+?>
+
+</body>
+</html>

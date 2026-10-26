@@ -1,0 +1,77 @@
+/*\*//*/
+  @import "main_ie5mac.css";
+/**/ 
+
+body, td {
+	margin: 5px 5px 5px 5px;
+	padding: 0 0 0 0;
+	background-color: #fff;
+	font: small/126% Times New Roman, Times, Serif;
+	font: x-small;
+	}
+	
+html>body,
+html>body td {
+	font: 83.5%/138% Times New Roman, Times, Serif;
+	}
+	
+a, a:link {
+	color: #000066;
+	}
+	
+a:visited {
+	color: #000066;
+	}
+	
+a:hover {
+	color: #990000;
+	}
+
+a h1, a h2, a h3, a h4, a h5 {
+	text-decoration:underline;
+	}
+		
+a img {
+	border: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	}
+	
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+	
+div.clear {
+	clear:both;
+	line-height:0px;
+	}
+	
+/* Let's make this presentable for old browsers */
+#goToSectionBox {
+	display:none;
+	}
+
+#footer li {
+	display: inline;
+	}
+#articleInline {
+	display:none;
+	}
+	
+#pageNumbers li {
+	display:inline;
+	}
+#nagBar {
+	font-family: Arial, Helvetica, Sans Serif;
+	background-color:#ccc;
+	margin-bottom: 10px;
+	}
+
+#nagBar p {
+	margin:0px;
+	}

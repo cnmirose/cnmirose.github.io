@@ -1,0 +1,904 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="ps3soln">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="ps3soln.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html3"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<DIV ALIGN="CENTER">
+Rutgers University
+<BR>
+The State University Of New Jersey
+<BR>
+College of Engineering
+<BR>
+Department of Electrical and Computer Engineering
+<BR>
+<BR>
+<BR>
+330:501<U>Systems Analysis</U>Fall 1995
+<BR>
+Problem Set 3 SOLUTIONS
+</DIV>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 1:</B>
+<BR>
+We apply Lipschitz first.  The function 
+<!-- MATH: $f(x,t) = t \sin x$ -->
+<IMG
+ WIDTH="109" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img1.gif"
+ ALT="$f(x,t) = t \sin x$">
+is
+obviously continuous.  However,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+|t \sin (x_1(t)) - t \sin (x_2(t))|
+=
+|t||\sin (x_1(t)) - \sin (x_2(t))|
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="374" HEIGHT="28"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img2.gif"
+ ALT="\begin{displaymath}\vert t \sin (x_1(t)) - t \sin (x_2(t))\vert
+=
+\vert t\vert\vert\sin (x_1(t)) - \sin (x_2(t))\vert
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Note that
+
+<!-- MATH: $\sin a - \sin b = 2 \sin \frac{a-b}{2} \cos \frac{a+b}{2} \le 2 \sin \frac{a-b}{2}$ -->
+<IMG
+ WIDTH="297" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img3.gif"
+ ALT="$\sin a - \sin b = 2 \sin \frac{a-b}{2} \cos \frac{a+b}{2} \le 2 \sin \frac{a-b}{2}$">.
+Then since 
+<!-- MATH: $|\sin x| \le |x|$ -->
+<IMG
+ WIDTH="86" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img4.gif"
+ ALT="$\vert\sin x\vert \le \vert x\vert$">
+<A NAME="tex2html1"
+ HREF="footnode.html#foot473"><SUP>1</SUP></A> we have
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+|t \sin (x_1(t)) - t \sin (x_2(t))|
+\le
+|t| |x_1(t) - x_2(t)|
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="308" HEIGHT="28"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img10.gif"
+ ALT="\begin{displaymath}\vert t \sin (x_1(t)) - t \sin (x_2(t))\vert
+\le
+\vert t\vert \vert x_1(t) - x_2(t)\vert
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+With the interval restricted to be finite, the Lipschitz condition
+is satisfied 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+|f(x_1,t)-f(x_2,t)| \le L |x_1(t) - x_2(t)|
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="257" HEIGHT="28"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img11.gif"
+ ALT="\begin{displaymath}\vert f(x_1,t)-f(x_2,t)\vert \le L \vert x_1(t) - x_2(t)\vert
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+with 
+<!-- MATH: $L= \max_{t \in I}|t|$ -->
+<IMG
+ WIDTH="104" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img12.gif"
+ ALT="$L= \max_{t \in I}\vert t\vert$">,
+and a unique solution exists.  Note that although the interval must be
+finite, it can be arbitrarily large.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 2:</B>
+<BR>
+From the problem, we can see that 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left[
+\begin{array}{cc}
+\dot{x}_1(t)\\
+\dot{x}_2(t)
+\end{array}
+\right]
+=
+\left[
+\begin{array}{cc}
+\frac{1}{t}x_1(t)\\
+\frac{1}{t}x_2(t)
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="158" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img13.gif"
+ ALT="\begin{displaymath}\left[
+\begin{array}{cc}
+\dot{x}_1(t)\\
+\dot{x}_2(t)
+\end{ar...
+...{cc}
+\frac{1}{t}x_1(t)\\
+\frac{1}{t}x_2(t)
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+So we have 
+<!-- MATH: $t\dot{x}_1(t)-x_1(t)=0$ -->
+<IMG
+ WIDTH="127" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img14.gif"
+ ALT="$t\dot{x}_1(t)-x_1(t)=0$">
+which is variable-separable, so its
+solution can be shown to be <I>x</I><SUB>1</SUB>(<I>t</I>)=<I>at</I>. We then have
+<I>a</I>=<I>x</I><SUB>1</SUB>(1). Such that, 
+<!-- MATH: $x_1(t)=tx_1(1)$ -->
+<I>x</I><SUB>1</SUB>(<I>t</I>)=<I>tx</I><SUB>1</SUB>(1). Similarly, we have
+
+<!-- MATH: $x_2(t)=tx_2(1)$ -->
+<I>x</I><SUB>2</SUB>(<I>t</I>)=<I>tx</I><SUB>2</SUB>(1). Rewrite as
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left[
+\begin{array}{cc}
+x_1(t)\\
+x_2(t)
+\end{array}
+\right]
+=
+\left[
+\begin{array}{cc}
+t &0 \\
+0 &
+t
+\end{array}
+\right]
+\left[
+\begin{array}{cc}
+x_1(1)\\
+x_2(1)
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="217" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img15.gif"
+ ALT="\begin{displaymath}\left[
+\begin{array}{cc}
+x_1(t)\\
+x_2(t)
+\end{array}\right]
+...
+...]
+\left[
+\begin{array}{cc}
+x_1(1)\\
+x_2(1)
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+By definition (in S&amp; B), the fundamental/transition matrix
+is 
+<!-- MATH: $\left[ \begin{array}{cc}t&0\\0&t\end{array}\right]$ -->
+<IMG
+ WIDTH="69" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img16.gif"
+ ALT="$\left[ \begin{array}{cc}t&0\\ 0&t\end{array}\right]$">.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 3:</B>
+<BR>
+Applying the iteration method of (2.7) we obtain
+
+<!-- MATH: $x_0(t)=1,x_1(t)=1+\int_{0}^{t}\tau d\tau=1+\frac{t^2}{2},
+x_2(t)=1+\int_{0}^{t}\tau(1+\frac{\tau^2}{2})d\tau=1+t^2+\frac{t^4}{8}$ -->
+<IMG
+ WIDTH="553" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img17.gif"
+ ALT="$x_0(t)=1,x_1(t)=1+\int_{0}^{t}\tau d\tau=1+\frac{t^2}{2},
+x_2(t)=1+\int_{0}^{t}\tau(1+\frac{\tau^2}{2})d\tau=1+t^2+\frac{t^4}{8}$">,
+and so on. It is easy to show that by using finite induction that
+<I>x</I><SUB><I>k</I></SUB>(<I>t</I>) is the <I>k</I><SUP><I>th</I></SUP> degree Taylor's polynomial of
+
+<!-- MATH: $e^{\frac{t^2}{2}}$ -->
+<IMG
+ WIDTH="27" HEIGHT="23" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img18.gif"
+ ALT="$e^{\frac{t^2}{2}}$">.
+Hence, 
+<!-- MATH: $x_k(t)\rightarrow e^{\frac{t^2}{2}}$ -->
+<IMG
+ WIDTH="87" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img19.gif"
+ ALT="$x_k(t)\rightarrow e^{\frac{t^2}{2}}$">
+as
+
+<!-- MATH: $t\rightarrow \infty$ -->
+<IMG
+ WIDTH="51" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img20.gif"
+ ALT="$t\rightarrow \infty$">.
+It is also easy to verify the solution since
+the differential equation is variable-separable and by proper
+rearrangement we could integrate both sides.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 4:</B>
+<BR>
+From Problem 1-16, we have 
+<!-- MATH: $\phi(t,0)=e^{At}$ -->
+<IMG
+ WIDTH="91" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img21.gif"
+ ALT="$\phi(t,0)=e^{At}$">.
+Using formula (2.23),
+we can apply integration directly to the elements of matrix.
+Therefore,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)=
+\left[
+\begin{array}{cc}
+\frac{1}{3}+\frac{2}{3}e^{3t}\\
+-\frac{1}{3}+\frac{4}{3}e^{3t}
+\end{array}
+\right]
++
+\left[
+\begin{array}{cc}
+\int_{0}^{t}(\frac{2}{3}+\frac{1}{3}e^{3(t-\tau)}d\tau\\
+\int_{0}^{t}(-\frac{2}{3}+\frac{2}{3}e^{3(t-\tau)}d\tau
+\end{array}
+\right]
+=
+\left[
+\begin{array}{cc}
+\frac{2}{9}+\frac{2}{3}t+\frac{7}{9}e^{3t}\\
+-\frac{5}{9}-\frac{2}{3}t+\frac{14}{9}e^{3t}
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="508" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img22.gif"
+ ALT="\begin{displaymath}x(t)=
+\left[
+\begin{array}{cc}
+\frac{1}{3}+\frac{2}{3}e^{3t}\...
+...\frac{5}{9}-\frac{2}{3}t+\frac{14}{9}e^{3t}
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>                
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 6:</B>
+<BR>
+From problem 1-16, we can see that
+
+<!-- MATH: $\phi(t,\tau)=A^{t-\tau}=T^{-1}\Lambda^{t-\tau}T$ -->
+<IMG
+ WIDTH="199" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img23.gif"
+ ALT="$\phi(t,\tau)=A^{t-\tau}=T^{-1}\Lambda^{t-\tau}T$">.
+Using formula
+(2.44), we have 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)
+=
+A^{t}x(0)+\sum_{\tau=0}^{t-1}A^{t-\tau-1}f(\tau)
+=
+\left [
+\begin{array}{c}
+\frac{1}{2}+\frac{5}{6}3^{t}+\frac{1}{3}0^{t}\\
+-1+\frac{5}{3}3^{t}-\frac{1}{3}0^{t}
+\end{array}
+\right ]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="380" HEIGHT="55"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img24.gif"
+ ALT="\begin{displaymath}x(t)
+=
+A^{t}x(0)+\sum_{\tau=0}^{t-1}A^{t-\tau-1}f(\tau)
+=
+\le...
+...t}\\
+-1+\frac{5}{3}3^{t}-\frac{1}{3}0^{t}
+\end{array}\right ]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 8:</B>
+<BR>
+Using the Laplace transform method (2.36) we obtain
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+X(s)=
+\left[
+\begin{array}{cc}
+\frac{2/9}{s}+\frac{2/3}{s^2}+\frac{7/9}{s-3}\\
+\frac{-5/9}{s}-\frac{2/3}{s^2}+\frac{14/9}{s-3}
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="210" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img25.gif"
+ ALT="\begin{displaymath}X(s)=
+\left[
+\begin{array}{cc}
+\frac{2/9}{s}+\frac{2/3}{s^2}+...
+...c{-5/9}{s}-\frac{2/3}{s^2}+\frac{14/9}{s-3}
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+By taking the inverse Laplace transform, we get
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)
+=
+\left[
+\begin{array}{cc}
+\frac{2}{9}+\frac{2}{3}t+\frac{7}{9}e^{3t}\\
+-\frac{5}{9}-\frac{2}{3}t+\frac{14}{9}e^{3t}
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="191" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img26.gif"
+ ALT="\begin{displaymath}x(t)
+=
+\left[
+\begin{array}{cc}
+\frac{2}{9}+\frac{2}{3}t+\fra...
+...\frac{5}{9}-\frac{2}{3}t+\frac{14}{9}e^{3t}
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 14:</B>
+<BR>
+Since the intial conditions of this second order equation
+are zero, by taking z-transform we obtain
+
+<!-- MATH: $z^2X(z)+3zX(z)+2X(z)=\frac{z}{z-1}$ -->
+<IMG
+ WIDTH="235" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img27.gif"
+ ALT="$z^2X(z)+3zX(z)+2X(z)=\frac{z}{z-1}$">.
+Thus,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+X(z)= \frac{z}{z-1}\frac{1}{(z+2)(z+1)}
+=
+\frac{1/6}{z-1}+\frac{1/2}{z+1}+\frac{-2/3}{z+2}
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="373" HEIGHT="44"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img28.gif"
+ ALT="\begin{displaymath}X(z)= \frac{z}{z-1}\frac{1}{(z+2)(z+1)}
+=
+\frac{1/6}{z-1}+\frac{1/2}{z+1}+\frac{-2/3}{z+2}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+by doing
+the partial fractions expansion.  Taking the inverse z-transform, we have
+
+<!-- MATH: $x(t)=\frac{1}{6}+\frac{1}{2}(-1)^{t-1}-\frac{2}{3}(-2)^{t-1}$ -->
+<IMG
+ WIDTH="231" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img29.gif"
+ ALT="$x(t)=\frac{1}{6}+\frac{1}{2}(-1)^{t-1}-\frac{2}{3}(-2)^{t-1}$">.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 15:</B>
+<BR>
+Let:
+
+<!-- MATH: $x_1(t)=x(t)$ -->
+<I>x</I><SUB>1</SUB>(<I>t</I>)=<I>x</I>(<I>t</I>) and 
+<!-- MATH: $x_2(t)=x_1(t+1)$ -->
+<I>x</I><SUB>2</SUB>(<I>t</I>)=<I>x</I><SUB>1</SUB>(<I>t</I>+1). We can get
+
+<!-- MATH: $x_2(t+1)=x(t+2)=1-2x_1(t)-3x_2(t)$ -->
+<I>x</I><SUB>2</SUB>(<I>t</I>+1)=<I>x</I>(<I>t</I>+2)=1-2<I>x</I><SUB>1</SUB>(<I>t</I>)-3<I>x</I><SUB>2</SUB>(<I>t</I>). It can be rewritten in the matrix
+form as:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left[
+\begin{array}{cc}
+x_1(t+1)\\
+x_2(t+1)
+\end{array}
+\right]
+=
+\left[
+\begin{array}{cc}
+x_2(t)\\
+1-2x_1(t)-3x_2(t)
+\end{array}
+\right]
+=
+\left[
+\begin{array}{cc}
+0&1\\
+-2&
+-3
+\end{array}
+\right]
+\left[
+\begin{array}{cc}
+x_1(t)\\
+x_2(t)
+\end{array}
+\right]
++
+\left[
+\begin{array}{cc}
+0\\
+1
+\end{array}
+\right]
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="513" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img30.gif"
+ ALT="\begin{displaymath}\left[
+\begin{array}{cc}
+x_1(t+1)\\
+x_2(t+1)
+\end{array}\ri...
+...y}\right]
++
+\left[
+\begin{array}{cc}
+0\\
+1
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 18:</B>
+<BR>
+From problem 1-16 we have the transition matrix as
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\phi(t,\tau)
+=
+\frac{1}{3}
+\left [
+\begin{array}{cc}
+2+e^{3(t-\tau)} &-1+e^{3(t-\tau)}\\
+-2+2e^{3(t-\tau)} &1+2e^{3(t-\tau)}
+\end{array}
+\right ]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="305" HEIGHT="46"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img31.gif"
+ ALT="\begin{displaymath}\phi(t,\tau)
+=
+\frac{1}{3}
+\left [
+\begin{array}{cc}
+2+e^{3(t...
+...u)}\\
+-2+2e^{3(t-\tau)} &1+2e^{3(t-\tau)}
+\end{array}\right ]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Using equation 2.23 we have
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)
+=
+\frac{1}{3}
+\left [
+\begin{array}{cc}
+2+e^{3(t-t_0)} &-1+e^{3(t-t_0)}\\
+-2+2e^{3(t-t_0)} &1+2e^{3(t-t_0)}
+\end{array}
+\right ]
+{\bf x}(t_0)
++
+\int_{t_0}^t
+\frac{1}{3}
+\left [
+\begin{array}{cc}
+2+e^{3(t-\tau)} &-1+e^{3(t-\tau)}\\
+-2+2e^{3(t-\tau)} &1+2e^{3(t-\tau)}
+\end{array}
+\right ]
+\left [
+\begin{array}{c}
+1\\
+0
+\end{array}
+\right ]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="657" HEIGHT="47"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img32.gif"
+ ALT="\begin{displaymath}x(t)
+=
+\frac{1}{3}
+\left [
+\begin{array}{cc}
+2+e^{3(t-t_0)} &...
+...y}\right ]
+\left [
+\begin{array}{c}
+1\\
+0
+\end{array}\right ]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+which simplifies to
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)
+=
+\frac{1}{3}
+\left[
+\begin{array}{cc}
+2+e^{3(t-t_0)} &-1+e^{3(t-t_0)}\\
+-2+2e^{3(t-t_0)} &1+2e^{3(t-t_0)}
+\end{array}
+\right]
+{\bf x}(t_0)
++
+\frac{1}{3}
+\left[
+\begin{array}{c}
+2(t-t_0) + \frac{1}{3}(e^{3(t-t_0)}-1) \\
+-2(t-t_0) + \frac{2}{3}(e^{3(t-t_0)}-1)
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="584" HEIGHT="46"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img33.gif"
+ ALT="\begin{displaymath}x(t)
+=
+\frac{1}{3}
+\left[
+\begin{array}{cc}
+2+e^{3(t-t_0)} &-...
+...\\
+-2(t-t_0) + \frac{2}{3}(e^{3(t-t_0)}-1)
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Now let <I>t</I><SUB>0</SUB>=1 with 
+<!-- MATH: ${\bf x}^T(1) = [1,1]$ -->
+<IMG
+ WIDTH="97" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img34.gif"
+ ALT="${\bf x}^T(1) = [1,1]$">
+and <I>t</I>=0.
+We then have
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(0)
+=
+\frac{1}{3}
+\left[
+\begin{array}{c}
+1+2e^{-3}\\
+-1+4e^{-3}
+\end{array}
+\right]
++
+\frac{1}{9}
+\left[
+\begin{array}{c}
+e^{-3}-7 \\
+2e^{-3}+4
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="293" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img35.gif"
+ ALT="\begin{displaymath}x(0)
+=
+\frac{1}{3}
+\left[
+\begin{array}{c}
+1+2e^{-3}\\
+-1+4e...
+...ft[
+\begin{array}{c}
+e^{-3}-7 \\
+2e^{-3}+4
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+which simplifies to
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(0)
+=
+\frac{1}{9}
+\left[
+\begin{array}{c}
+7e^{-3}-4 \\
+14e^{-3}+1
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="162" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img36.gif"
+ ALT="\begin{displaymath}x(0)
+=
+\frac{1}{9}
+\left[
+\begin{array}{c}
+7e^{-3}-4 \\
+14e^{-3}+1
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 2, Problem 19:</B>
+<BR>
+We need to show that 
+
+<!-- MATH: $|{\bf f}({\bf x}_1,t) - {\bf f}({\bf x}_2,t)| \le L|{\bf x}_1(t) - {\bf x}_2(t)|$ -->
+<IMG
+ WIDTH="261" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img37.gif"
+ ALT="$\vert{\bf f}({\bf x}_1,t) - {\bf f}({\bf x}_2,t)\vert \le L\vert{\bf x}_1(t) - {\bf x}_2(t)\vert$">in some region where all the first partials are bounded.  
+We define a matrix 
+<!-- MATH: $D{\mathbf f}({\mathbf x},t)$ -->
+<I>D</I><B>f</B>(<B>x</B>,<I>t</I>) with columns
+
+<!-- MATH: $\frac{\partial {\mathbf f}({\mathbf x},t)}{\partial x_j}$ -->
+<IMG
+ WIDTH="48" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img38.gif"
+ ALT="$\frac{\partial {\mathbf f}({\mathbf x},t)}{\partial x_j}$">.
+The mean value theorem
+(see example 1.6) says that if 
+<!-- MATH: $\mathbf f()$ -->
+<B>f</B>() is continuous
+in a neighborhood <I>N</I>, then 
+<!-- MATH: $\exists {\mathbf \chi} \in N$ -->
+<IMG
+ WIDTH="57" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img39.gif"
+ ALT="$\exists {\mathbf \chi} \in N$">
+such that
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+{\bf f}({\bf x}_1,t) - {\bf f}({\bf x}_2,t)
+=
+D{\mathbf f}({\mathbf \chi},t) ({\bf x}_1(t) - {\bf x}_2(t))
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="296" HEIGHT="28"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img40.gif"
+ ALT="\begin{displaymath}{\bf f}({\bf x}_1,t) - {\bf f}({\bf x}_2,t)
+=
+D{\mathbf f}({\mathbf \chi},t) ({\bf x}_1(t) - {\bf x}_2(t))
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+We then take the norm of both sides (we assume compatible norms, pp.18)
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+|{\bf f}({\bf x}_1,t) - {\bf f}({\bf x}_2,t)|
+\le
+|D{\mathbf f}({\mathbf \chi},t)| \cdot |{\bf x}_1(t) - {\bf x}_2(t)|
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="320" HEIGHT="28"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img41.gif"
+ ALT="\begin{displaymath}\vert{\bf f}({\bf x}_1,t) - {\bf f}({\bf x}_2,t)\vert
+\le
+\ve...
+...thbf \chi},t)\vert \cdot \vert{\bf x}_1(t) - {\bf x}_2(t)\vert
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+We can then bound
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+|D{\mathbf f}({\mathbf \chi},t)| \le
+\max_t
+|D{\mathbf f}({\mathbf \chi},t)|
+=
+L
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="215" HEIGHT="35"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img42.gif"
+ ALT="\begin{displaymath}\vert D{\mathbf f}({\mathbf \chi},t)\vert \le
+\max_t
+\vert D{\mathbf f}({\mathbf \chi},t)\vert
+=
+L
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and we are guaranteed that the maximum exists because the elements
+of 
+<!-- MATH: $D{\mathbf f}({\mathbf \chi},t)$ -->
+<IMG
+ WIDTH="60" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img43.gif"
+ ALT="$D{\mathbf f}({\mathbf \chi},t)$">
+are all bounded and we assume a finite
+interval <IMG
+ WIDTH="17" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img44.gif"
+ ALT="$\clubsuit$">
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html4"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html3"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Christopher Rose</I>
+<BR><I>1998-08-29</I>
+</ADDRESS>
+</BODY>
+</HTML>

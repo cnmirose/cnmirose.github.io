@@ -1,0 +1,809 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="ps4soln">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="ps4soln.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<DIV ALIGN="CENTER">
+Rutgers University
+<BR>
+The State University Of New Jersey
+<BR>
+College of Engineering
+<BR>
+Department of Electrical and Computer Engineering
+<BR>
+<BR>
+<BR>
+330:501<U>Systems Analysis</U>Fall 1995
+<BR>
+Problem Set 4 SOLUTIONS
+</DIV>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 1:
+<BR>
+Using the same method as in the problem 2-2, we can find that <DIV ALIGN="CENTER">
+
+<!-- MATH: $\phi(t,\tau)=\left[
+\begin{array}{ll} \frac{t}{\tau}&0\\0&\frac{t}{\tau} \end{array} \right]$ -->
+<IMG
+ WIDTH="154" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img1.gif"
+ ALT="$\phi(t,\tau)=\left[
+\begin{array}{ll} \frac{t}{\tau}&0\\ 0&\frac{t}{\tau} \end{array} \right]$"></DIV>
+Using the formula (3.19), we can get the solution
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)=\left[\begin{array}{cc} \frac{t}{t_0} & 0 \\0 &\frac{t}{t_0}  \end{array} \right]x_0+\int_{t_0}^{t}\left[
+\begin{array}{cc}\frac{t}{\tau} & 0 \\0 &  \frac{t}{\tau}
+\end{array} \right]\left[
+\begin{array}{cc} 1\\1\end{array} \right]u(\tau)d\tau
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="386" HEIGHT="56"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img2.gif"
+ ALT="\begin{displaymath}x(t)=\left[\begin{array}{cc} \frac{t}{t_0} & 0 \\ 0 &\frac{t}...
+...t]\left[
+\begin{array}{cc} 1\\ 1\end{array} \right]u(\tau)d\tau\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+That is
+<DIV ALIGN="CENTER">
+
+<!-- MATH: $x(t)=\left[
+\begin{array}{cc}\frac{t}{t_0} & 0 \\0 &\frac{t}{t_0}   \end{array}\right]x_0+\int_{t_0}^{t}\left[
+\begin{array}{cc}\frac{t}{\tau}\\\frac{t}{\tau}
+\end{array} \right]u(\tau)d\tau$ -->
+<IMG
+ WIDTH="315" HEIGHT="66" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img3.gif"
+ ALT="$x(t)=\left[
+\begin{array}{cc}\frac{t}{t_0} & 0 \\ 0 &\frac{t}{t_0} \end{array}\...
+...gin{array}{cc}\frac{t}{\tau}\\ \frac{t}{\tau}
+\end{array} \right]u(\tau)d\tau
+$"></DIV>
+Using formula (3.20), we can get
+<DIV ALIGN="CENTER">
+
+<!-- MATH: $y(t)=(t\;\;t)x_0/t_0+(1\;\; 1)\int_{t_0}^{t}\left[
+\begin{array}{cc}\frac{t}{\tau}\\\frac{t}{\tau}
+\end{array} \right]u(\tau)d\tau$ -->
+<IMG
+ WIDTH="339" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img4.gif"
+ ALT="$y(t)=(t\;\;t)x_0/t_0+(1\;\; 1)\int_{t_0}^{t}\left[
+\begin{array}{cc}\frac{t}{\tau}\\ \frac{t}{\tau}
+\end{array} \right]u(\tau)d\tau$"></DIV>
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 2:
+<BR>
+From Problem 2-4, we found the transition matrix as
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\phi(t,\tau)
+=
+\frac{1}{3}
+\left[
+\begin{array}{cc}
+2+e^{3t} &-1+e^{3t}\\
+-2+2e^{3t} &1+2e^{3t}
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="284" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img5.gif"
+ ALT="\begin{displaymath}\phi(t,\tau)
+=
+\frac{1}{3}
+\left[
+\begin{array}{cc}
+2+e^{3t} &-1+e^{3t}\\
+-2+2e^{3t} &1+2e^{3t}
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Using formula (3.19), we can get the solution
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)
+=
+\left[
+\begin{array}{cc}
+\frac{1}{3}+\frac{2}{3}e^{3t}\\
+-\frac{1}{3}+\frac{4}{3}e^{3t}
+\end{array}
+\right]
++
+\int_{0}^{t}
+\left[
+\begin{array}{cc}
+\frac{2}{3}+\frac{1}{3}e^{3(t-\tau)}\\
+-\frac{2}{3}+\frac{2}{3}e^{3(t-\tau)}
+\end{array}
+\right ]
+u(\tau)d\tau
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="421" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img6.gif"
+ ALT="\begin{displaymath}x(t)
+=
+\left[
+\begin{array}{cc}
+\frac{1}{3}+\frac{2}{3}e^{3t}...
+...}{3}+\frac{2}{3}e^{3(t-\tau)}
+\end{array}\right ]
+u(\tau)d\tau
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+In case of <I>u</I>(<I>t</I>)=1,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)
+=
+\left[
+\begin{array}{cc}
+\frac{2}{9}+\frac{2}{3}t+\frac{7}{9}e^{3t}\\
+-\frac{5}{9}-\frac{2}{3}t+\frac{14}{9}e^{3t}
+\end{array}
+\right ]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="215" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img7.gif"
+ ALT="\begin{displaymath}x(t)
+=
+\left[
+\begin{array}{cc}
+\frac{2}{9}+\frac{2}{3}t+\fra...
+...frac{5}{9}-\frac{2}{3}t+\frac{14}{9}e^{3t}
+\end{array}\right ]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Comparing with the result of Problem 2-4, they are the same.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 6:
+<BR>
+Assuming the A, B, C, and D are all constant matrices,
+taking the Laplace Transfrom of the state equations, we have
+
+<!-- MATH: $sX(s)-x_0=AX(s)+BU(s)$ -->
+<I>sX</I>(<I>s</I>)-<I>x</I><SUB>0</SUB>=<I>AX</I>(<I>s</I>)+<I>BU</I>(<I>s</I>), and 
+<!-- MATH: $Y(s)=CX(s)+DU(s)$ -->
+<I>Y</I>(<I>s</I>)=<I>CX</I>(<I>s</I>)+<I>DU</I>(<I>s</I>).  We can solve
+for 
+<!-- MATH: $X(s)= (sI-A)^{-1}(BU(s)+x_0)$ -->
+<I>X</I>(<I>s</I>)= (<I>sI</I>-<I>A</I>)<SUP>-1</SUP>(<I>BU</I>(<I>s</I>)+<I>x</I><SUB>0</SUB>).   We then have
+
+<!-- MATH: $[C(sI-A)^{-1}B+D]U(s) = Y(s)$ -->
+[<I>C</I>(<I>sI</I>-<I>A</I>)<SUP>-1</SUP><I>B</I>+<I>D</I>]<I>U</I>(<I>s</I>) = <I>Y</I>(<I>s</I>) so that 
+<!-- MATH: $H(s) = [C(sI-A)^{-1}B+D]$ -->
+<I>H</I>(<I>s</I>) = [<I>C</I>(<I>sI</I>-<I>A</I>)<SUP>-1</SUP><I>B</I>+<I>D</I>].
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 7:
+<BR>
+Using 
+<!-- MATH: $e^{At}=T^{-1}e^{\Lambda t}T$ -->
+<IMG
+ WIDTH="123" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img8.gif"
+ ALT="$e^{At}=T^{-1}e^{\Lambda t}T$">,
+we can get 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+e^{At}= \left [
+\begin{array}{cc}
+1 &\frac{1}{6}-\frac{1}{6}e^{-6t} \\
+0 &e^{-6t}
+\end{array}
+\right ]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="181" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img9.gif"
+ ALT="\begin{displaymath}e^{At}= \left [
+\begin{array}{cc}
+1 &\frac{1}{6}-\frac{1}{6}e^{-6t} \\
+0 &e^{-6t}
+\end{array}\right ]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+by showing that 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{ccc}
+{\Lambda
+=
+\left [
+\begin{array}{cc}
+0 & 0\\
+0 & -6
+\end{array}
+\right ] } & {
+T^{-1}
+=
+\left [
+\begin{array}{cc}
+1 & 1\\
+0 & 6
+\end{array}
+\right ] } & {
+T
+=
+\left [
+\begin{array}{cc}
+1 & -\frac{1}{6}\\
+0 & \frac{1}{6}
+\end{array}
+\right ]}
+\end{array}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="399" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img10.gif"
+ ALT="\begin{displaymath}\begin{array}{ccc}
+{\Lambda
+=
+\left [
+\begin{array}{cc}
+0 & 0...
+...\frac{1}{6}\\
+0 & \frac{1}{6}
+\end{array}\right ]}
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Therefore,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\phi(t,\tau)
+=
+\left [
+\begin{array}{ll}
+1 & \frac{1}{6}-\frac{1}{6}e^{-6(t-\tau)}\\
+0 & e^{-6(t-\tau)}
+\end{array}
+\right ]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="235" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img11.gif"
+ ALT="\begin{displaymath}\phi(t,\tau)
+=
+\left [
+\begin{array}{ll}
+1 & \frac{1}{6}-\frac{1}{6}e^{-6(t-\tau)}\\
+0 & e^{-6(t-\tau)}
+\end{array}\right ]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Applying (3.19) and (3.20), we can obtain the solutions as:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)
+=
+\left [
+\begin{array}{ll}
+1 & \frac{1}{6}-\frac{1}{6}e^{-6(t-t_0)}\\
+0 & e^{-6(t-t_0)}
+\end{array}
+\right ]
+{\mathbf x}(t_0)
++
+\int_{t_0}^{t} \left [
+\begin{array}{c}
+\frac{1}{3}-\frac{1}{3}e^{-6(t-\tau)}\\
+2e^{-6(t-\tau)}
+\end{array}
+\right ] u (\tau) d\tau
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="515" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img12.gif"
+ ALT="\begin{displaymath}x(t)
+=
+\left [
+\begin{array}{ll}
+1 & \frac{1}{6}-\frac{1}{6}e...
+...t-\tau)}\\
+2e^{-6(t-\tau)}
+\end{array}\right ] u (\tau) d\tau
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+y(t)
+=
+\left [
+\begin{array}{ll}
+1 & \frac{1}{6}-\frac{1}{6}e^{-6(t-\tau)}
+\end{array}
+\right ]
+{\mathbf x}(0)
++
+\int_{t_0}^{t} \left [
+\begin{array}{c}
+\frac{1}{3}-\frac{1}{3}e^{-6(t-\tau)}
+\end{array}
+\right ] u(\tau)d\tau
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="497" HEIGHT="48"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img13.gif"
+ ALT="\begin{displaymath}y(t)
+=
+\left [
+\begin{array}{ll}
+1 & \frac{1}{6}-\frac{1}{6}e...
+...{3}-\frac{1}{3}e^{-6(t-\tau)}
+\end{array}\right ] u(\tau)d\tau
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 14:
+<BR>
+The only time 
+<!-- MATH: $\dot{x}_1=0$ -->
+<IMG
+ WIDTH="58" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img14.gif"
+ ALT="$\dot{x}_1=0$">
+is when <I>x</I><SUB>1</SUB>+<I>x</I><SUB>2</SUB>=0. Similarly, for 
+
+<!-- MATH: $\dot{x}_2=0$ -->
+<IMG
+ WIDTH="58" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img15.gif"
+ ALT="$\dot{x}_2=0$">
+we must have <I>x</I><SUB>1</SUB>=<I>x</I><SUB>2</SUB>.  Thus, <I>x</I><SUB>1</SUB>=<I>x</I><SUB>2</SUB>=0 at the equilibrium.
+Concisely: 
+<!-- MATH: $\bar{{\mathbf x}}^T = [0,0]$ -->
+<IMG
+ WIDTH="89" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img16.gif"
+ ALT="$\bar{{\mathbf x}}^T = [0,0]$">
+and 
+<!-- MATH: $\bar{y} =0$ -->
+<IMG
+ WIDTH="49" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img17.gif"
+ ALT="$\bar{y} =0$">.
+We define the linearized variable as
+
+<!-- MATH: ${\mathbf z} = {\mathbf x}- \bar{{\mathbf x}}$ -->
+<IMG
+ WIDTH="86" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img18.gif"
+ ALT="${\mathbf z} = {\mathbf x}- \bar{{\mathbf x}}$">and obtain
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{z}_1
+=
+f_1(\bar{\mathbf x})
++
+\frac{\partial{f_1(\bar{\mathbf x})}}{\partial{x_1}}z_1
++
+\frac{\partial{f_1(\bar{\mathbf x})}}{\partial{x_2}}z_2
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="276" HEIGHT="50"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img19.gif"
+ ALT="\begin{displaymath}\dot{z}_1
+=
+f_1(\bar{\mathbf x})
++
+\frac{\partial{f_1(\bar{\m...
+...}z_1
++
+\frac{\partial{f_1(\bar{\mathbf x})}}{\partial{x_2}}z_2
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{z}_2
+=
+f_2(\bar{\mathbf{x}})
++
+\frac{\partial{f_2(\bar{\mathbf x})}}{\partial{x_1}}z_1
++
+\frac{\partial{f_2(\bar{\mathbf x})}}{\partial{x_2}}z_2
+-
+1
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="308" HEIGHT="50"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img20.gif"
+ ALT="\begin{displaymath}\dot{z}_2
+=
+f_2(\bar{\mathbf{x}})
++
+\frac{\partial{f_2(\bar{\...
+...
++
+\frac{\partial{f_2(\bar{\mathbf x})}}{\partial{x_2}}z_2
+-
+1
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+where 
+<!-- MATH: $f_1(x_1,x_2) = (x_1+x_2)^2$ -->
+<I>f</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>x</I><SUB>2</SUB>) = (<I>x</I><SUB>1</SUB>+<I>x</I><SUB>2</SUB>)<SUP>2</SUP> and
+
+<!-- MATH: $f_2(x_1,x_2) = e^{x_1-x_2}$ -->
+<I>f</I><SUB>2</SUB>(<I>x</I><SUB>1</SUB>,<I>x</I><SUB>2</SUB>) = <I>e</I><SUP><I>x</I><SUB>1</SUB>-<I>x</I><SUB>2</SUB></SUP>.  We then have
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{ll}
+\dot{z_1}=0\\
+\dot{z_2}= z_1 - z_2
+\end{array}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="96" HEIGHT="53"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img21.gif"
+ ALT="\begin{displaymath}\begin{array}{ll}
+\dot{z_1}=0\\
+\dot{z_2}= z_1 - z_2
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Finally, we have the linearized output as w
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+w=
+{\frac{\partial (x_1^2 + 2x_2)}{\partial x_1}}_{x_1=x_2=0} z_1
++
+{\frac{\partial (x_1^2 + 2x_2)}{\partial x_2}}_{x_1=x_2=0} z_2
+=
+2z_2
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="454" HEIGHT="53"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img22.gif"
+ ALT="\begin{displaymath}w=
+{\frac{\partial (x_1^2 + 2x_2)}{\partial x_1}}_{x_1=x_2=0}...
+...\partial (x_1^2 + 2x_2)}{\partial x_2}}_{x_1=x_2=0} z_2
+=
+2z_2
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<B>Problem 6</B>
+This is one of the annoying things about statespace form.  You can't
+do things that you think you should be able to do.  There are at least
+two different ways to think about it.  The most rigorous is to use
+linear algebra and consider the resolvent matrix 
+<!-- MATH: $(sI-A)^{-1}$ -->
+(<I>sI</I>-<I>A</I>)<SUP>-1</SUP>.  First
+note that the transfer function of a differentiator is <I>H</I>(<I>s</I>)=<I>s</I>; i.e.,
+the numerator (<I>s</I>) contains a higher order term than the denominator
+(1).  The determinant of (<I>sI</I>-<I>A</I>) must be of order <I>n</I> where <I>n</I> is
+the order of matrix <I>A</I>.  The inverse can be found by composing the
+``adjugate matrix'' for (<I>sI</I>-<I>A</I>). If you don't know what this means,
+don't worry and skip to the next argument which does not involve
+linear algebra.  Since each term in the adjugate matrix is formed by
+finding the determinant of the smaller matrix formed by deleting
+corresponding the row and column of (<I>sI</I>-<I>A</I>), the order of each
+cofactor can be at most <I>n</I>-1 in <I>s</I>.  Finally the inverse is found by
+dividing the adjugate matrix by the deteminant (which must be of order
+<I>n</I> in <I>s</I>).  So, in total 
+<!-- MATH: $(sI-A)^{-1}$ -->
+(<I>sI</I>-<I>A</I>)<SUP>-1</SUP> cannot have any term whose
+numerator is of higher order than it's denominator.  Which means that
+
+<!-- MATH: $H(s) = CR(s)B + D$ -->
+<I>H</I>(<I>s</I>) = <I>CR</I>(<I>s</I>)<I>B</I> + <I>D</I> cannot have numerator terms of higher order than
+the denominator.  So differentiation is not possible.
+
+<P>
+The most straightforward method is to simply consider the solution
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+y(t) = C\phi(t,t_0) x_0 + \int_{t_0}^{t} C\phi(t,\tau)B u(\tau) d \tau + Du(t)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="398" HEIGHT="48"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img23.gif"
+ ALT="\begin{displaymath}y(t) = C\phi(t,t_0) x_0 + \int_{t_0}^{t} C\phi(t,\tau)B u(\tau) d \tau + Du(t)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Since <IMG
+ WIDTH="40" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img24.gif"
+ ALT="$u(\tau)$">
+appears inside an <EM>integral</EM>, there is no
+way you can obtain <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img25.gif"
+ ALT="$\dot{u}$">
+in general for <I>y</I>(<I>t</I>).  In fact, were
+it not for the <I>Du</I> term, you could not even obtain <I>u</I> in the output.
+
+<P>
+Now all this being said, there are very sneaky ways one might try to
+make an integrator if you had an infinite state system (very nasty
+idea).  But the basic method is based on Fourier transforms. What you
+do is use the fact that the integral of a sinusoid differs only in
+sign and scale from its derivative.  Thus, you could in principle apply an
+infinitely sharp filter at each frequency <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img26.gif"
+ ALT="$\omega$">
+(infinite state
+filter), integrate, scale properly and add up all the results from all
+the (infinite number of) frequencies.
+Needless to say, this is impractical :)
+
+<P>
+<B>Problem 7</B>
+Expanding the transfer function, we find that
+
+<!-- MATH: $H(s) = 1+s+\frac{1}{s(s+1)}$ -->
+<IMG
+ WIDTH="179" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img27.gif"
+ ALT="$H(s) = 1+s+\frac{1}{s(s+1)}$">
+and we have a term in <I>s</I>.  This implies
+a derivative which we know we cannot model using the (finite) state-space
+representation.
+ 
+<B>Problem 8</B>
+From the transfer function, we have
+
+<!-- MATH: $Y(s)=(\frac{1}{s(s+1)}+1)U(s)$ -->
+<IMG
+ WIDTH="197" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img28.gif"
+ ALT="$Y(s)=(\frac{1}{s(s+1)}+1)U(s)$">.
+Right away we see that <I>D</I>=1since that is the only way to get <I>U</I>(<I>s</I>)(and not 
+<!-- MATH: $\frac{U(s)}{\mbox{polynomial in $s$ }}$ -->
+<IMG
+ WIDTH="142" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img29.gif"
+ ALT="$\frac{U(s)}{\mbox{polynomial in $s$ }}$">)
+into <I>y</I>.  This leaves 
+<!-- MATH: $C(sI-A)^{-1}B = \frac{1}{s(s+1)}$ -->
+<IMG
+ WIDTH="192" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img30.gif"
+ ALT="$C(sI-A)^{-1}B = \frac{1}{s(s+1)}$">.
+
+<P>
+Rewrite as a differential equation, 
+<!-- MATH: $d^2y/dt^2 + dy/dt = u$ -->
+<I>d</I><SUP>2</SUP><I>y</I>/<I>dt</I><SUP>2</SUP> + <I>dy</I>/<I>dt</I> = <I>u</I>.
+Use I/O form to obtain,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{ccc}
+{A = \left [
+\begin{array}{rr}
+0 & 1\\
+0 & -1
+\end{array}
+\right ]} & {
+B
+= \left [
+\begin{array}{c}
+0\\
+1
+\end{array}
+\right ] } & {
+C
+= \left [
+\begin{array}{cc}
+1 & 0
+\end{array}
+\right ]}
+\end{array}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="342" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img31.gif"
+ ALT="\begin{displaymath}\begin{array}{ccc}
+{A = \left [
+\begin{array}{rr}
+0 & 1\\
+0 ...
+...left [
+\begin{array}{cc}
+1 & 0
+\end{array}\right ]}
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+As a check note that 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{cc}
+{ (sI-A)^{-1}
+=
+\left [
+\begin{array}{cc}
+\frac{1}{s} & \frac{1}{s(s+1)} \\
+0 & \frac{1}{s+1}
+\end{array}
+\right ] } & {
+C(sI-A)^{-1}B
+=
+\par\left [
+\begin{array}{cc}
+1 & 0
+\end{array}
+\right ]
+\par\left [
+\begin{array}{cc}
+\frac{1}{s} & \frac{1}{s(s+1)} \\
+0 & \frac{1}{s+1}
+\end{array}
+\right ]
+\par\left [
+\begin{array}{c}
+0 \\
+1
+\end{array}
+\right ]
+\par = \frac{1}{s(s+1)} }
+\end{array}
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="666" HEIGHT="57"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img32.gif"
+ ALT="\begin{displaymath}\begin{array}{cc}
+{ (sI-A)^{-1}
+=
+\left [
+\begin{array}{cc}
+\...
+...\
+1
+\end{array}\right ]
+\par = \frac{1}{s(s+1)} }
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+Also note that this decomposition is not unique. There are infinitely many others (remember
+similarity transforms).
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html3"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Christopher Rose</I>
+<BR><I>1998-08-29</I>
+</ADDRESS>
+</BODY>
+</HTML>

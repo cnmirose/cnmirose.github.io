@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="ps9soln">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="ps9soln.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<DIV ALIGN="CENTER">
+Rutgers University
+<BR>
+The State University Of New Jersey
+<BR>
+College of Engineering
+<BR>
+Department of Electrical and Computer Engineering
+<BR>
+<BR>
+<BR>
+330:501<U>Systems Analysis</U>
+<BR>
+Problem Set 9 SOLUTIONS
+</DIV>
+
+<P>
+<FONT SIZE="+1"><B>Once again, these were prepared quickly.  In particular, I
+did not carefully check the book problem solutions to 6.1 and 6.2 and
+6.21 since they are so similar to 5.1 and 5.2.</B></FONT>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[6], prob. 1:
+<BR>
+From the P3-1, we have the transition matrix
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\phi(t,\tau)=\left[
+\begin{array}{lr}t/\tau&0\\0&t/\tau\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="174" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img1.gif"
+ ALT="\begin{displaymath}\phi(t,\tau)=\left[
+\begin{array}{lr}t/\tau&0\\ 0&t/\tau\end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Thus, the observability Gramian 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+M(t_0,t_1)=(\frac{t_1^3}{3t_0^2}-\frac{1}{3t_0})\left[
+\begin{array}{lr}1&1\\
+1&1\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="256" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img2.gif"
+ ALT="\begin{displaymath}M(t_0,t_1)=(\frac{t_1^3}{3t_0^2}-\frac{1}{3t_0})\left[
+\begin{array}{lr}1&1\\
+1&1\end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Since the determinant equals zero, the system is not observable.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[6], prob. 2:
+<BR>
+From P3-2, we have found the transition matrix 
+<!-- MATH: $\phi(t,\tau)$ -->
+<IMG
+ WIDTH="56" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img3.gif"
+ ALT="$\phi(t,\tau)$">.
+We can
+form the observability Gramian:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+M(t_0,t_1)=(\frac{e^{6(t_1-t_0)}}{6}-\frac{1}{6})\left[ \begin{array}{lr}1&1\\
+1&1 \end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="279" HEIGHT="55"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img4.gif"
+ ALT="\begin{displaymath}M(t_0,t_1)=(\frac{e^{6(t_1-t_0)}}{6}-\frac{1}{6})\left[ \begin{array}{lr}1&1\\
+1&1 \end{array}\right] \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+The determinant of this matrix is zero. Therefore, the system is not observable.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[6], prob. 14:
+<BR>
+If we define the 
+<!-- MATH: $\tilde{y}=y-Du$ -->
+<IMG
+ WIDTH="100" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img5.gif"
+ ALT="$\tilde{y}=y-Du$">,
+then the problem becomes, if the
+equation:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left[\begin{array}{c} \tilde{y}\\\dot{\tilde{y}}\\\; \\
+\stackrel{\small (n-1)}{\tilde{y}}\end{array}\right]=\left[
+\begin{array}{c}C\\CA\\\; \\CA^{n-1}\end{array}\right]x
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="198" HEIGHT="113"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img6.gif"
+ ALT="\begin{displaymath}\left[\begin{array}{c} \tilde{y}\\ \dot{\tilde{y}}\\ \; \\
+\...
+...eft[
+\begin{array}{c}C\\ CA\\ \; \\ CA^{n-1}\end{array}\right]x\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+has unique solution. It is obvious that we can still form the
+observability matrix, which has the same form as of the (<I>A</I>,<I>B</I>,<I>C</I>)system. Therefore, the matrix <I>D</I> has no influence on the
+observability of the system.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[6], prob. 21:
+<BR>
+Form the observability matrix for this linear time-invariant system:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+L_1=\left[
+\begin{array}{c}C\\CA\\CA^2\end{array}\right]=\left[\begin{array}{lcr}0&0&1\\0&1&0\\
+\frac{i}{J}&-\frac{f}{J}&0
+\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="257" HEIGHT="77"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img7.gif"
+ ALT="\begin{displaymath}L_1=\left[
+\begin{array}{c}C\\ CA\\ CA^2\end{array}\right]=\l...
+...}0&0&1\\ 0&1&0\\
+\frac{i}{J}&-\frac{f}{J}&0
+\end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+The determinant of this matrix is 
+<!-- MATH: $|L_1|=\frac{1}{J}\neq 0$ -->
+<IMG
+ WIDTH="108" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img8.gif"
+ ALT="$\vert L_1\vert=\frac{1}{J}\neq 0$">,
+therefore, the
+system is observable.
+<BR>
+For <I>C</I>=[0,1,0], the observability matrix is:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+L_2=\left[ \begin{array}{lrc} 0&1&0\\\frac{1}{J}&-\frac{f}{J}&0\\a&b&0
+\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="159" HEIGHT="77"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img9.gif"
+ ALT="\begin{displaymath}L_2=\left[ \begin{array}{lrc} 0&1&0\\ \frac{1}{J}&-\frac{f}{J}&0\\ a&b&0
+\end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+where <I>a</I>,<I>b</I> are some constants.
+Obviously, the rank of this matrix is less then 3. So the system is
+not observable.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B>Problem[6]:
+<BR>
+Let's make this simple since all we need is a counterexample 
+which shows that no matter what <I>A</I> is, we need not have 
+complete controllability and observability for all possible <I>B</I> and <I>C</I>.
+
+<P>
+Suppose that the system is completely controllable.  Well, if we can
+choose any <I>C</I> we like, then we can choose <I>C</I> as an EIGENVECTOR of
+<I>A</I><SUP><I>T</I></SUP>.  In that case 
+<!-- MATH: $CA = \lambda C$ -->
+<IMG
+ WIDTH="84" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img10.gif"
+ ALT="$CA = \lambda C$">
+and we're dead in the water right
+there (since <IMG
+ WIDTH="31" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img11.gif"
+ ALT="$\lambda C$">
+is a scaled version of <I>C</I>.  In fact, the whole
+<I>L</I> matrix is a set of scaled eigenvectors, 
+<!-- MATH: $[C^T, \lambda C^T, \lambda ^2 C^T ...]$ -->
+<IMG
+ WIDTH="153" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img12.gif"
+ ALT="$[C^T, \lambda C^T, \lambda ^2 C^T ...]$">.
+
+<P>
+So, can't put any condition on <I>A</I> which automatically makes the system both
+controllable and observable.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html3"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Christopher Rose</I>
+<BR><I>1998-08-29</I>
+</ADDRESS>
+</BODY>
+</HTML>

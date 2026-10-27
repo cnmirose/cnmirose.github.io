@@ -1,0 +1,58 @@
+@CHARSET "ISO-8859-1";
+.leftRail {background-color:#F6F9FF;float:left;width:130px;}
+.padLeft10 {padding-left:10px;}
+
+.paddingRail {padding-left:5px;padding-right:5px;float:left;}
+
+.blue {color:#0828A0}
+.gray {color:#545454;}
+
+.grayTitle {font-size:9pt;color:#545454;}
+
+#topLeftRail {border-bottom:1px solid #B0CAF7}
+.leftRailLinks a{text-decoration:none;font-weight:bold}
+.leftRailLinks a:hover{color:#B50000;}
+.leftRailLinks span{color:#545454}
+#leftBoxCenter {width:120px;background-image:url(http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/lb_box_stretch_pixels.gif);background-repeat:repeat-y;padding-left:5px;}
+.redHover:hover{color:#B50000;cursor:pointer}
+
+
+.paddingRailCenter{padding-left:5px;padding-right:5px;}
+.center {background-color:#ffffff;width:480px;border-right:1px solid #B0CAF7;border-left:1px solid #B0CAF7;float:left;}
+.number {position:absolute;left:10px;}
+.centerTease {position:relative;left:25px;width:445px;}
+.spotLightLine{background-image:url(http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spotlight_stretch_line.gif);height:14px;background-repeat:repeat-x;}
+#spotLightBackground{background-image:url(http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spotlight_left_slice.gif);background-repeat:repeat-x;float:left;height:14px;}
+#spotLightEndCap{float:left;height:14px;width:15px;background-image:url(http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/content_right_arrow.gif);}
+.spotLightText{color:#6a802c}
+.topCenter{background-color:#F6F9FF;}
+.centerInput{border:1px solid #2c6bdc;padding-left:5px;height:20px;padding-top:2px;width:370px;float:left;}
+.middleCenter{background-image:url(http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/stretch_gray.gif);height:22px;margin-bottom:10px;}
+
+.advancedInput{border:1px solid #2c6bdc;margin-left:15px;padding-left:5px;height:20px;padding-top:2px;width:360px;float:left;}
+.sortBySection{border-bottom:1px solid #B0CAF7;padding-top:10px;padding-bottom:10px;position:relative;background-color:#F6F9FF}
+.extraCenterPadding {padding-left:10px;padding-right:10px;}
+.sortByTitle{position:absolute;left:-145px;width:130px;top:10px;}
+.documentSection{padding-top:10px;padding-bottom:10px;position:relative;}
+.articlesCheckBox {float:left;width:135px;}
+.bostoncomCheckBox {float:left;border-left:1px solid #2c6bdc;border-right:1px solid #2c6bdc;width:190px;}
+.otherCheckBox{float:left;width:125px;}
+.documentTitle{position:absolute;left:-145px;width:130px;top:10px;}
+.publishSection{border-top:1px solid #B0CAF7;padding-top:10px;padding-bottom:10px;position:relative;background-color:#f6f9ff;}
+.publishedTitle{position:absolute;left:-140px;width:130px;top:10px;}
+
+#centerColumn {background:#ffffff; width:480px;}
+#rightRail {width:163px; background:#ffffff;}
+#topMasthead {background-color:#eef4FF; width:776px; border-bottom: #B9CAF5 1px solid; position:relative; height:39px } 
+#footer {border-top:#000000 1px solid;}
+#bcomNav {height:24px; overflow: hidden; position:relative;}
+#navigation  {width:629px; height:24px; float:left; z-index: 10;}
+#login { width:147px; height:24px; float:right; padding-top:5px;}
+#login DIV  {background-image: url(http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/membercenter_blank_longer.gif); font-family: arial,helvetica,sans-serif; font-size: 8pt; height:13px; color:#ffffff; }
+#login SPAN {position:relative; top:-1}
+#navigation DIV,  #topleftBanner {float:left;}
+#toprightAd {float:right; width:266px; text-align:right;}
+#topleftBanner IMG {position:relative; top:1;}
+#magicBorder {border-bottom: 1px solid #000066; z-index: 10; top:22;height:1px; position:absolute; width:776px;}
+#footer #flinks {float: left;}
+#footer #fGlobeAd {float: right; width:260px;}

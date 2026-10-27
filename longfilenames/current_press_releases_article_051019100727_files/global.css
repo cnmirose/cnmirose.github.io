@@ -1,0 +1,159 @@
+/*------------------------------------------------------------*
+**  Global
+**------------------------------------------------------------*/
+
+body {
+	background-color: #666666;
+	text-align: center;
+}
+
+#container {
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	width: 900px;
+	text-align: left;
+	height: auto;
+}
+
+img.profile {
+	border: 0;
+	padding: 5px 15px 5px 5px;
+	float: left;
+}
+
+/*------------------------------------------------------------*
+**  Navigation
+**------------------------------------------------------------*/
+
+.nav { 
+	font-family: Verdana, Arial, Helvetica, san-serif; 
+	font-size: 12px; 
+	color: #999999;
+	font-weight:bold;
+	margin: 0px 30px 40px 30px;
+} 
+
+.nav a:hover{ 
+	font-family: Verdana, Arial, Helvetica, san-serif; 
+	font-size: 12px; 
+	color: #333333;
+	font-weight:bold;
+	text-decoration:underline;
+} 
+
+/*------------------------------------------------------------*
+**  Headings
+**------------------------------------------------------------*/
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, san-serif; 
+	font-size: 16px;
+	font-weight: 900;
+	color: #A80000;	
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica, san-serif; 
+	font-size: 14px;
+	color: #A80000;	
+	text-transform: uppercase;
+}
+
+/*------------------------------------------------------------*
+**  Content
+**------------------------------------------------------------*/
+
+#content {
+	font-family: Verdana, Arial, Helvetica, san-serif;
+	color: #666666;
+	font-size: 14px;
+	margin: 10px 30px;
+} 
+
+#slider {
+	margin: 0 auto;
+}
+
+#mission {
+	width: 520px;
+	float: left;
+	padding: 5px;
+} 
+
+#twitter {
+	width: 300px;
+	float: right;
+	padding: 5px;
+} 
+
+.clear {
+	clear: both;
+}
+
+.leftcol {
+	float: left;
+}
+
+.rightcol {
+	float: right;
+}
+
+
+/*------------------------------------------------------------*
+**  Links
+**------------------------------------------------------------*/
+
+a:link {
+	font-style: normal;
+	line-height: normal;
+	color: #A80000;
+}
+
+a:hover { 
+	font-style: normal; 
+	line-height: normal; 
+	color: #333333; 
+	text-decoration: none;
+} 
+
+a:visited { 
+	font-style: normal; 
+	line-height: normal; 
+	color: #333333; 
+} 
+
+/*------------------------------------------------------------*
+**  Footer
+**------------------------------------------------------------*/
+
+#footer {
+	font-family: Verdana, Arial, Helvetica, san-serif;
+	font-size: 12px;
+	color: #ffffff;
+	background-color:#333333;
+	padding: 5px 15px;	
+}
+
+#footer a:link { 
+	color: #ffffff;
+} 
+
+.left {
+	width: 270px;
+	float:left;
+	padding: 10px;
+}
+
+.centered {
+	width: 270px;
+	float:left;
+	padding: 10px;
+	background: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/longfilenames/current_press_releases_article_051019100727_files/images/footer_bg.png) no-repeat left center;
+}
+
+.right {
+	width: 270px;
+	float:right;
+	padding: 10px;
+}

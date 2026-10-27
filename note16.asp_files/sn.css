@@ -1,0 +1,199 @@
+H1 {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+                   font-weight: bold; 
+                   color: #3333CC; 
+                   margin-left: 15px; 
+                   margin-right: 5px; 
+                   margin-bottom: 0px;
+                   } 
+                   
+H1.date {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+                   font-weight: bold; 
+                   color: #000000; 
+                   } 
+                   
+H2 {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+                   font-weight: bold; 
+                   color: #575757; 
+                   margin-left: 15px; 
+                   margin-right: 5px; 
+                   margin-bottom: 0px;
+                   }                    
+
+H3 {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: medium; 
+                   font-weight: bold; 
+                   color: #575757; 
+                   margin-left: 15px; 
+                   margin-right: 5px; 
+                   margin-top: 10px; 
+                   }                    
+
+P {
+                   font-family: Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+                   color: #000000; 
+                   margin-left: 15px; 
+                   margin-right: 5px; 
+                   } 
+                   
+P.date {
+                   font-family: Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+                   color: #000000; 
+                   } 
+                   
+P.search {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: x-small; 
+                   } 
+                   
+P.blurb {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+                   margin-left: 25px; 
+                   margin-right: 5px; 
+                   margin-top: 0px; 
+                   margin-bottom: 0px;
+                   } 
+                   
+P.online {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+									 font-weight: bold;
+									 color: #3333CC;
+                   margin-left: 15px; 
+                   margin-right: 5px; 
+                   margin-bottom: 0px;
+                   } 
+                   
+P.head {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: medium; 
+                   margin-left: 25px; 
+                   margin-right: 5px; 
+                   margin-top: 0px; 
+                   margin-bottom: 0px;
+                   } 
+                   
+P.prem {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+                   color: #575757; 
+                   } 
+
+P.left {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: x-small; 
+                   margin-left: 0px; 
+                   margin-right: 0px; 
+                   } 
+				   
+P.left2 {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif;
+                   font-size: x-small;
+                   margin-left: 0px;
+                   margin-right: 0px;
+                   text-align : center;
+} 				   
+                   
+P.right {
+                   font-family: Arial, Helvetica, sans-serif; 
+                   font-size: x-small; 
+                   margin-left: 5px; 
+                   margin-right: 5px; 
+                   }    
+                   
+P.top {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+                   color: #0000CC; 
+                   margin-left: 0px; 
+                   margin-right: 5px; 
+                   }
+                   
+P.footer {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: x-small; 
+                   margin-left: 0px; 
+                   margin-right: 0px; 
+                   }
+
+P.links {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: x-small; 
+                   font-weight: bold; 
+                   margin-left: 25px; 
+                   margin-right: 0px; 
+                   margin-top: 0px;
+                   }
+
+P.citation {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: x-small; 
+                   }
+
+P.reference {
+                   margin-left: 35px; 
+                   }
+
+P.caption {
+                   font-size: x-small; 
+                   font-style: italic; 
+                   margin-left: 0px; 
+                   margin-right: 0px; 
+                   }
+
+P.byline {
+                   font-size: small;
+                   font-weight: bold;
+                   }
+				   
+DL {
+                   font-family: Futura, Verdana, Arial, Helvetica, sans-serif; 
+                   font-size: small; 
+                   color: #000000; 
+                   margin-left: 15px; 
+                   margin-right: 5px; 
+				   }
+				   
+UL {
+                  font-family : Arial, Helvetica, sans-serif;
+                  font-size : small;
+}
+
+OL {
+                  font-family: Arial, Helvetica, sans-serif; 
+                  font-size: small; 
+                  color: #000000; 
+                }
+				
+TABLE.margin {
+	margin-left: 15px;
+}
+
+TABLE.margin2 {
+	margin-left: 40px;
+}
+
+SUP.sup {
+	vertical-align: top;
+}
+
+				   
+
+A:link {color: #6666CC; text-decoration: none}
+A:hover {color: #6666CC; text-decoration : underline}
+A:active {color: #CC0000; text-decoration: none}
+A:visited {color: #CC6633; text-decoration: none}
+
+A.left:link {color: #6666CC; text-decoration: none}
+A.left:hover {color: #6666CC; text-decoration : underline}
+A.left:active {color: #CC0000; text-decoration: none}
+A.left:visited {color: #CC6633; text-decoration: none}

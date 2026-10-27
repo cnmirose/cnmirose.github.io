@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="ps1soln">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="ps1soln.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html3"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<DIV ALIGN="CENTER">
+Rutgers University
+<BR>
+The State University Of New Jersey
+<BR>
+College of Engineering
+<BR>
+Department of Electrical and Computer Engineering
+<BR>
+<BR>
+<BR>
+330:501<U>Systems Analysis</U>
+<BR>
+Problem Set 1 SOLUTIONS
+</DIV>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[1], prob. 1:
+<BR>
+We have 
+<!-- MATH: $\rho(z,x) \le \rho(x,y) + \rho(y,z)$ -->
+<IMG
+ WIDTH="178" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img1.gif"
+ ALT="$\rho(z,x) \le \rho(x,y) + \rho(y,z)$">.
+Let <I>x</I>=<I>y</I> and we get
+
+<!-- MATH: $\rho(z,y) \le \rho(y,y) + \rho(y,z)$ -->
+<IMG
+ WIDTH="177" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img2.gif"
+ ALT="$\rho(z,y) \le \rho(y,y) + \rho(y,z)$">.
+But 
+<!-- MATH: $\rho(y,y) = 0$ -->
+<IMG
+ WIDTH="77" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img3.gif"
+ ALT="$\rho(y,y) = 0$">so 
+<!-- MATH: $\rho(z,y) \le \rho(y,z)$ -->
+<IMG
+ WIDTH="113" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img4.gif"
+ ALT="$\rho(z,y) \le \rho(y,z)$">.
+Now just swapping <I>z</I> and <I>x</I> in the 
+original equation we get
+
+<!-- MATH: $\rho(x,z) \le \rho(z,y) + \rho(y,x)$ -->
+<IMG
+ WIDTH="178" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img5.gif"
+ ALT="$\rho(x,z) \le \rho(z,y) + \rho(y,x)$">.
+Letting <I>x</I>=<I>y</I> we get
+
+<!-- MATH: $\rho(y,z) \le \rho(z,y)$ -->
+<IMG
+ WIDTH="113" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img6.gif"
+ ALT="$\rho(y,z) \le \rho(z,y)$">.
+Since both are always true we must
+have 
+<!-- MATH: $\rho(z,y) = \rho(y,z)$ -->
+<IMG
+ WIDTH="113" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img7.gif"
+ ALT="$\rho(z,y) = \rho(y,z)$">.
+<B>QED</B>.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[1], prob. 2:
+<BR>
+We have 
+<!-- MATH: $\rho(x,z) \le \rho(x,y) + \rho(y,z)$ -->
+<IMG
+ WIDTH="178" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img8.gif"
+ ALT="$\rho(x,z) \le \rho(x,y) + \rho(y,z)$">.
+Let <I>z</I> = <I>x</I>to get 
+<!-- MATH: $\rho(x,x) \le \rho(x,y) + \rho(y,x) = 2 \rho(x,y)$ -->
+<IMG
+ WIDTH="255" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img9.gif"
+ ALT="$\rho(x,x) \le \rho(x,y) + \rho(y,x) = 2 \rho(x,y)$">
+which implies
+
+<!-- MATH: $\rho(x,y) \ge 0$ -->
+<IMG
+ WIDTH="78" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img10.gif"
+ ALT="$\rho(x,y) \ge 0$">
+since 
+<!-- MATH: $\rho(x,x) \ge 0$ -->
+<IMG
+ WIDTH="78" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img11.gif"
+ ALT="$\rho(x,x) \ge 0$">.
+<B>QED</B>.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[1], prob. 4:
+<BR>
+Easy to see in 2 dimensions with a piece of a larger radius disk
+within a smaller radius disk.  Let 
+<!-- MATH: $M = \bar{B}_2((0,0), 0.5)$ -->
+<IMG
+ WIDTH="136" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img12.gif"
+ ALT="$M = \bar{B}_2((0,0), 0.5)$">.
+Now let
+
+<!-- MATH: $\bar{B}_1((0,0.1),0.8) = \{ (x,y)| rho( (x,y), (0,0.1)) \le 0.8) \}$ -->
+<IMG
+ WIDTH="365" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img13.gif"
+ ALT="$\bar{B}_1((0,0.1),0.8) = \{ (x,y)\vert rho( (x,y), (0,0.1)) \le 0.8) \}$">.
+Notice the set <IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img14.gif"
+ ALT="$\bar{B}_1$">
+is completely contained in <IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img15.gif"
+ ALT="$\bar{B}_2$">
+because
+the only admissible points in <I>M</I> are contained in <IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img15.gif"
+ ALT="$\bar{B}_2$">,
+but the radius
+of <IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img14.gif"
+ ALT="$\bar{B}_1$">
+is greater than that of <IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img15.gif"
+ ALT="$\bar{B}_2$">.
+Another example is <I>M</I> as the non-negative reals with
+
+<!-- MATH: $\bar{B}_2(0.5, 0.5)$ -->
+<IMG
+ WIDTH="83" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img16.gif"
+ ALT="$\bar{B}_2(0.5, 0.5)$">
+and 
+<!-- MATH: $\bar{B}_1(0.1,0.8)$ -->
+<IMG
+ WIDTH="83" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img17.gif"
+ ALT="$\bar{B}_1(0.1,0.8)$">.
+Draw both and
+it will be obvious. 
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[1], prob. 6:
+<BR>
+
+<!-- MATH: $\rho(A(x),A(y)) = | \ln x - \ln y| = |ln \frac{x}{y}|$ -->
+<IMG
+ WIDTH="254" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img18.gif"
+ ALT="$\rho(A(x),A(y)) = \vert \ln x - \ln y\vert = \vert ln \frac{x}{y}\vert$">.
+Might try to use
+MVT for any given <I>x</I> and <I>y</I> to get
+
+<!-- MATH: $\rho(A(x),A(y)) = |A^{\prime}(\chi)| |x-y|$ -->
+<IMG
+ WIDTH="212" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img19.gif"
+ ALT="$\rho(A(x),A(y)) = \vert A^{\prime}(\chi)\vert \vert x-y\vert$">
+for some <IMG
+ WIDTH="13" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img20.gif"
+ ALT="$\chi$">on [<I>x</I>,<I>y</I>] However, since 
+<!-- MATH: $x,y \in \Re$ -->
+<IMG
+ WIDTH="59" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img21.gif"
+ ALT="$x,y \in \Re$">,
+
+<!-- MATH: $A^{\prime}$ -->
+<IMG
+ WIDTH="20" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img22.gif"
+ ALT="$A^{\prime}$">
+is unbounded.
+
+<!-- MATH: $\rightarrow$ -->
+<IMG
+ WIDTH="19" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img23.gif"
+ ALT="$\rightarrow$">
+UNBOUNDED.  Also could just look at part of <IMG
+ WIDTH="28" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img24.gif"
+ ALT="$\ln x$">
+near
+<I>x</I>=0 and notice that even if 
+<!-- MATH: $x =y+\epsilon$ -->
+<IMG
+ WIDTH="68" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img25.gif"
+ ALT="$x =y+\epsilon$">,
+
+<!-- MATH: $|\ln \frac{x}{y}|$ -->
+<IMG
+ WIDTH="42" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img26.gif"
+ ALT="$\vert\ln \frac{x}{y}\vert$">
+could
+be HUGE.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[1], prob. 7:
+<BR>
+Here's a simple example which does not require us to prove
+a particular space is complete.  Use
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\rho(x,y) =
+\left\{\begin{array}{ll} 
+\displaystyle {1} & {x \ne y} \\
+		\displaystyle {0} & {x=y}
+		\end{array}\right.
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="149" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img27.gif"
+ ALT="\begin{displaymath}\rho(x,y) =
+\left\{\begin{array}{ll}
+\displaystyle {1} & {x \ne y} \\
+\displaystyle {0} & {x=y}
+\end{array}\right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and any old set (see example 1.4).  We choose the set
+
+<!-- MATH: $[-1,-\epsilon] \cup [\epsilon, 1]$ -->
+<IMG
+ WIDTH="106" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img28.gif"
+ ALT="$[-1,-\epsilon] \cup [\epsilon, 1]$">
+with 
+<!-- MATH: $\epsilon > 0$ -->
+<IMG
+ WIDTH="39" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img29.gif"
+ ALT="$\epsilon > 0$">
+and let <I>A</I>(<I>x</I>) = -<I>x</I>.
+
+<!-- MATH: $\rho(A(x),A(y)) = \rho(x,y)$ -->
+<IMG
+ WIDTH="164" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img30.gif"
+ ALT="$\rho(A(x),A(y)) = \rho(x,y)$">
+so it satisfies the condition,
+but you can see that 
+<!-- MATH: $x_n = A(x_{n-1})$ -->
+<I>x</I><SUB><I>n</I></SUB> = <I>A</I>(<I>x</I><SUB><I>n</I>-1</SUB>) bounces back and forth between
+<IMG
+ WIDTH="32" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img31.gif"
+ ALT="$\pm x_0$">.
+So no limit point.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[1], prob. 8:
+<BR>
+Same as above only <I>A</I>(<I>x</I>) = <I>x</I> with an infinity of limit points.
+
+<P>
+<BR>
+<BR>
+<B>Extra Problem:</B>
+<UL>
+<LI>
+<P>
+
+<!-- MATH: $R(A) = [0,b/4]$ -->
+<I>R</I>(<I>A</I>) = [0,<I>b</I>/4]
+<LI>
+For <I>b</I>&lt;1 we have
+
+<!-- MATH: $|A(x) - A(y)| = b|x - y + y^2 - x^2| = b|x-y||1-(x+y)|$ -->
+|<I>A</I>(<I>x</I>) - <I>A</I>(<I>y</I>)| = <I>b</I>|<I>x</I> - <I>y</I> + <I>y</I><SUP>2</SUP> - <I>x</I><SUP>2</SUP>| = <I>b</I>|<I>x</I>-<I>y</I>||1-(<I>x</I>+<I>y</I>)|.
+Since 
+<!-- MATH: $b|1-(x+y)| < 1$ -->
+<I>b</I>|1-(<I>x</I>+<I>y</I>)| &lt; 1, we have <I>A</I>() is a contraction mapping.
+
+<P>
+<LI>
+NOPE!  Just use <IMG
+ WIDTH="39" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img32.gif"
+ ALT="$b\ge 1$">
+and proceed as above.
+However, just because a mapping is not a contraction, does NOT
+mean it doesn't have limit points.  Try <I>b</I>=2 which has limit point
+0.5.  (try it numerically!).
+
+<P>
+<LI>
+Wierd, right?  We start one one-millionth away and get very different
+sequences.  The two sequences are plotted in the figure.  This mapping
+is one of the simpler <EM>chaotic mappings</EM>.  Chaos is generally
+annoying when you want to control a system completely since if you
+change the input even slightly (and precision is always finite because
+of noise) you can get wildly different results.
+<BR>
+<DIV ALIGN="CENTER"><A NAME="507">&#160;</A>
+<TABLE WIDTH="50%">
+<CAPTION><STRONG>Figure 1:</STRONG>
+Plot of sequences for chaotic mapping.</CAPTION>
+<TR><TD><IMG
+ WIDTH="388" HEIGHT="375"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img33.gif"
+ ALT="\begin{figure}\begin{center}
+\epsfig{figure=ps1plot.ps,height=3.0in,width=3.0in}\end{center}
+\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+<P>
+</UL>
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html4"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html3"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Christopher Rose</I>
+<BR><I>1998-08-29</I>
+</ADDRESS>
+</BODY>
+</HTML>

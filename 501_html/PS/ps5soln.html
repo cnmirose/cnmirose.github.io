@@ -1,0 +1,645 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="ps5soln">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="ps5soln.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<DIV ALIGN="CENTER">
+Rutgers University
+<BR>
+The State University Of New Jersey
+<BR>
+College of Engineering
+<BR>
+Department of Electrical and Computer Engineering
+<BR>
+<BR>
+<BR>
+330:501<U>Systems Analysis</U>
+<BR>
+Problem Set 5 SOLUTIONS
+</DIV>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 13:
+<BR>
+Assuming zero initial conditions and taking the Laplace transform, we
+can get the transfer function as following:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+H(s)=\frac{Y(s)}{U(s)}=\frac{R_2}{sL+R_1+R_2}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="211" HEIGHT="44"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img1.gif"
+ ALT="\begin{displaymath}H(s)=\frac{Y(s)}{U(s)}=\frac{R_2}{sL+R_1+R_2}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+Chosing
+<I>x</I>(<I>t</I>)=<I>i</I>(<I>t</I>), we can find the state space representation and its
+solution:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{x}(t) = -\frac{R_2+R_1}{L} x(t) + \frac{1}{L}u(t)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="209" HEIGHT="39"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img2.gif"
+ ALT="\begin{displaymath}\dot{x}(t) = -\frac{R_2+R_1}{L} x(t) + \frac{1}{L}u(t)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+y(t) = R_2 x(t)
+\end{displaymath} -->
+
+
+<I>y</I>(<I>t</I>) = <I>R</I><SUB>2</SUB> <I>x</I>(<I>t</I>)
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+So that
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x(t)=e^{-\frac{R_1+R_2}{L}t}x(0)+\frac{1}{L}\int_{0}^{t}e^{-\frac{R_1+R_2}{L}
+(t-\tau)}u(\tau)d(\tau)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="352" HEIGHT="46"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img3.gif"
+ ALT="\begin{displaymath}x(t)=e^{-\frac{R_1+R_2}{L}t}x(0)+\frac{1}{L}\int_{0}^{t}e^{-\frac{R_1+R_2}{L}
+(t-\tau)}u(\tau)d(\tau)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+If <I>u</I>(<I>t</I>)=1, the equilibrium is found as 
+<!-- MATH: $x(t)=\frac{1}{R_1+R_2}$ -->
+<IMG
+ WIDTH="98" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img4.gif"
+ ALT="$x(t)=\frac{1}{R_1+R_2}$">)
+which makes 
+<!-- MATH: $y(t)=\frac{R_2}{R_1+R_2}$ -->
+<IMG
+ WIDTH="97" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img5.gif"
+ ALT="$y(t)=\frac{R_2}{R_1+R_2}$">,
+a classical voltage divider.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 15:
+<BR>
+Applying Theorem 3.5, we have
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{x}(t)=
+\left[
+\begin{array}{cc}
+0 & 1\\-6 & -5
+\end{array}
+\right] x(t)
++ \left[
+\begin{array}{c}
+0 \\
+1
+\end{array}
+\right] u(t)
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="257" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img6.gif"
+ ALT="\begin{displaymath}\dot{x}(t)=
+\left[
+\begin{array}{cc}
+0 & 1\\ -6 & -5
+\end{ar...
+...x(t)
++ \left[
+\begin{array}{c}
+0 \\
+1
+\end{array}\right] u(t)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+y(t)
+=
+\left [
+\begin{array}{cc}
+3 & 1
+\end{array}
+\right ] x(t)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="137" HEIGHT="30"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img7.gif"
+ ALT="\begin{displaymath}y(t)
+=
+\left [
+\begin{array}{cc}
+3 & 1
+\end{array}\right ] x(t)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+Could find transition matrix but not worth it except for practice.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 17:
+<BR>
+Assuming zero initial conditions and taking the Laplace transform, we have the transfer function as following: <BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+H(s)=\frac{Y(s)}{U(s)}=\frac{s+3}{s^2+5s+6}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="192" HEIGHT="44"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img8.gif"
+ ALT="\begin{displaymath}H(s)=\frac{Y(s)}{U(s)}=\frac{s+3}{s^2+5s+6}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>. 
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 20:
+<BR>
+The transfer function is:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+H(s)=\frac{Y(s)}{U(s)}=\frac{2(s-1)}{(s+1)^2[s^2(s-1)-2s+1]}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="303" HEIGHT="44"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img9.gif"
+ ALT="\begin{displaymath}H(s)=\frac{Y(s)}{U(s)}=\frac{2(s-1)}{(s+1)^2[s^2(s-1)-2s+1]}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[3], prob. 21:
+<BR>
+The overall transfer function is
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+H(s)=\frac{\Theta(s)}{V(s)}=\frac{K_mK_a}{s[(sL_f+R_f)(sJ+f)+K_mK_aK_t]}
+=\frac{b_0}{s^3+a_2s^2+a_1s}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="487" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img10.gif"
+ ALT="\begin{displaymath}H(s)=\frac{\Theta(s)}{V(s)}=\frac{K_mK_a}{s[(sL_f+R_f)(sJ+f)+K_mK_aK_t]}
+=\frac{b_0}{s^3+a_2s^2+a_1s}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+where 
+<!-- MATH: $b_0=\frac{K_mK_a}{L_f}$ -->
+<IMG
+ WIDTH="82" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img11.gif"
+ ALT="$b_0=\frac{K_mK_a}{L_f}$">,
+
+<!-- MATH: $a_2=\frac{L_ff+R_fJ}{L_f}$ -->
+<IMG
+ WIDTH="103" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img12.gif"
+ ALT="$a_2=\frac{L_ff+R_fJ}{L_f}$">
+and 
+<!-- MATH: $a_1=\frac{fR_f+K_mK_aK_t}{L_f}$ -->
+<IMG
+ WIDTH="134" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img13.gif"
+ ALT="$a_1=\frac{fR_f+K_mK_aK_t}{L_f}$">.
+From
+Theorem 3.5, we obtain,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{c}
+\dot{x}(t)=Ax(t)+Bu(t)\\
+y(t)=Cx(t)
+\end{array}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="146" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img14.gif"
+ ALT="\begin{displaymath}\begin{array}{c}
+\dot{x}(t)=Ax(t)+Bu(t)\\
+y(t)=Cx(t)
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+where
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{ccc}
+{A= \left[
+\begin{array}{lcl}
+0 & 1 & 0\\
+0 & 0 & 1\\
+0 & -a_1 & -a_2
+\end{array} \right]} & {B=
+\left[
+\begin{array}{ll}
+0 \\
+0 \\
+1
+\end{array} \right]} & {C=
+\left [
+\begin{array}{ccc}
+b_0 & 0 & 0
+\end{array}
+\right ]}
+\end{array}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="399" HEIGHT="64"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img15.gif"
+ ALT="\begin{displaymath}\begin{array}{ccc}
+{A= \left[
+\begin{array}{lcl}
+0 & 1 & 0\\ ...
+...\begin{array}{ccc}
+b_0 & 0 & 0
+\end{array}\right ]}
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+The state variables of this realization are artificial in that
+no care was taken to have them correspond to real physical variables.
+One could define state variables directly corresponding
+to the inductance current, the inertia.  Feedback adds another state
+variable (not in general of course, but usually).  However, all realizations
+which are <EM>similar</EM> to the above system are equivalent.
+
+<P>
+Now as for the output when the input is 1, That corresponds to a DC
+input (<I>s</I>=0) for all time.  Thus, since 
+<!-- MATH: $\omega(t) =\frac{1}{K_t}$ -->
+<IMG
+ WIDTH="74" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img16.gif"
+ ALT="$\omega(t) =\frac{1}{K_t}$">we'd have 
+<!-- MATH: $\theta(t) = t/K_t + \theta_0$ -->
+<IMG
+ WIDTH="119" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img17.gif"
+ ALT="$\theta(t) = t/K_t + \theta_0$">.
+If,
+however, we have the input as a unit step, then the solution is more complicated
+and we'd need the roots of the characteristic equation to proceed exactly
+
+<P>
+However, since <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img18.gif"
+ ALT="$\omega$">
+is second order,
+use the overdamped, underdamped, critically damped arguments to
+obtain a step response for <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img18.gif"
+ ALT="$\omega$">
+similar to figure 3.22 depending
+upon the values of <I>a</I><SUB>1</SUB> (which corresponds to 
+<!-- MATH: $\omega_n^2$ -->
+<IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img19.gif"
+ ALT="$\omega_n^2$">,
+the natural
+frequency of the system) and <I>a</I><SUB>2</SUB>.
+
+<P>
+Don't you just LOVE open-ended problems!?!?!
+
+<P>
+<DL COMPACT>
+<DT><B>6)</B>
+<DD><DL COMPACT>
+<DT>(a)
+<DD>Differential Equations for <IMG
+ WIDTH="35" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img20.gif"
+ ALT="$\{x_i\}$">:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{x}_1=-\alpha x_1+\beta x_2
+\end{displaymath} -->
+
+<IMG
+ WIDTH="121" HEIGHT="27"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img21.gif"
+ ALT="\begin{displaymath}\dot{x}_1=-\alpha x_1+\beta x_2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{x}_k=\alpha x_{k-1}-(\alpha+\beta)x_k+\beta
+x_{k+1},\;\;k=2,...,N-1
+\end{displaymath} -->
+
+<IMG
+ WIDTH="355" HEIGHT="28"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img22.gif"
+ ALT="\begin{displaymath}\dot{x}_k=\alpha x_{k-1}-(\alpha+\beta)x_k+\beta
+x_{k+1},\;\;k=2,...,N-1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{x}_N=\alpha x_{N-1}-\beta x_N
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="139" HEIGHT="28"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img23.gif"
+ ALT="\begin{displaymath}\dot{x}_N=\alpha x_{N-1}-\beta x_N\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<DT>(b)
+<DD>
+<!-- MATH: $\dot{w}=Aw$ -->
+<IMG
+ WIDTH="61" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img24.gif"
+ ALT="$\dot{w}=Aw$">,
+where A is a N X N matrix:
+<A NAME="part:b">&#160;</A>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+{\mathbf A}
+=\left[
+\begin{array}{ccccc}
+-\alpha & \beta & 0 & .. & 0 \\
+\alpha  & -\alpha-\beta & \beta & 0 & \vdots\\
+0 & \alpha & -\alpha-\beta & \beta & \vdots\\
+\vdots & \cdots & \cdots & \cdots & \vdots \\
+\vdots & \cdots & \cdots & \alpha & -\beta
+\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="298" HEIGHT="144"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img25.gif"
+ ALT="\begin{displaymath}{\mathbf A}
+=\left[
+\begin{array}{ccccc}
+-\alpha & \beta & 0 ...
+...
+\vdots & \cdots & \cdots & \alpha & -\beta
+\end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<DT>(c)
+<DD>Since no liquid leaves the system we have
+
+<!-- MATH: $x_N=-\sum_{i=1}^{N-1}x_i$ -->
+<IMG
+ WIDTH="124" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img26.gif"
+ ALT="$x_N=-\sum_{i=1}^{N-1}x_i$">.
+Thus with
+<IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img27.gif"
+ ALT="$\Gamma$">
+total units of liquid in the system we have
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+{\mathbf A}
+=
+\left[ \begin{array}{ccccc}
+-\alpha & \beta & 0 & .. & 0 \\
+\alpha  & -\alpha-\beta & \beta & 0 & \vdots\\
+0 & \alpha & -\alpha-\beta & \beta & \vdots\\
+\vdots & \cdots & \cdots & \cdots & \vdots \\
+-\beta & -\beta & \cdots & \alpha-\beta & -(\alpha + 2\beta)
+\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="369" HEIGHT="134"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img28.gif"
+ ALT="\begin{displaymath}{\mathbf A}
+=
+\left[ \begin{array}{ccccc}
+-\alpha & \beta & 0...
+...& \cdots & \alpha-\beta & -(\alpha + 2\beta)
+\end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+{\mathbf B}
+=
+\left[
+\begin{array}{c}
+0 \\
+\vdots\\
+\vdots\\
+\beta\Gamma
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="87" HEIGHT="104"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img29.gif"
+ ALT="\begin{displaymath}{\mathbf B}
+=
+\left[
+\begin{array}{c}
+0 \\
+\vdots\\
+\vdots\\
+\beta\Gamma
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+so that
+
+<!-- MATH: $\dot{\mathbf{v}} = {\mathbf Av} + {\mathbf B}$ -->
+<IMG
+ WIDTH="90" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img30.gif"
+ ALT="$
+\dot{\mathbf{v}} = {\mathbf Av} + {\mathbf B}$">.
+
+<P>
+<DT>(d)
+<DD>From part(a) we have,
+<!-- MATH: $\dot{x}_1=-x_1$ -->
+<IMG
+ WIDTH="70" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img31.gif"
+ ALT="$ \dot{x}_1=-x_1$">.
+Solving this differential
+equation for 
+<!-- MATH: $x_1(0) = 1$ -->
+<I>x</I><SUB>1</SUB>(0) = 1 gives 
+<!-- MATH: $\dot{x}_1(t)=e^{-t}$ -->
+<IMG
+ WIDTH="83" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img32.gif"
+ ALT="$\dot{x}_1(t)=e^{-t}$">.
+Thus, 
+<!-- MATH: $\dot{x}_2 + x_2 = {\mathbf e}^{-t}$ -->
+<IMG
+ WIDTH="101" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img33.gif"
+ ALT="$\dot{x}_2 + x_2 = {\mathbf e}^{-t}$">
+so that 
+<!-- MATH: $x_2(t) = t {\mathbf e}^{-t}$ -->
+<I>x</I><SUB>2</SUB>(<I>t</I>) = <I>t</I> <B>e</B><SUP>-<I>t</I></SUP>.
+Likewise 
+<!-- MATH: $x_3(t) = \frac{t^2}{2}{\mathbf e}^{-t}$ -->
+<IMG
+ WIDTH="99" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img34.gif"
+ ALT="$x_3(t) = \frac{t^2}{2}{\mathbf e}^{-t}$">
+and so on for
+
+<!-- MATH: $x_k(t) = \frac{t^{k-1}}{(k-1)!}{\mathbf e}^{-t}$ -->
+<IMG
+ WIDTH="125" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img35.gif"
+ ALT="$x_k(t) = \frac{t^{k-1}}{(k-1)!}{\mathbf e}^{-t}$">
+<IMG
+ WIDTH="76" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img36.gif"
+ ALT="$k \le N-1$">.
+Thus, 
+<!-- MATH: $x_N(t) = 1 - \sum_{k=1}^{N-1} \frac{t^{k-1}}{(k-1)!} {\mathbf e}^{-t}$ -->
+<IMG
+ WIDTH="205" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img37.gif"
+ ALT="$x_N(t) = 1 - \sum_{k=1}^{N-1} \frac{t^{k-1}}{(k-1)!} {\mathbf e}^{-t}$">.
+
+<P>
+</DL></DL>
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html3"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Christopher Rose</I>
+<BR><I>1998-08-29</I>
+</ADDRESS>
+</BODY>
+</HTML>

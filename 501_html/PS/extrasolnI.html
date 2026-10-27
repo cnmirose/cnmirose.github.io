@@ -1,0 +1,447 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="extrasolnI">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="extrasolnI.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<P>
+<DIV ALIGN="CENTER">
+<B>330:501</B>
+
+<P>
+<B>Solution to Extra Problem Set</B>
+</DIV>
+<P>
+<DL COMPACT>
+<DT>1.
+<DD>Given 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\mathbf{x}_{n+1}=\mathbf{Ax}_n,
+\end{displaymath} -->
+
+<B>x</B><SUB><I>n</I>+1</SUB>=<B>Ax</B><SUB><I>n</I></SUB>,
+
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+where 
+<!-- MATH: $\mathbf{A}$ -->
+<B>A</B> is of the form 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\mathbf{A=}\left[
+\begin{array}{ccccccc}
+a & b & 0 & 0 & 0 & 0 & c \\
+c & a & b & 0 & 0 & 0 & 0 \\
+0 & c & a & b & 0 & 0 & 0 \\
+0 & 0 & c & a & b & 0 & 0 \\
+0 & 0 & 0 & c & a & b & 0 \\
+0 & 0 & 0 & 0 & c & a & b \\
+b & 0 & 0 & 0 & 0 & c & a
+\end{array}
+\right] 
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="236" HEIGHT="169"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img1.gif"
+ ALT="\begin{displaymath}\mathbf{A=}\left[
+\begin{array}{ccccccc}
+a & b & 0 & 0 & 0 &...
+... & c & a & b \\
+b & 0 & 0 & 0 & 0 & c & a
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+with 
+<!-- MATH: $a=0.1;b,c=0.2.$ -->
+<I>a</I>=0.1;<I>b</I>,<I>c</I>=0.2. It is obvious that the <EM>one-norm = infinity-norm
+= 0.5, </EM>and take 
+<!-- MATH: $\mathbf{z=x}_{n+1}\mathbf{-x}_n,$ -->
+<B>z</I>=<I>x</B><SUB><I>n</I>+1</SUB><B></I>-<I>x</B><SUB><I>n</I></SUB>, then because of
+compatibility of norms (one or infinity) 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left\| \mathbf{Az}\right\| \leq \left\| \mathbf{A}\right\| \left\| \mathbf{z%
+}\right\|
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="134" HEIGHT="33"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img2.gif"
+ ALT="\begin{displaymath}\left\Vert \mathbf{Az}\right\Vert \leq \left\Vert \mathbf{A}\right\Vert \left\Vert \mathbf{z%
+}\right\Vert
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+so 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left\| \mathbf{Ax}_{n+1}\mathbf{-Ax}_n\right\| \leq \left\| \mathbf{A}%
+\right\| \left\| \mathbf{x}_{n+1}\mathbf{-x}_n\right\| =0.5\left\| \mathbf{x}%
+_{n+1}\mathbf{-x}_n\right\|
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="420" HEIGHT="33"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img3.gif"
+ ALT="\begin{displaymath}\left\Vert \mathbf{Ax}_{n+1}\mathbf{-Ax}_n\right\Vert \leq \l...
+...ert =0.5\left\Vert \mathbf{x}%
+_{n+1}\mathbf{-x}_n\right\Vert
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+thus the mapping is contractive.
+
+<P>
+<DT>2.
+<DD>(a)
+
+<P>
+The matrix difference equation for the demon problem is given by 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\mathbf{x}_{n+1}=\mathbf{Ax}_n
+\end{displaymath} -->
+
+
+<B>x</B><SUB><I>n</I>+1</SUB>=<B>Ax</B><SUB><I>n</I></SUB>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+where 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\mathbf{A=}\left[
+\begin{array}{cccccc}
+2/3 & 1/3 & 0 & 0 & \cdots  & 0 \\
+1/3 & 1/3 & 1/3 & 0 & \cdots  & 0 \\
+0 & 1/3 & 1/3 & 1/3 & \cdots  & 0 \\
+\vdots  & \vdots  & \ddots  & \ddots  & \ddots  & 0 \\
+0 & 0 &  & 1/3 & 1/3 & 1/3 \\
+0 & 0 &  & 0 & 1/3 & 2/3
+\end{array}
+\right] .
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="332" HEIGHT="153"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img4.gif"
+ ALT="\begin{displaymath}\mathbf{A=}\left[
+\begin{array}{cccccc}
+2/3 & 1/3 & 0 & 0 & ...
+...3 & 1/3 & 1/3 \\
+0 & 0 & & 0 & 1/3 & 2/3
+\end{array}\right] .
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+The complete metric space on which the mapping is defined consists of
+the real non-negative vectors (although it could also be defined on
+all the real vectors, or even on all the complex vectors for that
+matter).
+
+<P>
+First notice that the zero vector is a fixed point of the mapping
+(even though for this problem we start out with a non-zero vector).
+We also notice that any vector 
+<!-- MATH: $[a,a, ... a]$ -->
+[<I>a</I>,<I>a</I>, ... <I>a</I>] is also a fixed point.
+As almost a side issue, for the initial conditions specified in this
+problem we assume the components must sum to 1 so <I>a</I>=1/<I>N</I>.
+
+<P>
+So, the mapping cannot be a contraction!  Why?  Because a contraction
+mapping can have only one unique fixed point in the complete metrix
+space over which it is defined.  This latter point is why we have to
+include the zero vector in the space.  The space of non-negative
+vectors without the zero vector is not a complete metric space; i.e.,
+consider the cauchy sequence 
+<!-- MATH: $[1/n,1/n,...1/n]$ -->
+[1/<I>n</I>,1/<I>n</I>,...1/<I>n</I>] which has limit point
+not in the space.
+
+<P>
+By the way, if you tried to show that all three of our matrix norms
+were <IMG
+ WIDTH="34" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img5.gif"
+ ALT="$\ge 1$">
+that was not enough.  Why?  Because you did not consider
+all possible norms. 
+All you need is to find  one valid norm (which forms a complete metric space)
+which is &lt;1 for the mapping to be a contraction, and it's impossible to
+consider ALL possible norms.  As a concrete example, let's say we only
+knew about the 
+<!-- MATH: $||\cdot||_{\infty}$ -->
+<IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img6.gif"
+ ALT="$\vert\vert\cdot\vert\vert _{\infty}$">
+norm and were given matrix <BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+A=\left[
+\begin{array}{ccccc}
+0 & 0.4 & 0.4 & 0 & 0 \\
+0 & 0.4 & 0.4 & 0 & 0 \\
+0 & 0.4 & 0.4 & 0 & 0 \\
+0 & 0.4 & 0.4 & 0 & 0 \\
+0 & 0.4 & 0.4 & 0 & 0
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="211" HEIGHT="122"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img7.gif"
+ ALT="\begin{displaymath}A=\left[
+\begin{array}{ccccc}
+0 & 0.4 & 0.4 & 0 & 0 \\
+0 & 0...
+...0.4 & 0.4 & 0 & 0 \\
+0 & 0.4 & 0.4 & 0 & 0
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+The column norm is 
+<!-- MATH: $||A||_{\infty}= 2$ -->
+<IMG
+ WIDTH="89" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img8.gif"
+ ALT="$\vert\vert A\vert\vert _{\infty}= 2$">
+and we're naively thinking ``not a
+contraction.''  However, up comes Josephine Smartalek with a
+definition of some exotic beast called the ``row norm'' with 
+<!-- MATH: $||A||_1=
+0.8$ -->
+||<I>A</I>||<SUB>1</SUB>=
+0.8 which proves that the mapping using <I>A</I> is a contraction.  The
+fixed point is the zero vector by the way.
+
+<P>
+This is an important point.  We pick our norms for convenience in the
+problem at hand.  Any one will do as long as it is a valid norm
+(distance measure) and it forms a complete metric space with the
+region in which we're interested.
+
+<P>
+(b)
+
+<P>
+Now the difference equation is given by 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\mathbf{x}_{n+1}=\left[
+\begin{array}{ccccc}
+0 & 0 & 0 & \cdots  & 1 \\
+1 & 0 & 0 & \cdots  & 0 \\
+0 & 1 & 0 & \cdots  & 0 \\
+\vdots  & \vdots  & \ddots  & \ddots  & \vdots  \\
+0 & 0 &  & 1 & 0
+\end{array}
+\right] \mathbf{x}_n,
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="263" HEIGHT="131"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img9.gif"
+ ALT="\begin{displaymath}\mathbf{x}_{n+1}=\left[
+\begin{array}{ccccc}
+0 & 0 & 0 & \cd...
+... & \vdots \\
+0 & 0 & & 1 & 0
+\end{array}\right] \mathbf{x}_n,
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+the domain of 
+<!-- MATH: $\mathbf{A}$ -->
+<B>A</B> is given by the set of unitary vectors, that is 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+D\left( \mathbf{A}\right) =\left\{ \left[
+\begin{array}{c}
+1 \\
+0 \\
+\vdots  \\
+0
+\end{array}
+\right] ,\left[ 
+\begin{array}{c}
+0 \\
+1 \\
+\vdots  \\
+0
+\end{array}
+\right] ,\ldots ,\left[ 
+\begin{array}{c}
+0 \\
+0 \\
+\vdots  \\
+1
+\end{array}
+\right] \right\} 
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="297" HEIGHT="107"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img10.gif"
+ ALT="\begin{displaymath}D\left( \mathbf{A}\right) =\left\{ \left[
+\begin{array}{c}
+1...
+...rray}{c}
+0 \\
+0 \\
+\vdots \\
+1
+\end{array}\right] \right\}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+the range of 
+<!-- MATH: $\mathbf{A}$ -->
+<B>A</B> is equal to the domain of 
+<!-- MATH: $\mathbf{A.}$ -->
+<B>A</I>.<I></B> One can
+immediately see that there are no fixed points for this mapping, thus it is
+not a contraction mapping. (Also the one, two and infinity norms of this
+matrix are equal to one).
+
+<P>
+<DT>3.
+<DD>This is interesting because 
+<!-- MATH: $\mathbf{A}^n$ -->
+<B>A</B><SUP><I>n</I></SUP> does not converge to any value as 
+
+<!-- MATH: $n\rightarrow \infty$ -->
+<IMG
+ WIDTH="65" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img11.gif"
+ ALT="$n\rightarrow \infty $">,
+but by simply iterating one can see that 
+<!-- MATH: $\mathbf{A}%
+^n$ -->
+<B>A</B>
+<SUP><I>n</I></SUP> is the <I>n</I>th circular rotation to the left of the rows of 
+<!-- MATH: $\mathbf{A}.$ -->
+<B>A</B>.So that for <I>n</I>=<I>N</I> we obtain an identity matrix.
+
+<P>
+<DT>4.
+<DD><P>
+For <I>N</I>=2,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+e^{\mathbf{A}t}=\frac{1}{2}
+\left[
+\begin{array}{cc}
+e^{-t}+e^t & -e^{-t}+ e^t \\
+-e^{-t}+e^t & e^{-t}+e^t
+\end{array}
+\right] . 
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="279" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img12.gif"
+ ALT="\begin{displaymath}e^{\mathbf{A}t}=\frac{1}{2}
+\left[
+\begin{array}{cc}
+e^{-t}+...
+...e^{-t}+ e^t \\
+-e^{-t}+e^t & e^{-t}+e^t
+\end{array}\right] .
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P></DL>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html3"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Christopher Rose</I>
+<BR><I>1998-08-29</I>
+</ADDRESS>
+</BODY>
+</HTML>

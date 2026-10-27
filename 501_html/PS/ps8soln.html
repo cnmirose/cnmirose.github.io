@@ -1,0 +1,536 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="ps8soln">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="ps8soln.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<DIV ALIGN="CENTER">
+Rutgers University
+<BR>
+The State University Of New Jersey
+<BR>
+College of Engineering
+<BR>
+Department of Electrical and Computer Engineering
+<BR>
+<BR>
+<BR>
+330:501<U>Systems Analysis</U>
+<BR>
+Problem Set 8 SOLUTIONS
+</DIV>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[5], prob. 1:
+<BR>
+The transition matrix can be found in P3-1. We can form the
+controllability Gramian:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+W(t_0,t_1)=\int_{t_0}^{t_1}\phi
+(t_0,\tau)B(\tau)B^T(\tau)\phi^T(t_0,\tau)d\tau=(t_0-t_0^2/t_1)\left[\begin{array}{ll}1&
+1 \\1& 1 \end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="484" HEIGHT="47"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img1.gif"
+ ALT="\begin{displaymath}W(t_0,t_1)=\int_{t_0}^{t_1}\phi
+(t_0,\tau)B(\tau)B^T(\tau)\ph...
+..._0^2/t_1)\left[\begin{array}{ll}1&
+1 \\ 1& 1 \end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Therefore, 
+<!-- MATH: $|W(t_0,t_1)|=0$ -->
+|<I>W</I>(<I>t</I><SUB>0</SUB>,<I>t</I><SUB>1</SUB>)|=0, the system is not controllable. <B>QED</B>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[5], prob. 2:
+<BR>
+We have found the transition matrix in P1-16:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\phi(t,t_0)=\left[ \begin{array}{lr}\frac{2}{3}+\frac{2}{3}e^{3(t-t_0)}&\frac{-1}{3}+\frac{1}{3}e^{3(t-t_0)}\\
+\frac{-2}{3}+\frac{2}{3}e^{3(t-t_0)}&\frac{1}{3}+\frac{2}{3}e^{3(t-t_0)}
+\end{array} \right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="314" HEIGHT="46"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img2.gif"
+ ALT="\begin{displaymath}\phi(t,t_0)=\left[ \begin{array}{lr}\frac{2}{3}+\frac{2}{3}e^...
+...t-t_0)}&\frac{1}{3}+\frac{2}{3}e^{3(t-t_0)}
+\end{array} \right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+From the controllability Gramian, we have
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+W(
+t_0,t_1)=\int_{t_0}^{t_1}\phi
+(t_0,\tau)B(\tau)B^T(\tau)\phi^T(t_0,\tau)d\tau
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="320" HEIGHT="47"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img3.gif"
+ ALT="\begin{displaymath}W(
+t_0,t_1)=\int_{t_0}^{t_1}\phi
+(t_0,\tau)B(\tau)B^T(\tau)\phi^T(t_0,\tau)d\tau\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Therefore
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+W(0,1)=\left[
+\begin{array}{lr}\frac{11}{18}+\frac{-4}{27}e^{-3}+\frac{-1}{54}e^{-6}&\frac{-1}{3}+\frac{-2}{27}e^{-3}+\frac{-1}{27}e^{-6}\\\frac{-1}{3}+ \frac{-2}{27}e^{-3}+\frac{-1}{27}e^{-6}&\frac{2}{9}+\frac{8}{27}e^{-3}+\frac{-2}{27}e^{-6}\end{array} \right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="415" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img4.gif"
+ ALT="\begin{displaymath}W(0,1)=\left[
+\begin{array}{lr}\frac{11}{18}+\frac{-4}{27}e^{...
+...2}{9}+\frac{8}{27}e^{-3}+\frac{-2}{27}e^{-6}\end{array} \right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+|W(0,1)|=\frac{2}{81}+\frac{8}{81}e^{-3}-\frac{2}{27}e^{-6}-\frac{4}{81}(e^{-3})^2=0.293
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="369" HEIGHT="38"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img5.gif"
+ ALT="\begin{displaymath}\vert W(0,1)\vert=\frac{2}{81}+\frac{8}{81}e^{-3}-\frac{2}{27}e^{-6}-\frac{4}{81}(e^{-3})^2=0.293\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+which
+is nonsingular, thus, the system is completely controllable in [0,1].  <B>QED</B>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[5], prob. 3:
+<BR>
+We have found <I>W</I>(0,1) in P5-2. (i). Obviously, it is
+symmetric. (ii).
+
+<!-- MATH: $\triangle_0=\frac{11}{18}+\frac{-4}{27}e^{-3}+\frac{-1}{54}e^{-6}=0.603>0,\triangle_1=0.293>0$ -->
+<IMG
+ WIDTH="393" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img6.gif"
+ ALT="$\triangle_0=\frac{11}{18}+\frac{-4}{27}e^{-3}+\frac{-1}{54}e^{-6}=0.603>0,\triangle_1=0.293>0$">,
+therefore
+<I>W</I>(0,1) is positive definite.  <B>QED</B>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[5], prob. 4:
+<BR>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+K=\left[\begin{array}{ll}B&AB\end{array}\right]=\left[\begin{array}{cc}1&1\\0&2\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="201" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img7.gif"
+ ALT="\begin{displaymath}K=\left[\begin{array}{ll}B&AB\end{array}\right]=\left[\begin{array}{cc}1&1\\ 0&2\end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and |<I>K</I>|=2, therefore <I>K</I> is full rank, and the system is completely
+controllable.  <B>QED</B>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[5], prob. 8:
+<BR>
+This problem is a little tricky.  We can verify the system is completely controllable
+by forming the <IMG
+ WIDTH="19" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img8.gif"
+ ALT="${\bf K}$">
+matrix
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+{\bf K}
+=
+[{\bf B}, {\bf AB}]
+=
+\left [
+\begin{array}{cc}
+1 & 1\\
+0 & 2
+\end{array}
+\right ]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="174" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img9.gif"
+ ALT="\begin{displaymath}{\bf K}
+=
+[{\bf B}, {\bf AB}]
+=
+\left [
+\begin{array}{cc}
+1 & 1\\
+0 & 2
+\end{array}\right ]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+which has full rank.  So it would seem that we should be able to
+force the system state along any trajectory we like.
+However, equation 5.19 states
+
+<!-- MATH: ${\bf X}(s)={\bf R}(s){\bf X}_0+{\bf R}(s){\bf B}{\bf U}(s)$ -->
+<IMG
+ WIDTH="214" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img10.gif"
+ ALT="${\bf X}(s)={\bf R}(s){\bf X}_0+{\bf R}(s){\bf B}{\bf U}(s)$">,
+where
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+{\bf R}(s)
+=
+(s{\bf I}-{\bf A})^{-1}
+=
+\frac{1}{(s-1)(s-2)-2}
+\left[
+\begin{array}{cc}
+s-2&1\\
+2&s-1
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="396" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img11.gif"
+ ALT="\begin{displaymath}{\bf R}(s)
+=
+(s{\bf I}-{\bf A})^{-1}
+=
+\frac{1}{(s-1)(s-2)-2}
+\left[
+\begin{array}{cc}
+s-2&1\\
+2&s-1
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+therefore
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left[
+\begin{array}{c}
+\frac{1}{s^2}+\frac{1}{s}\\
+\frac{1}{s}
+\end{array}
+\right]
+=
+\frac{1}{(s-1)(s-2)-2}
+\left [
+\begin{array}{c}
+s-1\\
+s+1
+\end{array}
+\right]
++
+\frac{1}{(s-1)(s-2)-2}
+\left[
+\begin{array}{c}
+s-2\\
+2
+\end{array}
+\right]
+{\bf U}(s)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="542" HEIGHT="45"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img12.gif"
+ ALT="\begin{displaymath}\left[
+\begin{array}{c}
+\frac{1}{s^2}+\frac{1}{s}\\
+\frac{1}...
+...\left[
+\begin{array}{c}
+s-2\\
+2
+\end{array}\right]
+{\bf U}(s) \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+From the first row of the above equation, we have
+
+<!-- MATH: $U(s)=-\frac{s+3}{s(s-2)}$ -->
+<IMG
+ WIDTH="112" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img13.gif"
+ ALT="$U(s)=-\frac{s+3}{s(s-2)}$">
+From the second row we have <I>U</I>(<I>s</I>)=-2.
+Thus, there is no consistent solution!
+
+<P>
+But the system was completely controllable so HOW CAN THIS POSSIBLY BE!!!????!!!????
+Think a bit about it.  We'll explore exactly this type of problem
+on the final to resolve this seeming paradox.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[5], prob. 10:
+<BR>
+We have found the state space representation
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{X}(t)=-\frac{R_2+R_1}{L} X(t)+\frac{1}{L}U(t)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="224" HEIGHT="39"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img14.gif"
+ ALT="\begin{displaymath}\dot{X}(t)=-\frac{R_2+R_1}{L} X(t)+\frac{1}{L}U(t)\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+therefore it's controllability Gramian 
+<!-- MATH: $K=\frac{1}{L}$ -->
+<IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img15.gif"
+ ALT="$K=\frac{1}{L}$">
+is not
+zero, so the system is completely controllable.  <B>QED</B>
+
+<P>
+<BR>
+<BR><B>7. Part (a) </B>
+<BR>
+We can figure
+out
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+A=\left[\begin{array}{lcccr}0&1&0&...&0\\0&0&1&...&0\\0&0&0&...&0\\...&...&...&...&1\\-p_0&-p_1&-p_2&...&-p_{n-1}
+\end{array}\right],B=\left[\begin{array}{c}0\\0\\.\\.\\1
+\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="359" HEIGHT="102"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img16.gif"
+ ALT="\begin{displaymath}A=\left[\begin{array}{lcccr}0&1&0&...&0\\ 0&0&1&...&0\\ 0&0&0...
+...t],B=\left[\begin{array}{c}0\\ 0\\ .\\ .\\ 1
+\end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+the controllability matrix:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+K=\left[\begin{array}{lccr}B,&AB,&...,&A^{n-1}B
+\end{array}\right]=\left[\begin{array}{lcccr}0&0&0&...&1\\0&0&...&1&-p_{n-1}
+\\.&.&.&.&.\\0&1&-p_{n-1}&...&-p_2\\1&-p_{n-1}&...&-p_2&-p_1\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="515" HEIGHT="102"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img17.gif"
+ ALT="\begin{displaymath}K=\left[\begin{array}{lccr}B,&AB,&...,&A^{n-1}B
+\end{array}\r...
+...&-p_{n-1}&...&-p_2\\ 1&-p_{n-1}&...&-p_2&-p_1\end{array}\right]\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+which is obviously full rank.
+
+<P>
+<B>Part b.</B>
+
+<P>
+The easiest thing is to approach the problem in almost complete
+ignorance.  In fact, I highly recommend ignorance when approaching a
+new problem.  Thinking about it independently first has two effects:
+1) you might discover an new route to solution, 2) you'll better
+appreciate and understand someone else's solution once you really
+understand the problem.
+
+<P>
+First does the system satisfy Lipschitz?  Yes it does:
+
+<!-- MATH: $|x_1^2 - x_2^2| \le L |x_1-x_2|$ -->
+<IMG
+ WIDTH="158" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img18.gif"
+ ALT="$\vert x_1^2 - x_2^2\vert \le L \vert x_1-x_2\vert$">
+for 
+<!-- MATH: $x_1,x_2 \in X$ -->
+<IMG
+ WIDTH="78" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img19.gif"
+ ALT="$x_1,x_2 \in X$">
+where <I>X</I> is some finite
+neighborhood about any point (say point <I>a</I>).
+
+<P>
+Now consider that for ANY given trajectory <I>x</I>(<I>t</I>) we
+obtain the necessary drive term <I>u</I>(<I>t</I>) as 
+<!-- MATH: $u(t) = \dot{x} - x^2$ -->
+<IMG
+ WIDTH="98" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img20.gif"
+ ALT="$u(t) = \dot{x} - x^2$">.
+Thus we can easily derive a control to take us along any trajectory
+we are given.
+
+<P>
+So, suppose we want to get from <I>x</I><SUB>0</SUB> at <I>t</I><SUB>0</SUB> to <I>x</I><SUB>1</SUB> at <I>t</I><SUB>1</SUB>.
+We simply form the trajectory 
+<!-- MATH: $x(t) = \frac{x_1-x_0}{t_1-t_0} (t-t_0) + x_0$ -->
+<IMG
+ WIDTH="179" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img21.gif"
+ ALT="$x(t) = \frac{x_1-x_0}{t_1-t_0} (t-t_0) + x_0$">which takes us from <I>x</I><SUB>0</SUB> at <I>t</I><SUB>0</SUB> to <I>x</I><SUB>1</SUB> at <I>t</I><SUB>1</SUB>.  We then
+find 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+u(t) = \frac{x_1-x_0}{t_1-t_0} - (\frac{x_1-x_0}{t_1-t_0} (t-t_0) + x_0)^2
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="283" HEIGHT="40"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img22.gif"
+ ALT="\begin{displaymath}u(t) = \frac{x_1-x_0}{t_1-t_0} - (\frac{x_1-x_0}{t_1-t_0} (t-t_0) + x_0)^2
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+Yup, this baby is completely controllable!
+
+<P>
+<BR>
+<BR><B>8. TURKEY  PROBLEM</B>
+<BR>
+As Nike says ``just do it!''.  The solution to the difference 
+equation with <I>w</I>(0)=1is 
+<!-- MATH: $w(10)= \prod_{t=0}^{9} (2+u(t))$ -->
+<IMG
+ WIDTH="169" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img23.gif"
+ ALT="$w(10)= \prod_{t=0}^{9} (2+u(t))$">.
+Now the question
+becomes how do you maximize that product term?  
+
+<P>
+Consider the product 2(2+<I>k</I>).  For <I>k</I>&gt;1 we always have
+
+<!-- MATH: $3(1+k) > 2(2+k)$ -->
+3(1+<I>k</I>) &gt; 2(2+<I>k</I>).  Now notice that if some <I>u</I><SUB><I>i</I></SUB> &gt;1 then
+some other <I>u</I><SUB><I>j</I></SUB> = 0.  Thus, if more than one unit is given
+in any week, the product can always be increased by using
+the extra unit from one week in the week where no units were used.
+
+<P>
+This argument leads to a uniform distribution on additive units, 1 per week.
+The MAXIMUM TURKEY WEIGHT is then 
+<!-- MATH: $w(10) = 3^{10} = 55,049$ -->
+<I>w</I>(10) = 3<SUP>10</SUP> = 55,049.  So let's
+hope that the turkey was an EMBRYO when the process started!
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html3"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Christopher Rose</I>
+<BR><I>1998-08-29</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,537 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="ps2soln">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="ps2soln.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<DIV ALIGN="CENTER">
+Rutgers University
+<BR>
+The State University Of New Jersey
+<BR>
+College of Engineering
+<BR>
+Department of Electrical and Computer Engineering
+<BR>
+<BR>
+<BR>
+330:501<U>Systems Analysis</U>Fall 1995
+<BR>
+Problem Set 2 SOLUTIONS
+</DIV>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 1, Problem 10:</B>
+<BR>
+First, let's define 
+<!-- MATH: $\rho(x,y) = ||x-y||$ -->
+<IMG
+ WIDTH="148" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img1.gif"
+ ALT="$\rho(x,y) = \vert\vert x-y\vert\vert$">
+and 
+<!-- MATH: $B(x) = Ax+b$ -->
+<I>B</I>(<I>x</I>) = <I>Ax</I>+<I>b</I> is a
+mapping. Therefore, 
+<!-- MATH: $\rho(B(x),B(y)) = ||B(x)-B(y)|| = ||(Ax+b)-(Ay+b)|| = ||A(x-y)|| \le ||A||*||x-y||$ -->
+<IMG
+ WIDTH="735" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img2.gif"
+ ALT="$\rho(B(x),B(y)) = \vert\vert B(x)-B(y)\vert\vert = \vert\vert(Ax+b)-(Ay+b)\vert...
+...\vert\vert A(x-y)\vert\vert \le \vert\vert A\vert\vert*\vert\vert x-y\vert\vert$">.
+Since, ||<I>A</I>|| &lt; 1, if we choose <I>k</I> =
+||<I>A</I>||, then 
+<!-- MATH: $\rho(B(x),B(y)) \le k||x-y|| = k\rho(x,y)$ -->
+<IMG
+ WIDTH="307" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img3.gif"
+ ALT="$\rho(B(x),B(y)) \le k\vert\vert x-y\vert\vert = k\rho(x,y)$">.
+So B(x) is a
+contrcation mapping. From Thm 1.3, we can see that this equation has a
+unique solution (fixed point). <B>QED</B>.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 1, Problem 11:</B>
+<BR>
+From Thm 1.8, we know that 
+<!-- MATH: $|\lambda| \le ||A||$ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img4.gif"
+ ALT="$\vert\lambda\vert \le \vert\vert A\vert\vert$">.
+And	
+<!-- MATH: $||A||_1 = \max_i\sum_{j=1}^{3} a_{i,j} = 4$ -->
+<IMG
+ WIDTH="220" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img5.gif"
+ ALT="$\vert\vert A\vert\vert _1 = \max_i\sum_{j=1}^{3} a_{i,j} = 4$">,
+	
+<!-- MATH: $||A||_{\infty} = \max_j\sum_{i=1}^{3} a_{i,j} = 4$ -->
+<IMG
+ WIDTH="227" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img6.gif"
+ ALT="$\vert\vert A\vert\vert _{\infty} = \max_j\sum_{i=1}^{3} a_{i,j} = 4$">,
+	
+<!-- MATH: $||A||_F = \sqrt{\sum_{i,j} |a_{i,j}|^2} = \sqrt{14}$ -->
+<IMG
+ WIDTH="231" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img7.gif"
+ ALT="$\vert\vert A\vert\vert _F = \sqrt{\sum_{i,j} \vert a_{i,j}\vert^2} = \sqrt{14}$">.
+Therefore,   
+<!-- MATH: $|\lambda| \le \sqrt{14}$ -->
+<IMG
+ WIDTH="86" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img8.gif"
+ ALT="$\vert\lambda\vert \le \sqrt{14}$">.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 1, Problem 12:</B>
+<BR>
+Apply Thm 1.9 to A:
+	Ball <I>B</I><SUB>1</SUB>, 
+<!-- MATH: $r_1 = \sum_{j=2}^{3}|a_{i,j}| = 3$ -->
+<IMG
+ WIDTH="160" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img9.gif"
+ ALT="$r_1 = \sum_{j=2}^{3}\vert a_{i,j}\vert = 3$">,
+	Ball <I>B</I><SUB>2</SUB>, 
+<!-- MATH: $r_2 = \sum_{j=1,j\neq2}^{3}|a_{i,j}| = 2$ -->
+<IMG
+ WIDTH="188" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img10.gif"
+ ALT="$r_2 = \sum_{j=1,j\neq2}^{3}\vert a_{i,j}\vert = 2$">,
+	Ball <I>B</I><SUB>3</SUB>, 
+<!-- MATH: $r_3 = \sum_{j=1}^{2}|a_{i,j}| = 3$ -->
+<IMG
+ WIDTH="160" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img11.gif"
+ ALT="$r_3 = \sum_{j=1}^{2}\vert a_{i,j}\vert = 3$">.
+All balls are closed balls with center at 1. Therefore, 
+<!-- MATH: $D = B_1\cup
+B_2\cup B_3 = [-2,4]$ -->
+<IMG
+ WIDTH="231" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img12.gif"
+ ALT="$D = B_1\cup
+B_2\cup B_3 = [-2,4]$">.
+
+<P>
+Apply Thm 1.9 to <I>A</I><SUP><I>T</I></SUP>:
+	<I>B</I><SUB>1</SUB>, 
+<!-- MATH: $r_1 = \sum|a'_{i,j}| = 1$ -->
+<IMG
+ WIDTH="136" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img13.gif"
+ ALT="$r_1 = \sum\vert a'_{i,j}\vert = 1$">,
+	<I>B</I><SUB>2</SUB>, 
+<!-- MATH: $r_2 = \sum|a'_{i,j}| = 4$ -->
+<IMG
+ WIDTH="136" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img14.gif"
+ ALT="$r_2 = \sum\vert a'_{i,j}\vert = 4$">,
+	<I>B</I><SUB>3</SUB>, 
+<!-- MATH: $r_3 = \sum|a'_{i,j}| = 3$ -->
+<IMG
+ WIDTH="136" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img15.gif"
+ ALT="$r_3 = \sum\vert a'_{i,j}\vert = 3$">.
+Again all balls are closed ballls with center at 1. Therefore, 
+<!-- MATH: $D =
+[-3,5]$ -->
+<I>D</I> =
+[-3,5]. The first one gives a tighter bound, which is better.
+	
+However, you can also take the intersection of the two to obtain
+
+<!-- MATH: $\lambda \in [-2,4]$ -->
+<IMG
+ WIDTH="91" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img16.gif"
+ ALT="$\lambda \in [-2,4]$">
+since the eigenvalues of <I>A</I><SUP><I>T</I></SUP> and <I>A</I> are
+identical (prove it for fun).
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 1, Problem 13:</B>
+<BR>
+It is easy to see that the rank of A is <I>r</I> = 2 and <I>m</I> = <I>n</I> = 3.
+Specifically we see that the sum of the first two rows yields the
+third and the first two rows are linarly independent of each other.
+The dimension of the null space is <I>n</I>-<I>r</I> = 1. We can choose any vector
+which satisties <I>Ax</I> = 0, say 
+<!-- MATH: $x = \alpha [1,3,-2]^T$ -->
+<IMG
+ WIDTH="133" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img17.gif"
+ ALT="$x = \alpha [1,3,-2]^T$">where <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img18.gif"
+ ALT="$\alpha$">
+is a nonzero constant.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 1, Problem 14:</B>
+<BR>
+We can first find the eigenvalues of A. To solve 
+<!-- MATH: $|A-\lambda I| = 0$ -->
+<IMG
+ WIDTH="108" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img19.gif"
+ ALT="$\vert A-\lambda I\vert = 0$">,
+we
+have two eigenvalues 
+<!-- MATH: $\lambda_1=0$ -->
+<IMG
+ WIDTH="58" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img20.gif"
+ ALT="$\lambda_1=0$">,
+and 
+<!-- MATH: $\lambda_2=5$ -->
+<IMG
+ WIDTH="58" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img21.gif"
+ ALT="$\lambda_2=5$">.
+We can then find
+the corresponding eigenvectors 
+<!-- MATH: $x_1 = [2,-1]^T$ -->
+<I>x</I><SUB>1</SUB> = [2,-1]<SUP><I>T</I></SUP> and 
+<!-- MATH: $x_2 = [1,2]^T$ -->
+<I>x</I><SUB>2</SUB> = [1,2]<SUP><I>T</I></SUP>.
+So: 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+T^{-1}= \left[
+\begin{array}{cc}
+2 &1 \\
+-1 &2
+\end{array} \right]
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="137" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img22.gif"
+ ALT="\begin{displaymath}T^{-1}= \left[
+\begin{array}{cc}
+2 &1 \\
+-1 &2
+\end{array} \right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+T =
+\frac{1}{5}
+\left[
+\begin{array}{cc}
+2 &-1\\
+1 &2
+\end{array} \right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="135" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img23.gif"
+ ALT="\begin{displaymath}T =
+\frac{1}{5}
+\left[
+\begin{array}{cc}
+2 &-1\\
+1 &2
+\end{array} \right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+And 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\Lambda = \left[
+\begin{array}{cc}
+0 &0\\
+0 &5
+\end{array} \right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="103" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img24.gif"
+ ALT="\begin{displaymath}\Lambda = \left[
+\begin{array}{cc}
+0 &0\\
+0 &5
+\end{array} \right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+from which we can verify that 
+<!-- MATH: $A = T^{-1} \Lambda T$ -->
+<IMG
+ WIDTH="102" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img25.gif"
+ ALT="$A = T^{-1} \Lambda T$">.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 1, Problem 16:</B>
+<BR>
+First find the eigenvalues of A, which are 
+<!-- MATH: $\lambda_1 = 0$ -->
+<IMG
+ WIDTH="58" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img20.gif"
+ ALT="$\lambda_1=0$">
+and
+
+<!-- MATH: $\lambda_2 = 3$ -->
+<IMG
+ WIDTH="58" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img26.gif"
+ ALT="$\lambda_2 = 3$">.
+Then find the two corresponding eigenvectors, 
+<!-- MATH: $x_1 =
+[1,-1]^T$ -->
+<I>x</I><SUB>1</SUB> =
+[1,-1]<SUP><I>T</I></SUP> and 
+<!-- MATH: $x_2 = [1,2]^T$ -->
+<I>x</I><SUB>2</SUB> = [1,2]<SUP><I>T</I></SUP>.  Thus, 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+T^{-1} = \left[ \begin{array}{cc}
+1 & 1 \\
+-1 & 2
+\end{array} \right]
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="137" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img27.gif"
+ ALT="\begin{displaymath}T^{-1} = \left[ \begin{array}{cc}
+1 & 1 \\
+-1 & 2
+\end{array} \right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+T = \frac{1}{3}
+\left[
+\begin{array}{cc}
+2 & -1 \\
+1 & 1
+\end{array} \right]
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="135" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img28.gif"
+ ALT="\begin{displaymath}T = \frac{1}{3}
+\left[
+\begin{array}{cc}
+2 & -1 \\
+1 & 1
+\end{array} \right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+We then have
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\Lambda = \left[ \begin{array}{cc}
+0 &0\\
+0 &3
+\end{array} \right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="103" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img29.gif"
+ ALT="\begin{displaymath}\Lambda = \left[ \begin{array}{cc}
+0 &0\\
+0 &3
+\end{array} \right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+e^{\Lambda t}
+=
+\left[ \begin{array}{cc}
+1 &0\\
+0 & e^{3t}
+\end{array} \right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="125" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img30.gif"
+ ALT="\begin{displaymath}e^{\Lambda t}
+=
+\left[ \begin{array}{cc}
+1 &0\\
+0 & e^{3t}
+\end{array} \right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+And since 
+<!-- MATH: $A = T^{-1} \Lambda T$ -->
+<IMG
+ WIDTH="102" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img25.gif"
+ ALT="$A = T^{-1} \Lambda T$">
+we get
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+e^{At}
+=
+T^{-1}e^{\Lambda t}T =
+\frac{1}{3}
+\left[
+\begin{array}{cc}
+2+e^{3t} &-1+e^{3t}\\
+-2+2e^{3t} &1+2e^{3t}
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="353" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img31.gif"
+ ALT="\begin{displaymath}e^{At}
+=
+T^{-1}e^{\Lambda t}T =
+\frac{1}{3}
+\left[
+\begin{arr...
+...+e^{3t} &-1+e^{3t}\\
+-2+2e^{3t} &1+2e^{3t}
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<BR>
+<BR><B>S &amp; B:</B> <B>Chapter 1, Problem 17:</B>
+<BR>
+Use the result of Example 1.19, to find
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+e^{At}
+=
+\left[
+\begin{array}{clcr}
+e^{2t} &te^{2t}\\
+0 &e^{2t}
+\end{array}
+\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="145" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img32.gif"
+ ALT="\begin{displaymath}e^{At}
+=
+\left[
+\begin{array}{clcr}
+e^{2t} &te^{2t}\\
+0 &e^{2t}
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html3"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Christopher Rose</I>
+<BR><I>1998-08-29</I>
+</ADDRESS>
+</BODY>
+</HTML>

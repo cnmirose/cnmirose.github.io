@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v3|317e|0|0|%2a|s;10106051;0-0;0;9050085;2321-160|600;6470306|6488202|1;;~sscs=%3fhttp://www.nature.com/nature/focus/malaria"><img src="http://m3.doubleclick.net/viewad/23675/10534-04-160x600.gif" border=0 alt="Nature Outlook Malaria"></a>');

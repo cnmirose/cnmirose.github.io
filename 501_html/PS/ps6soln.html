@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="ps6soln">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="ps6soln.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<DIV ALIGN="CENTER">
+Rutgers University
+<BR>
+The State University Of New Jersey
+<BR>
+College of Engineering
+<BR>
+Department of Electrical and Computer Engineering
+<BR>
+<BR>
+<BR>
+330:501<U>Systems Analysis</U>
+<BR>
+Problem Set 6 SOLUTIONS
+</DIV>
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[4], prob. 1:
+<BR>
+We have found the transition matrix in P3-1:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\phi (t,\tau)=
+\left[ \begin{array}{lr}t/\tau & 0 \\0 & t/\tau
+\end{array}\right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="174" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img1.gif"
+ ALT="\begin{displaymath}\phi (t,\tau)=
+\left[ \begin{array}{lr}t/\tau & 0 \\ 0 & t/\tau
+\end{array}\right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+For <IMG
+ WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img2.gif"
+ ALT="$t>\tau$">,
+
+<!-- MATH: $\phi(t,\tau)$ -->
+<IMG
+ WIDTH="56" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img3.gif"
+ ALT="$\phi(t,\tau)$">
+is not bounded which implies
+that this system is unstable.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[4], prob. 2:
+<BR>
+We have found the transition matrix in P2-4 (refer to the previous solution).
+
+<!-- MATH: $\phi(t,t_0)$ -->
+<IMG
+ WIDTH="60" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img4.gif"
+ ALT="$\phi(t,t_0)$">
+is not bounded for <I>t</I>&gt;<I>t</I><SUB>0</SUB>, so the system is not stable.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[4], prob. 4:
+<BR>
+The transition matrix has been found in P3-7  as
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\phi(t,t_0)=\left[ \begin{array}{lc}1 & 1/6-1/6e^{-6(t-t_0)} \\0 &
+e^{-6(t-t_0)} \end{array} \right]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="278" HEIGHT="54"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img5.gif"
+ ALT="\begin{displaymath}\phi(t,t_0)=\left[ \begin{array}{lc}1 & 1/6-1/6e^{-6(t-t_0)} \\ 0 &
+e^{-6(t-t_0)} \end{array} \right]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+which is bounded for <IMG
+ WIDTH="51" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img6.gif"
+ ALT="$t\ge t_0$">.
+Therefore the system is stable, but not asymtotically stable (has an
+eigenvalue of zero).
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[4], prob. 6:
+<BR>
+For this discrete system, we have the characteristic function
+
+<!-- MATH: $(2-\lambda)^2=0$ -->
+<IMG
+ WIDTH="105" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img7.gif"
+ ALT="$(2-\lambda)^2=0$">.
+The solutions are 
+<!-- MATH: $\lambda_1=\lambda_2=2$ -->
+<IMG
+ WIDTH="101" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img8.gif"
+ ALT="$\lambda_1=\lambda_2=2$">.
+Since
+the magnitudes of the eigenvalues are greater than 1, the system is
+unstable.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[4], prob. 8:
+<BR>
+We can form the Routh array for this system,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{lccc}
+s^3 & 1 & 3 &0 \\
+s^2 & 2 & 5 &0 \\
+s & 1/2 & 0 \\
+s^0 & 5 &
+\end{array}
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="110" HEIGHT="99"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img9.gif"
+ ALT="\begin{displaymath}\begin{array}{lccc}
+s^3 & 1 & 3 &0 \\
+s^2 & 2 & 5 &0 \\
+s & 1/2 & 0 \\
+s^0 & 5 &
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+There is no change of sign in the first column of the array. Therefore
+this is a stable system.  We can also form the Hurwitz array as
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left [
+\begin{array}{ccc}
+2 & 5 & 0\\
+1 & 3 & 0\\
+0 & 2 & 2
+\end{array}
+\right ]
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="88" HEIGHT="76"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img10.gif"
+ ALT="\begin{displaymath}\left [
+\begin{array}{ccc}
+2 & 5 & 0\\
+1 & 3 & 0\\
+0 & 2 & 2
+\end{array}\right ]
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and find all the appropriate determinants (2, 1 and 2)
+greater than zero.
+
+<P>
+<BR>
+<BR><B>S &amp; B:</B> Ch.[4], prob. 12:
+<BR>
+We have 
+<!-- MATH: $V(x)=(x-\bar{x})^T(x-\bar{x})$ -->
+<IMG
+ WIDTH="199" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img11.gif"
+ ALT="$V(x)=(x-\bar{x})^T(x-\bar{x})$">.
+This function satisfies the first two
+conditions of the Lyapunov function in that it is continuous and has a
+unique minimum at the stationary point <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img12.gif"
+ ALT="$\bar{x}$">.
+We check the last condition
+by differentiating the <I>V</I>(<I>x</I>) with respect to time to obtain.
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{V}(x)= \dot{x}^T(x-\bar{x}) + (x-\bar{x})^T \dot{x} =
+2 \dot{x}^T (x-\bar{x})
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="361" HEIGHT="33"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img13.gif"
+ ALT="\begin{displaymath}\dot{V}(x)= \dot{x}^T(x-\bar{x}) + (x-\bar{x})^T \dot{x} =
+2 \dot{x}^T (x-\bar{x})
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+We require
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\dot{x}^T (x-\bar{x})  = f^T(x)(x-\bar{x}) \le 0
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="246" HEIGHT="33"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img14.gif"
+ ALT="\begin{displaymath}\dot{x}^T (x-\bar{x}) = f^T(x)(x-\bar{x}) \le 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Thus, the latter part of the equation (in <I>f</I>()) specifies the condition
+on <I>f</I>(<I>x</I>) 
+<!-- MATH: $\forall x \in \Omega$ -->
+<IMG
+ WIDTH="63" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img15.gif"
+ ALT="$\forall x \in \Omega$">
+for <I>V</I>(<I>x</I>) to be a Lyapunov function.
+
+<P>
+NOTE:
+This might be considered as a generalized form of <EM>negative feedback</EM>.
+However, note that not all components of <I>f</I>(<I>x</I>) need have inverted
+signs from the corresponding components of 
+<!-- MATH: $(x-\bar{x})$ -->
+<IMG
+ WIDTH="64" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/img16.gif"
+ ALT="$(x-\bar{x})$">.
+Neat, huh?!
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html3"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/501_html/PS/home/crose/src/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Christopher Rose</I>
+<BR><I>1998-08-29</I>
+</ADDRESS>
+</BODY>
+</HTML>

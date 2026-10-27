@@ -1,0 +1,138 @@
+@import "/includes/news.css";
+
+.default	{FONT-SIZE: 10px;
+			LINE-HEIGHT: 14px;
+			FONT-FAMILY: verdana, arial, helvetica, sans-serif}
+.cmsdefault	{FONT-SIZE: 10px;
+			FONT-FAMILY: verdana, arial, helvetica, sans-serif}
+.verdana16	{FONT-SIZE: 16px;
+			FONT-FAMILY: verdana, arial, helvetica}
+.verdana14	{FONT-SIZE: 14px;
+			FONT-FAMILY: verdana, arial, helvetica}
+.verdana12	{FONT-SIZE: 12px;
+			FONT-FAMILY: verdana, arial, helvetica}
+.verdana11	{FONT-SIZE: 11px;
+			FONT-FAMILY: verdana, arial, helvetica}
+.verdana10	{FONT-SIZE: 10px;
+			FONT-FAMILY: verdana, arial, helvetica}
+.verdana9	{FONT-SIZE: 9px;
+			FONT-FAMILY: verdana, arial, helvetica}
+.arial14	{FONT-SIZE: 14px;
+			FONT-FAMILY: arial, helvetica}
+.arial13	{FONT-SIZE: 13px;
+			FONT-FAMILY: arial, helvetica}
+.arial12	{FONT-SIZE: 12px;
+			FONT-FAMILY: arial, helvetica}
+.arial11	{FONT-SIZE: 11px;
+			FONT-FAMILY: arial, helvetica}
+.arial10	{FONT-SIZE: 10px;
+			FONT-FAMILY: arial, helvetica}
+
+A			{COLOR: #c03b00;
+			TEXT-DECORATION: none}
+
+A:hover		{TEXT-DECORATION: underline}
+
+.link		{COLOR: #490000}
+
+.footer		{FONT-SIZE: 10px;
+			COLOR: #000000;
+			FONT-FAMILY: verdana, arial, helvetica;
+			TEXT-DECORATION: none}
+
+.white		{COLOR: #ffffff}
+
+.formelem	{FONT-SIZE: 11px;
+			COLOR: #000000;
+			FONT-FAMILY: arial, helvetica;
+			BACKGROUND-COLOR: #ffffff}
+
+.searchelem	{FONT-SIZE: 11px;
+			WIDTH: 130px;
+			COLOR: #000000;
+			FONT-FAMILY: arial, helvetica;
+			BACKGROUND-COLOR: #ffffff}
+
+.sectionhead
+			{FONT-WEIGHT: bold;
+			FONT-SIZE: 12px;
+			COLOR: #ffffff;
+			FONT-FAMILY: arial, helvetica;
+			BACKGROUND-COLOR: #482c59}
+
+.listhead	{FONT-WEIGHT: bold;
+			FONT-SIZE: 10px;
+			COLOR: #000000;
+			FONT-FAMILY: arial, helvetica;
+			BACKGROUND-COLOR: #fed971}
+
+.TableBody	{BACKGROUND-COLOR: #e3e3d8}
+
+A.droplink	{FONT-SIZE: 10px;
+			COLOR: #6e6e60;
+			FONT-FAMILY: verdana, arial, helvetica;
+			TEXT-DECORATION: none}
+
+.spotheader	{FONT-SIZE: 11px;
+			COLOR: #425f6c;
+			FONT-FAMILY: verdana, arial, helvetica}
+
+.floatbox	{FONT-SIZE: 10px;
+			LINE-HEIGHT: 13px;
+			FONT-FAMILY: verdana, arial, helvetica, sans-serif}
+
+.spacerbg	{BACKGROUND-IMAGE: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/spacer.gif)}
+
+.jumptobg	{BACKGROUND-IMAGE: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/sitewide/jumpto_bg.gif)}
+
+.navbullet	{FONT-SIZE: 10px;
+			COLOR: #c6e9fc;
+			FONT-FAMILY: verdana, arial, helvetica}
+
+.linksbg	{BACKGROUND-IMAGE: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/sitewide/leftwave.gif);
+			BACKGROUND-COLOR: #8eacba}
+
+.blueside	{BACKGROUND-COLOR: #8eacba}
+
+.graybg		{BACKGROUND-COLOR: #e5e5e5}
+
+.orangebg	{BACKGROUND-COLOR: #fa9624}
+
+.whitebg	{BACKGROUND-COLOR: #ffffff}
+
+.adbg		{BACKGROUND-COLOR: #9b8d7d}
+
+.calloutbg	{BACKGROUND-COLOR: #c7c2bb}
+
+.calloutborder	{BACKGROUND-COLOR: #b5ada2}
+
+.ltblue		{COLOR: #c2e5f8}
+
+.dropmenu	{BACKGROUND-COLOR: #8eacba}
+
+.dropmenuHIGH	{BACKGROUND-COLOR: #a7c8da}
+
+.dropsep	{BACKGROUND-COLOR: #a7c8da}
+
+.dropborder	{BACKGROUND-COLOR: #9bbaca}
+
+.dropnav	{FONT-SIZE: 9px;
+			COLOR: #000000;
+			FONT-FAMILY: verdana, arial, helvetica;
+			TEXT-DECORATION: none}
+
+.15px		{PADDING-LEFT: 15px;
+			WIDTH: 465px}
+
+.cmscallout	{PADDING-LEFT: 10px;
+			WIDTH: 200px}
+
+.quicksearch	{font-family: arial, helvetica;
+				font-size:11px;
+				color:#000000;
+				border:2px black;
+				background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/ActiveCampus/images/formelembg.gif);
+				background-attachment:fixed;
+				background-color: #FFFFFF;}
+				
+.spacer		{clear:both; line-height:1em;}

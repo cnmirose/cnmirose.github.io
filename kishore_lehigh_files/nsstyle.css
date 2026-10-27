@@ -1,0 +1,102 @@
+.default		{font-family: verdana, arial, helvetica, sans-serif;
+				font-size:11px;
+				line-height:15px;}
+.cmsdefault		{font-family: verdana, arial, helvetica, sans-serif;
+				font-size:10px;}
+.verdana16		{font-family: verdana, arial, helvetica;
+				font-size:16px;}
+.verdana14		{font-family: verdana, arial, helvetica;
+				font-size:14px;}
+.verdana12		{font-family: verdana, arial, helvetica;
+				font-size:12px;}
+.verdana11		{font-family: verdana, arial, helvetica;
+				font-size:11px;}
+.verdana10		{font-family: verdana, arial, helvetica;
+				font-size:11px;}
+.verdana9		{font-family: verdana, arial, helvetica;
+				font-size:10px;}
+.arial14		{font-family: arial, helvetica;
+				font-size:14px;}
+.arial13		{font-family: arial, helvetica;
+				font-size:13px;}
+.arial12		{font-family: arial, helvetica;
+				font-size:12px;}
+.arial11		{font-family: arial, helvetica;
+				font-size:11px;}
+.arial10		{font-family: arial, helvetica;
+				font-size:11px;}
+A				{color:#C03B00;
+				text-decoration:none;}
+A:hover			{text-decoration:underline;}
+.link			{color:#490000;}
+
+.footer			{font-family: verdana, arial, helvetica;
+				font-size:10px;
+				color:#000000;
+                text-decoration:none;}
+.white			{color:#FFFFFF;}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+.sectionhead	{background-color:#482C59; color:#ffffff; font-weight:bold; font-family: arial, helvetica; font-size:12px; }
+.listhead		{background-color:#FED971; color:#000000; font-weight:bold; font-family: arial, helvetica; font-size:10px; }
+.TableBody		{background-color:#E3E3D8;}
+A.droplink		{font-family: verdana, arial, helvetica;
+				font-size:10px;
+				text-decoration:none;
+				color:#6E6E60;}
+				
+.spotheader		{font-family: verdana, arial, helvetica;
+				font-size:11px;
+				color: #425F6C;}
+.floatbox		{font-family: verdana, arial, helvetica, sans-serif;
+				font-size:11px;
+				line-height:13px;}
+
+.spacerbg		{background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/spacer.gif);}
+
+.jumptobg		{background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/sitewide/jumpto_bg.gif);}
+
+.navbullet		{font-family: verdana, arial, helvetica;
+				font-size:10px;
+				color:#C6E9FC;}
+				
+.linksbg		{background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/sitewide/leftwave.gif);
+				background-color:#8EACBA;}
+.blueside		{background-color:#8EACBA;}
+.graybg			{background-color:#E5E5E5;}
+.orangebg		{background-color:#FA9624;
+				background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/spacer.gif);}
+.whitebg		{background-color:#FFFFFF;
+				background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/spacer.gif);}
+
+.adbg			{background-color:#9B8D7D;
+				background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/spacer.gif);}
+.calloutbg		{background-color:#C7C2BB;
+				background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/spacer.gif);}
+.calloutborder	{background-color:#B5ADA2;
+				background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/spacer.gif);}
+				
+.ltblue			{color:#C2E5F8;}
+
+
+.dropmenu 		{background-color:#8EACBA;}
+.dropmenuHIGH 	{background-color:#A7C8DA;}
+.dropsep 		{background-color:#A7C8DA;}
+.dropborder 	{background-color:#9BBACA;}
+.dropnav		{font-family: verdana, arial, helvetica;
+				font-size:10px;
+				color:#000000;
+				text-decoration:none;}
+				
+.fifteenpx		{padding-left:15px;
+				width:465px;}
+				
+.cmscallout		{padding-left:10px;
+				width:200px;}

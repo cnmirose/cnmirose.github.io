@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/351b/0/0/%2a/v;20590586;0-0;0;10965748;7157-150/49;12185554/12203450/2;;~sscs=%3fhttp://www.sciam.com/index.cfm?ref=nature"><img src="http://m1.2mdn.net/viewad/934919/sciam_logo_pink.jpg" border=0 alt="Click here"></a>');

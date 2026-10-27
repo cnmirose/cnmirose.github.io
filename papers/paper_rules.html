@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title></title>
+</head>
+  <body>
+ Folks,  <br>
+ <br>
+ Here are a set of procedures for submitting drafts so we don't waste precious
+time:<br>
+ <br>
+ 
+<h1>FIRST DRAFT:&nbsp;</h1>
+ 
+<ol>
+   <li>Make a tar ball of the directory in which all the latex files (and
+figure files) reside.  Exclude the .ps or .pdf forms of the whole document
+-- I'll compile on these my own machine.&nbsp;</li>
+   <li>Make SURE that the tar ball has everything that's needed. To do this, 
+after you make the tar ball, make a subdirectory and copy the tarball into 
+it.  Untar the tar ball and then run the normal latex commands IN THAT DIRECTORY. 
+If it doesn't compile for you, it won't compile for me!</li>
+   <li>If it compiles for you, then look over the .ps file which is produced 
+and make sure it's all readable and what you want to send.</li>
+   <li>Compress the successful tar ball (gzip, compress, zip whatever you'd 
+like, though I'd prefer gzip) and send it to me via email.</li>
+ 
+</ol>
+ 
+<h1>SUBSEQUENT DRAFTS:&nbsp;</h1>
+ 
+<ol>
+   <li>If I send you back, for instance,  paper3.tex, please send me back
+your revisions as the next increment, paper4.tex.  Send only this tex file
+unless figures have changed</li>
+   <li>If any figures have changed, send me the associated files along with 
+the paperN.tex file.&nbsp;</li>
+   <li>Please again make sure that what you send me will compile. For instance, 
+some of you use software which puts ctl-M's all over the place.  It would 
+be nice if you could keep this from happening.&nbsp;<br>
+   </li>
+ 
+</ol>
+ 
+<h1>GENERAL&nbsp; DOs and DON'Ts</h1>
+ 
+<ol>
+   <li>Proofread your draft before you send it to me.  If I get a draft which
+is not proofread for obvious syntax spelling and typographical errors, I'm
+gonna send it back unread. NEVER EVER&nbsp; send me half-baked work.</li>
+  <li>Your FIGURES should be properly labeled and captioned with legends
+where appropriate. &nbsp;Don't make me guess what a figure means.<br>
+  </li>
+   <li>Please look at the copies of papers on my web site. 
+ This is the standard I'll hold you to.  Typeset the equations in the same 
+basic way, and make sure your content flows correctly from abstract through 
+conclusion.  You may leave notes embedded in the text if you wish (clearly 
+marked in boldface so I don't stumble over them when reading -- you should
+use the \note{} macro ( \newcommand{\note}[1]{{\large \bf #1}} ).</li>
+   <li>NEVER send me drafts with single line paragraphs.  They are HELL for 
+me to edit.  Same for displayed equations.  Break things up logically.  You 
+can find a source tex file to use as a model&nbsp; <a
+ href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/avoid17.tex">here</a>.
+ Notice the extensive use of macros (\newcommands{}) and how equations, figures 
+and tables are referenced.&nbsp;</li>
+   <li>Anything you send me should have proper citations in place and a bibliography 
+at the end. Use this&nbsp; <a
+ href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/avoid17.tex">example</a>
+. You should have an associated .bib file  and use bibtex on your latex papers.
+ This allows us to share the bibliographies easily.  A (large) bibfile is
+available <a
+ href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/MERGE10.bib">here.</a></li>
+  <li>Place all figures in a SUBDIRECTORY called "figures".</li>
+  <li>Use the \equat{} and \Equat{} macros for referencing equations. &nbsp;Label
+equations as &nbsp;label{eq:equationname} for refeence as \equat{equationname}.
+Here's a file with the most of the <a
+ href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/papers/texdef.tex">macros</a>&nbsp;
+I use.<br>
+  </li>
+ 
+</ol>
+ <br>
+ <br>
+</body>
+</html>

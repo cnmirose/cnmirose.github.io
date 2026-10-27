@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/351b/0/0/%2a/f;92203559;0-0;0;13335175;3454-728/90;20444906/20462800/1;;~sscs=%3fhttp://network.nature.com"><img src="http://m1.2mdn.net/viewad/1236493/728-90-network.gif" border=0 alt="Brought to you by Nature Network"></a>');

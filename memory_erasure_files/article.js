@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/351b/0/0/%2a/i;75770945;0-0;0;9050085;4307-300/250;20041342/20059236/1;;~sscs=%3fhttp://www.nature.com/ng/qoty/index.html"><img src="http://m1.2mdn.net/viewad/488537/QotY_300x250.gif" border=0 alt="Click here to find out more!"></a>');

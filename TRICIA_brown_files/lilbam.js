@@ -4,7 +4,7 @@ function dropdownSelect(dropdown){
 		if (dropdown.options[i].selected){
 	
 			if (dropdown.options[i].value != ''){
-				location.href = 'https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/TRICIA_brown_files/class-notes/class-notes---' + dropdown.options[i].value + '.html';
+				location.href = 'https://bucket.worldofbits.brown.edu/TRICIA_brown_files/class-notes/class-notes---' + dropdown.options[i].value + '.html';
 			}
 			
 		}

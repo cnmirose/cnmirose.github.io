@@ -11,7 +11,7 @@ var fontfamily = 'arial,sans-serif'; // font for content
 var tSpeed=3;                        // scroll speed (1 = slow, 5 = fast)
 
 // enter your ticker content here (use \/ and \' in place of / and ' respectively)
-var content='Are you looking for loads of useful information <a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/http%3A%5C/%5C/javascript.about.com%5C">About Javascript<\/a>? Well now you\'ve found it.';
+var content='Are you looking for loads of useful information <a href="https://bucket.worldofbits.brown.edu/http%3A%5C/%5C/javascript.about.com%5C">About Javascript<\/a>? Well now you\'ve found it.';
 
 var cps=-tSpeed; var aw, mq; var fsz = parseInt(tHeight) - 4; function startticker(){if (document.getElementById) {var tick = '<div style="position:relative;width:'+tWidth+';height:'+tHeight+';overflow:hidden;background-color:'+tcolour+'"'; if (moStop) tick += ' onmouseover="cps=0" onmouseout="cps=-tSpeed"'; tick +='><div id="mq" style="position:absolute;right:0px;top:0px;font-family:'+fontfamily+';font-size:'+fsz+'px;white-space:nowrap;"><\/div><\/div>'; document.getElementById('ticker').innerHTML = tick; mq = document.getElementById("mq"); mq.style.right=(10+parseInt(tWidth))+"px"; mq.innerHTML='<span id="tx">'+content+'<\/span>'; aw = document.getElementById("tx").offsetWidth; lefttime=setInterval("scrollticker()",50);}} function scrollticker(){mq.style.right = (parseInt(mq.style.right)>(-10 - aw)) ?
 mq.style.right = parseInt(mq.style.right)+cps+"px": parseInt(tWidth)+10+"px";} window.onload=startticker;

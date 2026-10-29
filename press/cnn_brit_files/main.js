@@ -562,7 +562,7 @@ function LV_getRealOneStatus() {	// returns ('undetermined'|'installed'|'notinst
 	return RealOneInst;
 }
 
-function LV_getVideourl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/cnn_brit_files/videoUrlPath%2C%20format%2C%20realOneStatus) {
+function LV_getVideourl(https://bucket.worldofbits.brown.edu/press/cnn_brit_files/videoUrlPath%2C%20format%2C%20realOneStatus) {
 	var fullUrl;
 	var preferredEdition = "www";
 	var selectedEdition = WM_readCookie( "SelectedEdition" );
@@ -631,7 +631,7 @@ function LaunchVideo( videoPath, videoFormat ) {
 		}
 	}
 		
-	videoUrl = LV_getVideourl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/cnn_brit_files/videoPath%2C%20videoFormat%2C%20realOneStatus);
+	videoUrl = LV_getVideourl(https://bucket.worldofbits.brown.edu/press/cnn_brit_files/videoPath%2C%20videoFormat%2C%20realOneStatus);
 	
 	if ( videoUrl.indexOf( ".exclude.html" ) > 0 ) {
 		CNN_openPopup( videoUrl, '' + VIDEO_POPUP_WIDTH + 'x' + VIDEO_POPUP_HEIGHT, 'width=' + VIDEO_POPUP_WIDTH + ',height=' + VIDEO_POPUP_HEIGHT + ',scrollbars=no,resizable=no' );

@@ -143,7 +143,7 @@ function request_launch(site)
 	} 
 	else 
 	{
-		self.location.href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/bbc_whitehouse_files/1/shared/bsp/hi/services/help/html/av_console_browsers.stm";
+		self.location.href="https://bucket.worldofbits.brown.edu/press/bbc_whitehouse_files/1/shared/bsp/hi/services/help/html/av_console_browsers.stm";
 	}
 	
 	return;

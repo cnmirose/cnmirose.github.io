@@ -17,7 +17,7 @@ th {text-align:left;}
 .rightcol2 a {text-decoration:underline;}
 .rightcol2 p {padding-bottom:4px;}
 
-li.greenb {list-style-image: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/images/listbullet3.gif); margin-left:-2em;}
+li.greenb {list-style-image: url(https://bucket.worldofbits.brown.edu/press/images/listbullet3.gif); margin-left:-2em;}
 ul.listspecial {margin-top:0em; line-height:1.5em;}
 
 .text {font-family:Verdana; font-size:70%;}
@@ -100,7 +100,7 @@ ul.listspecial {margin-top:0em; line-height:1.5em;}
 .nest5570p1 {font-family:Verdana; font-size:100%; padding-bottom:5px;}
 .nest5570p2 {font-family:Verdana; font-size:100%; padding-bottom:12px;}
 
-.headmark {background-image: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/images/shadowmark.jpg); background-repeat:no-repeat;}
+.headmark {background-image: url(https://bucket.worldofbits.brown.edu/press/images/shadowmark.jpg); background-repeat:no-repeat;}
 .footernav {background-color:#8799cb; padding-bottom:3px; padding-top:1px; color:#ffffff; font-family:Verdana; font-size:x-small; text-align:center;}
 .footernav a {color:#ffffff;}
 .footernav a:hover {color:#6677aa;}
@@ -131,6 +131,6 @@ ul.listspecial {margin-top:0em; line-height:1.5em;}
 .cal_off {padding-left:1px; padding-right:1px; padding-top:3px; padding-bottom:3px; background-color:#B6E294; text-align:center; font-weight:bold; color:#868788; font-size:9px;}
 .cal_none { background-color:#C1C0C1; font-size:9px;}
 .dkgreybartitle {background-color:#888888;  font-family:Verdana; font-size:x-small; display:block;color:#ffffff; font-weight:bold; padding:5px;}
-.hm_pub_mission {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:small; background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/images/missionbg.gif); padding:15px;}
+.hm_pub_mission {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:small; background-image:url(https://bucket.worldofbits.brown.edu/press/images/missionbg.gif); padding:15px;}
 .photobuff {padding-right:7px; padding-bottom:7px;}
 .phototext {padding-bottom:10px;}

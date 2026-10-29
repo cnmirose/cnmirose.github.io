@@ -276,7 +276,7 @@ new SubI('sub7link13', 'Books', '/books/'),
 new SubI('sub7link14', 'Weblogs', '/weblogs/'),
 new SubI('sub7link15', 'Forums', '/forums/index.ssf?entertainment.ssf')
 ]
-hNAVBAR.m_i[8] = new MenuI('i', '<img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/starledger_coughlin_files/dhtml/hnavbar_class/images/classtitle.gif" border=0>', 'isub','/classifieds', 193, 244, 'miclass');
+hNAVBAR.m_i[8] = new MenuI('i', '<img src="https://bucket.worldofbits.brown.edu/press/starledger_coughlin_files/dhtml/hnavbar_class/images/classtitle.gif" border=0>', 'isub','/classifieds', 193, 244, 'miclass');
 hNAVBAR.m_i[8].s_m.s_i = [
 new SubI('sub8link0', 'Your Next Great Job Is Closer Than You Think!', 'http://www.nj.com/jobs/', 'Jobs:', 'Best Local Jobs', '/dhtml/hnavbar_class/images/icons/spacer.gif'),
 new SubI('sub8link1', 'Get A Quick Quote OR Do More Research', 'http://www.nj.com/autos/new/ ', '', 'Is That Hot New Car Perfect For You?', '/dhtml/hnavbar_class/images/icons/spacer.gif'),

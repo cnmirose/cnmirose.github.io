@@ -464,7 +464,7 @@ function _uFlash() {
  }
  return f;
 }
-function __utmLinkerurl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/TRICIA_brown_files/l%2Ch) {
+function __utmLinkerurl(https://bucket.worldofbits.brown.edu/TRICIA_brown_files/l%2Ch) {
  var p,k,a="-",b="-",c="-",x="-",z="-",v="-";
  var dc=_ubd.cookie;
  var iq = l.indexOf("?");
@@ -494,11 +494,11 @@ function __utmLinkerurl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/TRIC
 }
 function __utmLinker(l,h) {
  if (!_ulink || !l || l=="") return;
- _udl.href=__utmLinkerurl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/TRICIA_brown_files/l%2Ch);
+ _udl.href=__utmLinkerurl(https://bucket.worldofbits.brown.edu/TRICIA_brown_files/l%2Ch);
 }
 function __utmLinkPost(f,h) {
  if (!_ulink || !f || !f.action) return;
- f.action=__utmLinkerurl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/TRICIA_brown_files/f.action%2C%20h);
+ f.action=__utmLinkerurl(https://bucket.worldofbits.brown.edu/TRICIA_brown_files/f.action%2C%20h);
  return;
 }
 function __utmSetVar(v) {

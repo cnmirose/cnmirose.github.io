@@ -102,7 +102,7 @@ function newTop10PopupWindow(url) {
 	newWin.focus()
 }
 
-function encodeurl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/telegraph_highfield_files/url) {
+function encodeurl(https://bucket.worldofbits.brown.edu/press/telegraph_highfield_files/url) {
 
 	var encodedurl = url;
 
@@ -119,7 +119,7 @@ function encodeurl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/tel
 }
 
 function newWindow(url, name, features) {
-	var newWin = window.open(encodeurl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/telegraph_highfield_files/url),name,features);
+	var newWin = window.open(encodeurl(https://bucket.worldofbits.brown.edu/press/telegraph_highfield_files/url),name,features);
 	newWin.moveTo(50,50);
 	newWin.focus();
 }

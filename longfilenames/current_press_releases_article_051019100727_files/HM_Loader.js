@@ -96,7 +96,7 @@ function HM_f_CenterMenu(topmenuid) {
 }
 
 if(HM_IsMenu) {
-	//alert('SRC='https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/longfilenames/current_press_releases_article_051019100727_files/%2B%20basepath%20%2B'/js/hm/HM_Arrays.js');
+	//alert('SRC='https://bucket.worldofbits.brown.edu/longfilenames/current_press_releases_article_051019100727_files/%2B%20basepath%20%2B'/js/hm/HM_Arrays.js');
 	document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='" + basepath + "/js/hm/HM_Arrays.js' TYPE='text/javascript'><\/SCR" + "IPT>");
 	document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='" + basepath + "/js/hm/HM_Script"+ HM_BrowserString +".js' TYPE='text/javascript'><\/SCR" + "IPT>");
 }

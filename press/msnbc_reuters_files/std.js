@@ -396,7 +396,7 @@ function writeFlashComponent2(oFl)
 		switch (oFl.defaultType)
 		{
 			case 1:
-				noFlashLink1 = "<a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/%2B%20oFl.url%2B">"
+				noFlashLink1 = "<a href="https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/%2B%20oFl.url%2B">"
 				sReturn = ""+noFlashLink1+oFl.altImgWB3+noFlashLink2+"";
 				break;
 			case 2:
@@ -414,17 +414,17 @@ function writeFlashComponent2(oFl)
 		switch (oFl.defaultType)
 		{
 			case 1:
-				noFlashLink1 = "<a href="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/%2B%20oFl.url%2B">"
-				sReturn=""+noFlashLink1+"<img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/%2BoFl.altImg%2B" width="+oFl.width+" height="+oFl.height+" border=0>"+noFlashLink2+"";
+				noFlashLink1 = "<a href="https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/%2B%20oFl.url%2B">"
+				sReturn=""+noFlashLink1+"<img src="https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/%2BoFl.altImg%2B" width="+oFl.width+" height="+oFl.height+" border=0>"+noFlashLink2+"";
 				break;
 			case 2:
-				sReturn="<img border=0 src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/%2BoFl.altImg%2B" usemap=#"+oFl.ID+">"+oFl.imageMap;
+				sReturn="<img border=0 src="https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/%2BoFl.altImg%2B" usemap=#"+oFl.ID+">"+oFl.imageMap;
 				break;
 			case 3:
 				sReturn = oFl.htm;
 				break;
 			default:
-				sReturn=""+noFlashLink1+"<IMG SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/%2BoFl.altImg%2B" WIDTH="+oFl.width+" HEIGHT="+oFl.height+" BORDER=0>"+noFlashLink2+"";
+				sReturn=""+noFlashLink1+"<IMG SRC="https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/%2BoFl.altImg%2B" WIDTH="+oFl.width+" HEIGHT="+oFl.height+" BORDER=0>"+noFlashLink2+"";
 		}
 	}
 
@@ -435,7 +435,7 @@ function writeFlashComponent2(oFl)
 			var sSep = (oFl.flashFile.indexOf("?") > -1) ? "&" : "?";
 			if (oSniff.mac || oSniff.nn>=4 || oSniff.webtv )
 			{
-				sReturn="<a name=\"anc_" + oFl.ID + "\"><EMBED SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/%2BoFl.flashFile%2BsSep%2B"domain="+document.domain+"&"+flashvars+" swLiveConnect=TRUE WIDTH="+oFl.width+" HEIGHT="+oFl.height+" ALIGN=top PLAY="+oFl.play+" LOOP="+oFl.loop+" BGCOLOR="+oFl.bgcolor+" QUALITY="+oFl.quality+" SCALE="+oFl.scale+" SALIGN="+oFl.salign+" MAYSCRIPT NAME="+oFl.ID+" MENU="+oFl.menu+" DEVICEFONT="+oFl.deviceFont+" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED></a>";
+				sReturn="<a name=\"anc_" + oFl.ID + "\"><EMBED SRC="https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/%2BoFl.flashFile%2BsSep%2B"domain="+document.domain+"&"+flashvars+" swLiveConnect=TRUE WIDTH="+oFl.width+" HEIGHT="+oFl.height+" ALIGN=top PLAY="+oFl.play+" LOOP="+oFl.loop+" BGCOLOR="+oFl.bgcolor+" QUALITY="+oFl.quality+" SCALE="+oFl.scale+" SALIGN="+oFl.salign+" MAYSCRIPT NAME="+oFl.ID+" MENU="+oFl.menu+" DEVICEFONT="+oFl.deviceFont+" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED></a>";
 			}
 			else if (oSniff.ie>=4)
 			{

@@ -234,7 +234,7 @@ function LVDisplayForm(aLV) {
   	var butSubmit = "<BUTTON onclick=Vote(\"" +LVname+ "\","+aLV.bDhtml+");>" + aLV.butSubmit + "</BUTTON>";
 
 	if (aLV.butSubmit.indexOf("http://") == 0) { 
-		butSubmit = "<a href=\"javascript:Vote('" +LVname+ "',"+aLV.bDhtml+");\"><img src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/%2B%20aLV.butSubmit%20%2B" name=b_" +LVname+ " border=0 onmouseover=SwapImage('b_" +LVname+ "',1); onmouseout=SwapImage('b_" +LVname+ "',0);></a>"; 
+		butSubmit = "<a href=\"javascript:Vote('" +LVname+ "',"+aLV.bDhtml+");\"><img src="https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/%2B%20aLV.butSubmit%20%2B" name=b_" +LVname+ " border=0 onmouseover=SwapImage('b_" +LVname+ "',1); onmouseout=SwapImage('b_" +LVname+ "',0);></a>"; 
 	} else if (aLV.butSubmit.indexOf("<") == 0) { 
 		butSubmit = "<a href=\"javascript:Vote('" +LVname+ "',"+aLV.bDhtml+");\">" + aLV.butSubmit+"</a>"; 
 	}

@@ -14,10 +14,10 @@ a.nav-left-hdr:visited {background-color: #003366; font-family: Arial, Helvetica
 a.nav-left-hdr:hover {background-color: #003366; font-family: Arial, Helvetica; font-weight: bold; color: #ffffff; font-size: 80%; text-decoration: underline }
 
 /* MODULE ELEMENTS */
-td.color-dot { background-image: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/longfilenames/current_press_releases_article_051019100727_files/images/navydot2x2.gif); }
+td.color-dot { background-image: url(https://bucket.worldofbits.brown.edu/longfilenames/current_press_releases_article_051019100727_files/images/navydot2x2.gif); }
 td.color-bkg {background-color: #003366 }
 hr.color-bkg {color: #003366 }
-td.feat-title { background-image: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/longfilenames/current_press_releases_article_051019100727_files/images/feat_ofm198x12.gif); }
+td.feat-title { background-image: url(https://bucket.worldofbits.brown.edu/longfilenames/current_press_releases_article_051019100727_files/images/feat_ofm198x12.gif); }
 
 /* BODY ELEMENTS */
 .body-color {text-decoration: none; font-family: Arial, Helvetica; font-weight: bold; color: #003366; font-size: 80%; }

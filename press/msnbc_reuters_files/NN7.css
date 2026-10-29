@@ -14,7 +14,7 @@ a:active{text-decoration:none;color:#CC0000}
 .sfl a:hover{text-decoration:none}
 .sfm {border-bottom: 1px solid #000077}
 .sfr {font-size:1px}
-.sfi {background:#0F669F;background-image:  url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/msn9/sgf_db.gif);border-bottom:1px solid #000077;border-top:1px solid #0000b0;border-right:1px solid #000088;padding:0px 0px 9px 0px;}
+.sfi {background:#0F669F;background-image:  url(https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/msnbc/msn9/sgf_db.gif);border-bottom:1px solid #000077;border-top:1px solid #0000b0;border-right:1px solid #000088;padding:0px 0px 9px 0px;}
 .sflb {font-size:1px;background:#17179A;border-bottom: 1px solid #000077}
 
 .tb, .tb a, .tb a:visited,.tb a:visited:hover {color:#FFFFFF}
@@ -602,17 +602,17 @@ tsmheadlineSmall a, .tsmheadlineSmall a:hover, .tsmheadlineSmall a:active, .tsmh
 .nmIE,.nmIEH,.nmIF,.nmIFH,.nmIR,.nmIRH{padding-left:6px;padding-right:12px;border-bottom:1px solid white}
 .nmIE,.nmIEH,.nmIF,.nmIFH{cursor:hand}
 .nmIS,.nmISH,.nmISC,.nmISCH{border-top:1px solid #66AAFF}
-.nmIS{background:#000088 url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/w.gif) no-repeat right center}
-.nmISC{background:#000088 url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
+.nmIS{background:#000088 url(https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/msnbc/nm/w.gif) no-repeat right center}
+.nmISC{background:#000088 url(https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
 .nmIR,.nmIRH{background:#333333;cursor:default}
-.nmIKD,.nmIKDH{background:#CC0000 url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/w.gif) no-repeat right center}
+.nmIKD,.nmIKDH{background:#CC0000 url(https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/msnbc/nm/w.gif) no-repeat right center}
 .nmIE{background:#DDDDDD}
-.nmIF{background:#DDDDDD url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/b.gif) no-repeat right center}
-.nmIB,.nmIBH,.nmIBD,.nmIBDH{background:#DDEEFF url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
-.nmIK,.nmIKH{background:#EEEEEE url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
+.nmIF{background:#DDDDDD url(https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/msnbc/nm/b.gif) no-repeat right center}
+.nmIB,.nmIBH,.nmIBD,.nmIBDH{background:#DDEEFF url(https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
+.nmIK,.nmIKH{background:#EEEEEE url(https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
 .nmIEH{background:white}
-.nmISH,.nmISCH,.nmIFH{background:white url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/b.gif) no-repeat right center}
-.nmIBC,.nmIBCH,.nmIKC,.nmIKCH{background:white url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
+.nmISH,.nmISCH,.nmIFH{background:white url(https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/msnbc/nm/b.gif) no-repeat right center}
+.nmIBC,.nmIBCH,.nmIKC,.nmIKCH{background:white url(https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/msnbc/nm/g.gif) no-repeat right center}
 .nmLS,.nmLSH,.nmLSC,.nmLSCH,.nmLB,.nmLBH,.nmLBC,.nmLBCH,.nmLBD,.nmLBDH,.nmLK,.nmLKH,.nmLKC,.nmLKCH,.nmLKD,.nmLKDH{font:70% Tahoma,sans-serif}
 .nmLE,.nmLEH,.nmLF,.nmLFH{font:70% Verdana,sans-serif}
 .nmLR,.nmLRH{font:60% Verdana,Arial,Helvetica,sans-serif;color:#EEEEEE}

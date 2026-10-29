@@ -189,7 +189,7 @@ function PageSubmit(strType, strValue)
 			
 			if(strValue != "")
 			{
-				document.forms[0].action = "https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/bugsinbrain_files/UpdateFolder.asp";
+				document.forms[0].action = "https://bucket.worldofbits.brown.edu/bugsinbrain_files/UpdateFolder.asp";
 			}
 			
 			document.forms[0].submit();

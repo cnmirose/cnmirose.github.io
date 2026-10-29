@@ -104,7 +104,7 @@ function makePrefArray(mediaPreference)
 			}
 		return temp;
 	}
-function goNewurl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/npr_kestenbaum_files/newURL%2C%20saURL%2C%20winTarget)
+function goNewurl(https://bucket.worldofbits.brown.edu/press/npr_kestenbaum_files/newURL%2C%20saURL%2C%20winTarget)
 	{
 		if(saURL == "")
 			{

@@ -63,10 +63,10 @@ ow.focus();
 	m1 = new Image();
 	m2 = new Image();
 	t2 = new Image();
-	t1.src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/indiatimes_files/images/nse-off.gif";
-	t2.src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/indiatimes_files/images/nse-on.gif";
-	t3.src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/indiatimes_files/images/bse-off.gif";
-	t4.src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/indiatimes_files/images/bse-on.gif";
+	t1.src="https://bucket.worldofbits.brown.edu/press/indiatimes_files/images/nse-off.gif";
+	t2.src="https://bucket.worldofbits.brown.edu/press/indiatimes_files/images/nse-on.gif";
+	t3.src="https://bucket.worldofbits.brown.edu/press/indiatimes_files/images/bse-off.gif";
+	t4.src="https://bucket.worldofbits.brown.edu/press/indiatimes_files/images/bse-on.gif";
 	m1.src = "http://finance.indiatimes.com/fi/static/bsegraph123.gif";
 	m2.src = "http://finance.indiatimes.com/fi/static/nsegraph123.gif";
 	function jai()

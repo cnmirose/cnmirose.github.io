@@ -1,7 +1,7 @@
 var adsHt="http://ar.atwola.com",adsD=new Date(),adsTz="&TZ="+adsD.getTimezoneOffset(),adsScr=adsD.getTime()%0x3fffffff,adsTar='_top',adsExt='aol',adsTp='',adsSL="<SCRIPT LANGUAGE='JavaScript' SRC='"
 var adsDel=0,adsDel1=0,adsOld=1,adsNMSG,adsNG,adsNM,adsSr="",adsOt='',adsSN='',adsWM='',adsScat,adsIP=" SCROLLING=NO FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0></IFRAME>"
 var adsNv=navigator,adsAN=adsNv.appName,adsAVA=adsNv.appVersion,adsAV=parseInt(adsAVA),adsUA=adsNv.userAgent,adsLNm=0,adsLMN=new Array(),adsCo=new Array(),adsCN=0
-var adsAH1="<A HREF='",adsAH2="/"+adsScr+ "/",adsOne=0,adsI1="<IMG SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/cnn_brit_files/%2CadsI2%3D"/"+adsScr +"/",adsI3=" BORDER=0 ALT=\"Click Here\"></A>"
+var adsAH1="<A HREF='",adsAH2="/"+adsScr+ "/",adsOne=0,adsI1="<IMG SRC="https://bucket.worldofbits.brown.edu/press/cnn_brit_files/%2CadsI2%3D"/"+adsScr +"/",adsI3=" BORDER=0 ALT=\"Click Here\"></A>"
 var adsIE=(adsAN=="Microsoft Internet Explorer"),adsNS=(adsAN=="Netscape"),adsN4=(adsNS&&adsAV==4),adsN6=(adsNS&&adsAV>=5),adsOp=(adsUA.indexOf("Opera")!=-1)
 if (((adsNS||adsIE)&&adsAV>=4)&&!adsOp){adsOld=0}
 function adsClFn(z){if (window.adsCol0)return eval('window.adsCol'+z)
@@ -90,11 +90,11 @@ j=c+adsCN
 if (((t=='c'&&((adsN6&&(adsUA.indexOf('rv:0')!=-1||adsUA.indexOf('Safari')!=-1))||ie4||(adsAVA.indexOf('MSIE 5.0')!=-1))))||(ie4&&t=='d')||adsN4){adsTp='J',t='';}
 if (t=='t'){d.write(adsSL+s+"J&hw=topbot'></SCRIPT>")}
 else if(t=='b'){d.write(window.adsTop)}
-else if(t=='c'){d.write ('<IFRAME ID="'+j+'" NAME="'+j+'" SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/cnn_brit_files/about%3Ablank" HEIGHT=0 WIDTH=0'+adsIP)
+else if(t=='c'){d.write ('<IFRAME ID="'+j+'" NAME="'+j+'" SRC="https://bucket.worldofbits.brown.edu/press/cnn_brit_files/about%3Ablank" HEIGHT=0 WIDTH=0'+adsIP)
 adsCo[adsCN++]=s+"|"+w+"|"+h}
 else if(t=='d'){d.write('<DIV ID="'+j+'" NAME="'+j+'"></DIV>')
 adsCo[adsCN++]=s+"|T"}
-else{if (adsTp!='J'&&!adsN4){var x="<IFRAME NAME='adsF"+adsLNm+"' ID='adsF"+adsLNm+"' SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/cnn_brit_files/if%20%28adsDel%3D%3D0%29%7Bd.write%28x%2Bs%2B"I"+p+adsIP)}else{d.write(x+"''"+p+adsIP)
+else{if (adsTp!='J'&&!adsN4){var x="<IFRAME NAME='adsF"+adsLNm+"' ID='adsF"+adsLNm+"' SRC="https://bucket.worldofbits.brown.edu/press/cnn_brit_files/if%20%28adsDel%3D%3D0%29%7Bd.write%28x%2Bs%2B"I"+p+adsIP)}else{d.write(x+"''"+p+adsIP)
 adsLMN[adsLNm]="adsF"+adsLNm+"|"+s+"I"}adsLNm++
 }else if ((adsTp=='L'||(adsDel!=0&&adsTp!='J'))&&adsN4){var q=adsLNm
 d.write("<ILAYER ID=adsL"+q+" visibility=hide"+p+"></ILAYER>")

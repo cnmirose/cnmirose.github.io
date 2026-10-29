@@ -14,13 +14,13 @@ var buttonsLaunch_02,buttonsLaunch_02_over,buttonsLaunch_02_down,buttonsLaunch_0
 function VT_preloadImages() {
 	if (document.images) {
 		buttonsLaunch_02 = new Image();
-		buttonsLaunch_02.src = "https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/buttons/launch/buttonsLaunch_02.gif";
+		buttonsLaunch_02.src = "https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/buttons/launch/buttonsLaunch_02.gif";
 		buttonsLaunch_02_over = new Image();
-		buttonsLaunch_02_over.src = "https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/buttons/launch/buttonsLaunch_02-over.gif";
+		buttonsLaunch_02_over.src = "https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/buttons/launch/buttonsLaunch_02-over.gif";
 		buttonsLaunch_02_down = new Image();
-		buttonsLaunch_02_down.src = "https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/buttons/launch/buttonsLaunch_02-down.gif";
+		buttonsLaunch_02_down.src = "https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/buttons/launch/buttonsLaunch_02-down.gif";
 		buttonsLaunch_02_sel = new Image();
-		buttonsLaunch_02_sel.src = "https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/msnbc_reuters_files/images/buttons/launch/buttonsLaunch_02-sel.gif";
+		buttonsLaunch_02_sel.src = "https://bucket.worldofbits.brown.edu/press/msnbc_reuters_files/images/buttons/launch/buttonsLaunch_02-sel.gif";
 	}
 }
 VT_preloadImages();

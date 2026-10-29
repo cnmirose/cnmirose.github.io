@@ -334,7 +334,7 @@ function writeMenus(container) {
 			}
 			var dTag = '<div id="menuItem'+ countItems +'" style="position:absolute;left:' + itemLeft + 'px;top:'+ itemTop +'px;'+ itemProps +'">';
 			var dClose = '</div>'
-			if (menu.bgImageUp) dTag = '<div id="menuItem'+ countItems +'" style="background:url('https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/RUhomepage_files/%2Bmenu.bgImageUp%2B');position:absolute;left:' + itemLeft + 'px;top:'+ itemTop +'px;'+ itemProps +'">';
+			if (menu.bgImageUp) dTag = '<div id="menuItem'+ countItems +'" style="background:url('https://bucket.worldofbits.brown.edu/press/RUhomepage_files/%2Bmenu.bgImageUp%2B');position:absolute;left:' + itemLeft + 'px;top:'+ itemTop +'px;'+ itemProps +'">';
 
 			var left = 0, top = 0, right = 0, bottom = 0;
 			left = 1 + menu.menuItemPadding + menu.menuItemIndent;
@@ -637,11 +637,11 @@ function onMenuItemOver(e, l) {
 			a.style.backgroundColor = a.saveColor;
 			if (a.hilite) a.hilite.style.visibility = "hidden";
 			if (a.hiliteShim) a.hiliteShim.style.visibility = "inherit";
-			if (a.Menu.bgImageUp) a.style.background = "url("https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/RUhomepage_files/%2B%20a.Menu.bgImageUp%20%2B")";;
+			if (a.Menu.bgImageUp) a.style.background = "url("https://bucket.worldofbits.brown.edu/press/RUhomepage_files/%2B%20a.Menu.bgImageUp%20%2B")";;
 		} 
 		l.style.backgroundColor = l.menuHiliteBgColor;
 		l.zIndex = 1;
-		if (l.Menu.bgImageOver) l.style.background = "url("https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/RUhomepage_files/%2B%20l.Menu.bgImageOver%20%2B")";
+		if (l.Menu.bgImageOver) l.style.background = "url("https://bucket.worldofbits.brown.edu/press/RUhomepage_files/%2B%20l.Menu.bgImageOver%20%2B")";
 		if (l.hilite) {
 			l.hilite.style.visibility = "inherit";
 			if( l.hiliteShim ) l.hiliteShim.style.visibility = "visible";
@@ -802,7 +802,7 @@ function hideMenu(mouseup, e) {
 			a.style.backgroundColor = a.saveColor;
 			if (a.hilite) a.hilite.style.visibility = "hidden";
 			if (a.hiliteShim) a.hiliteShim.style.visibility = "inherit";
-			if (a.Menu.bgImageUp) a.style.background = "url("https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/RUhomepage_files/%2B%20a.Menu.bgImageUp%20%2B")";
+			if (a.Menu.bgImageUp) a.style.background = "url("https://bucket.worldofbits.brown.edu/press/RUhomepage_files/%2B%20a.Menu.bgImageUp%20%2B")";
 		}
 	}
 	if (!mouseup && window.ActiveMenu) {

@@ -148,7 +148,7 @@ function writeMenus(container) {
 			if (menu.bgImageUp) {
 				menu.menuBorder = 0;
 				menu.menuItemBorder = 0;
-				dTag	= '<DIV ID="menuItem'+ countItems +'" STYLE="background:url('https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/%2Bmenu.bgImageUp%2B');position:absolute;left:0;top:'+ (i * menu.menuItemHeight) +';'+ itemProps +'">';
+				dTag	= '<DIV ID="menuItem'+ countItems +'" STYLE="background:url('https://bucket.worldofbits.brown.edu/%2Bmenu.bgImageUp%2B');position:absolute;left:0;top:'+ (i * menu.menuItemHeight) +';'+ itemProps +'">';
 				if (document.layers) {
 					dTag = '<LAYER BACKGROUND="'+menu.bgImageUp+'" ID="menuItem'+ countItems +'" TOP="'+ (i * menu.menuItemHeight) +'" style="' + itemProps +'">';
 					dClose = '</LAYER>';
@@ -413,14 +413,14 @@ function onMenuItemOver(e, l) {
 			a.style.backgroundColor = a.saveColor;
 			if (a.hilite) a.hilite.style.visibility = "hidden";
 			if (a.Menu.bgImageUp) {
-				a.style.background = "url("https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/%2B%20a.Menu.bgImageUp%20%2B")";;
+				a.style.background = "url("https://bucket.worldofbits.brown.edu/%2B%20a.Menu.bgImageUp%20%2B")";;
 			}
 		} 
 		if (l.isSeparator) return;
 		l.style.backgroundColor = l.menuHiliteBgColor;
 		l.zIndex = 1;  // magic IE 4.5 mac happy doohicky.	jba
 		if (l.Menu.bgImageOver) {
-			l.style.background = "url("https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/%2B%20l.Menu.bgImageOver%20%2B")";
+			l.style.background = "url("https://bucket.worldofbits.brown.edu/%2B%20l.Menu.bgImageOver%20%2B")";
 		}
 		if (l.hilite) {
 			l.style.backgroundColor = l.menuHiliteBgColor;
@@ -575,7 +575,7 @@ function hideMenu(mouseup, e) {
 			a.style.backgroundColor = a.saveColor;
 			if (a.hilite) a.hilite.style.visibility = "hidden";
 			if (a.Menu.bgImageUp) {
-				a.style.background = "url("https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/%2B%20a.Menu.bgImageUp%20%2B")";;
+				a.style.background = "url("https://bucket.worldofbits.brown.edu/%2B%20a.Menu.bgImageUp%20%2B")";;
 			}
 		}
 	}

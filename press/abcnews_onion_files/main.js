@@ -34,7 +34,7 @@ function goTo(pagename) {
 
 // LaunchURL main function
 
-function launchurl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/abcnews_onion_files/url%2Cname%2Cx%2Cy) {
+function launchurl(https://bucket.worldofbits.brown.edu/press/abcnews_onion_files/url%2Cname%2Cx%2Cy) {
 	window.name = "_newshome";
     var ItsTheWindow;
     ItsTheWindow = window.open(url, name,

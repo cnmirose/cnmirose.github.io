@@ -550,7 +550,7 @@ function handleKeyPress(aSrc)
 	if (btnName == null)
 		return;
 		
-	//alert("Enter pressed: src="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/birdsmell_files/%2B%20aSrc.name%20%2B", btn=" + btnName);
+	//alert("Enter pressed: src="https://bucket.worldofbits.brown.edu/birdsmell_files/%2B%20aSrc.name%20%2B", btn=" + btnName);
 	if ((btnName!=null) && (btnName!=""))
 	{
 		var pfxJS = "javascript:";

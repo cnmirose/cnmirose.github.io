@@ -21,7 +21,7 @@
    		document.images[image_name].src = image_src;
 	}
 
-	function goTourl(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/misc/mindcontrol_grasshopper_files/obj){
+	function goTourl(https://bucket.worldofbits.brown.edu/misc/mindcontrol_grasshopper_files/obj){
 		var f = (obj.section) ? obj : obj.form;
 		var selected = f.section.selectedIndex;
 		var URL = f.section.options[selected].value;

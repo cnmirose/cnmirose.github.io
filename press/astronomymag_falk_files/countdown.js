@@ -13,7 +13,7 @@ framePause[5] = new Array(4,4,4,4,4);
 loadingGraphic = new Image();
 var loadingGraphicIsLoaded = false;
 loadingGraphic.onload = function() {loadingGraphicIsLoaded = true;}
-loadingGraphic.src = 'https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/astronomymag_falk_files/im_homejs/animationnew/anim_loading.jpg';
+loadingGraphic.src = 'https://bucket.worldofbits.brown.edu/press/astronomymag_falk_files/im_homejs/animationnew/anim_loading.jpg';
 
 //to keep track of what's been loaded, to avoid redundancy
 var framesLoaded = new Array();
@@ -66,7 +66,7 @@ else if (document.layers) {
 }
 
 function ShowLayer(){
-document.hvu.src ='https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/astronomymag_falk_files/im_homejs/hvu-anew3.jpg';//bring back original hvu image
+document.hvu.src ='https://bucket.worldofbits.brown.edu/press/astronomymag_falk_files/im_homejs/hvu-anew3.jpg';//bring back original hvu image
 if (document.getElementById) {
    document.getElementById('logintable').style.visibility = 'visible';
 }

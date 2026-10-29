@@ -1,12 +1,12 @@
 function swapimages(){
 	if(window.document.I2!=null){
-		window.document.I2.src = "https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/426_html/cellphone_tutorial_verizon_files/About/Community/learningcenter/images/rhs/i2_closed.gif"
+		window.document.I2.src = "https://bucket.worldofbits.brown.edu/426_html/cellphone_tutorial_verizon_files/About/Community/learningcenter/images/rhs/i2_closed.gif"
 	}
 	if(window.document.I3!=null){
-		window.document.I3.src = "https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/426_html/cellphone_tutorial_verizon_files/About/Community/learningcenter/images/rhs/i3_closed.gif"
+		window.document.I3.src = "https://bucket.worldofbits.brown.edu/426_html/cellphone_tutorial_verizon_files/About/Community/learningcenter/images/rhs/i3_closed.gif"
 	}
 	if(window.document.I4!=null){
-		window.document.I4.src = "https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/426_html/cellphone_tutorial_verizon_files/About/Community/learningcenter/images/rhs/i4_closed.gif"
+		window.document.I4.src = "https://bucket.worldofbits.brown.edu/426_html/cellphone_tutorial_verizon_files/About/Community/learningcenter/images/rhs/i4_closed.gif"
 	}
 }
 

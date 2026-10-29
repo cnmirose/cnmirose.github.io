@@ -100,9 +100,9 @@ function writeFlashComponent() {
 	if (Ticket.flash) {
 		if (Ticket.mac || Ticket.netscape) {
 			if (this.bgcolor){
-					sCR="<EMBED SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect="+this.LiveConnect+" WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" FlashVars="+ this.flashVars +" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" BGCOLOR="+this.bgcolor+" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED>";
+					sCR="<EMBED SRC="https://bucket.worldofbits.brown.edu/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect="+this.LiveConnect+" WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" FlashVars="+ this.flashVars +" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" BGCOLOR="+this.bgcolor+" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED>";
 					} else {
-					sCR="<EMBED SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect="+this.LiveConnect+" WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" FlashVars="+ this.flashVars +" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED>";
+					sCR="<EMBED SRC="https://bucket.worldofbits.brown.edu/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect="+this.LiveConnect+" WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" FlashVars="+ this.flashVars +" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED>";
 			}
 		} else if (this.DenyIEdl=='TRUE') {
 			sCR="<OBJECT classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://active.macromedia.com/flash2/cabs/swflash.cab#version="+this.FlashVer+",0,0,0\" ID=\""+this.ID+"\" WIDTH=\""+this.width+"\" HEIGHT=\""+this.height+"\">\n";
@@ -119,9 +119,9 @@ function writeFlashComponent() {
 			}
 			sCR+="<PARAM NAME=devicefont VALUE=\""+this.deviceFont+"\">\n";
 			if (this.bgcolor){
-			sCR+="<EMBED SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect="+this.LiveConnect+" WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" FlashVars="+ this.flashVars +" BGCOLOR="+this.bgcolor+" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED></OBJECT>";
+			sCR+="<EMBED SRC="https://bucket.worldofbits.brown.edu/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect="+this.LiveConnect+" WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" FlashVars="+ this.flashVars +" BGCOLOR="+this.bgcolor+" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED></OBJECT>";
 			} else {
-			sCR+="<EMBED SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect="+this.LiveConnect+" WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" FlashVars="+ this.flashVars +" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED></OBJECT>";
+			sCR+="<EMBED SRC="https://bucket.worldofbits.brown.edu/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect="+this.LiveConnect+" WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" FlashVars="+ this.flashVars +" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED></OBJECT>";
 			}
 		} else if (Ticket.ie>=4 && this.DenyIEdl=='FALSE') {
 			sCR="<OBJECT classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://active.macromedia.com/flash2/cabs/swflash.cab#version="+this.cabVersion+"\" ID=\""+this.ID+"\" WIDTH=\""+this.width+"\" HEIGHT=\""+this.height+"\">\n";
@@ -139,7 +139,7 @@ function writeFlashComponent() {
 			sCR+="<PARAM NAME=devicefont VALUE=\""+this.deviceFont+"\">\n";
 			sCR+="</OBJECT>\n";
 		} else if (Ticket.webtv) {
-			sCR="<EMBED SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect=TRUE WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" FlashVars="+ this.flashVars +" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED>";
+			sCR="<EMBED SRC="https://bucket.worldofbits.brown.edu/press/abcnews_onion_files/%2Bthis.flashFile%2B" swLiveConnect=TRUE WIDTH="+this.width+" HEIGHT="+this.height+" QUALITY="+this.quality+" SCALE="+this.scale+" wmode="+this.wmode+" ID="+this.ID+" NAME="+this.name+" MENU="+this.menu+" DEVICEFONT="+this.deviceFont+" FlashVars="+ this.flashVars +" TYPE=application/x-shockwave-flash PLUGINSPAGE=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash></EMBED>";
 		}
 	} else {
 	if (this.redirect){
@@ -148,7 +148,7 @@ function writeFlashComponent() {
 			if (this.altTxt){
 			sCR = this.altTxt;
 			} else {
-			sCR="<IMG SRC="https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/press/abcnews_onion_files/%2Bthis.altImg%2B" WIDTH="+this.width+" HEIGHT="+this.height+" BORDER=0>";
+			sCR="<IMG SRC="https://bucket.worldofbits.brown.edu/press/abcnews_onion_files/%2Bthis.altImg%2B" WIDTH="+this.width+" HEIGHT="+this.height+" BORDER=0>";
 			}
 		}
 		}

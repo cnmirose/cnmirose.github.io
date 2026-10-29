@@ -81,15 +81,15 @@ A.droplink	{FONT-SIZE: 10px;
 			LINE-HEIGHT: 13px;
 			FONT-FAMILY: verdana, arial, helvetica, sans-serif}
 
-.spacerbg	{BACKGROUND-IMAGE: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/spacer.gif)}
+.spacerbg	{BACKGROUND-IMAGE: url(https://bucket.worldofbits.brown.edu/kishore_lehigh_files/images/spacer.gif)}
 
-.jumptobg	{BACKGROUND-IMAGE: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/sitewide/jumpto_bg.gif)}
+.jumptobg	{BACKGROUND-IMAGE: url(https://bucket.worldofbits.brown.edu/kishore_lehigh_files/images/sitewide/jumpto_bg.gif)}
 
 .navbullet	{FONT-SIZE: 10px;
 			COLOR: #c6e9fc;
 			FONT-FAMILY: verdana, arial, helvetica}
 
-.linksbg	{BACKGROUND-IMAGE: url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/images/sitewide/leftwave.gif);
+.linksbg	{BACKGROUND-IMAGE: url(https://bucket.worldofbits.brown.edu/kishore_lehigh_files/images/sitewide/leftwave.gif);
 			BACKGROUND-COLOR: #8eacba}
 
 .blueside	{BACKGROUND-COLOR: #8eacba}
@@ -131,7 +131,7 @@ A.droplink	{FONT-SIZE: 10px;
 				font-size:11px;
 				color:#000000;
 				border:2px black;
-				background-image:url(https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/kishore_lehigh_files/ActiveCampus/images/formelembg.gif);
+				background-image:url(https://bucket.worldofbits.brown.edu/kishore_lehigh_files/ActiveCampus/images/formelembg.gif);
 				background-attachment:fixed;
 				background-color: #FFFFFF;}
 				

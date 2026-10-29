@@ -1887,7 +1887,7 @@ var c=xk(Qk);O(c,dc,function(d,e){v(e)&&e!=mc&&b.QL(ec,c)})}
 function qw(a){var b=B("learnmore",undefined),c=new su(b,a,"q_d");a.xa().Ha("lm",c,{show:c.show});L(b,xa,c,c.JT);L(b,sa,c,c.FT)}
 function vw(a){var b=function(c){c.node().blur();Uk(Tc,Uc)(a,a.xa(),f,c.node())};
 a.xa().Ha("link",i,{show:b})}
-function ww(a){var b="";if(y.type==4){var c=a.D().$().offsetWidth;b=fp("#map{width:%1$dpx;}",c)}var d=fp('#panel{background:url("https://pub-e537d4245eb54823b4ef9e72eec121b5.r2.dev/santafe_files/%251%24s")}',a.vd.GCa());lr("mediaPrintCSS",fp("@media print{%1$s%2$s}",b,d),{dynamicCss:f})}
+function ww(a){var b="";if(y.type==4){var c=a.D().$().offsetWidth;b=fp("#map{width:%1$dpx;}",c)}var d=fp('#panel{background:url("https://bucket.worldofbits.brown.edu/santafe_files/%251%24s")}',a.vd.GCa());lr("mediaPrintCSS",fp("@media print{%1$s%2$s}",b,d),{dynamicCss:f})}
 function yw(a){Ol(a,yb,function(b){Uk(je,ke)(a,b)})}
 function zw(a){a.xa().Ha("ab",i,{topLevelClick:function(b){b.branch();s(ue,ve,function(c){c(b.node(),a,b);b.done()},
 b)}});
